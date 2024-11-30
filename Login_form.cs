@@ -1,5 +1,5 @@
-﻿using CuaHangDaQuy.DTO;
-using QuanLyCuaHangDaQuy.DAO;
+﻿using CuaHangDaQuy.DAO;
+using CuaHangDaQuy.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

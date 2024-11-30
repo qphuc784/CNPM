@@ -1823,7 +1823,6 @@
             this.btn_Manager_HDDV_ShowGuest.TabIndex = 22;
             this.btn_Manager_HDDV_ShowGuest.Text = "Hiển thị khách hàng";
             this.btn_Manager_HDDV_ShowGuest.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btn_Manager_HDDV_ShowGuest.Click += new System.EventHandler(this.btn_Manager_HDDV_ShowGuest_Click);
             // 
             // flowLayoutPanel5
             // 

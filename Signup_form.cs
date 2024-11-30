@@ -1,4 +1,4 @@
-﻿using QuanLyCuaHangDaQuy.DAO;
+﻿using CuaHangDaQuy.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;

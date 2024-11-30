@@ -1,5 +1,4 @@
-﻿using CNPM.DAO;
-using CuaHangDaQuy.DTO;
+﻿using CuaHangDaQuy.DTO;
 using Guna.UI.WinForms;
 using System;
 using System.Collections.Generic;
@@ -11,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using CuaHangDaQuy.DAO;
 
 namespace CNPM
 {
