@@ -1,6 +1,6 @@
-﻿using CNPM.DAO;
+﻿using CNPM;
 using CuaHangDaQuy.DTO;
-using QuanLyCuaHangDaQuy.DAO;
+using CuaHangDaQuy.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,7 +43,7 @@ namespace CNPM
                 MessageBox.Show("So dien thoai da duoc su dung");
                 return;
             }
-            
+           
             if (Add_customer(ten,sdt))
             {
                 MessageBox.Show("Thanh Cong!");

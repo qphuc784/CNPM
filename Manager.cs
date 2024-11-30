@@ -172,7 +172,7 @@ namespace CNPM
                 int selectedIDLoai = (int)cbbox.SelectedItem; // Chuyển đổi sang int
 
             }
-        }
+        }   
 
     }
 }

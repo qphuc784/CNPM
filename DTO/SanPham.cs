@@ -17,9 +17,9 @@ namespace CuaHangDaQuy.DTO
         public string TenSanPham
         { get => tensanpham; set => tensanpham = value; }
 
-        private int iDloai;
+        private int idloai;
         public int IDLoai
-        { get => IDLoai; set => iDloai = value; }
+        { get => idloai; set => idloai = value; }
 
         private int soluong;
         public int SoLuong

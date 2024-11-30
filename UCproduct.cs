@@ -16,27 +16,6 @@ namespace CNPM
         {
             InitializeComponent();
         }
-
-        private void gunaLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void gunaDataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void gunaPictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Button_UCproduct_Them_Click(object sender, EventArgs e)
         {
             AddProduct newproduct = new AddProduct();

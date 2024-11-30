@@ -23,25 +23,14 @@ namespace CuaHangDaQuy.DAO
             private set { ProductDAO.instance = value; }
         }
         private ProductDAO() { }
-        public List<SanPham> GetListSanPham()
+        
+
+        public bool InsertProduct(string tenSanPham, string Ten , string dongia, string soluong)
         {
-            List<SanPham> listSP = new List<SanPham>();
-            string query = "select * from SanPham";
-            DataTable data = DataProvider.Instance.ExcuteQuery(query);
-
-            foreach (DataRow row in data.Rows)
-            {
-                SanPham sp = new SanPham(row);
-                listSP.Add(sp);
-            }
-
-            return listSP;
-        }
-
-        public bool InsertProduct(string tenSanPham, int idLoai, float donGia, int soLuong)
-        {
-            string query = "EXEC ThemSanPham @TenSanPham , @IDLoai , @DonGia , @SoLuong";
-            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { tenSanPham, idLoai, donGia, soLuong });
+            int soluong1 = Convert.ToInt32(soluong);
+            float dongia1 = Convert.ToSingle(dongia);
+            string query = "USP_add_product @tensanpham ,@tenloaisp ,@dongia ,@soluong ";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { tenSanPham, Ten, dongia1, soluong1 });
             return result > 0;
         }
 

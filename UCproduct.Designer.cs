@@ -60,7 +60,7 @@
             this.TextBox_UCproduct_timkiem.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCproduct_timkiem.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.TextBox_UCproduct_timkiem.Location = new System.Drawing.Point(237, 28);
-            this.TextBox_UCproduct_timkiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox_UCproduct_timkiem.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_UCproduct_timkiem.Name = "TextBox_UCproduct_timkiem";
             this.TextBox_UCproduct_timkiem.PasswordChar = '\0';
             this.TextBox_UCproduct_timkiem.Radius = 10;
@@ -105,7 +105,7 @@
             this.DataGridView_UCproduct.EnableHeadersVisualStyles = false;
             this.DataGridView_UCproduct.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_UCproduct.Location = new System.Drawing.Point(53, 118);
-            this.DataGridView_UCproduct.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DataGridView_UCproduct.Margin = new System.Windows.Forms.Padding(4);
             this.DataGridView_UCproduct.Name = "DataGridView_UCproduct";
             this.DataGridView_UCproduct.RowHeadersVisible = false;
             this.DataGridView_UCproduct.RowHeadersWidth = 62;
@@ -183,7 +183,6 @@
             this.gunaLabel2.Size = new System.Drawing.Size(143, 29);
             this.gunaLabel2.TabIndex = 1;
             this.gunaLabel2.Text = "Tìm kiếm :";
-            this.gunaLabel2.Click += new System.EventHandler(this.gunaLabel2_Click);
             // 
             // Button_UCproduct_Them
             // 
@@ -199,7 +198,7 @@
             this.Button_UCproduct_Them.Image = null;
             this.Button_UCproduct_Them.ImageSize = new System.Drawing.Size(20, 20);
             this.Button_UCproduct_Them.Location = new System.Drawing.Point(884, 16);
-            this.Button_UCproduct_Them.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button_UCproduct_Them.Margin = new System.Windows.Forms.Padding(4);
             this.Button_UCproduct_Them.Name = "Button_UCproduct_Them";
             this.Button_UCproduct_Them.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCproduct_Them.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -227,7 +226,7 @@
             this.Button_UCproduct_Xoa.Image = null;
             this.Button_UCproduct_Xoa.ImageSize = new System.Drawing.Size(20, 20);
             this.Button_UCproduct_Xoa.Location = new System.Drawing.Point(1066, 16);
-            this.Button_UCproduct_Xoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button_UCproduct_Xoa.Margin = new System.Windows.Forms.Padding(4);
             this.Button_UCproduct_Xoa.Name = "Button_UCproduct_Xoa";
             this.Button_UCproduct_Xoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCproduct_Xoa.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -254,7 +253,7 @@
             this.Button_UCproduct_Sua.Image = null;
             this.Button_UCproduct_Sua.ImageSize = new System.Drawing.Size(20, 20);
             this.Button_UCproduct_Sua.Location = new System.Drawing.Point(1248, 16);
-            this.Button_UCproduct_Sua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button_UCproduct_Sua.Margin = new System.Windows.Forms.Padding(4);
             this.Button_UCproduct_Sua.Name = "Button_UCproduct_Sua";
             this.Button_UCproduct_Sua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCproduct_Sua.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -281,7 +280,7 @@
             this.Button_UCproduct_OK.Image = null;
             this.Button_UCproduct_OK.ImageSize = new System.Drawing.Size(20, 20);
             this.Button_UCproduct_OK.Location = new System.Drawing.Point(753, 16);
-            this.Button_UCproduct_OK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button_UCproduct_OK.Margin = new System.Windows.Forms.Padding(4);
             this.Button_UCproduct_OK.Name = "Button_UCproduct_OK";
             this.Button_UCproduct_OK.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.Button_UCproduct_OK.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -299,13 +298,12 @@
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = global::CNPM.Properties.Resources.search_icon;
             this.gunaPictureBox1.Location = new System.Drawing.Point(50, 35);
-            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
             this.gunaPictureBox1.Size = new System.Drawing.Size(44, 37);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gunaPictureBox1.TabIndex = 8;
             this.gunaPictureBox1.TabStop = false;
-            this.gunaPictureBox1.Click += new System.EventHandler(this.gunaPictureBox1_Click);
             // 
             // UCproduct
             // 
@@ -320,7 +318,7 @@
             this.Controls.Add(this.DataGridView_UCproduct);
             this.Controls.Add(this.TextBox_UCproduct_timkiem);
             this.Controls.Add(this.gunaLabel2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCproduct";
             this.Size = new System.Drawing.Size(1448, 1126);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_UCproduct)).EndInit();
