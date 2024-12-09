@@ -33,12 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TextBox_UCproduct_timkiem = new Guna.UI.WinForms.GunaTextBox();
             this.DataGridView_UCproduct = new Guna.UI.WinForms.GunaDataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.Button_UCproduct_Them = new Guna.UI.WinForms.GunaButton();
             this.Button_UCproduct_Xoa = new Guna.UI.WinForms.GunaButton();
@@ -87,13 +81,6 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.DataGridView_UCproduct.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGridView_UCproduct.ColumnHeadersHeight = 32;
-            this.DataGridView_UCproduct.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5,
-            this.Column6});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -135,42 +122,6 @@
             this.DataGridView_UCproduct.ThemeStyle.RowsStyle.Height = 28;
             this.DataGridView_UCproduct.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_UCproduct.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Column1";
-            this.Column1.MinimumWidth = 8;
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Column2";
-            this.Column2.MinimumWidth = 8;
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Column3";
-            this.Column3.MinimumWidth = 8;
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Column4";
-            this.Column4.MinimumWidth = 8;
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Column5";
-            this.Column5.MinimumWidth = 8;
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Column6";
-            this.Column6.MinimumWidth = 8;
-            this.Column6.Name = "Column6";
             // 
             // gunaLabel2
             // 
@@ -238,6 +189,7 @@
             this.Button_UCproduct_Xoa.TabIndex = 10;
             this.Button_UCproduct_Xoa.Text = "- Xóa";
             this.Button_UCproduct_Xoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Button_UCproduct_Xoa.Click += new System.EventHandler(this.Button_UCproduct_Xoa_Click);
             // 
             // Button_UCproduct_Sua
             // 
@@ -292,6 +244,7 @@
             this.Button_UCproduct_OK.TabIndex = 27;
             this.Button_UCproduct_OK.Text = "Ok";
             this.Button_UCproduct_OK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Button_UCproduct_OK.Click += new System.EventHandler(this.Button_UCproduct_OK_Click);
             // 
             // gunaPictureBox1
             // 
@@ -333,12 +286,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaTextBox TextBox_UCproduct_timkiem;
         private Guna.UI.WinForms.GunaDataGridView DataGridView_UCproduct;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaButton Button_UCproduct_Them;
         private Guna.UI.WinForms.GunaButton Button_UCproduct_Xoa;

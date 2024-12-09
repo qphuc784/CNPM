@@ -123,7 +123,7 @@ namespace CNPM
                 MessageBox.Show("Khach hang khong ton tai");
             }
 
-        }     
+        }
         private void tb_Manager_HDban_IdProduct_TextChanged(object sender, EventArgs e)
         {
 
@@ -133,7 +133,7 @@ namespace CNPM
         private void LoadListLoaiSP()
         {
             List<string> listTenLoai = LoaiSanPhamDAO.Instance.GetListLoaiSanPham();
-            //listTenLoai.Insert(0, ""); // Thêm mục trống vào đầu danh sách
+            listTenLoai.Insert(0, ""); // Thêm mục trống vào đầu danh sách
             cb_Manager_HDban_ProductType.DataSource = listTenLoai;
             cb_Manager_HDban_ProductType.DisplayMember = "Ten";
             cb_Manager_HDban_ProductType.SelectedIndex = -1; // Đặt mục ban đầu là trống
@@ -141,38 +141,54 @@ namespace CNPM
 
         private void cb_Manager_HDban_ProductType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            GunaComboBox cbbox = sender as GunaComboBox;
-
-            if (cbbox != null && cbbox.SelectedItem != null)
+            if (cb_Manager_HDban_ProductType.SelectedItem == null || cb_Manager_HDban_ProductType.SelectedIndex == -1)
             {
-                string selectedTenLoai = cbbox.SelectedItem.ToString();
+                LoadTenSPToComboBox("");
+            }
+            else
+            {
+                string selectedTenLoai = cb_Manager_HDban_ProductType.SelectedItem.ToString();
                 LoadTenSPToComboBox(selectedTenLoai);
             }
         }
         private void LoadTenSPToComboBox(string selectedLoaiSP)
         {
-            // Lấy danh sách sản phẩm theo loại sản phẩm đã chọn
-            List<string> listTenSP = ProductDAO.Instance.GetTenSanPhamByLoai(selectedLoaiSP);
+            DataTable listTenSP = ProductDAO.Instance.GetTenSanPhamByLoai(selectedLoaiSP);
 
-            // Cập nhật dữ liệu cho ComboBox
-            cb_Manager_HDban_ProductName.DataSource = listTenSP;
-            cb_Manager_HDban_ProductName.DisplayMember = "TenSanPham";
-            cb_Manager_HDban_ProductName.SelectedIndex = -1; // Đặt mục ban đầu là trống
+            if (listTenSP != null && listTenSP.Rows.Count > 0)
+            {
+                cb_Manager_HDban_ProductName.DataSource = listTenSP;
+                cb_Manager_HDban_ProductName.DisplayMember = "TenSanPham"; // Tên cột phải khớp
+                cb_Manager_HDban_ProductName.ValueMember = "ID"; // Tên cột phải khớp
+                cb_Manager_HDban_ProductName.SelectedIndex = -1; // Đặt mục ban đầu là trống
+            }
+            else
+            {
+                cb_Manager_HDban_ProductName.DataSource = null; // Xóa dữ liệu cũ
+            }
         }
 
 
         private void cb_Manager_HDban_ProductName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Lấy ComboBox từ sender
-            GunaComboBox cbbox = sender as GunaComboBox;
-
-            if (cbbox != null && cbbox.SelectedItem != null)
+            if (cb_Manager_HDban_ProductName.SelectedIndex != -1 && cb_Manager_HDban_ProductName.SelectedValue != null)
             {
-                // Lấy IDLoai đã chọn từ ComboBox
-                int selectedIDLoai = (int)cbbox.SelectedItem; // Chuyển đổi sang int
+                tb_Manager_HDban_IdProduct.Text = cb_Manager_HDban_ProductName.SelectedValue.ToString();
 
+                string idSanPham = cb_Manager_HDban_ProductName.SelectedValue.ToString();
+                //string tenLoai = LoaiSanPhamDAO.Instance.GetTenLoaiByID(idSanPham);
+
+                //if (!string.IsNullOrEmpty(tenLoai))
+                //{
+                //    cb_Manager_HDban_ProductType.SelectedIndex = cb_Manager_HDban_ProductType.Items.IndexOf(tenLoai);
+                //}
             }
-        }   
+            else
+            {
+                tb_Manager_HDban_IdProduct.Text = "";
+                cb_Manager_HDban_ProductType.SelectedIndex = -1; // Reset loại sản phẩm
+            }
+        }
 
     }
 }

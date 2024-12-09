@@ -44,6 +44,20 @@ namespace CuaHangDaQuy.DAO
             return listTenLoai;
         }
 
+        //public string GetTenLoaiByID(string idSanPham)
+        //{
+        //    // Gọi stored procedure và truyền tham số
+        //    string query = "USP_GetTenLoaiByID @idsanpham";
+        //    DataTable result = DataProvider.Instance.ExcuteQuery(query, new object[] { idSanPham });
+
+        //    if (result.Rows.Count > 0)
+        //    {
+        //        return result.Rows[0]["Ten"].ToString();
+        //    }
+        //    return null;
+        //}
+
+
         //public LoaiSP GetIDbyTen(string ten)
         //{
         //    string query = "Select ID from LoaiSanPham where Ten = " + ten;

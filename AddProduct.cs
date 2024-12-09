@@ -29,7 +29,7 @@ namespace CNPM
 
         private void LoadIDLoaiToComboBox()
         {
-            List<string> listIDLoai = LoaiSanPhamDAO.Instance.GetListLoaiSanPham();
+            List<LoaiSP> listIDLoai = ProductDAO.Instance.GetListSanPham();
             gunaComboBox_AddProduct_loai_san_pham.DataSource = listIDLoai;
             gunaComboBox_AddProduct_loai_san_pham.DisplayMember = "Ten";
         }
@@ -41,43 +41,41 @@ namespace CNPM
 
             if (cbbox.SelectedItem is DataRowView rowView)
             {
-                //int selectedIDLoai = (int)rowView["Ten"];
-                string selectedtenloai = (string)rowView["Ten"];
+                int selectedIDLoai = (int)rowView["Ten"];
             }
 
         }
 
         private void Button_AddProduct_Ok_Click(object sender, EventArgs e)
         {
-            string tensanpham = TextBox_AddProduct_ten_san_pham.Text;
-            string tenloaisp = gunaComboBox_AddProduct_loai_san_pham.SelectedText;
-            string soluong = TextBox_AddProduct_So_luong.Text;
-            string dongia = TextBox_AddProduct_Don_gia.Text; 
-            //int soluong1=Convert.ToInt32(soluong);
-            //float dongia1=Convert.ToInt32(dongia);
-
-            if (string.IsNullOrWhiteSpace(TextBox_AddProduct_ten_san_pham.Text) ||
-                 string.IsNullOrWhiteSpace(TextBox_AddProduct_Don_gia.Text) ||
-                 string.IsNullOrWhiteSpace(TextBox_AddProduct_So_luong.Text))
+            string TenSanpham = TextBox_AddProduct_ten_san_pham.Text;
+            string TenLoai = gunaComboBox_AddProduct_loai_san_pham.Text;
+            string SoLuongText = TextBox_AddProduct_So_luong.Text;
+            string DonGiaText = TextBox_AddProduct_Don_gia.Text;
+            int SoLuong = Convert.ToInt32(SoLuongText);
+            float DonGia = Convert.ToSingle(DonGiaText);
+            if (string.IsNullOrWhiteSpace(TenSanpham) ||
+                string.IsNullOrEmpty(SoLuongText) ||
+                string.IsNullOrEmpty(DonGiaText)
+               )
             {
-                MessageBox.Show("Vui Lòng Nhập Đầy Đủ!");
+                MessageBox.Show("Nhập đầy đủ thông tin");
                 return;
             }
-            if (add_product(tensanpham,tenloaisp,soluong,dongia))
+            if (add_Product(TenSanpham, TenLoai, SoLuong, DonGia))
             {
-                MessageBox.Show("Thanh Cong!");
+                MessageBox.Show("Thêm Sản Phẩm Thành Công!");
                 this.Close();
             }
-            else
-            {
-                MessageBox.Show("That Bai!");
-            }
-            
         }
-        bool add_product(string tensanpham, string tenloaisp, string soluong,string dongia)
+        bool add_Product(string TenSanpham, string TenLoai, int SoLuong, float DonGia)
         {
-            return ProductDAO.Instance.InsertProduct(tensanpham, tenloaisp, dongia, soluong);
+            return ProductDAO.Instance.AddSanPham(TenSanpham, TenLoai, SoLuong, DonGia);
         }
 
+        private void Button_AddProduct_Cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
