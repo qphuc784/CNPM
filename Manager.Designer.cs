@@ -948,7 +948,6 @@
             this.tb_Manager_HDban_IdProduct.Size = new System.Drawing.Size(297, 59);
             this.tb_Manager_HDban_IdProduct.TabIndex = 5;
             this.tb_Manager_HDban_IdProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tb_Manager_HDban_IdProduct.TextChanged += new System.EventHandler(this.tb_Manager_HDban_IdProduct_TextChanged);
             // 
             // gunaTextBox4
             // 
@@ -1182,6 +1181,7 @@
             this.txb_Manager_HDban_Quantity.Size = new System.Drawing.Size(297, 59);
             this.txb_Manager_HDban_Quantity.TabIndex = 15;
             this.txb_Manager_HDban_Quantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txb_Manager_HDban_Quantity.TextChanged += new System.EventHandler(this.txb_Manager_HDban_Quantity_TextChanged);
             // 
             // gunaTextBox22
             // 
@@ -1228,6 +1228,7 @@
             this.btn_Manager_HDban_AddProductbill.TabIndex = 21;
             this.btn_Manager_HDban_AddProductbill.Text = "Thêm vào hóa đơn";
             this.btn_Manager_HDban_AddProductbill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Manager_HDban_AddProductbill.Click += new System.EventHandler(this.btn_Manager_HDban_AddProductbill_Click);
             // 
             // billTB
             // 

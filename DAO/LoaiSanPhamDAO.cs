@@ -27,29 +27,34 @@ namespace CuaHangDaQuy.DAO
 
         private LoaiSanPhamDAO() { }
 
-        //public string GetTenLoaiByID(string idSanPham)
-        //{
-        //    // Gọi stored procedure và truyền tham số
-        //    string query = "USP_GetTenLoaiByID @idsanpham";
-        //    DataTable result = DataProvider.Instance.ExcuteQuery(query, new object[] { idSanPham });
+        public List<string> GetDVTByIDLoai(int idloai)
+        {
+            List<string> listDonViTinh = new List<string>();
+            string query = "USP_GetDVTByIDLoai @idloai ";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { idloai });
 
-        //    if (result.Rows.Count > 0)
-        //    {
-        //        return result.Rows[0]["Ten"].ToString();
-        //    }
-        //    return null;
-        //}
+            foreach (DataRow row in data.Rows)
+            {
+                string donViTinh = row["DonViTinh"].ToString();
+                listDonViTinh.Add(donViTinh);
+            }
 
+            return listDonViTinh;
+        }
 
-        //public LoaiSP GetIDbyTen(string ten)
-        //{
-        //    string query = "Select ID from LoaiSanPham where Ten = " + ten;
-        //    DataTable data = DataProvider.Instance.ExcuteQuery(query);
-        //    foreach (DataRow item in data.Rows)
-        //    {
-        //        return new LoaiSP(item);
-        //    }
-        //    return null;
-        //}
+        public List<string> GetDonGiaBan(int idloai)
+        {
+            List<string> listdonGiaBan = new List<string>();
+            string query = "USP_GetDonGiaBan @idloai ";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { idloai });
+
+            foreach (DataRow row in data.Rows)
+            {
+                string donGiaBan = row["DonGiaBan"].ToString();
+                listdonGiaBan.Add(donGiaBan);
+            }
+
+            return listdonGiaBan;
+        }
     }
 }

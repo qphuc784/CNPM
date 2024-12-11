@@ -124,11 +124,6 @@ namespace CNPM
             }
 
         }
-        private void tb_Manager_HDban_IdProduct_TextChanged(object sender, EventArgs e)
-        {
-
-
-        }
 
         private void LoadListLoaiSP()
         {
@@ -153,7 +148,9 @@ namespace CNPM
         {
             // Xóa danh sách sản phẩm trước đó
             cb_Manager_HDban_ProductName.DataSource = null;
-            tb_Manager_HDban_IdProduct.Text = ""; // Xóa thông tin mã sản phẩm
+            tb_Manager_HDban_IdProduct.Text = "";
+            tb_Manager_HDban_Donvitinh.Text = "";
+            tb_Manager_HDban_UnitPrice.Text = "";
 
             if (cb_Manager_HDban_ProductType.SelectedIndex != -1)
             {
@@ -162,13 +159,38 @@ namespace CNPM
                 if (selectedLoaiSPID != null && int.TryParse(selectedLoaiSPID.ToString(), out int selectedIDSanPham))
                 {
                     LoadTenSPToComboBox(selectedIDSanPham);
+
+                    List<string> donViTinhs = LoaiSanPhamDAO.Instance.GetDVTByIDLoai(selectedIDSanPham);
+                    if (donViTinhs != null && donViTinhs.Count > 0)
+                    {
+                        // Nối các đơn vị tính thành một chuỗi, ngăn cách bằng dấu phẩy
+                        tb_Manager_HDban_Donvitinh.Text = string.Join(", ", donViTinhs);
+                    }
+                    else
+                    {
+                        tb_Manager_HDban_Donvitinh.Text = " ";
+                    }
+
+                    List<string> dongiaban = LoaiSanPhamDAO.Instance.GetDonGiaBan(selectedIDSanPham);
+                    if (dongiaban != null && dongiaban.Count > 0)
+                    {
+                        // Nối các đơn vị tính thành một chuỗi, ngăn cách bằng dấu phẩy
+                        tb_Manager_HDban_UnitPrice.Text = string.Join(", ", dongiaban);
+                    }
+                    else
+                    {
+                        tb_Manager_HDban_UnitPrice.Text = " ";
+                    }
+
                 }
                 else
                 {
-                    LoadTenSPToComboBox('0');
+                    LoadTenSPToComboBox(0);
+                    tb_Manager_HDban_Donvitinh.Text = "";
+                    tb_Manager_HDban_UnitPrice.Text = "";
                 }
-            }
         }
+    }
 
         private void LoadTenSPToComboBox(int selectedLoaiSPID)
         {
@@ -213,9 +235,89 @@ namespace CNPM
             }
         }
 
+        private void txb_Manager_HDban_Quantity_TextChanged(object sender, EventArgs e)
+        {
+            // Lấy giá trị đơn giá bán
+            if (decimal.TryParse(tb_Manager_HDban_UnitPrice.Text, out decimal donGiaBan) &&
+                int.TryParse(txb_Manager_HDban_Quantity.Text, out int soLuong))
+            {
+                decimal tongTien = donGiaBan * soLuong;
 
+                tb_Manager_HDban_Cash.Text = tongTien.ToString("N2"); 
+            }
+            else
+            {
+                tb_Manager_HDban_Cash.Text = "0";
+            }
+        }
 
+        private void btn_Manager_HDban_AddProductbill_Click(object sender, EventArgs e)
+        {
+            // Lấy thông tin từ các TextBox hoặc ComboBox
+            string maSP = tb_Manager_HDban_IdProduct.Text;
+            string loaiSP = cb_Manager_HDban_ProductType.Text;
+            string tenSP = cb_Manager_HDban_ProductName.Text;
+            string donViTinh = tb_Manager_HDban_Donvitinh.Text;
+            int soLuong = 0;
+            decimal donGia = 0;
+            decimal giamGia = 0; // Hiện tại giảm giá đang cố định là 0, có thể thêm TextBox để nhập giảm giá nếu cần.
 
+            // Chuyển đổi số lượng và đơn giá
+            if (!int.TryParse(txb_Manager_HDban_Quantity.Text, out soLuong) || soLuong <= 0)
+            {
+                MessageBox.Show("Số lượng phải là số nguyên dương.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!decimal.TryParse(tb_Manager_HDban_UnitPrice.Text, out donGia) || donGia <= 0)
+            {
+                MessageBox.Show("Đơn giá phải là số dương.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Tính thành tiền
+            decimal thanhTien = donGia * soLuong - giamGia;
+
+            // Thêm thông tin vào ListView
+            ListViewItem item = new ListViewItem(maSP);
+            item.SubItems.Add(loaiSP);
+            item.SubItems.Add(tenSP);
+            item.SubItems.Add(soLuong.ToString());
+            item.SubItems.Add(donViTinh);
+            item.SubItems.Add(donGia.ToString("N2")); // Định dạng số thập phân
+            item.SubItems.Add(giamGia.ToString("N2")); // Giảm giá
+            item.SubItems.Add(thanhTien.ToString("N2")); // Thành tiền
+
+            lsv_Manager_HDban.Items.Add(item);
+
+            // Sau khi thêm, reset các ô nhập liệu
+            tb_Manager_HDban_IdProduct.Text = string.Empty;
+            cb_Manager_HDban_ProductType.SelectedIndex = -1;
+            cb_Manager_HDban_ProductName.DataSource = null;
+            txb_Manager_HDban_Quantity.Text = string.Empty;
+            tb_Manager_HDban_Donvitinh.Text = string.Empty;
+            tb_Manager_HDban_UnitPrice.Text = string.Empty;
+            tb_Manager_HDban_Cash.Text = "0";
+
+            CalculateTotal();
+        }
+        private void CalculateTotal()
+        {
+            decimal total = 0;
+
+            // Duyệt qua các dòng trong ListView
+            foreach (ListViewItem item in lsv_Manager_HDban.Items)
+            {
+                // Lấy giá trị cột "Thành tiền" (giả sử cột này nằm ở vị trí thứ 7, index = 6)
+                if (decimal.TryParse(item.SubItems[7].Text, out decimal thanhTien))
+                {
+                    total += thanhTien;
+                }
+            }
+
+            // Hiển thị tổng tiền trong TextBox
+            tb_Manager_HDban_Total.Text = total.ToString("N2"); // Định dạng số thập phân
+        }
 
     }
 }
