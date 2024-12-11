@@ -132,63 +132,90 @@ namespace CNPM
 
         private void LoadListLoaiSP()
         {
-            List<string> listTenLoai = LoaiSanPhamDAO.Instance.GetListLoaiSanPham();
-            listTenLoai.Insert(0, ""); // Thêm mục trống vào đầu danh sách
-            cb_Manager_HDban_ProductType.DataSource = listTenLoai;
-            cb_Manager_HDban_ProductType.DisplayMember = "Ten";
-            cb_Manager_HDban_ProductType.SelectedIndex = -1; // Đặt mục ban đầu là trống
+            // Lấy danh sách loại sản phẩm từ DAO
+            List<LoaiSP> listLoaiSP = ProductDAO.Instance.GetListSanPham();
+
+            if (listLoaiSP != null && listLoaiSP.Count > 0)
+            {
+                // Gán danh sách vào ComboBox loại sản phẩm
+                cb_Manager_HDban_ProductType.DataSource = listLoaiSP;
+                cb_Manager_HDban_ProductType.DisplayMember = "Ten";  // Hiển thị tên loại sản phẩm
+                cb_Manager_HDban_ProductType.ValueMember = "ID";     // Lưu trữ ID loại sản phẩm
+                cb_Manager_HDban_ProductType.SelectedIndex = -1;     // Đặt mục ban đầu là trống
+            }
+            else
+            {
+                cb_Manager_HDban_ProductType.DataSource = null; // Không hiển thị gì nếu không có loại sản phẩm
+            }
         }
 
         private void cb_Manager_HDban_ProductType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cb_Manager_HDban_ProductType.SelectedItem == null || cb_Manager_HDban_ProductType.SelectedIndex == -1)
+            // Xóa danh sách sản phẩm trước đó
+            cb_Manager_HDban_ProductName.DataSource = null;
+            tb_Manager_HDban_IdProduct.Text = ""; // Xóa thông tin mã sản phẩm
+
+            if (cb_Manager_HDban_ProductType.SelectedIndex != -1)
             {
-                LoadTenSPToComboBox("");
-            }
-            else
-            {
-                string selectedTenLoai = cb_Manager_HDban_ProductType.SelectedItem.ToString();
-                LoadTenSPToComboBox(selectedTenLoai);
+                // Lấy ID loại sản phẩm được chọn
+                object selectedLoaiSPID = cb_Manager_HDban_ProductType.SelectedValue;
+                if (selectedLoaiSPID != null && int.TryParse(selectedLoaiSPID.ToString(), out int selectedIDSanPham))
+                {
+                    LoadTenSPToComboBox(selectedIDSanPham);
+                }
+                else
+                {
+                    LoadTenSPToComboBox('0');
+                }
             }
         }
-        private void LoadTenSPToComboBox(string selectedLoaiSP)
-        {
-            DataTable listTenSP = ProductDAO.Instance.GetTenSanPhamByLoai(selectedLoaiSP);
 
-            if (listTenSP != null && listTenSP.Rows.Count > 0)
+        private void LoadTenSPToComboBox(int selectedLoaiSPID)
+        {
+            // Lấy danh sách sản phẩm theo loại sản phẩm từ DAO
+            List<SanPham> listSanPham = ProductDAO.Instance.GetSanPhamByIDLoai(selectedLoaiSPID);
+
+            if (listSanPham != null && listSanPham.Count > 0)
             {
-                cb_Manager_HDban_ProductName.DataSource = listTenSP;
-                cb_Manager_HDban_ProductName.DisplayMember = "TenSanPham"; // Tên cột phải khớp
-                cb_Manager_HDban_ProductName.ValueMember = "ID"; // Tên cột phải khớp
-                cb_Manager_HDban_ProductName.SelectedIndex = -1; // Đặt mục ban đầu là trống
+                // Gán danh sách sản phẩm vào ComboBox tên sản phẩm
+                cb_Manager_HDban_ProductName.DataSource = listSanPham;
+                cb_Manager_HDban_ProductName.DisplayMember = "TenSanPham"; // Hiển thị tên sản phẩm
+                cb_Manager_HDban_ProductName.ValueMember = "ID";           // Lưu trữ ID sản phẩm
+                cb_Manager_HDban_ProductName.SelectedIndex = -1;           // Đặt mục ban đầu là trống
             }
             else
             {
-                cb_Manager_HDban_ProductName.DataSource = null; // Xóa dữ liệu cũ
+                cb_Manager_HDban_ProductName.DataSource = null; // Không hiển thị gì nếu không có sản phẩm
+                tb_Manager_HDban_IdProduct.Text = "";
             }
         }
 
 
         private void cb_Manager_HDban_ProductName_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cb_Manager_HDban_ProductName.SelectedIndex != -1 && cb_Manager_HDban_ProductName.SelectedValue != null)
+            if (cb_Manager_HDban_ProductName.SelectedIndex != -1)
             {
-                tb_Manager_HDban_IdProduct.Text = cb_Manager_HDban_ProductName.SelectedValue.ToString();
+                // Lấy ID sản phẩm được chọn
+                object selectedValue = cb_Manager_HDban_ProductName.SelectedValue;
 
-                string idSanPham = cb_Manager_HDban_ProductName.SelectedValue.ToString();
-                //string tenLoai = LoaiSanPhamDAO.Instance.GetTenLoaiByID(idSanPham);
-
-                //if (!string.IsNullOrEmpty(tenLoai))
-                //{
-                //    cb_Manager_HDban_ProductType.SelectedIndex = cb_Manager_HDban_ProductType.Items.IndexOf(tenLoai);
-                //}
+                if (selectedValue != null && int.TryParse(selectedValue.ToString(), out int selectedIDSanPham))
+                {
+                    tb_Manager_HDban_IdProduct.Text = selectedIDSanPham.ToString();
+                }
+                else
+                {
+                    tb_Manager_HDban_IdProduct.Text = ""; // Xóa thông tin nếu không thể chuyển đổi
+                }
             }
             else
             {
-                tb_Manager_HDban_IdProduct.Text = "";
-                cb_Manager_HDban_ProductType.SelectedIndex = -1; // Reset loại sản phẩm
+                tb_Manager_HDban_IdProduct.Text = ""; // Xóa thông tin nếu không có sản phẩm được chọn
             }
         }
+
+
+
+
 
     }
 }

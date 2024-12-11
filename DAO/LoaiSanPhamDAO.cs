@@ -27,23 +27,6 @@ namespace CuaHangDaQuy.DAO
 
         private LoaiSanPhamDAO() { }
 
-        public List<string> GetListLoaiSanPham()
-        {
-            List<string> listTenLoai = new List<string>();
-            string query = "select distinct Ten from LoaiSanPham";
-            DataTable data = DataProvider.Instance.ExcuteQuery(query);
-
-            foreach (DataRow row in data.Rows)
-            {
-                if (row["Ten"] != DBNull.Value)
-                {
-                    listTenLoai.Add(row["Ten"].ToString());
-                }
-            }
-
-            return listTenLoai;
-        }
-
         //public string GetTenLoaiByID(string idSanPham)
         //{
         //    // Gọi stored procedure và truyền tham số

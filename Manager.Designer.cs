@@ -855,7 +855,7 @@
             // columnHeader7
             // 
             this.columnHeader7.Text = "Giảm giá %";
-            this.columnHeader7.Width = 87;
+            this.columnHeader7.Width = 89;
             // 
             // columnHeader8
             // 

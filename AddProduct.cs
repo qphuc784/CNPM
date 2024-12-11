@@ -77,5 +77,11 @@ namespace CNPM
         {
             this.Close();
         }
+
+        private void gunaComboBox_AddProduct_loai_san_pham_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
     }
 }

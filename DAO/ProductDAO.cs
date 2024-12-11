@@ -37,44 +37,11 @@ namespace CuaHangDaQuy.DAO
 
             return listSP;
         }
-
-        public bool InsertProduct(string tenSanPham, int idLoai, float donGia, int soLuong)
-        {
-            string query = "EXEC ThemSanPham @TenSanPham , @IDLoai , @DonGia , @SoLuong";
-            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { tenSanPham, idLoai, donGia, soLuong });
-            return result > 0;
-        }
-
-        public SanPham GetIDSanPhamByTen(string tensp)
-        {
-            string query = "USP_GetIDSanPhamByTen @tensanpham ";
-            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { tensp });
-            foreach (DataRow item in data.Rows)
-            {
-                return new SanPham(item);
-            }
-            return null;
-        }
-
-        public DataTable GetTenSanPhamByLoai(string loaiSanPham)
-        {
-            //List<string> listTenSP = new List<string>();
-            string query = "USP_GetTenSPByLoai @tenloai";
-
-            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { loaiSanPham });
-
-            //foreach (DataRow row in data.Rows)
-            //{
-            //    listTenSP.Add(row["TenSanPham"].ToString());
-            //}
-
-            return data;
-        }
-        public List<SanPham> GetSanPhamByLoai(string loai)
+        public List<SanPham> GetSanPhamByIDLoai(int idloai)
         {
             List<SanPham> listSP = new List<SanPham>();
-            string query = "USP_GetSanPhamByLoai";
-            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { loai });
+            string query = "USP_GetSanPhamByIDLoai @idloai ";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { idloai });
 
             foreach (DataRow row in data.Rows)
             {

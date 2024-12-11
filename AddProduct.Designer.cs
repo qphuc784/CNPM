@@ -266,6 +266,7 @@
             this.gunaComboBox_AddProduct_loai_san_pham.OnHoverItemForeColor = System.Drawing.Color.Black;
             this.gunaComboBox_AddProduct_loai_san_pham.Size = new System.Drawing.Size(374, 43);
             this.gunaComboBox_AddProduct_loai_san_pham.TabIndex = 15;
+            this.gunaComboBox_AddProduct_loai_san_pham.SelectedIndexChanged += new System.EventHandler(this.gunaComboBox_AddProduct_loai_san_pham_SelectedIndexChanged);
             // 
             // AddProduct
             // 
