@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,6 +23,13 @@ namespace CuaHangDaQuy.DTO
             this.ID = id;
             this.TenLoai = tenloai;
             this.DonGia = dongia;
+        }
+
+        public LoaiDichVu(DataRow row)
+        {
+            this.ID = (int)row["ID"];
+            this.TenLoai = row["TenLoai"].ToString();
+            //this.DonGia = (float)row["DonGia"];
         }
     }
 }

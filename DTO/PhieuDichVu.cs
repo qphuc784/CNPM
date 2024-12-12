@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -43,6 +44,18 @@ namespace CuaHangDaQuy.DTO
             this.TraTruoc = tratruoc;
             this.NgayBan = ngayban;
             this.IDNhanVien = idnhanvien;
+        }
+
+        public PhieuDichVu(DataRow row)
+        {
+            this.ID = (int)row["ID"];
+            this.IDKhach = (int)row["IDKhach"];
+            this.IDDichVu = (int)row["IDDichVu"];
+            this.SoLuong = (int)row["SoLuong"];
+            this.TinhTrang = row["TinhTrang"].ToString();
+            this.TraTruoc = (float)row["TraTruoc"];
+            this.NgayBan = (DateTime)row["NgayBan"];
+            this.IDNhanVien = (int)row["IDNhanVien"];
         }
     }
 }

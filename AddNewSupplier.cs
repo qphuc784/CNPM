@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace CNPM
 {
-    public partial class PhieuDichVu : Form
+    public partial class AddNewSupplier : Form
     {
-        public PhieuDichVu(DataRow row)
+        public AddNewSupplier()
         {
             InitializeComponent();
-        }
-
-        private void PhieuDichVu_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

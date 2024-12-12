@@ -87,7 +87,6 @@
             this.tb_Manager_HDban_Cash = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox20 = new Guna.UI.WinForms.GunaTextBox();
             this.txb_Manager_HDban_Quantity = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaTextBox22 = new Guna.UI.WinForms.GunaTextBox();
             this.btn_Manager_HDban_AddProductbill = new Guna.UI.WinForms.GunaButton();
             this.billTB = new Guna.UI.WinForms.GunaTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -137,7 +136,7 @@
             this.gunaTextBox38 = new Guna.UI.WinForms.GunaTextBox();
             this.tb_Manager_HDDV_Discount = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox40 = new Guna.UI.WinForms.GunaTextBox();
-            this.cb_Manager_HDDV_ServiceName = new System.Windows.Forms.ComboBox();
+            this.cb_Manager_HDDV_TrangThai = new System.Windows.Forms.ComboBox();
             this.gunaTextBox41 = new Guna.UI.WinForms.GunaTextBox();
             this.tb_Manager_HDDV_Cash = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox43 = new Guna.UI.WinForms.GunaTextBox();
@@ -194,6 +193,8 @@
             this.gunaTextBox82 = new Guna.UI.WinForms.GunaTextBox();
             this.btn_Manager_HDmua_AddProductbill = new Guna.UI.WinForms.GunaButton();
             this.gunaTextBox55 = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaTextBox11 = new Guna.UI.WinForms.GunaTextBox();
+            this.txb_Manager_HDban_GiamGia = new Guna.UI.WinForms.GunaTextBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl_Manager.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -402,6 +403,7 @@
             this.gunaTextBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox1.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox1.Enabled = false;
             this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -411,6 +413,7 @@
             this.gunaTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox1.Name = "gunaTextBox1";
             this.gunaTextBox1.PasswordChar = '\0';
+            this.gunaTextBox1.ReadOnly = true;
             this.gunaTextBox1.SelectedText = "";
             this.gunaTextBox1.Size = new System.Drawing.Size(222, 53);
             this.gunaTextBox1.TabIndex = 22;
@@ -448,6 +451,7 @@
             this.gunaTextBox2.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox2.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox2.Enabled = false;
             this.gunaTextBox2.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox2.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox2.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -457,6 +461,7 @@
             this.gunaTextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox2.Name = "gunaTextBox2";
             this.gunaTextBox2.PasswordChar = '\0';
+            this.gunaTextBox2.ReadOnly = true;
             this.gunaTextBox2.SelectedText = "";
             this.gunaTextBox2.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox2.TabIndex = 4;
@@ -490,6 +495,7 @@
             this.gunaTextBox6.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox6.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox6.Enabled = false;
             this.gunaTextBox6.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox6.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox6.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -499,6 +505,7 @@
             this.gunaTextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox6.Name = "gunaTextBox6";
             this.gunaTextBox6.PasswordChar = '\0';
+            this.gunaTextBox6.ReadOnly = true;
             this.gunaTextBox6.SelectedText = "";
             this.gunaTextBox6.Size = new System.Drawing.Size(435, 59);
             this.gunaTextBox6.TabIndex = 6;
@@ -532,6 +539,7 @@
             this.gunaTextBox9.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox9.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox9.Enabled = false;
             this.gunaTextBox9.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox9.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox9.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -541,6 +549,7 @@
             this.gunaTextBox9.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox9.Name = "gunaTextBox9";
             this.gunaTextBox9.PasswordChar = '\0';
+            this.gunaTextBox9.ReadOnly = true;
             this.gunaTextBox9.SelectedText = "";
             this.gunaTextBox9.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox9.TabIndex = 8;
@@ -574,6 +583,7 @@
             this.gunaTextBox12.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox12.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox12.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox12.Enabled = false;
             this.gunaTextBox12.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox12.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox12.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -583,6 +593,7 @@
             this.gunaTextBox12.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox12.Name = "gunaTextBox12";
             this.gunaTextBox12.PasswordChar = '\0';
+            this.gunaTextBox12.ReadOnly = true;
             this.gunaTextBox12.SelectedText = "";
             this.gunaTextBox12.Size = new System.Drawing.Size(435, 59);
             this.gunaTextBox12.TabIndex = 10;
@@ -616,6 +627,7 @@
             this.gunaTextBox14.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox14.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox14.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox14.Enabled = false;
             this.gunaTextBox14.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox14.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox14.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -625,6 +637,7 @@
             this.gunaTextBox14.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox14.Name = "gunaTextBox14";
             this.gunaTextBox14.PasswordChar = '\0';
+            this.gunaTextBox14.ReadOnly = true;
             this.gunaTextBox14.SelectedText = "";
             this.gunaTextBox14.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox14.TabIndex = 12;
@@ -658,6 +671,7 @@
             this.gunaTextBox26.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox26.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox26.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox26.Enabled = false;
             this.gunaTextBox26.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox26.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox26.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -667,6 +681,7 @@
             this.gunaTextBox26.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox26.Name = "gunaTextBox26";
             this.gunaTextBox26.PasswordChar = '\0';
+            this.gunaTextBox26.ReadOnly = true;
             this.gunaTextBox26.SelectedText = "";
             this.gunaTextBox26.Size = new System.Drawing.Size(435, 59);
             this.gunaTextBox26.TabIndex = 14;
@@ -699,6 +714,7 @@
             this.gunaTextBox28.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox28.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox28.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox28.Enabled = false;
             this.gunaTextBox28.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox28.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox28.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -708,6 +724,7 @@
             this.gunaTextBox28.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox28.Name = "gunaTextBox28";
             this.gunaTextBox28.PasswordChar = '\0';
+            this.gunaTextBox28.ReadOnly = true;
             this.gunaTextBox28.SelectedText = "";
             this.gunaTextBox28.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox28.TabIndex = 16;
@@ -868,6 +885,7 @@
             this.gunaTextBox3.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox3.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox3.Enabled = false;
             this.gunaTextBox3.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox3.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -877,6 +895,7 @@
             this.gunaTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox3.Name = "gunaTextBox3";
             this.gunaTextBox3.PasswordChar = '\0';
+            this.gunaTextBox3.ReadOnly = true;
             this.gunaTextBox3.SelectedText = "";
             this.gunaTextBox3.Size = new System.Drawing.Size(235, 53);
             this.gunaTextBox3.TabIndex = 11;
@@ -900,7 +919,8 @@
             this.flowLayoutPanel1.Controls.Add(this.tb_Manager_HDban_Cash);
             this.flowLayoutPanel1.Controls.Add(this.gunaTextBox20);
             this.flowLayoutPanel1.Controls.Add(this.txb_Manager_HDban_Quantity);
-            this.flowLayoutPanel1.Controls.Add(this.gunaTextBox22);
+            this.flowLayoutPanel1.Controls.Add(this.gunaTextBox11);
+            this.flowLayoutPanel1.Controls.Add(this.txb_Manager_HDban_GiamGia);
             this.flowLayoutPanel1.Controls.Add(this.btn_Manager_HDban_AddProductbill);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 462);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -914,6 +934,7 @@
             this.gunaTextBox5.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox5.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox5.Enabled = false;
             this.gunaTextBox5.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox5.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox5.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -923,6 +944,7 @@
             this.gunaTextBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox5.Name = "gunaTextBox5";
             this.gunaTextBox5.PasswordChar = '\0';
+            this.gunaTextBox5.ReadOnly = true;
             this.gunaTextBox5.SelectedText = "";
             this.gunaTextBox5.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox5.TabIndex = 4;
@@ -935,6 +957,7 @@
             this.tb_Manager_HDban_IdProduct.BaseColor = System.Drawing.Color.WhiteSmoke;
             this.tb_Manager_HDban_IdProduct.BorderColor = System.Drawing.Color.Black;
             this.tb_Manager_HDban_IdProduct.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_Manager_HDban_IdProduct.Enabled = false;
             this.tb_Manager_HDban_IdProduct.FocusedBaseColor = System.Drawing.Color.LightGray;
             this.tb_Manager_HDban_IdProduct.FocusedBorderColor = System.Drawing.Color.DimGray;
             this.tb_Manager_HDban_IdProduct.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -955,6 +978,7 @@
             this.gunaTextBox4.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox4.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox4.Enabled = false;
             this.gunaTextBox4.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox4.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox4.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -977,6 +1001,7 @@
             this.tb_Manager_HDban_UnitPrice.BaseColor = System.Drawing.Color.WhiteSmoke;
             this.tb_Manager_HDban_UnitPrice.BorderColor = System.Drawing.Color.Black;
             this.tb_Manager_HDban_UnitPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_Manager_HDban_UnitPrice.Enabled = false;
             this.tb_Manager_HDban_UnitPrice.FocusedBaseColor = System.Drawing.Color.LightGray;
             this.tb_Manager_HDban_UnitPrice.FocusedBorderColor = System.Drawing.Color.DimGray;
             this.tb_Manager_HDban_UnitPrice.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -997,6 +1022,7 @@
             this.gunaTextBox10.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox10.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox10.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox10.Enabled = false;
             this.gunaTextBox10.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox10.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox10.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1006,6 +1032,7 @@
             this.gunaTextBox10.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox10.Name = "gunaTextBox10";
             this.gunaTextBox10.PasswordChar = '\0';
+            this.gunaTextBox10.ReadOnly = true;
             this.gunaTextBox10.SelectedText = "";
             this.gunaTextBox10.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox10.TabIndex = 10;
@@ -1029,6 +1056,7 @@
             this.gunaTextBox13.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox13.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox13.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox13.Enabled = false;
             this.gunaTextBox13.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox13.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox13.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1072,6 +1100,7 @@
             this.gunaTextBox16.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox16.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox16.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox16.Enabled = false;
             this.gunaTextBox16.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox16.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox16.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1081,6 +1110,7 @@
             this.gunaTextBox16.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox16.Name = "gunaTextBox16";
             this.gunaTextBox16.PasswordChar = '\0';
+            this.gunaTextBox16.ReadOnly = true;
             this.gunaTextBox16.SelectedText = "";
             this.gunaTextBox16.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox16.TabIndex = 14;
@@ -1104,6 +1134,7 @@
             this.gunaTextBox18.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox18.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox18.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox18.Enabled = false;
             this.gunaTextBox18.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox18.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox18.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1147,6 +1178,7 @@
             this.gunaTextBox20.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox20.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox20.Enabled = false;
             this.gunaTextBox20.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox20.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox20.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1156,11 +1188,12 @@
             this.gunaTextBox20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox20.Name = "gunaTextBox20";
             this.gunaTextBox20.PasswordChar = '\0';
+            this.gunaTextBox20.ReadOnly = true;
             this.gunaTextBox20.SelectedText = "";
             this.gunaTextBox20.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox20.TabIndex = 18;
             this.gunaTextBox20.Text = "Số lượng";
-            this.gunaTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaTextBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txb_Manager_HDban_Quantity
             // 
@@ -1178,31 +1211,10 @@
             this.txb_Manager_HDban_Quantity.Name = "txb_Manager_HDban_Quantity";
             this.txb_Manager_HDban_Quantity.PasswordChar = '\0';
             this.txb_Manager_HDban_Quantity.SelectedText = "";
-            this.txb_Manager_HDban_Quantity.Size = new System.Drawing.Size(297, 59);
+            this.txb_Manager_HDban_Quantity.Size = new System.Drawing.Size(116, 59);
             this.txb_Manager_HDban_Quantity.TabIndex = 15;
             this.txb_Manager_HDban_Quantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txb_Manager_HDban_Quantity.TextChanged += new System.EventHandler(this.txb_Manager_HDban_Quantity_TextChanged);
-            // 
-            // gunaTextBox22
-            // 
-            this.gunaTextBox22.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox22.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox22.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox22.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox22.Enabled = false;
-            this.gunaTextBox22.FocusedBaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox22.FocusedBorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox22.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox22.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaTextBox22.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox22.Location = new System.Drawing.Point(552, 212);
-            this.gunaTextBox22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gunaTextBox22.Name = "gunaTextBox22";
-            this.gunaTextBox22.PasswordChar = '\0';
-            this.gunaTextBox22.SelectedText = "";
-            this.gunaTextBox22.Size = new System.Drawing.Size(177, 59);
-            this.gunaTextBox22.TabIndex = 20;
-            this.gunaTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btn_Manager_HDban_AddProductbill
             // 
@@ -1235,6 +1247,7 @@
             this.billTB.BaseColor = System.Drawing.Color.White;
             this.billTB.BorderColor = System.Drawing.Color.Silver;
             this.billTB.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.billTB.Enabled = false;
             this.billTB.FocusedBaseColor = System.Drawing.Color.DimGray;
             this.billTB.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.billTB.FocusedForeColor = System.Drawing.SystemColors.ActiveCaption;
@@ -1244,6 +1257,7 @@
             this.billTB.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.billTB.Name = "billTB";
             this.billTB.PasswordChar = '\0';
+            this.billTB.ReadOnly = true;
             this.billTB.SelectedText = "";
             this.billTB.Size = new System.Drawing.Size(1442, 103);
             this.billTB.TabIndex = 8;
@@ -1438,6 +1452,7 @@
             this.gunaTextBox7.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox7.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox7.Enabled = false;
             this.gunaTextBox7.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox7.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox7.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1447,6 +1462,7 @@
             this.gunaTextBox7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox7.Name = "gunaTextBox7";
             this.gunaTextBox7.PasswordChar = '\0';
+            this.gunaTextBox7.ReadOnly = true;
             this.gunaTextBox7.SelectedText = "";
             this.gunaTextBox7.Size = new System.Drawing.Size(222, 53);
             this.gunaTextBox7.TabIndex = 28;
@@ -1484,6 +1500,7 @@
             this.gunaTextBox8.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox8.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox8.Enabled = false;
             this.gunaTextBox8.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox8.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox8.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1493,6 +1510,7 @@
             this.gunaTextBox8.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox8.Name = "gunaTextBox8";
             this.gunaTextBox8.PasswordChar = '\0';
+            this.gunaTextBox8.ReadOnly = true;
             this.gunaTextBox8.SelectedText = "";
             this.gunaTextBox8.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox8.TabIndex = 4;
@@ -1526,6 +1544,7 @@
             this.gunaTextBox15.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox15.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox15.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox15.Enabled = false;
             this.gunaTextBox15.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox15.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox15.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1535,6 +1554,7 @@
             this.gunaTextBox15.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox15.Name = "gunaTextBox15";
             this.gunaTextBox15.PasswordChar = '\0';
+            this.gunaTextBox15.ReadOnly = true;
             this.gunaTextBox15.SelectedText = "";
             this.gunaTextBox15.Size = new System.Drawing.Size(433, 59);
             this.gunaTextBox15.TabIndex = 6;
@@ -1568,6 +1588,7 @@
             this.gunaTextBox19.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox19.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox19.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox19.Enabled = false;
             this.gunaTextBox19.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox19.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox19.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1577,6 +1598,7 @@
             this.gunaTextBox19.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox19.Name = "gunaTextBox19";
             this.gunaTextBox19.PasswordChar = '\0';
+            this.gunaTextBox19.ReadOnly = true;
             this.gunaTextBox19.SelectedText = "";
             this.gunaTextBox19.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox19.TabIndex = 8;
@@ -1610,6 +1632,7 @@
             this.gunaTextBox23.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox23.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox23.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox23.Enabled = false;
             this.gunaTextBox23.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox23.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox23.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1619,6 +1642,7 @@
             this.gunaTextBox23.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox23.Name = "gunaTextBox23";
             this.gunaTextBox23.PasswordChar = '\0';
+            this.gunaTextBox23.ReadOnly = true;
             this.gunaTextBox23.SelectedText = "";
             this.gunaTextBox23.Size = new System.Drawing.Size(433, 59);
             this.gunaTextBox23.TabIndex = 10;
@@ -1652,6 +1676,7 @@
             this.gunaTextBox25.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox25.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox25.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox25.Enabled = false;
             this.gunaTextBox25.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox25.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox25.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1661,6 +1686,7 @@
             this.gunaTextBox25.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox25.Name = "gunaTextBox25";
             this.gunaTextBox25.PasswordChar = '\0';
+            this.gunaTextBox25.ReadOnly = true;
             this.gunaTextBox25.SelectedText = "";
             this.gunaTextBox25.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox25.TabIndex = 12;
@@ -1694,6 +1720,7 @@
             this.gunaTextBox29.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox29.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox29.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox29.Enabled = false;
             this.gunaTextBox29.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox29.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox29.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1703,6 +1730,7 @@
             this.gunaTextBox29.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox29.Name = "gunaTextBox29";
             this.gunaTextBox29.PasswordChar = '\0';
+            this.gunaTextBox29.ReadOnly = true;
             this.gunaTextBox29.SelectedText = "";
             this.gunaTextBox29.Size = new System.Drawing.Size(433, 59);
             this.gunaTextBox29.TabIndex = 14;
@@ -1735,6 +1763,7 @@
             this.gunaTextBox31.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox31.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox31.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox31.Enabled = false;
             this.gunaTextBox31.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox31.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox31.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1744,6 +1773,7 @@
             this.gunaTextBox31.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox31.Name = "gunaTextBox31";
             this.gunaTextBox31.PasswordChar = '\0';
+            this.gunaTextBox31.ReadOnly = true;
             this.gunaTextBox31.SelectedText = "";
             this.gunaTextBox31.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox31.TabIndex = 16;
@@ -1824,6 +1854,7 @@
             this.btn_Manager_HDDV_ShowGuest.TabIndex = 22;
             this.btn_Manager_HDDV_ShowGuest.Text = "Hiển thị khách hàng";
             this.btn_Manager_HDDV_ShowGuest.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Manager_HDDV_ShowGuest.Click += new System.EventHandler(this.btn_Manager_HDDV_ShowGuest_Click);
             // 
             // flowLayoutPanel5
             // 
@@ -1897,6 +1928,7 @@
             this.gunaTextBox32.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox32.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox32.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox32.Enabled = false;
             this.gunaTextBox32.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox32.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox32.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1906,6 +1938,7 @@
             this.gunaTextBox32.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox32.Name = "gunaTextBox32";
             this.gunaTextBox32.PasswordChar = '\0';
+            this.gunaTextBox32.ReadOnly = true;
             this.gunaTextBox32.SelectedText = "";
             this.gunaTextBox32.Size = new System.Drawing.Size(235, 53);
             this.gunaTextBox32.TabIndex = 25;
@@ -1917,14 +1950,14 @@
             this.flowLayoutPanel6.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox33);
             this.flowLayoutPanel6.Controls.Add(this.tb_Manager_HDDV_IdService);
-            this.flowLayoutPanel6.Controls.Add(this.gunaTextBox35);
-            this.flowLayoutPanel6.Controls.Add(this.tb_Manager_HDDV_UnitPrice);
-            this.flowLayoutPanel6.Controls.Add(this.gunaTextBox37);
-            this.flowLayoutPanel6.Controls.Add(this.cb_Manager_HDDV_ServiceType);
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox38);
             this.flowLayoutPanel6.Controls.Add(this.tb_Manager_HDDV_Discount);
+            this.flowLayoutPanel6.Controls.Add(this.gunaTextBox37);
+            this.flowLayoutPanel6.Controls.Add(this.cb_Manager_HDDV_ServiceType);
+            this.flowLayoutPanel6.Controls.Add(this.gunaTextBox35);
+            this.flowLayoutPanel6.Controls.Add(this.tb_Manager_HDDV_UnitPrice);
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox40);
-            this.flowLayoutPanel6.Controls.Add(this.cb_Manager_HDDV_ServiceName);
+            this.flowLayoutPanel6.Controls.Add(this.cb_Manager_HDDV_TrangThai);
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox41);
             this.flowLayoutPanel6.Controls.Add(this.tb_Manager_HDDV_Cash);
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox43);
@@ -1943,6 +1976,7 @@
             this.gunaTextBox33.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox33.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox33.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox33.Enabled = false;
             this.gunaTextBox33.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox33.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox33.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1952,6 +1986,7 @@
             this.gunaTextBox33.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox33.Name = "gunaTextBox33";
             this.gunaTextBox33.PasswordChar = '\0';
+            this.gunaTextBox33.ReadOnly = true;
             this.gunaTextBox33.SelectedText = "";
             this.gunaTextBox33.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox33.TabIndex = 4;
@@ -1964,6 +1999,7 @@
             this.tb_Manager_HDDV_IdService.BaseColor = System.Drawing.Color.WhiteSmoke;
             this.tb_Manager_HDDV_IdService.BorderColor = System.Drawing.Color.Black;
             this.tb_Manager_HDDV_IdService.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_Manager_HDDV_IdService.Enabled = false;
             this.tb_Manager_HDDV_IdService.FocusedBaseColor = System.Drawing.Color.LightGray;
             this.tb_Manager_HDDV_IdService.FocusedBorderColor = System.Drawing.Color.DimGray;
             this.tb_Manager_HDDV_IdService.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -1973,6 +2009,7 @@
             this.tb_Manager_HDDV_IdService.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDDV_IdService.Name = "tb_Manager_HDDV_IdService";
             this.tb_Manager_HDDV_IdService.PasswordChar = '\0';
+            this.tb_Manager_HDDV_IdService.ReadOnly = true;
             this.tb_Manager_HDDV_IdService.SelectedText = "";
             this.tb_Manager_HDDV_IdService.Size = new System.Drawing.Size(297, 59);
             this.tb_Manager_HDDV_IdService.TabIndex = 5;
@@ -1984,15 +2021,17 @@
             this.gunaTextBox35.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox35.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox35.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox35.Enabled = false;
             this.gunaTextBox35.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox35.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox35.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox35.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox35.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox35.Location = new System.Drawing.Point(552, 5);
+            this.gunaTextBox35.Location = new System.Drawing.Point(550, 74);
             this.gunaTextBox35.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox35.Name = "gunaTextBox35";
             this.gunaTextBox35.PasswordChar = '\0';
+            this.gunaTextBox35.ReadOnly = true;
             this.gunaTextBox35.SelectedText = "";
             this.gunaTextBox35.Size = new System.Drawing.Size(444, 59);
             this.gunaTextBox35.TabIndex = 8;
@@ -2005,12 +2044,13 @@
             this.tb_Manager_HDDV_UnitPrice.BaseColor = System.Drawing.Color.WhiteSmoke;
             this.tb_Manager_HDDV_UnitPrice.BorderColor = System.Drawing.Color.Black;
             this.tb_Manager_HDDV_UnitPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_Manager_HDDV_UnitPrice.Enabled = false;
             this.tb_Manager_HDDV_UnitPrice.FocusedBaseColor = System.Drawing.Color.LightGray;
             this.tb_Manager_HDDV_UnitPrice.FocusedBorderColor = System.Drawing.Color.DimGray;
             this.tb_Manager_HDDV_UnitPrice.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDDV_UnitPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDDV_UnitPrice.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDDV_UnitPrice.Location = new System.Drawing.Point(1004, 5);
+            this.tb_Manager_HDDV_UnitPrice.Location = new System.Drawing.Point(1002, 74);
             this.tb_Manager_HDDV_UnitPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDDV_UnitPrice.Name = "tb_Manager_HDDV_UnitPrice";
             this.tb_Manager_HDDV_UnitPrice.PasswordChar = '\0';
@@ -2025,6 +2065,7 @@
             this.gunaTextBox37.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox37.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox37.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox37.Enabled = false;
             this.gunaTextBox37.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox37.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox37.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2034,6 +2075,7 @@
             this.gunaTextBox37.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox37.Name = "gunaTextBox37";
             this.gunaTextBox37.PasswordChar = '\0';
+            this.gunaTextBox37.ReadOnly = true;
             this.gunaTextBox37.SelectedText = "";
             this.gunaTextBox37.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox37.TabIndex = 10;
@@ -2049,6 +2091,7 @@
             this.cb_Manager_HDDV_ServiceType.Name = "cb_Manager_HDDV_ServiceType";
             this.cb_Manager_HDDV_ServiceType.Size = new System.Drawing.Size(295, 39);
             this.cb_Manager_HDDV_ServiceType.TabIndex = 23;
+            this.cb_Manager_HDDV_ServiceType.SelectedIndexChanged += new System.EventHandler(this.cb_Manager_HDDV_ServiceType_SelectedIndexChanged);
             // 
             // gunaTextBox38
             // 
@@ -2056,15 +2099,17 @@
             this.gunaTextBox38.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox38.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox38.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox38.Enabled = false;
             this.gunaTextBox38.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox38.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox38.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox38.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox38.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox38.Location = new System.Drawing.Point(550, 74);
+            this.gunaTextBox38.Location = new System.Drawing.Point(552, 5);
             this.gunaTextBox38.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox38.Name = "gunaTextBox38";
             this.gunaTextBox38.PasswordChar = '\0';
+            this.gunaTextBox38.ReadOnly = true;
             this.gunaTextBox38.SelectedText = "";
             this.gunaTextBox38.Size = new System.Drawing.Size(445, 59);
             this.gunaTextBox38.TabIndex = 12;
@@ -2077,13 +2122,12 @@
             this.tb_Manager_HDDV_Discount.BaseColor = System.Drawing.Color.WhiteSmoke;
             this.tb_Manager_HDDV_Discount.BorderColor = System.Drawing.Color.Black;
             this.tb_Manager_HDDV_Discount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_Manager_HDDV_Discount.Enabled = false;
             this.tb_Manager_HDDV_Discount.FocusedBaseColor = System.Drawing.Color.LightGray;
             this.tb_Manager_HDDV_Discount.FocusedBorderColor = System.Drawing.Color.DimGray;
             this.tb_Manager_HDDV_Discount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDDV_Discount.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDDV_Discount.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDDV_Discount.Location = new System.Drawing.Point(1003, 74);
+            this.tb_Manager_HDDV_Discount.Location = new System.Drawing.Point(1005, 5);
             this.tb_Manager_HDDV_Discount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDDV_Discount.Name = "tb_Manager_HDDV_Discount";
             this.tb_Manager_HDDV_Discount.PasswordChar = '\0';
@@ -2098,6 +2142,7 @@
             this.gunaTextBox40.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox40.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox40.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox40.Enabled = false;
             this.gunaTextBox40.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox40.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox40.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2107,21 +2152,23 @@
             this.gunaTextBox40.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox40.Name = "gunaTextBox40";
             this.gunaTextBox40.PasswordChar = '\0';
+            this.gunaTextBox40.ReadOnly = true;
             this.gunaTextBox40.SelectedText = "";
             this.gunaTextBox40.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox40.TabIndex = 14;
-            this.gunaTextBox40.Text = "Tên dịch vụ";
+            this.gunaTextBox40.Text = "Trạng thái";
             this.gunaTextBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // cb_Manager_HDDV_ServiceName
+            // cb_Manager_HDDV_TrangThai
             // 
-            this.cb_Manager_HDDV_ServiceName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_Manager_HDDV_ServiceName.FormattingEnabled = true;
-            this.cb_Manager_HDDV_ServiceName.Location = new System.Drawing.Point(247, 142);
-            this.cb_Manager_HDDV_ServiceName.Margin = new System.Windows.Forms.Padding(4);
-            this.cb_Manager_HDDV_ServiceName.Name = "cb_Manager_HDDV_ServiceName";
-            this.cb_Manager_HDDV_ServiceName.Size = new System.Drawing.Size(295, 39);
-            this.cb_Manager_HDDV_ServiceName.TabIndex = 24;
+            this.cb_Manager_HDDV_TrangThai.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_Manager_HDDV_TrangThai.FormattingEnabled = true;
+            this.cb_Manager_HDDV_TrangThai.Location = new System.Drawing.Point(247, 142);
+            this.cb_Manager_HDDV_TrangThai.Margin = new System.Windows.Forms.Padding(4);
+            this.cb_Manager_HDDV_TrangThai.Name = "cb_Manager_HDDV_TrangThai";
+            this.cb_Manager_HDDV_TrangThai.Size = new System.Drawing.Size(295, 39);
+            this.cb_Manager_HDDV_TrangThai.TabIndex = 24;
+            this.cb_Manager_HDDV_TrangThai.SelectedIndexChanged += new System.EventHandler(this.cb_Manager_HDDV_ServiceName_SelectedIndexChanged);
             // 
             // gunaTextBox41
             // 
@@ -2129,6 +2176,7 @@
             this.gunaTextBox41.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox41.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox41.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox41.Enabled = false;
             this.gunaTextBox41.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox41.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox41.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2138,6 +2186,7 @@
             this.gunaTextBox41.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox41.Name = "gunaTextBox41";
             this.gunaTextBox41.PasswordChar = '\0';
+            this.gunaTextBox41.ReadOnly = true;
             this.gunaTextBox41.SelectedText = "";
             this.gunaTextBox41.Size = new System.Drawing.Size(445, 59);
             this.gunaTextBox41.TabIndex = 16;
@@ -2171,6 +2220,7 @@
             this.gunaTextBox43.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox43.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox43.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox43.Enabled = false;
             this.gunaTextBox43.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox43.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox43.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2180,6 +2230,7 @@
             this.gunaTextBox43.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox43.Name = "gunaTextBox43";
             this.gunaTextBox43.PasswordChar = '\0';
+            this.gunaTextBox43.ReadOnly = true;
             this.gunaTextBox43.SelectedText = "";
             this.gunaTextBox43.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox43.TabIndex = 18;
@@ -2257,6 +2308,7 @@
             this.gunaTextBox46.BaseColor = System.Drawing.Color.White;
             this.gunaTextBox46.BorderColor = System.Drawing.Color.Silver;
             this.gunaTextBox46.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox46.Enabled = false;
             this.gunaTextBox46.FocusedBaseColor = System.Drawing.Color.DimGray;
             this.gunaTextBox46.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox46.FocusedForeColor = System.Drawing.SystemColors.ActiveCaption;
@@ -2266,6 +2318,7 @@
             this.gunaTextBox46.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox46.Name = "gunaTextBox46";
             this.gunaTextBox46.PasswordChar = '\0';
+            this.gunaTextBox46.ReadOnly = true;
             this.gunaTextBox46.SelectedText = "";
             this.gunaTextBox46.Size = new System.Drawing.Size(1442, 103);
             this.gunaTextBox46.TabIndex = 23;
@@ -2440,6 +2493,7 @@
             this.gunaTextBox83.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox83.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox83.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox83.Enabled = false;
             this.gunaTextBox83.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox83.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox83.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2449,6 +2503,7 @@
             this.gunaTextBox83.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox83.Name = "gunaTextBox83";
             this.gunaTextBox83.PasswordChar = '\0';
+            this.gunaTextBox83.ReadOnly = true;
             this.gunaTextBox83.SelectedText = "";
             this.gunaTextBox83.Size = new System.Drawing.Size(235, 53);
             this.gunaTextBox83.TabIndex = 26;
@@ -2461,6 +2516,7 @@
             this.gunaTextBox56.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox56.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox56.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox56.Enabled = false;
             this.gunaTextBox56.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox56.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox56.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2470,6 +2526,7 @@
             this.gunaTextBox56.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox56.Name = "gunaTextBox56";
             this.gunaTextBox56.PasswordChar = '\0';
+            this.gunaTextBox56.ReadOnly = true;
             this.gunaTextBox56.SelectedText = "";
             this.gunaTextBox56.Size = new System.Drawing.Size(222, 53);
             this.gunaTextBox56.TabIndex = 25;
@@ -2507,6 +2564,7 @@
             this.gunaTextBox57.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox57.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox57.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox57.Enabled = false;
             this.gunaTextBox57.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox57.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox57.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2516,6 +2574,7 @@
             this.gunaTextBox57.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox57.Name = "gunaTextBox57";
             this.gunaTextBox57.PasswordChar = '\0';
+            this.gunaTextBox57.ReadOnly = true;
             this.gunaTextBox57.SelectedText = "";
             this.gunaTextBox57.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox57.TabIndex = 4;
@@ -2549,6 +2608,7 @@
             this.gunaTextBox59.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox59.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox59.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox59.Enabled = false;
             this.gunaTextBox59.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox59.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox59.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2558,6 +2618,7 @@
             this.gunaTextBox59.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox59.Name = "gunaTextBox59";
             this.gunaTextBox59.PasswordChar = '\0';
+            this.gunaTextBox59.ReadOnly = true;
             this.gunaTextBox59.SelectedText = "";
             this.gunaTextBox59.Size = new System.Drawing.Size(435, 59);
             this.gunaTextBox59.TabIndex = 6;
@@ -2591,6 +2652,7 @@
             this.gunaTextBox61.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox61.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox61.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox61.Enabled = false;
             this.gunaTextBox61.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox61.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox61.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2600,6 +2662,7 @@
             this.gunaTextBox61.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox61.Name = "gunaTextBox61";
             this.gunaTextBox61.PasswordChar = '\0';
+            this.gunaTextBox61.ReadOnly = true;
             this.gunaTextBox61.SelectedText = "";
             this.gunaTextBox61.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox61.TabIndex = 8;
@@ -2633,6 +2696,7 @@
             this.gunaTextBox63.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox63.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox63.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox63.Enabled = false;
             this.gunaTextBox63.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox63.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox63.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2642,6 +2706,7 @@
             this.gunaTextBox63.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox63.Name = "gunaTextBox63";
             this.gunaTextBox63.PasswordChar = '\0';
+            this.gunaTextBox63.ReadOnly = true;
             this.gunaTextBox63.SelectedText = "";
             this.gunaTextBox63.Size = new System.Drawing.Size(435, 59);
             this.gunaTextBox63.TabIndex = 10;
@@ -2675,6 +2740,7 @@
             this.gunaTextBox65.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox65.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox65.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox65.Enabled = false;
             this.gunaTextBox65.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox65.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox65.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2684,6 +2750,7 @@
             this.gunaTextBox65.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox65.Name = "gunaTextBox65";
             this.gunaTextBox65.PasswordChar = '\0';
+            this.gunaTextBox65.ReadOnly = true;
             this.gunaTextBox65.SelectedText = "";
             this.gunaTextBox65.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox65.TabIndex = 12;
@@ -2717,6 +2784,7 @@
             this.gunaTextBox67.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox67.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox67.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox67.Enabled = false;
             this.gunaTextBox67.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox67.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox67.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2726,6 +2794,7 @@
             this.gunaTextBox67.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox67.Name = "gunaTextBox67";
             this.gunaTextBox67.PasswordChar = '\0';
+            this.gunaTextBox67.ReadOnly = true;
             this.gunaTextBox67.SelectedText = "";
             this.gunaTextBox67.Size = new System.Drawing.Size(435, 59);
             this.gunaTextBox67.TabIndex = 14;
@@ -2758,6 +2827,7 @@
             this.gunaTextBox69.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox69.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox69.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox69.Enabled = false;
             this.gunaTextBox69.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox69.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox69.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2767,6 +2837,7 @@
             this.gunaTextBox69.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox69.Name = "gunaTextBox69";
             this.gunaTextBox69.PasswordChar = '\0';
+            this.gunaTextBox69.ReadOnly = true;
             this.gunaTextBox69.SelectedText = "";
             this.gunaTextBox69.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox69.TabIndex = 16;
@@ -2876,6 +2947,7 @@
             this.gunaTextBox70.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox70.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox70.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox70.Enabled = false;
             this.gunaTextBox70.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox70.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox70.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2885,6 +2957,7 @@
             this.gunaTextBox70.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox70.Name = "gunaTextBox70";
             this.gunaTextBox70.PasswordChar = '\0';
+            this.gunaTextBox70.ReadOnly = true;
             this.gunaTextBox70.SelectedText = "";
             this.gunaTextBox70.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox70.TabIndex = 4;
@@ -2917,6 +2990,7 @@
             this.gunaTextBox72.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox72.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox72.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox72.Enabled = false;
             this.gunaTextBox72.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox72.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox72.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2926,6 +3000,7 @@
             this.gunaTextBox72.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox72.Name = "gunaTextBox72";
             this.gunaTextBox72.PasswordChar = '\0';
+            this.gunaTextBox72.ReadOnly = true;
             this.gunaTextBox72.SelectedText = "";
             this.gunaTextBox72.Size = new System.Drawing.Size(450, 59);
             this.gunaTextBox72.TabIndex = 8;
@@ -2958,6 +3033,7 @@
             this.gunaTextBox74.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox74.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox74.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox74.Enabled = false;
             this.gunaTextBox74.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox74.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox74.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2967,6 +3043,7 @@
             this.gunaTextBox74.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox74.Name = "gunaTextBox74";
             this.gunaTextBox74.PasswordChar = '\0';
+            this.gunaTextBox74.ReadOnly = true;
             this.gunaTextBox74.SelectedText = "";
             this.gunaTextBox74.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox74.TabIndex = 10;
@@ -2989,6 +3066,7 @@
             this.gunaTextBox77.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox77.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox77.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox77.Enabled = false;
             this.gunaTextBox77.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox77.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox77.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -2998,6 +3076,7 @@
             this.gunaTextBox77.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox77.Name = "gunaTextBox77";
             this.gunaTextBox77.PasswordChar = '\0';
+            this.gunaTextBox77.ReadOnly = true;
             this.gunaTextBox77.SelectedText = "";
             this.gunaTextBox77.Size = new System.Drawing.Size(451, 59);
             this.gunaTextBox77.TabIndex = 14;
@@ -3020,6 +3099,7 @@
             this.gunaTextBox78.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox78.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox78.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox78.Enabled = false;
             this.gunaTextBox78.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox78.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox78.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -3029,6 +3109,7 @@
             this.gunaTextBox78.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox78.Name = "gunaTextBox78";
             this.gunaTextBox78.PasswordChar = '\0';
+            this.gunaTextBox78.ReadOnly = true;
             this.gunaTextBox78.SelectedText = "";
             this.gunaTextBox78.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox78.TabIndex = 16;
@@ -3062,6 +3143,7 @@
             this.gunaTextBox80.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox80.BorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox80.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox80.Enabled = false;
             this.gunaTextBox80.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.gunaTextBox80.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.gunaTextBox80.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -3071,6 +3153,7 @@
             this.gunaTextBox80.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox80.Name = "gunaTextBox80";
             this.gunaTextBox80.PasswordChar = '\0';
+            this.gunaTextBox80.ReadOnly = true;
             this.gunaTextBox80.SelectedText = "";
             this.gunaTextBox80.Size = new System.Drawing.Size(321, 59);
             this.gunaTextBox80.TabIndex = 18;
@@ -3148,6 +3231,7 @@
             this.gunaTextBox55.BaseColor = System.Drawing.Color.White;
             this.gunaTextBox55.BorderColor = System.Drawing.Color.Silver;
             this.gunaTextBox55.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox55.Enabled = false;
             this.gunaTextBox55.FocusedBaseColor = System.Drawing.Color.DimGray;
             this.gunaTextBox55.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.gunaTextBox55.FocusedForeColor = System.Drawing.SystemColors.ActiveCaption;
@@ -3157,11 +3241,55 @@
             this.gunaTextBox55.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox55.Name = "gunaTextBox55";
             this.gunaTextBox55.PasswordChar = '\0';
+            this.gunaTextBox55.ReadOnly = true;
             this.gunaTextBox55.SelectedText = "";
             this.gunaTextBox55.Size = new System.Drawing.Size(1442, 103);
             this.gunaTextBox55.TabIndex = 9;
             this.gunaTextBox55.Text = "HÓA ĐƠN MUA HÀNG";
             this.gunaTextBox55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gunaTextBox11
+            // 
+            this.gunaTextBox11.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox11.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox11.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox11.Enabled = false;
+            this.gunaTextBox11.FocusedBaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox11.FocusedBorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox11.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox11.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaTextBox11.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gunaTextBox11.Location = new System.Drawing.Point(371, 212);
+            this.gunaTextBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaTextBox11.Name = "gunaTextBox11";
+            this.gunaTextBox11.PasswordChar = '\0';
+            this.gunaTextBox11.ReadOnly = true;
+            this.gunaTextBox11.SelectedText = "";
+            this.gunaTextBox11.Size = new System.Drawing.Size(164, 59);
+            this.gunaTextBox11.TabIndex = 24;
+            this.gunaTextBox11.Text = "Giảm giá";
+            this.gunaTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txb_Manager_HDban_GiamGia
+            // 
+            this.txb_Manager_HDban_GiamGia.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txb_Manager_HDban_GiamGia.BaseColor = System.Drawing.Color.WhiteSmoke;
+            this.txb_Manager_HDban_GiamGia.BorderColor = System.Drawing.Color.Black;
+            this.txb_Manager_HDban_GiamGia.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_Manager_HDban_GiamGia.FocusedBaseColor = System.Drawing.Color.LightGray;
+            this.txb_Manager_HDban_GiamGia.FocusedBorderColor = System.Drawing.Color.DimGray;
+            this.txb_Manager_HDban_GiamGia.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txb_Manager_HDban_GiamGia.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txb_Manager_HDban_GiamGia.ForeColor = System.Drawing.Color.Black;
+            this.txb_Manager_HDban_GiamGia.Location = new System.Drawing.Point(543, 212);
+            this.txb_Manager_HDban_GiamGia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txb_Manager_HDban_GiamGia.Name = "txb_Manager_HDban_GiamGia";
+            this.txb_Manager_HDban_GiamGia.PasswordChar = '\0';
+            this.txb_Manager_HDban_GiamGia.SelectedText = "";
+            this.txb_Manager_HDban_GiamGia.Size = new System.Drawing.Size(186, 59);
+            this.txb_Manager_HDban_GiamGia.TabIndex = 25;
+            this.txb_Manager_HDban_GiamGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Manager
             // 
@@ -3307,7 +3435,6 @@
         private Guna.UI.WinForms.GunaTextBox txb_Manager_HDDV_TongTien;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox51;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox47;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox22;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox55;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox56;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
@@ -3362,10 +3489,12 @@
         private System.Windows.Forms.ComboBox cb_Manager_HDban_ProductType;
         private System.Windows.Forms.ComboBox cb_Manager_HDban_ProductName;
         private System.Windows.Forms.ComboBox cb_Manager_HDDV_ServiceType;
-        private System.Windows.Forms.ComboBox cb_Manager_HDDV_ServiceName;
+        private System.Windows.Forms.ComboBox cb_Manager_HDDV_TrangThai;
         private System.Windows.Forms.ComboBox cb_Manager_HDmua_ProductType;
         private System.Windows.Forms.ComboBox cb_Manager_HDmua_ProductName;
         private System.Windows.Forms.ToolStripMenuItem phiếuDịchVụToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem phiếuDịchVụToolStripMenuItem1;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox11;
+        private Guna.UI.WinForms.GunaTextBox txb_Manager_HDban_GiamGia;
     }
 }
