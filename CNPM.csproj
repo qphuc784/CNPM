@@ -105,6 +105,7 @@
     <Compile Include="DAO\KhachHangDAO.cs" />
     <Compile Include="DAO\LoaiDichVuDAO.cs" />
     <Compile Include="DAO\LoaiSanPhamDAO.cs" />
+    <Compile Include="DAO\NhaCungCapDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
     <Compile Include="DAO\ProductDAO.cs" />
     <Compile Include="DoiMatKhau.cs">

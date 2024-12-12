@@ -67,6 +67,7 @@
             this.ControlBox_AddNewSupplier_X.OnPressedColor = System.Drawing.Color.LightCoral;
             this.ControlBox_AddNewSupplier_X.Size = new System.Drawing.Size(73, 49);
             this.ControlBox_AddNewSupplier_X.TabIndex = 10;
+            this.ControlBox_AddNewSupplier_X.Click += new System.EventHandler(this.ControlBox_AddNewSupplier_X_Click);
             // 
             // gunaPanel1
             // 
@@ -106,6 +107,7 @@
             this.Button_AddNewSupplier_Cancel.TabIndex = 12;
             this.Button_AddNewSupplier_Cancel.Text = "Cancel";
             this.Button_AddNewSupplier_Cancel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Button_AddNewSupplier_Cancel.Click += new System.EventHandler(this.Button_AddNewSupplier_Cancel_Click);
             // 
             // Button_AddNewSupplier_Ok
             // 
@@ -134,6 +136,7 @@
             this.Button_AddNewSupplier_Ok.TabIndex = 11;
             this.Button_AddNewSupplier_Ok.Text = "Ok";
             this.Button_AddNewSupplier_Ok.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Button_AddNewSupplier_Ok.Click += new System.EventHandler(this.Button_AddNewSupplier_Ok_Click);
             // 
             // Label_AddNewSupplier_sdt
             // 

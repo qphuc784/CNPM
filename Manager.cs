@@ -35,7 +35,6 @@ namespace CNPM
 
             LoadListLoaiDV();
             cb_Manager_HDDV_ServiceType.SelectedIndexChanged += cb_Manager_HDDV_ServiceType_SelectedIndexChanged;
-            cb_Manager_HDDV_TrangThai.SelectedIndexChanged += cb_Manager_HDDV_ServiceName_SelectedIndexChanged;
         }
 
         void changeAccount(string cv)
@@ -107,9 +106,14 @@ namespace CNPM
             AddCustomer addCustomer = new AddCustomer();
             addCustomer.ShowDialog();
         }
-///////////////////////////////////////////////////////////////////////////////////////
-// HÓA ĐƠN BÁN HÀNG //
-// Thông tin chung //
+        private void btn_Manager_HDmua_AddGuest_Click(object sender, EventArgs e)
+        {
+            AddNewSupplier addNewSupplier = new AddNewSupplier();
+            addNewSupplier.ShowDialog();
+        }
+        ///////////////////////////////////////////////////////////////////////////////////////
+        // HÓA ĐƠN BÁN HÀNG //
+        // Thông tin chung //
         // Hiển thị khách hàng theo sdt
         private void btn_Manager_HDban_ShowGuest_Click(object sender, EventArgs e)
         {
@@ -361,6 +365,7 @@ namespace CNPM
 
         }
 
+// Thông tin dịch vụ //
         private void LoadListLoaiDV()
         {
             List<LoaiDichVu> listLoaiDichVu = LoaiDichVuDAO.Instance.GetListLoaiDV();
@@ -379,17 +384,21 @@ namespace CNPM
         }
         private void cb_Manager_HDDV_ServiceType_SelectedIndexChanged(object sender, EventArgs e)
         {
+            // Reset các giá trị trước đó
             cb_Manager_HDDV_TrangThai.DataSource = null;
             tb_Manager_HDDV_IdService.Text = "";
             tb_Manager_HDDV_UnitPrice.Text = "";
 
             if (cb_Manager_HDDV_ServiceType.SelectedIndex != -1)
             {
+                // Lấy ID loại dịch vụ được chọn
                 object selectedLoaiDVID = cb_Manager_HDDV_ServiceType.SelectedValue;
                 if (selectedLoaiDVID != null && int.TryParse(selectedLoaiDVID.ToString(), out int selectedIDDichVu))
                 {
-                    LoadTenDVToComboBox(selectedIDDichVu);
+                    // Hiển thị ID dịch vụ trong TextBox
+                    tb_Manager_HDDV_IdService.Text = selectedIDDichVu.ToString();
 
+                    // Lấy đơn giá dịch vụ tương ứng
                     List<string> dongiadichvu = LoaiDichVuDAO.Instance.GetDonGiaDichVu(selectedIDDichVu);
                     if (dongiadichvu != null && dongiadichvu.Count > 0)
                     {
@@ -399,55 +408,208 @@ namespace CNPM
                     {
                         tb_Manager_HDDV_UnitPrice.Text = " ";
                     }
-
                 }
                 else
                 {
-                    LoadTenDVToComboBox(0);
                     tb_Manager_HDDV_UnitPrice.Text = "";
                 }
             }
         }
 
-        private void LoadTenDVToComboBox(int selectedLoaiDVID)
+        private void txb_Manager_HDDV_Quantity_TextChanged(object sender, EventArgs e)
         {
-            // Lấy danh sách sản phẩm theo loại sản phẩm từ DAO
-            List<PhieuDichVu> listDichVu = DichVuDAO.Instance.GetDichVuByIDLoai(selectedLoaiDVID);
-
-            if (listDichVu != null && listDichVu.Count > 0)
+            if (decimal.TryParse(tb_Manager_HDDV_UnitPrice.Text, out decimal donGiaBan) &&
+                int.TryParse(txb_Manager_HDDV_Quantity.Text, out int soLuong))
             {
-                // Gán danh sách sản phẩm vào ComboBox tên sản phẩm
-                cb_Manager_HDDV_TrangThai.DataSource = listDichVu;
-                cb_Manager_HDDV_TrangThai.DisplayMember = "TinhTrang"; // Hiển thị tên sản phẩm
-                cb_Manager_HDDV_TrangThai.ValueMember = "ID";           // Lưu trữ ID sản phẩm
-                cb_Manager_HDDV_TrangThai.SelectedIndex = -1;           // Đặt mục ban đầu là trống
+                decimal tongTien = (donGiaBan * soLuong);
+
+                tb_Manager_HDDV_Cash.Text = tongTien.ToString("N2");
             }
             else
             {
-                cb_Manager_HDDV_TrangThai.DataSource = null; // Không hiển thị gì nếu không có sản phẩm
-                tb_Manager_HDDV_IdService.Text = "";
+                tb_Manager_HDDV_Cash.Text = "0";
             }
         }
-        private void cb_Manager_HDDV_ServiceName_SelectedIndexChanged(object sender, EventArgs e)
+        private void btn_Manager_HDDV_AddServicebill_Click(object sender, EventArgs e)
         {
-            if (cb_Manager_HDDV_TrangThai.SelectedIndex != -1)
-            {
-                // Lấy ID sản phẩm được chọn
-                object selectedValue = cb_Manager_HDDV_TrangThai.SelectedValue;
+            // Lấy thông tin từ các TextBox hoặc ComboBox
+            string maDV = tb_Manager_HDDV_IdService.Text;
+            string loaiDV = cb_Manager_HDDV_ServiceType.Text;
+            string trangThai = cb_Manager_HDDV_TrangThai.Text;
+            int soLuong = 0;
+            decimal donGia = 0;
+            decimal giamGia = 0;
 
-                if (selectedValue != null && int.TryParse(selectedValue.ToString(), out int selectedIDDichVu))
+            // Chuyển đổi số lượng và đơn giá
+            if (!int.TryParse(txb_Manager_HDDV_Quantity.Text, out soLuong) || soLuong <= 0)
+            {
+                MessageBox.Show("Số lượng phải là số nguyên dương.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!decimal.TryParse(tb_Manager_HDDV_UnitPrice.Text, out donGia) || donGia <= 0)
+            {
+                MessageBox.Show("Đơn giá phải là số dương.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!decimal.TryParse(tb_Manager_HDDV_Discount.Text, out giamGia) || giamGia <= 0)
+            {
+                MessageBox.Show("Giảm giá phải là số dương.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Tính thành tiền
+            decimal thanhTien = (donGia * soLuong) * (1 - giamGia / 100);
+
+            // Thêm thông tin vào ListView
+            ListViewItem item = new ListViewItem(maDV);
+            item.SubItems.Add(loaiDV);
+            item.SubItems.Add(trangThai);
+            item.SubItems.Add(soLuong.ToString());
+            item.SubItems.Add(donGia.ToString("N2")); // Định dạng số thập phân
+            item.SubItems.Add(giamGia.ToString()); // Giảm giá
+            item.SubItems.Add(thanhTien.ToString("N2")); // Thành tiền
+
+            lsv_Manager_HDDV.Items.Add(item);
+
+            // Sau khi thêm, reset các ô nhập liệu
+            tb_Manager_HDDV_IdService.Text = string.Empty;
+            cb_Manager_HDDV_ServiceType.SelectedIndex = -1;
+            cb_Manager_HDDV_TrangThai.DataSource = null;
+            txb_Manager_HDDV_Quantity.Text = string.Empty;
+            tb_Manager_HDDV_UnitPrice.Text = string.Empty;
+            tb_Manager_HDDV_Discount.Text = string.Empty;
+            tb_Manager_HDDV_Cash.Text = "0";
+
+            CalculateTotal_DV();
+        }
+        private void CalculateTotal_DV()
+        {
+            decimal total = 0;
+
+            foreach (ListViewItem item in lsv_Manager_HDDV.Items)
+            {
+                if (decimal.TryParse(item.SubItems[6].Text, out decimal thanhTien))
                 {
-                    tb_Manager_HDDV_IdService.Text = selectedIDDichVu.ToString();
+                    total += thanhTien;
+                }
+            }
+
+            // Hiển thị tổng tiền trong TextBox
+            txb_Manager_HDDV_TongTien.Text = total.ToString("N2"); // Định dạng số thập phân
+        }
+
+        private void txb_Manager_HDDV_TraTruoc_TextChanged(object sender, EventArgs e)
+        {
+            if (decimal.TryParse(txb_Manager_HDDV_TraTruoc.Text, out decimal traTruoc) &&
+                decimal.TryParse(txb_Manager_HDDV_TongTien.Text, out decimal tongTien))
+            {
+                if (traTruoc < tongTien)
+                {
+                    decimal conLai = tongTien - traTruoc;
+                    txb_Manager_HDDV_Conlai.Text = conLai.ToString("N2");
                 }
                 else
                 {
-                    tb_Manager_HDDV_IdService.Text = ""; // Xóa thông tin nếu không thể chuyển đổi
+                    decimal conLai = 0;
+                    txb_Manager_HDDV_TraTruoc.Text = txb_Manager_HDDV_TongTien.Text;
+                    txb_Manager_HDDV_Conlai.Text = conLai.ToString("N2");
                 }
             }
             else
             {
-                tb_Manager_HDDV_IdService.Text = ""; // Xóa thông tin nếu không có sản phẩm được chọn
+                txb_Manager_HDDV_Conlai.Text = "0";
             }
+        }
+
+///////////////////////////////////////////////////////////////////////////////////////
+// HÓA ĐƠN MUA HÀNG //
+// Thông tin chung //
+        //Hiển thị khách hàng 
+        private void btn_Manager_HDmua_ShowNCC_Click(object sender, EventArgs e)
+        {
+            string sdt = tb_Manager_HDmua_GuestPN.Text;
+            if (string.IsNullOrWhiteSpace(tb_Manager_HDmua_GuestPN.Text))
+            {
+                MessageBox.Show("Nhap so dien thoai nha cung cap");
+                return;
+            }
+            NhaCungCap f = NhaCungCapDAO.Instance.GetNhaCungCapBySdt(sdt);
+            if (f != null)
+            {
+                tb_Manager_HDmua_IDncc.Text = f.ID.ToString();
+                tb_Manager_HDmua_DiaChi.Text = f.DiaChi;
+            }
+            else
+            {
+                MessageBox.Show("Nha cung cap khong ton tai");
+            }
+        }
+
+
+// Thông tin sản phẩm //
+        private void LoadListLoaiSP_mua()
+        {
+            // Lấy danh sách loại sản phẩm từ DAO
+            List<LoaiSP> listLoaiSP = ProductDAO.Instance.GetListSanPham();
+
+            if (listLoaiSP != null && listLoaiSP.Count > 0)
+            {
+                // Gán danh sách vào ComboBox loại sản phẩm
+                cb_Manager_HDban_ProductType.DataSource = listLoaiSP;
+                cb_Manager_HDban_ProductType.DisplayMember = "Ten";  // Hiển thị tên loại sản phẩm
+                cb_Manager_HDban_ProductType.ValueMember = "ID";     // Lưu trữ ID loại sản phẩm
+                cb_Manager_HDban_ProductType.SelectedIndex = -1;     // Đặt mục ban đầu là trống
+            }
+            else
+            {
+                cb_Manager_HDban_ProductType.DataSource = null; // Không hiển thị gì nếu không có loại sản phẩm
+            }
+        }
+        private void cb_Manager_HDmua_ProductType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Reset các giá trị trước đó
+            cb_Manager_HDmua_ProductType.DataSource = null;
+            tb_Manager_HDmua_IdProduct.Text = "";
+            tb_Manager_HDmua_UnitPrice.Text = "";
+
+            if (cb_Manager_HDDV_ServiceType.SelectedIndex != -1)
+            {
+                // Lấy ID loại dịch vụ được chọn
+                object selectedLoaiDVID = cb_Manager_HDDV_ServiceType.SelectedValue;
+                if (selectedLoaiDVID != null && int.TryParse(selectedLoaiDVID.ToString(), out int selectedIDDichVu))
+                {
+                    // Hiển thị ID dịch vụ trong TextBox
+                    tb_Manager_HDDV_IdService.Text = selectedIDDichVu.ToString();
+
+                    // Lấy đơn giá dịch vụ tương ứng
+                    List<string> dongiadichvu = LoaiDichVuDAO.Instance.GetDonGiaDichVu(selectedIDDichVu);
+                    if (dongiadichvu != null && dongiadichvu.Count > 0)
+                    {
+                        tb_Manager_HDDV_UnitPrice.Text = string.Join(", ", dongiadichvu);
+                    }
+                    else
+                    {
+                        tb_Manager_HDDV_UnitPrice.Text = " ";
+                    }
+                }
+                else
+                {
+                    tb_Manager_HDDV_UnitPrice.Text = "";
+                }
+            }
+        }
+        private void cb_Manager_HDmua_ProductName_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
+
+
+
+
+
+
+
+
