@@ -57,5 +57,7 @@ namespace CuaHangDaQuy.DTO
             this.NgayThayDoiSL = (DateTime)row["NgayThayDoiSoLuong"];
             this.Sl_Truoc = (int)row["SoLuongTruoc"];
         }
+
+        public SanPham() { }
     }
 }

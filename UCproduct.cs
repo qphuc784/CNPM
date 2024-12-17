@@ -1,5 +1,6 @@
 ﻿using CuaHangDaQuy.DAO;
 using CuaHangDaQuy.DTO;
+using Guna.UI.WinForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,27 @@ namespace CNPM
         {
             InitializeComponent();
         }
+
+        private void gunaLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gunaDataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void gunaPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void Button_UCproduct_Them_Click(object sender, EventArgs e)
         {
             AddProduct newproduct = new AddProduct();
@@ -44,7 +66,7 @@ namespace CNPM
             }
             else
             {
-                MessageBox.Show("Không Tìm Thấy Sản Phẩm Vui Lòng Thử Lại!");
+                MessageBox.Show("Không Tìm Thấy Sản Phẩm Này, Vui Lòng Thử Lại!");
             }
 
         }
@@ -53,11 +75,10 @@ namespace CNPM
         {
             string TenSanPham = TextBox_UCproduct_timkiem.Text;
             DialogResult result = MessageBox.Show(
-        $"Bạn có chắc chắn muốn xóa không?",
-        "Xác nhận xóa",
-        MessageBoxButtons.YesNo,
-        MessageBoxIcon.Warning
-        );
+            $"Bạn có chắc chắn muốn xóa không?",
+            "Xác nhận xóa",
+            MessageBoxButtons.YesNo,
+            MessageBoxIcon.Warning);
             if (result == DialogResult.Yes)
             {
                 bool isdeleted = ProductDAO.Instance.DeleteSanPhamByTenSp(TenSanPham);
@@ -69,5 +90,32 @@ namespace CNPM
                 }
             }
         }
+
+        private void Button_UCproduct_Sua_Click(object sender, EventArgs e)
+        {
+            if (DataGridView_UCproduct.Rows.Count == 0)
+            {
+                MessageBox.Show("Vui Lòng Chọn Sản Phẩm Để Cập Nhật!");
+            }
+            foreach (DataGridViewRow row in DataGridView_UCproduct.Rows)
+            {
+                string TenSanPham = row.Cells["TenSanPham"].Value.ToString();
+                int SoLuong = Convert.ToInt32(row.Cells["SoLuong"].Value);
+                int ID = Convert.ToInt32(row.Cells["ID"].Value);
+                DataGridView_UCproduct.ReadOnly = false;
+                DataGridView_UCproduct.Columns["ID"].ReadOnly = true;
+                bool isUpdate = ProductDAO.Instance.UpdateSanPham(ID, TenSanPham, SoLuong);
+                if (!isUpdate)
+                {
+                    MessageBox.Show("Cập Nhật Sản Phẩm Thất Bại! Vui Lòng Thử Lại!");
+                    return;
+                }
+            }
+            MessageBox.Show("Cập Nhật Sản Phẩm Thành Công!");
+
+            Button_UCproduct_OK_Click(sender, e);
+        }
+
+
     }
 }

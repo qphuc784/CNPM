@@ -75,12 +75,41 @@ namespace CuaHangDaQuy.DAO
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { TenSanPham });
             return result > 0;
         }
-        public bool UpdateSanPham(int SoLuong, bool TrangThai)
+        public bool UpdateSanPham(int ID, string TenSanPham, int SoLuong)
         {
-            string query = "USP_UpdateSanPham @TenSanPham, @SoLuong, @TrangThai";
-            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { SoLuong, TrangThai });
+            string query = "USP_UpdateSanPham @ID , @TenSanPham , @SoLuong";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { ID, TenSanPham, SoLuong, });
             return result > 0;
         }
+
+
+        public List<SanPham> GetSanPhamByTenLoai(string TenLoai)
+        {
+            List<SanPham> listSP = new List<SanPham>();
+            string query = "USP_HienThiTonkho @TenLoai ";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { TenLoai });
+
+            foreach (DataRow row in data.Rows)
+            {
+                SanPham sp = new SanPham(row);
+                listSP.Add(sp);
+            }
+            return listSP;
+        }
+        public List<SanPham> USP_GetAllSanPhamByTenLoai(string TenLoai, DateTime TuNgay, DateTime DenNgay)
+        {
+            List<SanPham> listSP = new List<SanPham>();
+            string query = "USP_GetAllSanPhamByTenLoai @TenLoai , @TuNgay , @DenNgay";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { TenLoai, TuNgay, DenNgay });
+
+            foreach (DataRow row in data.Rows)
+            {
+                SanPham sp = new SanPham(row);
+                listSP.Add(sp);
+            }
+            return listSP;
+        }
+    
 
     }
 }

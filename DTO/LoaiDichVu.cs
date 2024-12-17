@@ -29,7 +29,7 @@ namespace CuaHangDaQuy.DTO
         {
             this.ID = (int)row["ID"];
             this.TenLoai = row["TenLoai"].ToString();
-            //this.DonGia = (float)row["DonGia"];
+            this.DonGia = Convert.ToSingle(row["dongia"]);
         }
     }
 }
