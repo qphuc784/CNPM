@@ -51,6 +51,16 @@ namespace CuaHangDaQuy.DAO
         //    return list;
 
         //}
+        public NhanVien GetNhanVienByID(string id)
+        {
+            string query = "USP_GetNhanVienByID @id ";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { id });
+            foreach (DataRow item in data.Rows)
+            {
+                return new NhanVien(item);
+            }
+            return null;
+        }
 
         public NhanVien GetNhanVienByUserName(string username)
         {
@@ -86,6 +96,13 @@ namespace CuaHangDaQuy.DAO
                 
             }
             return result2;    
+        }
+
+        public bool changePassWord(int id, string password)
+        {
+            string query = "USP_UpdatePassword @IDNhanVien , @NewPassword ";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { id , password });
+            return result > 0;
         }
     }
 }

@@ -65,9 +65,11 @@ namespace CNPM
         // Hiển thị form thông tin cá nhân
         private void thôngTinCáNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            string staff_id = tb_Manager_HDban_IdStaff.Text;
+            NhanVien nv = NhanVienDAO.Instance.GetNhanVienByID(staff_id);
+            ThongTinTaiKhoan f = new ThongTinTaiKhoan(nv);
             this.Hide();
-            ThongTinTaiKhoan TTKT = new ThongTinTaiKhoan();
-            TTKT.ShowDialog();
+            f.ShowDialog();
             this.Show();
         }
         // Cảnh báo đăng xuất
