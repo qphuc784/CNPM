@@ -43,7 +43,6 @@
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
             this.TextBox_ThongTinTK_Email = new Guna.UI.WinForms.GunaTextBox();
             this.TextBox_ThongTinTK_SDT = new Guna.UI.WinForms.GunaTextBox();
-            this.Button_ThongTinTK_CapNhatThongTin = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_loginForm_avt)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
@@ -69,19 +68,18 @@
             this.TextBox_ThongTinTK_ID.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextBox_ThongTinTK_ID.BorderColor = System.Drawing.Color.Transparent;
             this.TextBox_ThongTinTK_ID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_ThongTinTK_ID.Enabled = false;
             this.TextBox_ThongTinTK_ID.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.TextBox_ThongTinTK_ID.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_ThongTinTK_ID.FocusedForeColor = System.Drawing.Color.White;
             this.TextBox_ThongTinTK_ID.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_ThongTinTK_ID.ForeColor = System.Drawing.Color.White;
-            this.TextBox_ThongTinTK_ID.Location = new System.Drawing.Point(260, 248);
+            this.TextBox_ThongTinTK_ID.Location = new System.Drawing.Point(307, 248);
             this.TextBox_ThongTinTK_ID.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_ThongTinTK_ID.Name = "TextBox_ThongTinTK_ID";
             this.TextBox_ThongTinTK_ID.PasswordChar = '\0';
             this.TextBox_ThongTinTK_ID.ReadOnly = true;
             this.TextBox_ThongTinTK_ID.SelectedText = "";
-            this.TextBox_ThongTinTK_ID.Size = new System.Drawing.Size(197, 54);
+            this.TextBox_ThongTinTK_ID.Size = new System.Drawing.Size(58, 45);
             this.TextBox_ThongTinTK_ID.TabIndex = 13;
             // 
             // gunaLabel4
@@ -91,7 +89,7 @@
             this.gunaLabel4.Enabled = false;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel4.Location = new System.Drawing.Point(186, 253);
+            this.gunaLabel4.Location = new System.Drawing.Point(253, 248);
             this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(63, 38);
@@ -138,7 +136,7 @@
             this.gunaCirclePictureBox1.Location = new System.Drawing.Point(0, 1004);
             this.gunaCirclePictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(620, 55);
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(618, 57);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaCirclePictureBox1.TabIndex = 20;
             this.gunaCirclePictureBox1.TabStop = false;
@@ -159,7 +157,7 @@
             this.Button_ThongTinTK_DoiMK.ForeColor = System.Drawing.Color.Black;
             this.Button_ThongTinTK_DoiMK.Image = null;
             this.Button_ThongTinTK_DoiMK.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_ThongTinTK_DoiMK.Location = new System.Drawing.Point(314, 908);
+            this.Button_ThongTinTK_DoiMK.Location = new System.Drawing.Point(290, 889);
             this.Button_ThongTinTK_DoiMK.Margin = new System.Windows.Forms.Padding(4);
             this.Button_ThongTinTK_DoiMK.Name = "Button_ThongTinTK_DoiMK";
             this.Button_ThongTinTK_DoiMK.OnHoverBaseColor = System.Drawing.SystemColors.ScrollBar;
@@ -206,7 +204,6 @@
             this.TextBox_ThongTinTK_Ten.BorderColor = System.Drawing.Color.DimGray;
             this.TextBox_ThongTinTK_Ten.BorderSize = 1;
             this.TextBox_ThongTinTK_Ten.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_ThongTinTK_Ten.Enabled = false;
             this.TextBox_ThongTinTK_Ten.FocusedBaseColor = System.Drawing.Color.DarkGray;
             this.TextBox_ThongTinTK_Ten.FocusedBorderColor = System.Drawing.Color.DimGray;
             this.TextBox_ThongTinTK_Ten.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -274,7 +271,6 @@
             this.TextBox_ThongTinTK_Email.BorderColor = System.Drawing.Color.DimGray;
             this.TextBox_ThongTinTK_Email.BorderSize = 1;
             this.TextBox_ThongTinTK_Email.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_ThongTinTK_Email.Enabled = false;
             this.TextBox_ThongTinTK_Email.FocusedBaseColor = System.Drawing.Color.DarkGray;
             this.TextBox_ThongTinTK_Email.FocusedBorderColor = System.Drawing.Color.DimGray;
             this.TextBox_ThongTinTK_Email.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -296,7 +292,6 @@
             this.TextBox_ThongTinTK_SDT.BorderColor = System.Drawing.Color.DimGray;
             this.TextBox_ThongTinTK_SDT.BorderSize = 1;
             this.TextBox_ThongTinTK_SDT.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_ThongTinTK_SDT.Enabled = false;
             this.TextBox_ThongTinTK_SDT.FocusedBaseColor = System.Drawing.Color.DarkGray;
             this.TextBox_ThongTinTK_SDT.FocusedBorderColor = System.Drawing.Color.DimGray;
             this.TextBox_ThongTinTK_SDT.FocusedForeColor = System.Drawing.SystemColors.ControlText;
@@ -311,43 +306,12 @@
             this.TextBox_ThongTinTK_SDT.Size = new System.Drawing.Size(477, 66);
             this.TextBox_ThongTinTK_SDT.TabIndex = 23;
             // 
-            // Button_ThongTinTK_CapNhatThongTin
-            // 
-            this.Button_ThongTinTK_CapNhatThongTin.AnimationHoverSpeed = 0.07F;
-            this.Button_ThongTinTK_CapNhatThongTin.AnimationSpeed = 0.03F;
-            this.Button_ThongTinTK_CapNhatThongTin.BackColor = System.Drawing.Color.Transparent;
-            this.Button_ThongTinTK_CapNhatThongTin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Button_ThongTinTK_CapNhatThongTin.BaseColor = System.Drawing.Color.White;
-            this.Button_ThongTinTK_CapNhatThongTin.BorderColor = System.Drawing.Color.Black;
-            this.Button_ThongTinTK_CapNhatThongTin.BorderSize = 1;
-            this.Button_ThongTinTK_CapNhatThongTin.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Button_ThongTinTK_CapNhatThongTin.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_ThongTinTK_CapNhatThongTin.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_ThongTinTK_CapNhatThongTin.ForeColor = System.Drawing.Color.Black;
-            this.Button_ThongTinTK_CapNhatThongTin.Image = null;
-            this.Button_ThongTinTK_CapNhatThongTin.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_ThongTinTK_CapNhatThongTin.Location = new System.Drawing.Point(27, 908);
-            this.Button_ThongTinTK_CapNhatThongTin.Margin = new System.Windows.Forms.Padding(4);
-            this.Button_ThongTinTK_CapNhatThongTin.Name = "Button_ThongTinTK_CapNhatThongTin";
-            this.Button_ThongTinTK_CapNhatThongTin.OnHoverBaseColor = System.Drawing.SystemColors.ScrollBar;
-            this.Button_ThongTinTK_CapNhatThongTin.OnHoverBorderColor = System.Drawing.SystemColors.ScrollBar;
-            this.Button_ThongTinTK_CapNhatThongTin.OnHoverForeColor = System.Drawing.Color.Black;
-            this.Button_ThongTinTK_CapNhatThongTin.OnHoverImage = null;
-            this.Button_ThongTinTK_CapNhatThongTin.OnPressedColor = System.Drawing.Color.DarkGray;
-            this.Button_ThongTinTK_CapNhatThongTin.Radius = 5;
-            this.Button_ThongTinTK_CapNhatThongTin.Size = new System.Drawing.Size(255, 58);
-            this.Button_ThongTinTK_CapNhatThongTin.TabIndex = 27;
-            this.Button_ThongTinTK_CapNhatThongTin.Text = "CẬP NHẬT";
-            this.Button_ThongTinTK_CapNhatThongTin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Button_ThongTinTK_CapNhatThongTin.UseTransfarantBackground = true;
-            // 
             // ThongTinTaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(618, 1058);
-            this.Controls.Add(this.Button_ThongTinTK_CapNhatThongTin);
             this.Controls.Add(this.gunaLabel5);
             this.Controls.Add(this.gunaLabel6);
             this.Controls.Add(this.TextBox_ThongTinTK_Email);
@@ -391,6 +355,5 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaTextBox TextBox_ThongTinTK_Email;
         private Guna.UI.WinForms.GunaTextBox TextBox_ThongTinTK_SDT;
-        private Guna.UI.WinForms.GunaButton Button_ThongTinTK_CapNhatThongTin;
     }
 }

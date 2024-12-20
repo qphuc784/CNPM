@@ -35,6 +35,10 @@ namespace CNPM
 
             LoadListLoaiDV();
             cb_Manager_HDDV_ServiceType.SelectedIndexChanged += cb_Manager_HDDV_ServiceType_SelectedIndexChanged;
+
+            LoadListLoaiSP_mua();
+            cb_Manager_HDmua_ProductType.SelectedIndexChanged += cb_Manager_HDmua_ProductType_SelectedIndexChanged;
+            cb_Manager_HDmua_ProductName.SelectedIndexChanged += cb_Manager_HDmua_ProductName_SelectedIndexChanged;
         }
 
         void changeAccount(string cv)
@@ -558,53 +562,198 @@ namespace CNPM
             if (listLoaiSP != null && listLoaiSP.Count > 0)
             {
                 // Gán danh sách vào ComboBox loại sản phẩm
-                cb_Manager_HDban_ProductType.DataSource = listLoaiSP;
-                cb_Manager_HDban_ProductType.DisplayMember = "Ten";  // Hiển thị tên loại sản phẩm
-                cb_Manager_HDban_ProductType.ValueMember = "ID";     // Lưu trữ ID loại sản phẩm
-                cb_Manager_HDban_ProductType.SelectedIndex = -1;     // Đặt mục ban đầu là trống
+                cb_Manager_HDmua_ProductType.DataSource = listLoaiSP;
+                cb_Manager_HDmua_ProductType.DisplayMember = "Ten";  // Hiển thị tên loại sản phẩm
+                cb_Manager_HDmua_ProductType.ValueMember = "ID";     // Lưu trữ ID loại sản phẩm
+                cb_Manager_HDmua_ProductType.SelectedIndex = -1;     // Đặt mục ban đầu là trống
             }
             else
             {
-                cb_Manager_HDban_ProductType.DataSource = null; // Không hiển thị gì nếu không có loại sản phẩm
+                cb_Manager_HDmua_ProductType.DataSource = null; // Không hiển thị gì nếu không có loại sản phẩm
             }
         }
         private void cb_Manager_HDmua_ProductType_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Reset các giá trị trước đó
-            cb_Manager_HDmua_ProductType.DataSource = null;
+            // Xóa danh sách sản phẩm trước đó
+            cb_Manager_HDmua_ProductName.DataSource = null;
             tb_Manager_HDmua_IdProduct.Text = "";
             tb_Manager_HDmua_UnitPrice.Text = "";
 
-            if (cb_Manager_HDDV_ServiceType.SelectedIndex != -1)
+            if (cb_Manager_HDmua_ProductType.SelectedIndex != -1)
             {
-                // Lấy ID loại dịch vụ được chọn
-                object selectedLoaiDVID = cb_Manager_HDDV_ServiceType.SelectedValue;
-                if (selectedLoaiDVID != null && int.TryParse(selectedLoaiDVID.ToString(), out int selectedIDDichVu))
+                // Lấy ID loại sản phẩm được chọn
+                object selectedLoaiSPID = cb_Manager_HDmua_ProductType.SelectedValue;
+                if (selectedLoaiSPID != null && int.TryParse(selectedLoaiSPID.ToString(), out int selectedIDSanPham))
                 {
-                    // Hiển thị ID dịch vụ trong TextBox
-                    tb_Manager_HDDV_IdService.Text = selectedIDDichVu.ToString();
+                    LoadTenSPToComboBox_mua(selectedIDSanPham);
 
-                    // Lấy đơn giá dịch vụ tương ứng
-                    List<string> dongiadichvu = LoaiDichVuDAO.Instance.GetDonGiaDichVu(selectedIDDichVu);
-                    if (dongiadichvu != null && dongiadichvu.Count > 0)
+                    //List<string> donViTinhs = LoaiSanPhamDAO.Instance.GetDVTByIDLoai(selectedIDSanPham);
+                    //if (donViTinhs != null && donViTinhs.Count > 0)
+                    //{
+                    //    // Nối các đơn vị tính thành một chuỗi, ngăn cách bằng dấu phẩy
+                    //    tb_Manager_HDmua_Donvitinh.Text = string.Join(", ", donViTinhs);
+                    //}
+                    //else
+                    //{
+                    //    tb_Manager_HDmua_Donvitinh.Text = " ";
+                    //}
+
+                    List<string> dongiaban = LoaiSanPhamDAO.Instance.GetDonGiaMua(selectedIDSanPham);
+                    if (dongiaban != null && dongiaban.Count > 0)
                     {
-                        tb_Manager_HDDV_UnitPrice.Text = string.Join(", ", dongiadichvu);
+                        // Nối các đơn vị tính thành một chuỗi, ngăn cách bằng dấu phẩy
+                        tb_Manager_HDmua_UnitPrice.Text = string.Join(", ", dongiaban);
                     }
                     else
                     {
-                        tb_Manager_HDDV_UnitPrice.Text = " ";
+                        tb_Manager_HDmua_UnitPrice.Text = " ";
                     }
+
                 }
                 else
                 {
-                    tb_Manager_HDDV_UnitPrice.Text = "";
+                    LoadTenSPToComboBox_mua(0);
+                    tb_Manager_HDmua_UnitPrice.Text = "";
                 }
             }
         }
+
+        private void LoadTenSPToComboBox_mua(int selectedLoaiSPID)
+        {
+            // Lấy danh sách sản phẩm theo loại sản phẩm từ DAO
+            List<SanPham> listSanPham = ProductDAO.Instance.GetSanPhamByIDLoai(selectedLoaiSPID);
+
+            if (listSanPham != null && listSanPham.Count > 0)
+            {
+                // Gán danh sách sản phẩm vào ComboBox tên sản phẩm
+                cb_Manager_HDmua_ProductName.DataSource = listSanPham;
+                cb_Manager_HDmua_ProductName.DisplayMember = "TenSanPham"; // Hiển thị tên sản phẩm
+                cb_Manager_HDmua_ProductName.ValueMember = "ID";           // Lưu trữ ID sản phẩm
+                cb_Manager_HDmua_ProductName.SelectedIndex = -1;           // Đặt mục ban đầu là trống
+            }
+            else
+            {
+                cb_Manager_HDmua_ProductName.DataSource = null; // Không hiển thị gì nếu không có sản phẩm
+                tb_Manager_HDmua_IdProduct.Text = "";
+            }
+        }
+
         private void cb_Manager_HDmua_ProductName_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if (cb_Manager_HDmua_ProductName.SelectedIndex != -1)
+            {
+                // Lấy ID sản phẩm được chọn
+                object selectedValue = cb_Manager_HDmua_ProductName.SelectedValue;
 
+                if (selectedValue != null && int.TryParse(selectedValue.ToString(), out int selectedIDSanPham))
+                {
+                    tb_Manager_HDmua_IdProduct.Text = selectedIDSanPham.ToString();
+                }
+                else
+                {
+                    tb_Manager_HDmua_IdProduct.Text = ""; // Xóa thông tin nếu không thể chuyển đổi
+                }
+            }
+            else
+            {
+                tb_Manager_HDmua_IdProduct.Text = ""; // Xóa thông tin nếu không có sản phẩm được chọn
+            }
         }
+        private void tb_Manager_HDmua_UnitPrice_TextChanged(object sender, EventArgs e)
+        {
+            // Lấy giá trị đơn giá bán
+            if (decimal.TryParse(tb_Manager_HDmua_UnitPrice.Text, out decimal donGiaBan) &&
+                int.TryParse(txb_Manager_HDmua_Quantity.Text, out int soLuong))
+            {
+                decimal tongTien = (donGiaBan * soLuong);
+
+                tb_Manager_HDmua_Cash.Text = tongTien.ToString("N2");
+            }
+            else
+            {
+                tb_Manager_HDmua_Cash.Text = "0";
+            }
+        }
+
+        private void txb_Manager_HDmua_Quantity_TextChanged(object sender, EventArgs e)
+        {
+            // Lấy giá trị đơn giá bán
+            if (decimal.TryParse(tb_Manager_HDmua_UnitPrice.Text, out decimal donGiaBan) &&
+                int.TryParse(txb_Manager_HDmua_Quantity.Text, out int soLuong))
+            {
+                decimal tongTien = (donGiaBan * soLuong);
+
+                tb_Manager_HDmua_Cash.Text = tongTien.ToString("N2");
+            }
+            else
+            {
+                tb_Manager_HDmua_Cash.Text = "0";
+            }
+        }
+
+        private void btn_Manager_HDmua_AddProductbill_Click(object sender, EventArgs e)
+        {
+            // Lấy thông tin từ các TextBox hoặc ComboBox
+            string maSP = tb_Manager_HDmua_IdProduct.Text;
+            string loaiSP = cb_Manager_HDmua_ProductType.Text;
+            string tenSP = cb_Manager_HDmua_ProductName.Text;
+            int soLuong = 0;
+            decimal donGia = 0;
+
+            // Chuyển đổi số lượng và đơn giá
+            if (!int.TryParse(txb_Manager_HDmua_Quantity.Text, out soLuong) || soLuong <= 0)
+            {
+                MessageBox.Show("Số lượng phải là số nguyên dương.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            if (!decimal.TryParse(tb_Manager_HDmua_UnitPrice.Text, out donGia) || donGia <= 0)
+            {
+                MessageBox.Show("Đơn giá phải là số dương.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Tính thành tiền
+            decimal thanhTien = (donGia * soLuong);
+
+            // Thêm thông tin vào ListView
+            ListViewItem item = new ListViewItem(maSP);
+            item.SubItems.Add(loaiSP);
+            item.SubItems.Add(tenSP);
+            item.SubItems.Add(soLuong.ToString());
+            item.SubItems.Add(donGia.ToString("N2")); // Định dạng số thập phân
+            item.SubItems.Add(thanhTien.ToString("N2")); // Thành tiền
+
+            lsv_Manager_HDmua.Items.Add(item);
+
+            // Sau khi thêm, reset các ô nhập liệu
+            tb_Manager_HDmua_IdProduct.Text = string.Empty;
+            cb_Manager_HDmua_ProductType.SelectedIndex = -1;
+            cb_Manager_HDmua_ProductName.DataSource = null;
+            txb_Manager_HDmua_Quantity.Text = string.Empty;
+            tb_Manager_HDmua_UnitPrice.Text = string.Empty;
+            tb_Manager_HDmua_Cash.Text = "0";
+
+            CalculateTotal_mua();
+        }
+        private void CalculateTotal_mua()
+        {
+            decimal total = 0;
+
+            // Duyệt qua các dòng trong ListView
+            foreach (ListViewItem item in lsv_Manager_HDmua.Items)
+            {
+                // Lấy giá trị cột "Thành tiền" (giả sử cột này nằm ở vị trí thứ 7, index = 6)
+                if (decimal.TryParse(item.SubItems[5].Text, out decimal thanhTien))
+                {
+                    total += thanhTien;
+                }
+            }
+
+            // Hiển thị tổng tiền trong TextBox
+            tb_Manager_HDmua_Total.Text = total.ToString("N2"); // Định dạng số thập phân
+        }
+
     }
 }
 

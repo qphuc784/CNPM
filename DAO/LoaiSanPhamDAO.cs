@@ -56,5 +56,19 @@ namespace CuaHangDaQuy.DAO
 
             return listdonGiaBan;
         }
+        public List<string> GetDonGiaMua(int idloai)
+        {
+            List<string> listdonGiaMua = new List<string>();
+            string query = "USP_GetDonGiaMua @idloai ";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { idloai });
+
+            foreach (DataRow row in data.Rows)
+            {
+                string donGiaMua = row["DonGiaMua"].ToString();
+                listdonGiaMua.Add(donGiaMua);
+            }
+
+            return listdonGiaMua;
+        }
     }
 }

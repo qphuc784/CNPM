@@ -9,8 +9,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 using System.Xml.Linq;
 
 namespace CNPM
@@ -21,8 +19,9 @@ namespace CNPM
         public NhanVien MatKhauNhanVien
         {
             get => matkhauNhanVien;
-            set { matkhauNhanVien = value;}
+            set { matkhauNhanVien = value; }
         }
+
         public DoiMatKhau(NhanVien mk)
         {
             InitializeComponent();
@@ -36,31 +35,40 @@ namespace CNPM
 
         private void Button_DoiMatKhau_Ok_Click(object sender, EventArgs e)
         {
+            string currentPassword = TextBox_DoiMatKhau_MatKhauhientai.Text.Trim();
+            string newPassword = TextBox_DoiMatKhau_matkhaumoi.Text.Trim();
+            string confirmPassword = TextBox_DoiMatKhau_xacnhanmk.Text.Trim();
+
+            if (string.IsNullOrWhiteSpace(currentPassword) ||
+                string.IsNullOrWhiteSpace(newPassword) ||
+                string.IsNullOrWhiteSpace(confirmPassword))
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin.");
+                return;
+            }
+
+            if (string.CompareOrdinal(matkhauNhanVien.MatKhau, currentPassword) != 0)
+            {
+                MessageBox.Show("Mật khẩu hiện tại không đúng.");
+                return;
+            }
+
+            if (!string.Equals(newPassword, confirmPassword))
+            {
+                MessageBox.Show("Mật khẩu mới và xác nhận mật khẩu không khớp.");
+                return;
+            }
+
             int id = matkhauNhanVien.ID;
-            string pass = TextBox_DoiMatKhau_matkhaumoi.Text;
-            if (string.IsNullOrWhiteSpace(TextBox_DoiMatKhau_MatKhauhientai.Text) ||
-                string.IsNullOrWhiteSpace(TextBox_DoiMatKhau_matkhaumoi.Text) ||
-                string.IsNullOrWhiteSpace(TextBox_DoiMatKhau_xacnhanmk.Text))
-            {
-                MessageBox.Show("Nhập đầy đủ thông tin");
-                return;
-            }
+            bool result = NhanVienDAO.Instance.changePassWord(id, newPassword);
 
-            if (string.CompareOrdinal(matkhauNhanVien.MatKhau, TextBox_DoiMatKhau_MatKhauhientai.Text) != 0)
-            {
-                MessageBox.Show("Mat khau hien tai sai");
-                return;
-            }
-
-            bool result = NhanVienDAO.Instance.changePassWord(id, pass);
             if (!result)
             {
-                MessageBox.Show("Đổi mật khẩu không thành công");
+                MessageBox.Show("Đổi mật khẩu không thành công. Vui lòng thử lại.");
             }
             else
             {
-
-                MessageBox.Show("Đổi mật khẩu thành công");
+                MessageBox.Show("Đổi mật khẩu thành công.");
                 this.Close();
             }
         }

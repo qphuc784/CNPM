@@ -90,7 +90,7 @@ namespace CuaHangDaQuy.DAO
             foreach (DataRow row in result.Rows)
             {
                 if (string.CompareOrdinal(row["TaiKhoan"].ToString(),username) == 0)
-                {
+                {   
                     result2 = true;
                 }
                 
