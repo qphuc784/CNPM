@@ -53,13 +53,13 @@
             this.ControlBox_loginForm_X.BackColor = System.Drawing.Color.LightCoral;
             this.ControlBox_loginForm_X.IconColor = System.Drawing.Color.Black;
             this.ControlBox_loginForm_X.IconSize = 30F;
-            this.ControlBox_loginForm_X.Location = new System.Drawing.Point(396, 0);
-            this.ControlBox_loginForm_X.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.ControlBox_loginForm_X.Location = new System.Drawing.Point(544, 0);
+            this.ControlBox_loginForm_X.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.ControlBox_loginForm_X.Name = "ControlBox_loginForm_X";
             this.ControlBox_loginForm_X.OnHoverBackColor = System.Drawing.Color.Firebrick;
             this.ControlBox_loginForm_X.OnHoverIconColor = System.Drawing.Color.White;
             this.ControlBox_loginForm_X.OnPressedColor = System.Drawing.Color.LightCoral;
-            this.ControlBox_loginForm_X.Size = new System.Drawing.Size(53, 33);
+            this.ControlBox_loginForm_X.Size = new System.Drawing.Size(73, 50);
             this.ControlBox_loginForm_X.TabIndex = 0;
             this.ControlBox_loginForm_X.Click += new System.EventHandler(this.ControlBox_loginForm_X_Click);
             // 
@@ -74,14 +74,15 @@
             this.TextBox_loginForm_Username.FocusedBorderColor = System.Drawing.Color.DimGray;
             this.TextBox_loginForm_Username.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_loginForm_Username.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_loginForm_Username.Location = new System.Drawing.Point(49, 250);
-            this.TextBox_loginForm_Username.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextBox_loginForm_Username.Location = new System.Drawing.Point(67, 375);
+            this.TextBox_loginForm_Username.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TextBox_loginForm_Username.Name = "TextBox_loginForm_Username";
             this.TextBox_loginForm_Username.PasswordChar = '\0';
             this.TextBox_loginForm_Username.Radius = 5;
             this.TextBox_loginForm_Username.SelectedText = "";
-            this.TextBox_loginForm_Username.Size = new System.Drawing.Size(347, 44);
+            this.TextBox_loginForm_Username.Size = new System.Drawing.Size(477, 66);
             this.TextBox_loginForm_Username.TabIndex = 2;
+            this.TextBox_loginForm_Username.Text = "phuc";
             // 
             // TextBox_loginForm_Password
             // 
@@ -94,23 +95,25 @@
             this.TextBox_loginForm_Password.FocusedBorderColor = System.Drawing.Color.DimGray;
             this.TextBox_loginForm_Password.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_loginForm_Password.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_loginForm_Password.Location = new System.Drawing.Point(49, 330);
-            this.TextBox_loginForm_Password.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextBox_loginForm_Password.Location = new System.Drawing.Point(67, 495);
+            this.TextBox_loginForm_Password.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.TextBox_loginForm_Password.Name = "TextBox_loginForm_Password";
             this.TextBox_loginForm_Password.PasswordChar = '●';
             this.TextBox_loginForm_Password.Radius = 5;
             this.TextBox_loginForm_Password.SelectedText = "";
-            this.TextBox_loginForm_Password.Size = new System.Drawing.Size(347, 44);
+            this.TextBox_loginForm_Password.Size = new System.Drawing.Size(477, 66);
             this.TextBox_loginForm_Password.TabIndex = 3;
+            this.TextBox_loginForm_Password.Text = "123";
             this.TextBox_loginForm_Password.UseSystemPasswordChar = true;
             // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel1.Location = new System.Drawing.Point(44, 228);
+            this.gunaLabel1.Location = new System.Drawing.Point(60, 342);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(75, 20);
+            this.gunaLabel1.Size = new System.Drawing.Size(106, 30);
             this.gunaLabel1.TabIndex = 4;
             this.gunaLabel1.Text = "Username";
             // 
@@ -118,9 +121,10 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel2.Location = new System.Drawing.Point(44, 307);
+            this.gunaLabel2.Location = new System.Drawing.Point(60, 460);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(70, 20);
+            this.gunaLabel2.Size = new System.Drawing.Size(99, 30);
             this.gunaLabel2.TabIndex = 5;
             this.gunaLabel2.Text = "Password";
             // 
@@ -130,19 +134,20 @@
             this.Switch_loginForm_ShowPassword.CheckedOffColor = System.Drawing.Color.Silver;
             this.Switch_loginForm_ShowPassword.CheckedOnColor = System.Drawing.Color.DimGray;
             this.Switch_loginForm_ShowPassword.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.Switch_loginForm_ShowPassword.Location = new System.Drawing.Point(356, 382);
-            this.Switch_loginForm_ShowPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Switch_loginForm_ShowPassword.Location = new System.Drawing.Point(490, 573);
+            this.Switch_loginForm_ShowPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Switch_loginForm_ShowPassword.Name = "Switch_loginForm_ShowPassword";
-            this.Switch_loginForm_ShowPassword.Size = new System.Drawing.Size(40, 26);
+            this.Switch_loginForm_ShowPassword.Size = new System.Drawing.Size(55, 39);
             this.Switch_loginForm_ShowPassword.TabIndex = 2;
             // 
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(229, 385);
+            this.gunaLabel3.Location = new System.Drawing.Point(315, 578);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(110, 20);
+            this.gunaLabel3.Size = new System.Drawing.Size(155, 30);
             this.gunaLabel3.TabIndex = 7;
             this.gunaLabel3.Text = "Show Password";
             // 
@@ -160,8 +165,8 @@
             this.Button_loginForm_LOGIN.ForeColor = System.Drawing.Color.White;
             this.Button_loginForm_LOGIN.Image = null;
             this.Button_loginForm_LOGIN.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_loginForm_LOGIN.Location = new System.Drawing.Point(47, 422);
-            this.Button_loginForm_LOGIN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Button_loginForm_LOGIN.Location = new System.Drawing.Point(65, 633);
+            this.Button_loginForm_LOGIN.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Button_loginForm_LOGIN.Name = "Button_loginForm_LOGIN";
             this.Button_loginForm_LOGIN.OnHoverBaseColor = System.Drawing.SystemColors.WindowFrame;
             this.Button_loginForm_LOGIN.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -169,7 +174,7 @@
             this.Button_loginForm_LOGIN.OnHoverImage = null;
             this.Button_loginForm_LOGIN.OnPressedColor = System.Drawing.Color.Black;
             this.Button_loginForm_LOGIN.Radius = 5;
-            this.Button_loginForm_LOGIN.Size = new System.Drawing.Size(160, 38);
+            this.Button_loginForm_LOGIN.Size = new System.Drawing.Size(220, 57);
             this.Button_loginForm_LOGIN.TabIndex = 8;
             this.Button_loginForm_LOGIN.Text = "LOGIN";
             this.Button_loginForm_LOGIN.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -191,8 +196,8 @@
             this.Button_loginForm_SIGNUP.ForeColor = System.Drawing.Color.Black;
             this.Button_loginForm_SIGNUP.Image = null;
             this.Button_loginForm_SIGNUP.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_loginForm_SIGNUP.Location = new System.Drawing.Point(234, 422);
-            this.Button_loginForm_SIGNUP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Button_loginForm_SIGNUP.Location = new System.Drawing.Point(322, 633);
+            this.Button_loginForm_SIGNUP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Button_loginForm_SIGNUP.Name = "Button_loginForm_SIGNUP";
             this.Button_loginForm_SIGNUP.OnHoverBaseColor = System.Drawing.SystemColors.ScrollBar;
             this.Button_loginForm_SIGNUP.OnHoverBorderColor = System.Drawing.SystemColors.ScrollBar;
@@ -200,7 +205,7 @@
             this.Button_loginForm_SIGNUP.OnHoverImage = null;
             this.Button_loginForm_SIGNUP.OnPressedColor = System.Drawing.Color.DarkGray;
             this.Button_loginForm_SIGNUP.Radius = 5;
-            this.Button_loginForm_SIGNUP.Size = new System.Drawing.Size(160, 38);
+            this.Button_loginForm_SIGNUP.Size = new System.Drawing.Size(220, 57);
             this.Button_loginForm_SIGNUP.TabIndex = 9;
             this.Button_loginForm_SIGNUP.Text = "SIGN UP";
             this.Button_loginForm_SIGNUP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -213,10 +218,10 @@
             this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gunaCirclePictureBox1.ErrorImage = null;
             this.gunaCirclePictureBox1.InitialImage = null;
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(-1, 491);
-            this.gunaCirclePictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(-1, 736);
+            this.gunaCirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(451, 30);
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(620, 45);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaCirclePictureBox1.TabIndex = 10;
             this.gunaCirclePictureBox1.TabStop = false;
@@ -229,9 +234,9 @@
             this.gunaPanel1.Controls.Add(this.ControlBox_loginForm_X);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(450, 210);
+            this.gunaPanel1.Size = new System.Drawing.Size(619, 315);
             this.gunaPanel1.TabIndex = 12;
             // 
             // PictureBox_loginForm_avt
@@ -240,19 +245,19 @@
             this.PictureBox_loginForm_avt.BaseColor = System.Drawing.Color.Transparent;
             this.PictureBox_loginForm_avt.Image = global::CNPM.Properties.Resources.avt_user;
             this.PictureBox_loginForm_avt.InitialImage = global::CNPM.Properties.Resources.avt_user;
-            this.PictureBox_loginForm_avt.Location = new System.Drawing.Point(146, 44);
-            this.PictureBox_loginForm_avt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.PictureBox_loginForm_avt.Location = new System.Drawing.Point(201, 66);
+            this.PictureBox_loginForm_avt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.PictureBox_loginForm_avt.Name = "PictureBox_loginForm_avt";
-            this.PictureBox_loginForm_avt.Size = new System.Drawing.Size(156, 128);
+            this.PictureBox_loginForm_avt.Size = new System.Drawing.Size(214, 192);
             this.PictureBox_loginForm_avt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PictureBox_loginForm_avt.TabIndex = 11;
             this.PictureBox_loginForm_avt.TabStop = false;
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 519);
+            this.ClientSize = new System.Drawing.Size(619, 778);
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.gunaCirclePictureBox1);
             this.Controls.Add(this.Button_loginForm_SIGNUP);
@@ -265,7 +270,7 @@
             this.Controls.Add(this.TextBox_loginForm_Username);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Log in";

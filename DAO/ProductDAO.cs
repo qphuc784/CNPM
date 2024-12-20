@@ -53,7 +53,7 @@ namespace CuaHangDaQuy.DAO
         }
         public bool AddSanPham(string TenSanPham, string TenLoai, int SoLuong, float Dongia)
         {
-            string query = "USP_AddSanPham @TenSanPham , @TenLoai , @SoLuong , @Dongia";
+            string query = "USP_AddSanPham @TenSanPham , @TenLoai , @SoLuong , @Dongia ";
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { TenSanPham, TenLoai, SoLuong, Dongia });
             return result > 0;
         }
@@ -71,13 +71,13 @@ namespace CuaHangDaQuy.DAO
         }
         public bool DeleteSanPhamByTenSp(string TenSanPham)
         {
-            string query = "USP_DeleteSanPhamByTenSp @TenSanPham";
+            string query = "USP_DeleteSanPhamByTenSp @TenSanPham ";
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { TenSanPham });
             return result > 0;
         }
         public bool UpdateSanPham(int ID, string TenSanPham, int SoLuong)
         {
-            string query = "USP_UpdateSanPham @ID , @TenSanPham , @SoLuong";
+            string query = "USP_UpdateSanPham @ID , @TenSanPham , @SoLuong ";
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { ID, TenSanPham, SoLuong, });
             return result > 0;
         }
@@ -109,7 +109,19 @@ namespace CuaHangDaQuy.DAO
             }
             return listSP;
         }
-    
+
+        public int GetSoLuongByID(string idSanPham)
+        {
+            string query = "SELECT SoLuong FROM SanPham WHERE ID = @idSanPham ";
+            object result = DataProvider.Instance.ExcuteScalar(query, new object[] { idSanPham });
+
+            if (result != null && int.TryParse(result.ToString(), out int soLuong))
+            {
+                return soLuong;
+            }
+
+            return 0; // Trả về 0 nếu không tìm thấy hoặc không có dữ liệu
+        }
 
     }
 }

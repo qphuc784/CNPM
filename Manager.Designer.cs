@@ -123,7 +123,6 @@
             this.lsv_Manager_HDDV = new System.Windows.Forms.ListView();
             this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -139,10 +138,8 @@
             this.gunaTextBox35 = new Guna.UI.WinForms.GunaTextBox();
             this.tb_Manager_HDDV_UnitPrice = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox40 = new Guna.UI.WinForms.GunaTextBox();
-            this.cb_Manager_HDDV_TrangThai = new System.Windows.Forms.ComboBox();
             this.gunaTextBox41 = new Guna.UI.WinForms.GunaTextBox();
             this.tb_Manager_HDDV_Cash = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaTextBox43 = new Guna.UI.WinForms.GunaTextBox();
             this.txb_Manager_HDDV_Quantity = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox45 = new Guna.UI.WinForms.GunaTextBox();
             this.btn_Manager_HDDV_AddServicebill = new Guna.UI.WinForms.GunaButton();
@@ -356,6 +353,7 @@
             this.btn_Manager_HDban_ThemHoaDon.TabIndex = 31;
             this.btn_Manager_HDban_ThemHoaDon.Text = "Thêm Hóa Đơn";
             this.btn_Manager_HDban_ThemHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Manager_HDban_ThemHoaDon.Click += new System.EventHandler(this.btn_Manager_HDban_ThemHoaDon_Click);
             // 
             // gunaTextBox49
             // 
@@ -1944,7 +1942,6 @@
             this.lsv_Manager_HDDV.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader9,
             this.columnHeader10,
-            this.columnHeader11,
             this.columnHeader12,
             this.columnHeader14,
             this.columnHeader15,
@@ -1969,11 +1966,6 @@
             // 
             this.columnHeader10.Text = "Loại DV";
             this.columnHeader10.Width = 113;
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "TrangThai";
-            this.columnHeader11.Width = 153;
             // 
             // columnHeader12
             // 
@@ -2030,11 +2022,9 @@
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox35);
             this.flowLayoutPanel6.Controls.Add(this.tb_Manager_HDDV_UnitPrice);
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox40);
-            this.flowLayoutPanel6.Controls.Add(this.cb_Manager_HDDV_TrangThai);
+            this.flowLayoutPanel6.Controls.Add(this.txb_Manager_HDDV_Quantity);
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox41);
             this.flowLayoutPanel6.Controls.Add(this.tb_Manager_HDDV_Cash);
-            this.flowLayoutPanel6.Controls.Add(this.gunaTextBox43);
-            this.flowLayoutPanel6.Controls.Add(this.txb_Manager_HDDV_Quantity);
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox45);
             this.flowLayoutPanel6.Controls.Add(this.btn_Manager_HDDV_AddServicebill);
             this.flowLayoutPanel6.Location = new System.Drawing.Point(0, 457);
@@ -2229,18 +2219,8 @@
             this.gunaTextBox40.SelectedText = "";
             this.gunaTextBox40.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox40.TabIndex = 14;
-            this.gunaTextBox40.Text = "Trạng thái";
+            this.gunaTextBox40.Text = "Số Lượng";
             this.gunaTextBox40.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // cb_Manager_HDDV_TrangThai
-            // 
-            this.cb_Manager_HDDV_TrangThai.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_Manager_HDDV_TrangThai.FormattingEnabled = true;
-            this.cb_Manager_HDDV_TrangThai.Location = new System.Drawing.Point(247, 142);
-            this.cb_Manager_HDDV_TrangThai.Margin = new System.Windows.Forms.Padding(4);
-            this.cb_Manager_HDDV_TrangThai.Name = "cb_Manager_HDDV_TrangThai";
-            this.cb_Manager_HDDV_TrangThai.Size = new System.Drawing.Size(295, 39);
-            this.cb_Manager_HDDV_TrangThai.TabIndex = 24;
             // 
             // gunaTextBox41
             // 
@@ -2254,7 +2234,7 @@
             this.gunaTextBox41.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox41.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox41.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox41.Location = new System.Drawing.Point(550, 143);
+            this.gunaTextBox41.Location = new System.Drawing.Point(552, 143);
             this.gunaTextBox41.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox41.Name = "gunaTextBox41";
             this.gunaTextBox41.PasswordChar = '\0';
@@ -2277,7 +2257,7 @@
             this.tb_Manager_HDDV_Cash.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDDV_Cash.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDDV_Cash.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDDV_Cash.Location = new System.Drawing.Point(1003, 143);
+            this.tb_Manager_HDDV_Cash.Location = new System.Drawing.Point(1005, 143);
             this.tb_Manager_HDDV_Cash.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDDV_Cash.Name = "tb_Manager_HDDV_Cash";
             this.tb_Manager_HDDV_Cash.PasswordChar = '\0';
@@ -2285,29 +2265,6 @@
             this.tb_Manager_HDDV_Cash.Size = new System.Drawing.Size(431, 59);
             this.tb_Manager_HDDV_Cash.TabIndex = 17;
             this.tb_Manager_HDDV_Cash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // gunaTextBox43
-            // 
-            this.gunaTextBox43.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox43.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox43.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox43.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox43.Enabled = false;
-            this.gunaTextBox43.FocusedBaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox43.FocusedBorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox43.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox43.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaTextBox43.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox43.Location = new System.Drawing.Point(4, 212);
-            this.gunaTextBox43.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gunaTextBox43.Name = "gunaTextBox43";
-            this.gunaTextBox43.PasswordChar = '\0';
-            this.gunaTextBox43.ReadOnly = true;
-            this.gunaTextBox43.SelectedText = "";
-            this.gunaTextBox43.Size = new System.Drawing.Size(235, 59);
-            this.gunaTextBox43.TabIndex = 18;
-            this.gunaTextBox43.Text = "Số lượng";
-            this.gunaTextBox43.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txb_Manager_HDDV_Quantity
             // 
@@ -2320,7 +2277,7 @@
             this.txb_Manager_HDDV_Quantity.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txb_Manager_HDDV_Quantity.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Manager_HDDV_Quantity.ForeColor = System.Drawing.Color.Black;
-            this.txb_Manager_HDDV_Quantity.Location = new System.Drawing.Point(247, 212);
+            this.txb_Manager_HDDV_Quantity.Location = new System.Drawing.Point(247, 143);
             this.txb_Manager_HDDV_Quantity.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txb_Manager_HDDV_Quantity.Name = "txb_Manager_HDDV_Quantity";
             this.txb_Manager_HDDV_Quantity.PasswordChar = '\0';
@@ -2342,12 +2299,12 @@
             this.gunaTextBox45.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox45.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox45.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox45.Location = new System.Drawing.Point(552, 212);
+            this.gunaTextBox45.Location = new System.Drawing.Point(4, 212);
             this.gunaTextBox45.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox45.Name = "gunaTextBox45";
             this.gunaTextBox45.PasswordChar = '\0';
             this.gunaTextBox45.SelectedText = "";
-            this.gunaTextBox45.Size = new System.Drawing.Size(450, 59);
+            this.gunaTextBox45.Size = new System.Drawing.Size(998, 59);
             this.gunaTextBox45.TabIndex = 20;
             this.gunaTextBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -3465,7 +3422,6 @@
         private System.Windows.Forms.ListView lsv_Manager_HDDV;
         private System.Windows.Forms.ColumnHeader columnHeader9;
         private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.ColumnHeader columnHeader11;
         private System.Windows.Forms.ColumnHeader columnHeader12;
         private System.Windows.Forms.ColumnHeader columnHeader14;
         private System.Windows.Forms.ColumnHeader columnHeader15;
@@ -3482,7 +3438,6 @@
         private Guna.UI.WinForms.GunaTextBox gunaTextBox40;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox41;
         private Guna.UI.WinForms.GunaTextBox tb_Manager_HDDV_Cash;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox43;
         private Guna.UI.WinForms.GunaTextBox txb_Manager_HDDV_Quantity;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox45;
         private Guna.UI.WinForms.GunaButton btn_Manager_HDDV_AddServicebill;
@@ -3552,7 +3507,6 @@
         private System.Windows.Forms.ComboBox cb_Manager_HDban_ProductType;
         private System.Windows.Forms.ComboBox cb_Manager_HDban_ProductName;
         private System.Windows.Forms.ComboBox cb_Manager_HDDV_ServiceType;
-        private System.Windows.Forms.ComboBox cb_Manager_HDDV_TrangThai;
         private System.Windows.Forms.ComboBox cb_Manager_HDmua_ProductType;
         private System.Windows.Forms.ComboBox cb_Manager_HDmua_ProductName;
         private System.Windows.Forms.ToolStripMenuItem phiếuDịchVụToolStripMenuItem;
