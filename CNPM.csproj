@@ -81,6 +81,12 @@
     <Compile Include="Addproductbill.Designer.cs">
       <DependentUpon>Addproductbill.cs</DependentUpon>
     </Compile>
+	  <Compile Include="AddProductType.cs">
+		  <SubType>Form</SubType>
+	  </Compile>
+	  <Compile Include="AddProductType.Designer.cs">
+		  <DependentUpon>AddProductType.cs</DependentUpon>
+	  </Compile>
     <Compile Include="AddService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +199,12 @@
     <Compile Include="UCproductbill.Designer.cs">
       <DependentUpon>UCproductbill.cs</DependentUpon>
     </Compile>
+    <Compile Include="UCProductType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCProductType.Designer.cs">
+      <DependentUpon>UCProductType.cs</DependentUpon>
+    </Compile>
     <Compile Include="UCservice.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -226,6 +238,9 @@
     <EmbeddedResource Include="Addproductbill.resx">
       <DependentUpon>Addproductbill.cs</DependentUpon>
     </EmbeddedResource>
+	  <EmbeddedResource Include="AddProductType.resx">
+		  <DependentUpon>AddProductType.cs</DependentUpon>
+	  </EmbeddedResource>
     <EmbeddedResource Include="AddService.resx">
       <DependentUpon>AddService.cs</DependentUpon>
     </EmbeddedResource>
@@ -280,6 +295,9 @@
     </Compile>
     <EmbeddedResource Include="UCproductbill.resx">
       <DependentUpon>UCproductbill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCProductType.resx">
+      <DependentUpon>UCProductType.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UCservice.resx">
       <DependentUpon>UCservice.cs</DependentUpon>
