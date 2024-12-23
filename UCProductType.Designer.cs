@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.TextBox_UCproductType_timkiem = new Guna.UI.WinForms.GunaTextBox();
             this.Button_UCproductType_OK = new Guna.UI.WinForms.GunaButton();
@@ -48,9 +48,10 @@
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Verdana", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.gunaLabel2.Location = new System.Drawing.Point(57, 27);
+            this.gunaLabel2.Location = new System.Drawing.Point(78, 40);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(99, 20);
+            this.gunaLabel2.Size = new System.Drawing.Size(138, 29);
             this.gunaLabel2.TabIndex = 2;
             this.gunaLabel2.Text = "Tìm Kiếm:";
             // 
@@ -64,12 +65,13 @@
             this.TextBox_UCproductType_timkiem.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_UCproductType_timkiem.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCproductType_timkiem.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TextBox_UCproductType_timkiem.Location = new System.Drawing.Point(162, 19);
+            this.TextBox_UCproductType_timkiem.Location = new System.Drawing.Point(223, 28);
+            this.TextBox_UCproductType_timkiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBox_UCproductType_timkiem.Name = "TextBox_UCproductType_timkiem";
             this.TextBox_UCproductType_timkiem.PasswordChar = '\0';
             this.TextBox_UCproductType_timkiem.Radius = 10;
             this.TextBox_UCproductType_timkiem.SelectedText = "";
-            this.TextBox_UCproductType_timkiem.Size = new System.Drawing.Size(355, 33);
+            this.TextBox_UCproductType_timkiem.Size = new System.Drawing.Size(488, 63);
             this.TextBox_UCproductType_timkiem.TabIndex = 10;
             this.TextBox_UCproductType_timkiem.Text = "Tên loại sản phẩm";
             // 
@@ -86,15 +88,16 @@
             this.Button_UCproductType_OK.ForeColor = System.Drawing.Color.White;
             this.Button_UCproductType_OK.Image = null;
             this.Button_UCproductType_OK.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCproductType_OK.Location = new System.Drawing.Point(541, 7);
+            this.Button_UCproductType_OK.Location = new System.Drawing.Point(744, 10);
+            this.Button_UCproductType_OK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCproductType_OK.Name = "Button_UCproductType_OK";
             this.Button_UCproductType_OK.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.Button_UCproductType_OK.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproductType_OK.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCproductType_OK.OnHoverImage = null;
             this.Button_UCproductType_OK.OnPressedColor = System.Drawing.Color.DimGray;
-            this.Button_UCproductType_OK.Radius = 20;
-            this.Button_UCproductType_OK.Size = new System.Drawing.Size(71, 45);
+            this.Button_UCproductType_OK.Radius = 10;
+            this.Button_UCproductType_OK.Size = new System.Drawing.Size(98, 68);
             this.Button_UCproductType_OK.TabIndex = 28;
             this.Button_UCproductType_OK.Text = "Ok";
             this.Button_UCproductType_OK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -113,15 +116,16 @@
             this.Button_UCproductType_Them.ForeColor = System.Drawing.Color.White;
             this.Button_UCproductType_Them.Image = null;
             this.Button_UCproductType_Them.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCproductType_Them.Location = new System.Drawing.Point(637, 7);
+            this.Button_UCproductType_Them.Location = new System.Drawing.Point(876, 10);
+            this.Button_UCproductType_Them.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCproductType_Them.Name = "Button_UCproductType_Them";
             this.Button_UCproductType_Them.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCproductType_Them.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproductType_Them.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCproductType_Them.OnHoverImage = null;
             this.Button_UCproductType_Them.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCproductType_Them.Radius = 20;
-            this.Button_UCproductType_Them.Size = new System.Drawing.Size(101, 45);
+            this.Button_UCproductType_Them.Radius = 10;
+            this.Button_UCproductType_Them.Size = new System.Drawing.Size(139, 68);
             this.Button_UCproductType_Them.TabIndex = 29;
             this.Button_UCproductType_Them.Text = "Thêm";
             this.Button_UCproductType_Them.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -140,15 +144,16 @@
             this.Button_UCproductType_Xoa.ForeColor = System.Drawing.Color.White;
             this.Button_UCproductType_Xoa.Image = null;
             this.Button_UCproductType_Xoa.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCproductType_Xoa.Location = new System.Drawing.Point(768, 7);
+            this.Button_UCproductType_Xoa.Location = new System.Drawing.Point(1056, 10);
+            this.Button_UCproductType_Xoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCproductType_Xoa.Name = "Button_UCproductType_Xoa";
             this.Button_UCproductType_Xoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCproductType_Xoa.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproductType_Xoa.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCproductType_Xoa.OnHoverImage = null;
             this.Button_UCproductType_Xoa.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCproductType_Xoa.Radius = 20;
-            this.Button_UCproductType_Xoa.Size = new System.Drawing.Size(101, 45);
+            this.Button_UCproductType_Xoa.Radius = 10;
+            this.Button_UCproductType_Xoa.Size = new System.Drawing.Size(139, 68);
             this.Button_UCproductType_Xoa.TabIndex = 30;
             this.Button_UCproductType_Xoa.Text = " Xóa";
             this.Button_UCproductType_Xoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -167,15 +172,16 @@
             this.Button_UCproductType_Sua.ForeColor = System.Drawing.Color.White;
             this.Button_UCproductType_Sua.Image = null;
             this.Button_UCproductType_Sua.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCproductType_Sua.Location = new System.Drawing.Point(906, 7);
+            this.Button_UCproductType_Sua.Location = new System.Drawing.Point(1246, 10);
+            this.Button_UCproductType_Sua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCproductType_Sua.Name = "Button_UCproductType_Sua";
             this.Button_UCproductType_Sua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCproductType_Sua.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproductType_Sua.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCproductType_Sua.OnHoverImage = null;
             this.Button_UCproductType_Sua.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCproductType_Sua.Radius = 20;
-            this.Button_UCproductType_Sua.Size = new System.Drawing.Size(101, 45);
+            this.Button_UCproductType_Sua.Radius = 10;
+            this.Button_UCproductType_Sua.Size = new System.Drawing.Size(139, 68);
             this.Button_UCproductType_Sua.TabIndex = 31;
             this.Button_UCproductType_Sua.Text = "Thay Đổi";
             this.Button_UCproductType_Sua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -183,39 +189,40 @@
             // 
             // DataGridView_UCproducttype
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.DataGridView_UCproducttype.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.DataGridView_UCproducttype.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DataGridView_UCproducttype.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DataGridView_UCproducttype.BackgroundColor = System.Drawing.Color.White;
             this.DataGridView_UCproducttype.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.DataGridView_UCproducttype.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridView_UCproducttype.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridView_UCproducttype.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridView_UCproducttype.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DataGridView_UCproducttype.ColumnHeadersHeight = 32;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridView_UCproducttype.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridView_UCproducttype.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView_UCproducttype.EnableHeadersVisualStyles = false;
             this.DataGridView_UCproducttype.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridView_UCproducttype.Location = new System.Drawing.Point(19, 56);
+            this.DataGridView_UCproducttype.Location = new System.Drawing.Point(26, 84);
+            this.DataGridView_UCproducttype.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DataGridView_UCproducttype.Name = "DataGridView_UCproducttype";
             this.DataGridView_UCproducttype.RowHeadersVisible = false;
             this.DataGridView_UCproducttype.RowHeadersWidth = 62;
             this.DataGridView_UCproducttype.RowTemplate.Height = 28;
             this.DataGridView_UCproducttype.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView_UCproducttype.Size = new System.Drawing.Size(1014, 639);
+            this.DataGridView_UCproducttype.Size = new System.Drawing.Size(1394, 958);
             this.DataGridView_UCproducttype.TabIndex = 32;
             this.DataGridView_UCproducttype.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.DataGridView_UCproducttype.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -244,16 +251,17 @@
             // 
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = global::CNPM.Properties.Resources.search_icon;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(30, 27);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(41, 40);
+            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(32, 25);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(44, 38);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gunaPictureBox1.TabIndex = 9;
             this.gunaPictureBox1.TabStop = false;
             // 
             // UCProductType
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.DataGridView_UCproducttype);
             this.Controls.Add(this.Button_UCproductType_Sua);
@@ -263,8 +271,9 @@
             this.Controls.Add(this.TextBox_UCproductType_timkiem);
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.gunaLabel2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UCProductType";
-            this.Size = new System.Drawing.Size(1053, 751);
+            this.Size = new System.Drawing.Size(1448, 1126);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_UCproducttype)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);

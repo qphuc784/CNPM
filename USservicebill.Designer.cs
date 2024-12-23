@@ -58,11 +58,12 @@
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Verdana", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.gunaLabel2.Location = new System.Drawing.Point(69, 30);
+            this.gunaLabel2.Location = new System.Drawing.Point(84, 36);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(119, 25);
+            this.gunaLabel2.Size = new System.Drawing.Size(124, 32);
             this.gunaLabel2.TabIndex = 27;
             this.gunaLabel2.Text = "Tìm kiếm :";
             // 
@@ -101,13 +102,14 @@
             this.DataGridView_UCservicebill.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView_UCservicebill.EnableHeadersVisualStyles = false;
             this.DataGridView_UCservicebill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridView_UCservicebill.Location = new System.Drawing.Point(43, 210);
+            this.DataGridView_UCservicebill.Location = new System.Drawing.Point(53, 252);
+            this.DataGridView_UCservicebill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DataGridView_UCservicebill.Name = "DataGridView_UCservicebill";
             this.DataGridView_UCservicebill.RowHeadersVisible = false;
             this.DataGridView_UCservicebill.RowHeadersWidth = 62;
             this.DataGridView_UCservicebill.RowTemplate.Height = 28;
             this.DataGridView_UCservicebill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView_UCservicebill.Size = new System.Drawing.Size(1092, 708);
+            this.DataGridView_UCservicebill.Size = new System.Drawing.Size(1335, 850);
             this.DataGridView_UCservicebill.TabIndex = 23;
             this.DataGridView_UCservicebill.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.DataGridView_UCservicebill.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -177,19 +179,20 @@
             this.Button_UCservicebill_Sua.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCservicebill_Sua.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCservicebill_Sua.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCservicebill_Sua.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCservicebill_Sua.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCservicebill_Sua.ForeColor = System.Drawing.Color.White;
             this.Button_UCservicebill_Sua.Image = null;
             this.Button_UCservicebill_Sua.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCservicebill_Sua.Location = new System.Drawing.Point(1021, 13);
+            this.Button_UCservicebill_Sua.Location = new System.Drawing.Point(1248, 16);
+            this.Button_UCservicebill_Sua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCservicebill_Sua.Name = "Button_UCservicebill_Sua";
             this.Button_UCservicebill_Sua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCservicebill_Sua.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCservicebill_Sua.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCservicebill_Sua.OnHoverImage = null;
             this.Button_UCservicebill_Sua.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCservicebill_Sua.Radius = 20;
-            this.Button_UCservicebill_Sua.Size = new System.Drawing.Size(114, 56);
+            this.Button_UCservicebill_Sua.Radius = 10;
+            this.Button_UCservicebill_Sua.Size = new System.Drawing.Size(139, 67);
             this.Button_UCservicebill_Sua.TabIndex = 32;
             this.Button_UCservicebill_Sua.Text = "<> Sửa";
             this.Button_UCservicebill_Sua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -203,19 +206,20 @@
             this.Button_UCservicebill_Xoa.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCservicebill_Xoa.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCservicebill_Xoa.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCservicebill_Xoa.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCservicebill_Xoa.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCservicebill_Xoa.ForeColor = System.Drawing.Color.White;
             this.Button_UCservicebill_Xoa.Image = null;
             this.Button_UCservicebill_Xoa.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCservicebill_Xoa.Location = new System.Drawing.Point(872, 13);
+            this.Button_UCservicebill_Xoa.Location = new System.Drawing.Point(1066, 16);
+            this.Button_UCservicebill_Xoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCservicebill_Xoa.Name = "Button_UCservicebill_Xoa";
             this.Button_UCservicebill_Xoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCservicebill_Xoa.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCservicebill_Xoa.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCservicebill_Xoa.OnHoverImage = null;
             this.Button_UCservicebill_Xoa.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCservicebill_Xoa.Radius = 20;
-            this.Button_UCservicebill_Xoa.Size = new System.Drawing.Size(114, 56);
+            this.Button_UCservicebill_Xoa.Radius = 10;
+            this.Button_UCservicebill_Xoa.Size = new System.Drawing.Size(139, 67);
             this.Button_UCservicebill_Xoa.TabIndex = 31;
             this.Button_UCservicebill_Xoa.Text = "- Xóa";
             this.Button_UCservicebill_Xoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -224,9 +228,10 @@
             // 
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = global::CNPM.Properties.Resources.search_icon;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(41, 29);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(50, 35);
+            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(36, 31);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(44, 37);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gunaPictureBox1.TabIndex = 29;
             this.gunaPictureBox1.TabStop = false;
@@ -240,19 +245,20 @@
             this.Button_UCservicebill_OK.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCservicebill_OK.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCservicebill_OK.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCservicebill_OK.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCservicebill_OK.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCservicebill_OK.ForeColor = System.Drawing.Color.White;
             this.Button_UCservicebill_OK.Image = null;
             this.Button_UCservicebill_OK.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCservicebill_OK.Location = new System.Drawing.Point(616, 13);
+            this.Button_UCservicebill_OK.Location = new System.Drawing.Point(753, 16);
+            this.Button_UCservicebill_OK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCservicebill_OK.Name = "Button_UCservicebill_OK";
             this.Button_UCservicebill_OK.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.Button_UCservicebill_OK.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCservicebill_OK.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCservicebill_OK.OnHoverImage = null;
             this.Button_UCservicebill_OK.OnPressedColor = System.Drawing.Color.DimGray;
-            this.Button_UCservicebill_OK.Radius = 20;
-            this.Button_UCservicebill_OK.Size = new System.Drawing.Size(80, 56);
+            this.Button_UCservicebill_OK.Radius = 10;
+            this.Button_UCservicebill_OK.Size = new System.Drawing.Size(98, 67);
             this.Button_UCservicebill_OK.TabIndex = 33;
             this.Button_UCservicebill_OK.Text = "Ok";
             this.Button_UCservicebill_OK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -267,21 +273,23 @@
             this.TextBox_UCservicebill_thang.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_UCservicebill_thang.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCservicebill_thang.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TextBox_UCservicebill_thang.Location = new System.Drawing.Point(644, 145);
+            this.TextBox_UCservicebill_thang.Location = new System.Drawing.Point(787, 174);
+            this.TextBox_UCservicebill_thang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBox_UCservicebill_thang.Name = "TextBox_UCservicebill_thang";
             this.TextBox_UCservicebill_thang.PasswordChar = '\0';
             this.TextBox_UCservicebill_thang.Radius = 10;
             this.TextBox_UCservicebill_thang.SelectedText = "";
-            this.TextBox_UCservicebill_thang.Size = new System.Drawing.Size(65, 37);
+            this.TextBox_UCservicebill_thang.Size = new System.Drawing.Size(79, 50);
             this.TextBox_UCservicebill_thang.TabIndex = 43;
             // 
             // gunaLabel5
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(527, 149);
+            this.gunaLabel5.Location = new System.Drawing.Point(644, 179);
+            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(107, 28);
+            this.gunaLabel5.Size = new System.Drawing.Size(132, 32);
             this.gunaLabel5.TabIndex = 42;
             this.gunaLabel5.Text = "Tháng lập :";
             // 
@@ -295,12 +303,13 @@
             this.TextBox_UCservicebill_ngay.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_UCservicebill_ngay.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCservicebill_ngay.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TextBox_UCservicebill_ngay.Location = new System.Drawing.Point(642, 94);
+            this.TextBox_UCservicebill_ngay.Location = new System.Drawing.Point(785, 113);
+            this.TextBox_UCservicebill_ngay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBox_UCservicebill_ngay.Name = "TextBox_UCservicebill_ngay";
             this.TextBox_UCservicebill_ngay.PasswordChar = '\0';
             this.TextBox_UCservicebill_ngay.Radius = 10;
             this.TextBox_UCservicebill_ngay.SelectedText = "";
-            this.TextBox_UCservicebill_ngay.Size = new System.Drawing.Size(65, 37);
+            this.TextBox_UCservicebill_ngay.Size = new System.Drawing.Size(79, 50);
             this.TextBox_UCservicebill_ngay.TabIndex = 41;
             // 
             // TextBox_UCservicebill_ten_kh
@@ -313,21 +322,23 @@
             this.TextBox_UCservicebill_ten_kh.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_UCservicebill_ten_kh.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCservicebill_ten_kh.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TextBox_UCservicebill_ten_kh.Location = new System.Drawing.Point(207, 145);
+            this.TextBox_UCservicebill_ten_kh.Location = new System.Drawing.Point(253, 174);
+            this.TextBox_UCservicebill_ten_kh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBox_UCservicebill_ten_kh.Name = "TextBox_UCservicebill_ten_kh";
             this.TextBox_UCservicebill_ten_kh.PasswordChar = '\0';
             this.TextBox_UCservicebill_ten_kh.Radius = 10;
             this.TextBox_UCservicebill_ten_kh.SelectedText = "";
-            this.TextBox_UCservicebill_ten_kh.Size = new System.Drawing.Size(301, 37);
+            this.TextBox_UCservicebill_ten_kh.Size = new System.Drawing.Size(368, 50);
             this.TextBox_UCservicebill_ten_kh.TabIndex = 40;
             // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(527, 98);
+            this.gunaLabel4.Location = new System.Drawing.Point(644, 118);
+            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(105, 28);
+            this.gunaLabel4.Size = new System.Drawing.Size(128, 32);
             this.gunaLabel4.TabIndex = 38;
             this.gunaLabel4.Text = " Ngày lập :";
             // 
@@ -335,9 +346,10 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(42, 149);
+            this.gunaLabel3.Location = new System.Drawing.Point(51, 179);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(155, 28);
+            this.gunaLabel3.Size = new System.Drawing.Size(195, 32);
             this.gunaLabel3.TabIndex = 37;
             this.gunaLabel3.Text = "Tên khách hàng :";
             // 
@@ -345,23 +357,25 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(42, 98);
+            this.gunaLabel1.Location = new System.Drawing.Point(51, 118);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(125, 28);
+            this.gunaLabel1.Size = new System.Drawing.Size(154, 32);
             this.gunaLabel1.TabIndex = 36;
             this.gunaLabel1.Text = "Loại dịch vụ :";
             // 
             // ComboBox_UCservicebill_LoaiDV
             // 
             this.ComboBox_UCservicebill_LoaiDV.FormattingEnabled = true;
-            this.ComboBox_UCservicebill_LoaiDV.Location = new System.Drawing.Point(207, 98);
+            this.ComboBox_UCservicebill_LoaiDV.Location = new System.Drawing.Point(253, 118);
+            this.ComboBox_UCservicebill_LoaiDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComboBox_UCservicebill_LoaiDV.Name = "ComboBox_UCservicebill_LoaiDV";
-            this.ComboBox_UCservicebill_LoaiDV.Size = new System.Drawing.Size(301, 28);
+            this.ComboBox_UCservicebill_LoaiDV.Size = new System.Drawing.Size(367, 32);
             this.ComboBox_UCservicebill_LoaiDV.TabIndex = 44;
             // 
             // USservicebill
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ComboBox_UCservicebill_LoaiDV);
             this.Controls.Add(this.TextBox_UCservicebill_thang);
@@ -377,8 +391,9 @@
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.DataGridView_UCservicebill);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "USservicebill";
-            this.Size = new System.Drawing.Size(1185, 938);
+            this.Size = new System.Drawing.Size(1448, 1126);
             this.Load += new System.EventHandler(this.USservicebill_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_UCservicebill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();

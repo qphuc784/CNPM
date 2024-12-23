@@ -66,19 +66,20 @@
             this.Button_UCgoodreceipt_OK.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCgoodreceipt_OK.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCgoodreceipt_OK.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCgoodreceipt_OK.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCgoodreceipt_OK.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCgoodreceipt_OK.ForeColor = System.Drawing.Color.White;
             this.Button_UCgoodreceipt_OK.Image = null;
             this.Button_UCgoodreceipt_OK.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCgoodreceipt_OK.Location = new System.Drawing.Point(616, 13);
+            this.Button_UCgoodreceipt_OK.Location = new System.Drawing.Point(753, 16);
+            this.Button_UCgoodreceipt_OK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCgoodreceipt_OK.Name = "Button_UCgoodreceipt_OK";
             this.Button_UCgoodreceipt_OK.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.Button_UCgoodreceipt_OK.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCgoodreceipt_OK.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCgoodreceipt_OK.OnHoverImage = null;
             this.Button_UCgoodreceipt_OK.OnPressedColor = System.Drawing.Color.DimGray;
-            this.Button_UCgoodreceipt_OK.Radius = 20;
-            this.Button_UCgoodreceipt_OK.Size = new System.Drawing.Size(80, 56);
+            this.Button_UCgoodreceipt_OK.Radius = 10;
+            this.Button_UCgoodreceipt_OK.Size = new System.Drawing.Size(98, 67);
             this.Button_UCgoodreceipt_OK.TabIndex = 41;
             this.Button_UCgoodreceipt_OK.Text = "Ok";
             this.Button_UCgoodreceipt_OK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -92,19 +93,20 @@
             this.Button_UCgoodreceipt_Sua.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCgoodreceipt_Sua.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCgoodreceipt_Sua.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCgoodreceipt_Sua.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCgoodreceipt_Sua.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCgoodreceipt_Sua.ForeColor = System.Drawing.Color.White;
             this.Button_UCgoodreceipt_Sua.Image = null;
             this.Button_UCgoodreceipt_Sua.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCgoodreceipt_Sua.Location = new System.Drawing.Point(1021, 13);
+            this.Button_UCgoodreceipt_Sua.Location = new System.Drawing.Point(1248, 16);
+            this.Button_UCgoodreceipt_Sua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCgoodreceipt_Sua.Name = "Button_UCgoodreceipt_Sua";
             this.Button_UCgoodreceipt_Sua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCgoodreceipt_Sua.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCgoodreceipt_Sua.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCgoodreceipt_Sua.OnHoverImage = null;
             this.Button_UCgoodreceipt_Sua.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCgoodreceipt_Sua.Radius = 20;
-            this.Button_UCgoodreceipt_Sua.Size = new System.Drawing.Size(114, 56);
+            this.Button_UCgoodreceipt_Sua.Radius = 10;
+            this.Button_UCgoodreceipt_Sua.Size = new System.Drawing.Size(139, 67);
             this.Button_UCgoodreceipt_Sua.TabIndex = 40;
             this.Button_UCgoodreceipt_Sua.Text = "<> Sửa";
             this.Button_UCgoodreceipt_Sua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -118,19 +120,20 @@
             this.Button_UCgoodreceipt_Xoa.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCgoodreceipt_Xoa.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCgoodreceipt_Xoa.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCgoodreceipt_Xoa.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCgoodreceipt_Xoa.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCgoodreceipt_Xoa.ForeColor = System.Drawing.Color.White;
             this.Button_UCgoodreceipt_Xoa.Image = null;
             this.Button_UCgoodreceipt_Xoa.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCgoodreceipt_Xoa.Location = new System.Drawing.Point(872, 13);
+            this.Button_UCgoodreceipt_Xoa.Location = new System.Drawing.Point(1066, 16);
+            this.Button_UCgoodreceipt_Xoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCgoodreceipt_Xoa.Name = "Button_UCgoodreceipt_Xoa";
             this.Button_UCgoodreceipt_Xoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCgoodreceipt_Xoa.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCgoodreceipt_Xoa.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCgoodreceipt_Xoa.OnHoverImage = null;
             this.Button_UCgoodreceipt_Xoa.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCgoodreceipt_Xoa.Radius = 20;
-            this.Button_UCgoodreceipt_Xoa.Size = new System.Drawing.Size(114, 56);
+            this.Button_UCgoodreceipt_Xoa.Radius = 10;
+            this.Button_UCgoodreceipt_Xoa.Size = new System.Drawing.Size(139, 67);
             this.Button_UCgoodreceipt_Xoa.TabIndex = 39;
             this.Button_UCgoodreceipt_Xoa.Text = "- Xóa";
             this.Button_UCgoodreceipt_Xoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -138,11 +141,12 @@
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Verdana", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.gunaLabel2.Location = new System.Drawing.Point(69, 30);
+            this.gunaLabel2.Location = new System.Drawing.Point(84, 36);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(119, 25);
+            this.gunaLabel2.Size = new System.Drawing.Size(124, 32);
             this.gunaLabel2.TabIndex = 35;
             this.gunaLabel2.Text = "Tìm kiếm :";
             // 
@@ -181,13 +185,14 @@
             this.DataGridView_UCgoodreceipt.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView_UCgoodreceipt.EnableHeadersVisualStyles = false;
             this.DataGridView_UCgoodreceipt.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridView_UCgoodreceipt.Location = new System.Drawing.Point(43, 210);
+            this.DataGridView_UCgoodreceipt.Location = new System.Drawing.Point(53, 252);
+            this.DataGridView_UCgoodreceipt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DataGridView_UCgoodreceipt.Name = "DataGridView_UCgoodreceipt";
             this.DataGridView_UCgoodreceipt.RowHeadersVisible = false;
             this.DataGridView_UCgoodreceipt.RowHeadersWidth = 62;
             this.DataGridView_UCgoodreceipt.RowTemplate.Height = 28;
             this.DataGridView_UCgoodreceipt.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView_UCgoodreceipt.Size = new System.Drawing.Size(1092, 708);
+            this.DataGridView_UCgoodreceipt.Size = new System.Drawing.Size(1335, 850);
             this.DataGridView_UCgoodreceipt.TabIndex = 34;
             this.DataGridView_UCgoodreceipt.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.DataGridView_UCgoodreceipt.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -253,9 +258,10 @@
             // 
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel6.Location = new System.Drawing.Point(754, 98);
+            this.gunaLabel6.Location = new System.Drawing.Point(922, 118);
+            this.gunaLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel6.Name = "gunaLabel6";
-            this.gunaLabel6.Size = new System.Drawing.Size(56, 28);
+            this.gunaLabel6.Size = new System.Drawing.Size(69, 32);
             this.gunaLabel6.TabIndex = 54;
             this.gunaLabel6.Text = "SĐT :";
             this.gunaLabel6.Click += new System.EventHandler(this.gunaLabel6_Click);
@@ -270,12 +276,13 @@
             this.TextBox_UCgoodreceipt_thang.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_UCgoodreceipt_thang.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCgoodreceipt_thang.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TextBox_UCgoodreceipt_thang.Location = new System.Drawing.Point(644, 145);
+            this.TextBox_UCgoodreceipt_thang.Location = new System.Drawing.Point(787, 174);
+            this.TextBox_UCgoodreceipt_thang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBox_UCgoodreceipt_thang.Name = "TextBox_UCgoodreceipt_thang";
             this.TextBox_UCgoodreceipt_thang.PasswordChar = '\0';
             this.TextBox_UCgoodreceipt_thang.Radius = 10;
             this.TextBox_UCgoodreceipt_thang.SelectedText = "";
-            this.TextBox_UCgoodreceipt_thang.Size = new System.Drawing.Size(65, 37);
+            this.TextBox_UCgoodreceipt_thang.Size = new System.Drawing.Size(79, 50);
             this.TextBox_UCgoodreceipt_thang.TabIndex = 53;
             this.TextBox_UCgoodreceipt_thang.TextChanged += new System.EventHandler(this.TextBox_UCproductbill_thang_TextChanged);
             // 
@@ -283,9 +290,10 @@
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(527, 149);
+            this.gunaLabel5.Location = new System.Drawing.Point(644, 179);
+            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(107, 28);
+            this.gunaLabel5.Size = new System.Drawing.Size(132, 32);
             this.gunaLabel5.TabIndex = 52;
             this.gunaLabel5.Text = "Tháng lập :";
             this.gunaLabel5.Click += new System.EventHandler(this.gunaLabel5_Click);
@@ -300,12 +308,13 @@
             this.TextBox_UCgoodreceipt_ngay.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_UCgoodreceipt_ngay.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCgoodreceipt_ngay.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TextBox_UCgoodreceipt_ngay.Location = new System.Drawing.Point(642, 94);
+            this.TextBox_UCgoodreceipt_ngay.Location = new System.Drawing.Point(785, 113);
+            this.TextBox_UCgoodreceipt_ngay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBox_UCgoodreceipt_ngay.Name = "TextBox_UCgoodreceipt_ngay";
             this.TextBox_UCgoodreceipt_ngay.PasswordChar = '\0';
             this.TextBox_UCgoodreceipt_ngay.Radius = 10;
             this.TextBox_UCgoodreceipt_ngay.SelectedText = "";
-            this.TextBox_UCgoodreceipt_ngay.Size = new System.Drawing.Size(65, 37);
+            this.TextBox_UCgoodreceipt_ngay.Size = new System.Drawing.Size(79, 50);
             this.TextBox_UCgoodreceipt_ngay.TabIndex = 51;
             this.TextBox_UCgoodreceipt_ngay.TextChanged += new System.EventHandler(this.TextBox_UCproductbill_ngay_TextChanged);
             // 
@@ -319,12 +328,13 @@
             this.TextBox_UCgoodreceipt_ten_ncc.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_UCgoodreceipt_ten_ncc.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCgoodreceipt_ten_ncc.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TextBox_UCgoodreceipt_ten_ncc.Location = new System.Drawing.Point(223, 145);
+            this.TextBox_UCgoodreceipt_ten_ncc.Location = new System.Drawing.Point(273, 174);
+            this.TextBox_UCgoodreceipt_ten_ncc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBox_UCgoodreceipt_ten_ncc.Name = "TextBox_UCgoodreceipt_ten_ncc";
             this.TextBox_UCgoodreceipt_ten_ncc.PasswordChar = '\0';
             this.TextBox_UCgoodreceipt_ten_ncc.Radius = 10;
             this.TextBox_UCgoodreceipt_ten_ncc.SelectedText = "";
-            this.TextBox_UCgoodreceipt_ten_ncc.Size = new System.Drawing.Size(289, 37);
+            this.TextBox_UCgoodreceipt_ten_ncc.Size = new System.Drawing.Size(353, 50);
             this.TextBox_UCgoodreceipt_ten_ncc.TabIndex = 50;
             this.TextBox_UCgoodreceipt_ten_ncc.TextChanged += new System.EventHandler(this.TextBox_UCproductbill_ten_kh_TextChanged);
             // 
@@ -332,9 +342,10 @@
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(527, 98);
+            this.gunaLabel4.Location = new System.Drawing.Point(644, 118);
+            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(105, 28);
+            this.gunaLabel4.Size = new System.Drawing.Size(128, 32);
             this.gunaLabel4.TabIndex = 48;
             this.gunaLabel4.Text = " Ngày lập :";
             this.gunaLabel4.Click += new System.EventHandler(this.gunaLabel4_Click);
@@ -343,9 +354,10 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(42, 149);
+            this.gunaLabel3.Location = new System.Drawing.Point(51, 179);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(171, 28);
+            this.gunaLabel3.Size = new System.Drawing.Size(215, 32);
             this.gunaLabel3.TabIndex = 47;
             this.gunaLabel3.Text = "Tên nhà cung cấp :";
             this.gunaLabel3.Click += new System.EventHandler(this.gunaLabel3_Click);
@@ -354,9 +366,10 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(42, 98);
+            this.gunaLabel1.Location = new System.Drawing.Point(51, 118);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(146, 28);
+            this.gunaLabel1.Size = new System.Drawing.Size(180, 32);
             this.gunaLabel1.TabIndex = 46;
             this.gunaLabel1.Text = "Loại sản phẩm :";
             this.gunaLabel1.Click += new System.EventHandler(this.gunaLabel1_Click);
@@ -365,34 +378,37 @@
             // 
             this.ComboBox_UCgoodreceipt_LoaiDV.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_UCgoodreceipt_LoaiDV.FormattingEnabled = true;
-            this.ComboBox_UCgoodreceipt_LoaiDV.Location = new System.Drawing.Point(223, 98);
+            this.ComboBox_UCgoodreceipt_LoaiDV.Location = new System.Drawing.Point(273, 118);
+            this.ComboBox_UCgoodreceipt_LoaiDV.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComboBox_UCgoodreceipt_LoaiDV.Name = "ComboBox_UCgoodreceipt_LoaiDV";
-            this.ComboBox_UCgoodreceipt_LoaiDV.Size = new System.Drawing.Size(289, 36);
+            this.ComboBox_UCgoodreceipt_LoaiDV.Size = new System.Drawing.Size(352, 39);
             this.ComboBox_UCgoodreceipt_LoaiDV.TabIndex = 56;
             // 
             // ComboBox_UCgoodreceipt_SDT
             // 
             this.ComboBox_UCgoodreceipt_SDT.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_UCgoodreceipt_SDT.FormattingEnabled = true;
-            this.ComboBox_UCgoodreceipt_SDT.Location = new System.Drawing.Point(818, 98);
+            this.ComboBox_UCgoodreceipt_SDT.Location = new System.Drawing.Point(1000, 118);
+            this.ComboBox_UCgoodreceipt_SDT.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComboBox_UCgoodreceipt_SDT.Name = "ComboBox_UCgoodreceipt_SDT";
-            this.ComboBox_UCgoodreceipt_SDT.Size = new System.Drawing.Size(168, 36);
+            this.ComboBox_UCgoodreceipt_SDT.Size = new System.Drawing.Size(204, 39);
             this.ComboBox_UCgoodreceipt_SDT.TabIndex = 57;
             // 
             // gunaPictureBox1
             // 
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = global::CNPM.Properties.Resources.search_icon;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(41, 29);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(50, 35);
+            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(36, 31);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(44, 37);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gunaPictureBox1.TabIndex = 37;
             this.gunaPictureBox1.TabStop = false;
             // 
             // USgoodreceipt
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ComboBox_UCgoodreceipt_SDT);
             this.Controls.Add(this.ComboBox_UCgoodreceipt_LoaiDV);
@@ -410,8 +426,9 @@
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.DataGridView_UCgoodreceipt);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "USgoodreceipt";
-            this.Size = new System.Drawing.Size(1185, 938);
+            this.Size = new System.Drawing.Size(1448, 1126);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_UCgoodreceipt)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);

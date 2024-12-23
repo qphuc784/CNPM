@@ -234,7 +234,7 @@
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(92, 34);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(92, 38);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
@@ -244,7 +244,7 @@
             this.thôngTinCáNhânToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
             this.thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
-            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(212, 34);
+            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
             this.thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản";
             // 
             // thôngTinCáNhânToolStripMenuItem
@@ -264,27 +264,27 @@
             // báoCáoTồnKhoToolStripMenuItem
             // 
             this.báoCáoTồnKhoToolStripMenuItem.Name = "báoCáoTồnKhoToolStripMenuItem";
-            this.báoCáoTồnKhoToolStripMenuItem.Size = new System.Drawing.Size(182, 34);
+            this.báoCáoTồnKhoToolStripMenuItem.Size = new System.Drawing.Size(182, 38);
             this.báoCáoTồnKhoToolStripMenuItem.Text = "Báo cáo tồn kho";
             this.báoCáoTồnKhoToolStripMenuItem.Click += new System.EventHandler(this.báoCáoTồnKhoToolStripMenuItem_Click);
             // 
             // hóaĐơnToolStripMenuItem
             // 
             this.hóaĐơnToolStripMenuItem.Name = "hóaĐơnToolStripMenuItem";
-            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(112, 34);
+            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(112, 38);
             this.hóaĐơnToolStripMenuItem.Text = "Hóa đơn";
             this.hóaĐơnToolStripMenuItem.Click += new System.EventHandler(this.hóaĐơnToolStripMenuItem_Click);
             // 
             // phiếuDịchVụToolStripMenuItem
             // 
             this.phiếuDịchVụToolStripMenuItem.Name = "phiếuDịchVụToolStripMenuItem";
-            this.phiếuDịchVụToolStripMenuItem.Size = new System.Drawing.Size(199, 34);
+            this.phiếuDịchVụToolStripMenuItem.Size = new System.Drawing.Size(199, 38);
             this.phiếuDịchVụToolStripMenuItem.Text = "Tìm kiếm hóa đơn";
             // 
             // phiếuDịchVụToolStripMenuItem1
             // 
             this.phiếuDịchVụToolStripMenuItem1.Name = "phiếuDịchVụToolStripMenuItem1";
-            this.phiếuDịchVụToolStripMenuItem1.Size = new System.Drawing.Size(156, 34);
+            this.phiếuDịchVụToolStripMenuItem1.Size = new System.Drawing.Size(156, 38);
             this.phiếuDịchVụToolStripMenuItem1.Text = "Phiếu dịch vụ";
             // 
             // tabControl_Manager
@@ -341,7 +341,7 @@
             this.btn_Manager_HDban_ThemHoaDon.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDban_ThemHoaDon.Image = null;
             this.btn_Manager_HDban_ThemHoaDon.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDban_ThemHoaDon.Location = new System.Drawing.Point(1201, 72);
+            this.btn_Manager_HDban_ThemHoaDon.Location = new System.Drawing.Point(1156, 73);
             this.btn_Manager_HDban_ThemHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Manager_HDban_ThemHoaDon.Name = "btn_Manager_HDban_ThemHoaDon";
             this.btn_Manager_HDban_ThemHoaDon.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -367,7 +367,7 @@
             this.gunaTextBox49.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox49.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox49.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox49.Location = new System.Drawing.Point(616, 5);
+            this.gunaTextBox49.Location = new System.Drawing.Point(581, 5);
             this.gunaTextBox49.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox49.Name = "gunaTextBox49";
             this.gunaTextBox49.PasswordChar = '\0';
@@ -375,7 +375,7 @@
             this.gunaTextBox49.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox49.TabIndex = 30;
             this.gunaTextBox49.Text = "Tổng tiền";
-            this.gunaTextBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaTextBox49.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tb_Manager_HDban_Total
             // 
@@ -390,7 +390,7 @@
             this.tb_Manager_HDban_Total.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDban_Total.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDban_Total.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDban_Total.Location = new System.Drawing.Point(869, 5);
+            this.tb_Manager_HDban_Total.Location = new System.Drawing.Point(824, 5);
             this.tb_Manager_HDban_Total.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDban_Total.Name = "tb_Manager_HDban_Total";
             this.tb_Manager_HDban_Total.PasswordChar = '\0';
@@ -692,7 +692,7 @@
             this.gunaTextBox26.SelectedText = "";
             this.gunaTextBox26.Size = new System.Drawing.Size(435, 59);
             this.gunaTextBox26.TabIndex = 14;
-            this.gunaTextBox26.Text = "SDT";
+            this.gunaTextBox26.Text = "SĐT";
             this.gunaTextBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tb_Manager_HDban_GuestPN
@@ -979,7 +979,7 @@
             this.tb_Manager_HDban_IdProduct.Name = "tb_Manager_HDban_IdProduct";
             this.tb_Manager_HDban_IdProduct.PasswordChar = '\0';
             this.tb_Manager_HDban_IdProduct.SelectedText = "";
-            this.tb_Manager_HDban_IdProduct.Size = new System.Drawing.Size(297, 59);
+            this.tb_Manager_HDban_IdProduct.Size = new System.Drawing.Size(300, 59);
             this.tb_Manager_HDban_IdProduct.TabIndex = 5;
             this.tb_Manager_HDban_IdProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -995,13 +995,13 @@
             this.gunaTextBox4.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox4.Location = new System.Drawing.Point(552, 5);
+            this.gunaTextBox4.Location = new System.Drawing.Point(555, 5);
             this.gunaTextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox4.Name = "gunaTextBox4";
             this.gunaTextBox4.PasswordChar = '\0';
             this.gunaTextBox4.ReadOnly = true;
             this.gunaTextBox4.SelectedText = "";
-            this.gunaTextBox4.Size = new System.Drawing.Size(450, 59);
+            this.gunaTextBox4.Size = new System.Drawing.Size(449, 59);
             this.gunaTextBox4.TabIndex = 8;
             this.gunaTextBox4.Text = "Đơn giá";
             this.gunaTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1019,7 +1019,7 @@
             this.tb_Manager_HDban_UnitPrice.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDban_UnitPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDban_UnitPrice.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDban_UnitPrice.Location = new System.Drawing.Point(1010, 5);
+            this.tb_Manager_HDban_UnitPrice.Location = new System.Drawing.Point(1012, 5);
             this.tb_Manager_HDban_UnitPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDban_UnitPrice.Name = "tb_Manager_HDban_UnitPrice";
             this.tb_Manager_HDban_UnitPrice.PasswordChar = '\0';
@@ -1391,7 +1391,7 @@
             this.btn_Manager_HDDV_ThemHoaDon.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDDV_ThemHoaDon.Image = null;
             this.btn_Manager_HDDV_ThemHoaDon.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDDV_ThemHoaDon.Location = new System.Drawing.Point(1195, 72);
+            this.btn_Manager_HDDV_ThemHoaDon.Location = new System.Drawing.Point(1195, 73);
             this.btn_Manager_HDDV_ThemHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Manager_HDDV_ThemHoaDon.Name = "btn_Manager_HDDV_ThemHoaDon";
             this.btn_Manager_HDDV_ThemHoaDon.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -1416,7 +1416,7 @@
             this.txb_Manager_HDDV_Conlai.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txb_Manager_HDDV_Conlai.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Manager_HDDV_Conlai.ForeColor = System.Drawing.Color.Black;
-            this.txb_Manager_HDDV_Conlai.Location = new System.Drawing.Point(983, 5);
+            this.txb_Manager_HDDV_Conlai.Location = new System.Drawing.Point(1174, 5);
             this.txb_Manager_HDDV_Conlai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txb_Manager_HDDV_Conlai.Name = "txb_Manager_HDDV_Conlai";
             this.txb_Manager_HDDV_Conlai.PasswordChar = '\0';
@@ -1437,15 +1437,15 @@
             this.gunaTextBox54.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox54.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox54.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox54.Location = new System.Drawing.Point(841, 5);
+            this.gunaTextBox54.Location = new System.Drawing.Point(1010, 5);
             this.gunaTextBox54.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox54.Name = "gunaTextBox54";
             this.gunaTextBox54.PasswordChar = '\0';
             this.gunaTextBox54.SelectedText = "";
-            this.gunaTextBox54.Size = new System.Drawing.Size(131, 59);
+            this.gunaTextBox54.Size = new System.Drawing.Size(156, 59);
             this.gunaTextBox54.TabIndex = 37;
             this.gunaTextBox54.Text = "Còn lại";
-            this.gunaTextBox54.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaTextBox54.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txb_Manager_HDDV_TraTruoc
             // 
@@ -1459,7 +1459,7 @@
             this.txb_Manager_HDDV_TraTruoc.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txb_Manager_HDDV_TraTruoc.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Manager_HDDV_TraTruoc.ForeColor = System.Drawing.Color.Black;
-            this.txb_Manager_HDDV_TraTruoc.Location = new System.Drawing.Point(571, 5);
+            this.txb_Manager_HDDV_TraTruoc.Location = new System.Drawing.Point(722, 5);
             this.txb_Manager_HDDV_TraTruoc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txb_Manager_HDDV_TraTruoc.Name = "txb_Manager_HDDV_TraTruoc";
             this.txb_Manager_HDDV_TraTruoc.PasswordChar = '\0';
@@ -1507,10 +1507,10 @@
             this.gunaTextBox51.Name = "gunaTextBox51";
             this.gunaTextBox51.PasswordChar = '\0';
             this.gunaTextBox51.SelectedText = "";
-            this.gunaTextBox51.Size = new System.Drawing.Size(160, 59);
+            this.gunaTextBox51.Size = new System.Drawing.Size(153, 59);
             this.gunaTextBox51.TabIndex = 34;
             this.gunaTextBox51.Text = "Tổng tiền";
-            this.gunaTextBox51.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaTextBox51.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // gunaTextBox47
             // 
@@ -1524,15 +1524,15 @@
             this.gunaTextBox47.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox47.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox47.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox47.Location = new System.Drawing.Point(431, 5);
+            this.gunaTextBox47.Location = new System.Drawing.Point(475, 5);
             this.gunaTextBox47.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox47.Name = "gunaTextBox47";
             this.gunaTextBox47.PasswordChar = '\0';
             this.gunaTextBox47.SelectedText = "";
-            this.gunaTextBox47.Size = new System.Drawing.Size(131, 59);
+            this.gunaTextBox47.Size = new System.Drawing.Size(239, 59);
             this.gunaTextBox47.TabIndex = 32;
             this.gunaTextBox47.Text = "Trả trước";
-            this.gunaTextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaTextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // gunaTextBox7
             // 
@@ -1827,7 +1827,7 @@
             this.gunaTextBox29.SelectedText = "";
             this.gunaTextBox29.Size = new System.Drawing.Size(433, 59);
             this.gunaTextBox29.TabIndex = 14;
-            this.gunaTextBox29.Text = "SDT";
+            this.gunaTextBox29.Text = "SĐT";
             this.gunaTextBox29.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tb_Manager_HDDV_GuestPN
@@ -2199,7 +2199,7 @@
             this.gunaTextBox35.PasswordChar = '\0';
             this.gunaTextBox35.ReadOnly = true;
             this.gunaTextBox35.SelectedText = "";
-            this.gunaTextBox35.Size = new System.Drawing.Size(447, 59);
+            this.gunaTextBox35.Size = new System.Drawing.Size(444, 59);
             this.gunaTextBox35.TabIndex = 8;
             this.gunaTextBox35.Text = "Đơn giá";
             this.gunaTextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -2217,7 +2217,7 @@
             this.tb_Manager_HDDV_UnitPrice.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDDV_UnitPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDDV_UnitPrice.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDDV_UnitPrice.Location = new System.Drawing.Point(1005, 74);
+            this.tb_Manager_HDDV_UnitPrice.Location = new System.Drawing.Point(1002, 74);
             this.tb_Manager_HDDV_UnitPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDDV_UnitPrice.Name = "tb_Manager_HDDV_UnitPrice";
             this.tb_Manager_HDDV_UnitPrice.PasswordChar = '\0';
@@ -2312,7 +2312,7 @@
             this.tb_Manager_HDDV_Cash.Name = "tb_Manager_HDDV_Cash";
             this.tb_Manager_HDDV_Cash.PasswordChar = '\0';
             this.tb_Manager_HDDV_Cash.SelectedText = "";
-            this.tb_Manager_HDDV_Cash.Size = new System.Drawing.Size(431, 59);
+            this.tb_Manager_HDDV_Cash.Size = new System.Drawing.Size(430, 59);
             this.tb_Manager_HDDV_Cash.TabIndex = 17;
             this.tb_Manager_HDDV_Cash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2426,7 +2426,7 @@
             this.btn_Manager_HDmua_ThemHoaDon.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDmua_ThemHoaDon.Image = null;
             this.btn_Manager_HDmua_ThemHoaDon.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDmua_ThemHoaDon.Location = new System.Drawing.Point(1195, 72);
+            this.btn_Manager_HDmua_ThemHoaDon.Location = new System.Drawing.Point(1156, 73);
             this.btn_Manager_HDmua_ThemHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Manager_HDmua_ThemHoaDon.Name = "btn_Manager_HDmua_ThemHoaDon";
             this.btn_Manager_HDmua_ThemHoaDon.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -2451,7 +2451,7 @@
             this.gunaTextBox84.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox84.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox84.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox84.Location = new System.Drawing.Point(616, 5);
+            this.gunaTextBox84.Location = new System.Drawing.Point(581, 5);
             this.gunaTextBox84.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox84.Name = "gunaTextBox84";
             this.gunaTextBox84.PasswordChar = '\0';
@@ -2459,7 +2459,7 @@
             this.gunaTextBox84.Size = new System.Drawing.Size(235, 59);
             this.gunaTextBox84.TabIndex = 30;
             this.gunaTextBox84.Text = "Tổng tiền";
-            this.gunaTextBox84.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaTextBox84.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tb_Manager_HDmua_Total
             // 
@@ -2474,7 +2474,7 @@
             this.tb_Manager_HDmua_Total.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDmua_Total.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDmua_Total.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDmua_Total.Location = new System.Drawing.Point(869, 5);
+            this.tb_Manager_HDmua_Total.Location = new System.Drawing.Point(824, 5);
             this.tb_Manager_HDmua_Total.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDmua_Total.Name = "tb_Manager_HDmua_Total";
             this.tb_Manager_HDmua_Total.PasswordChar = '\0';
@@ -2865,7 +2865,7 @@
             this.gunaTextBox67.SelectedText = "";
             this.gunaTextBox67.Size = new System.Drawing.Size(435, 59);
             this.gunaTextBox67.TabIndex = 14;
-            this.gunaTextBox67.Text = "SDT";
+            this.gunaTextBox67.Text = "SĐT";
             this.gunaTextBox67.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // tb_Manager_HDmua_GuestPN
@@ -3087,7 +3087,7 @@
             this.tb_Manager_HDmua_IdProduct.Name = "tb_Manager_HDmua_IdProduct";
             this.tb_Manager_HDmua_IdProduct.PasswordChar = '\0';
             this.tb_Manager_HDmua_IdProduct.SelectedText = "";
-            this.tb_Manager_HDmua_IdProduct.Size = new System.Drawing.Size(370, 59);
+            this.tb_Manager_HDmua_IdProduct.Size = new System.Drawing.Size(367, 59);
             this.tb_Manager_HDmua_IdProduct.TabIndex = 5;
             this.tb_Manager_HDmua_IdProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -3154,7 +3154,7 @@
             this.gunaTextBox77.PasswordChar = '\0';
             this.gunaTextBox77.ReadOnly = true;
             this.gunaTextBox77.SelectedText = "";
-            this.gunaTextBox77.Size = new System.Drawing.Size(438, 59);
+            this.gunaTextBox77.Size = new System.Drawing.Size(440, 59);
             this.gunaTextBox77.TabIndex = 14;
             this.gunaTextBox77.Text = "Tên sản phẩm";
             this.gunaTextBox77.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -3163,10 +3163,10 @@
             // 
             this.cb_Manager_HDmua_ProductName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Manager_HDmua_ProductName.FormattingEnabled = true;
-            this.cb_Manager_HDmua_ProductName.Location = new System.Drawing.Point(1068, 73);
+            this.cb_Manager_HDmua_ProductName.Location = new System.Drawing.Point(1070, 73);
             this.cb_Manager_HDmua_ProductName.Margin = new System.Windows.Forms.Padding(4);
             this.cb_Manager_HDmua_ProductName.Name = "cb_Manager_HDmua_ProductName";
-            this.cb_Manager_HDmua_ProductName.Size = new System.Drawing.Size(370, 39);
+            this.cb_Manager_HDmua_ProductName.Size = new System.Drawing.Size(365, 39);
             this.cb_Manager_HDmua_ProductName.TabIndex = 25;
             this.cb_Manager_HDmua_ProductName.SelectedIndexChanged += new System.EventHandler(this.cb_Manager_HDmua_ProductName_SelectedIndexChanged);
             // 
@@ -3255,7 +3255,7 @@
             this.gunaTextBox78.PasswordChar = '\0';
             this.gunaTextBox78.ReadOnly = true;
             this.gunaTextBox78.SelectedText = "";
-            this.gunaTextBox78.Size = new System.Drawing.Size(293, 59);
+            this.gunaTextBox78.Size = new System.Drawing.Size(297, 59);
             this.gunaTextBox78.TabIndex = 16;
             this.gunaTextBox78.Text = "Thành tiền";
             this.gunaTextBox78.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -3273,12 +3273,12 @@
             this.tb_Manager_HDmua_Cash.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDmua_Cash.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDmua_Cash.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDmua_Cash.Location = new System.Drawing.Point(1068, 143);
+            this.tb_Manager_HDmua_Cash.Location = new System.Drawing.Point(1072, 143);
             this.tb_Manager_HDmua_Cash.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDmua_Cash.Name = "tb_Manager_HDmua_Cash";
             this.tb_Manager_HDmua_Cash.PasswordChar = '\0';
             this.tb_Manager_HDmua_Cash.SelectedText = "";
-            this.tb_Manager_HDmua_Cash.Size = new System.Drawing.Size(370, 59);
+            this.tb_Manager_HDmua_Cash.Size = new System.Drawing.Size(366, 59);
             this.tb_Manager_HDmua_Cash.TabIndex = 17;
             this.tb_Manager_HDmua_Cash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

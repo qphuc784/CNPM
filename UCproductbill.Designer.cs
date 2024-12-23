@@ -58,11 +58,12 @@
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Verdana", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.gunaLabel2.Location = new System.Drawing.Point(69, 30);
+            this.gunaLabel2.Location = new System.Drawing.Point(84, 36);
+            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(119, 25);
+            this.gunaLabel2.Size = new System.Drawing.Size(124, 32);
             this.gunaLabel2.TabIndex = 20;
             this.gunaLabel2.Text = "Tìm kiếm :";
             // 
@@ -101,13 +102,14 @@
             this.DataGridView_UCproductbill.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView_UCproductbill.EnableHeadersVisualStyles = false;
             this.DataGridView_UCproductbill.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridView_UCproductbill.Location = new System.Drawing.Point(43, 210);
+            this.DataGridView_UCproductbill.Location = new System.Drawing.Point(53, 252);
+            this.DataGridView_UCproductbill.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DataGridView_UCproductbill.Name = "DataGridView_UCproductbill";
             this.DataGridView_UCproductbill.RowHeadersVisible = false;
             this.DataGridView_UCproductbill.RowHeadersWidth = 62;
             this.DataGridView_UCproductbill.RowTemplate.Height = 28;
             this.DataGridView_UCproductbill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView_UCproductbill.Size = new System.Drawing.Size(1092, 708);
+            this.DataGridView_UCproductbill.Size = new System.Drawing.Size(1335, 850);
             this.DataGridView_UCproductbill.TabIndex = 16;
             this.DataGridView_UCproductbill.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.DataGridView_UCproductbill.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -177,19 +179,20 @@
             this.Button_UCproductbill_Sua.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproductbill_Sua.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCproductbill_Sua.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCproductbill_Sua.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCproductbill_Sua.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCproductbill_Sua.ForeColor = System.Drawing.Color.White;
             this.Button_UCproductbill_Sua.Image = null;
             this.Button_UCproductbill_Sua.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCproductbill_Sua.Location = new System.Drawing.Point(1021, 13);
+            this.Button_UCproductbill_Sua.Location = new System.Drawing.Point(1248, 16);
+            this.Button_UCproductbill_Sua.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCproductbill_Sua.Name = "Button_UCproductbill_Sua";
             this.Button_UCproductbill_Sua.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCproductbill_Sua.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproductbill_Sua.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCproductbill_Sua.OnHoverImage = null;
             this.Button_UCproductbill_Sua.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCproductbill_Sua.Radius = 20;
-            this.Button_UCproductbill_Sua.Size = new System.Drawing.Size(114, 56);
+            this.Button_UCproductbill_Sua.Radius = 10;
+            this.Button_UCproductbill_Sua.Size = new System.Drawing.Size(139, 67);
             this.Button_UCproductbill_Sua.TabIndex = 25;
             this.Button_UCproductbill_Sua.Text = "<> Sửa";
             this.Button_UCproductbill_Sua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -203,19 +206,20 @@
             this.Button_UCproductbill_Xoa.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproductbill_Xoa.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCproductbill_Xoa.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCproductbill_Xoa.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCproductbill_Xoa.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCproductbill_Xoa.ForeColor = System.Drawing.Color.White;
             this.Button_UCproductbill_Xoa.Image = null;
             this.Button_UCproductbill_Xoa.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCproductbill_Xoa.Location = new System.Drawing.Point(872, 13);
+            this.Button_UCproductbill_Xoa.Location = new System.Drawing.Point(1066, 16);
+            this.Button_UCproductbill_Xoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCproductbill_Xoa.Name = "Button_UCproductbill_Xoa";
             this.Button_UCproductbill_Xoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCproductbill_Xoa.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproductbill_Xoa.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCproductbill_Xoa.OnHoverImage = null;
             this.Button_UCproductbill_Xoa.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCproductbill_Xoa.Radius = 20;
-            this.Button_UCproductbill_Xoa.Size = new System.Drawing.Size(114, 56);
+            this.Button_UCproductbill_Xoa.Radius = 10;
+            this.Button_UCproductbill_Xoa.Size = new System.Drawing.Size(139, 67);
             this.Button_UCproductbill_Xoa.TabIndex = 24;
             this.Button_UCproductbill_Xoa.Text = "- Xóa";
             this.Button_UCproductbill_Xoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -229,19 +233,20 @@
             this.Button_UCproductbill_OK.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproductbill_OK.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCproductbill_OK.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCproductbill_OK.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCproductbill_OK.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCproductbill_OK.ForeColor = System.Drawing.Color.White;
             this.Button_UCproductbill_OK.Image = null;
             this.Button_UCproductbill_OK.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCproductbill_OK.Location = new System.Drawing.Point(616, 13);
+            this.Button_UCproductbill_OK.Location = new System.Drawing.Point(753, 16);
+            this.Button_UCproductbill_OK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCproductbill_OK.Name = "Button_UCproductbill_OK";
             this.Button_UCproductbill_OK.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.Button_UCproductbill_OK.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproductbill_OK.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCproductbill_OK.OnHoverImage = null;
             this.Button_UCproductbill_OK.OnPressedColor = System.Drawing.Color.DimGray;
-            this.Button_UCproductbill_OK.Radius = 20;
-            this.Button_UCproductbill_OK.Size = new System.Drawing.Size(80, 56);
+            this.Button_UCproductbill_OK.Radius = 10;
+            this.Button_UCproductbill_OK.Size = new System.Drawing.Size(98, 67);
             this.Button_UCproductbill_OK.TabIndex = 27;
             this.Button_UCproductbill_OK.Text = "Ok";
             this.Button_UCproductbill_OK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -250,9 +255,10 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(42, 149);
+            this.gunaLabel3.Location = new System.Drawing.Point(51, 179);
+            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(155, 28);
+            this.gunaLabel3.Size = new System.Drawing.Size(195, 32);
             this.gunaLabel3.TabIndex = 29;
             this.gunaLabel3.Text = "Tên khách hàng :";
             // 
@@ -260,9 +266,10 @@
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(527, 98);
+            this.gunaLabel4.Location = new System.Drawing.Point(644, 118);
+            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(105, 28);
+            this.gunaLabel4.Size = new System.Drawing.Size(128, 32);
             this.gunaLabel4.TabIndex = 30;
             this.gunaLabel4.Text = " Ngày lập :";
             // 
@@ -276,12 +283,13 @@
             this.TextBox_UCproductbill_ten_kh.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_UCproductbill_ten_kh.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCproductbill_ten_kh.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TextBox_UCproductbill_ten_kh.Location = new System.Drawing.Point(207, 145);
+            this.TextBox_UCproductbill_ten_kh.Location = new System.Drawing.Point(253, 174);
+            this.TextBox_UCproductbill_ten_kh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBox_UCproductbill_ten_kh.Name = "TextBox_UCproductbill_ten_kh";
             this.TextBox_UCproductbill_ten_kh.PasswordChar = '\0';
             this.TextBox_UCproductbill_ten_kh.Radius = 10;
             this.TextBox_UCproductbill_ten_kh.SelectedText = "";
-            this.TextBox_UCproductbill_ten_kh.Size = new System.Drawing.Size(301, 37);
+            this.TextBox_UCproductbill_ten_kh.Size = new System.Drawing.Size(368, 50);
             this.TextBox_UCproductbill_ten_kh.TabIndex = 32;
             // 
             // TextBox_UCproductbill_ngay
@@ -294,21 +302,23 @@
             this.TextBox_UCproductbill_ngay.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_UCproductbill_ngay.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCproductbill_ngay.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TextBox_UCproductbill_ngay.Location = new System.Drawing.Point(642, 94);
+            this.TextBox_UCproductbill_ngay.Location = new System.Drawing.Point(785, 113);
+            this.TextBox_UCproductbill_ngay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBox_UCproductbill_ngay.Name = "TextBox_UCproductbill_ngay";
             this.TextBox_UCproductbill_ngay.PasswordChar = '\0';
             this.TextBox_UCproductbill_ngay.Radius = 10;
             this.TextBox_UCproductbill_ngay.SelectedText = "";
-            this.TextBox_UCproductbill_ngay.Size = new System.Drawing.Size(65, 37);
+            this.TextBox_UCproductbill_ngay.Size = new System.Drawing.Size(79, 50);
             this.TextBox_UCproductbill_ngay.TabIndex = 33;
             // 
             // gunaLabel5
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(527, 149);
+            this.gunaLabel5.Location = new System.Drawing.Point(644, 179);
+            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(107, 28);
+            this.gunaLabel5.Size = new System.Drawing.Size(132, 32);
             this.gunaLabel5.TabIndex = 34;
             this.gunaLabel5.Text = "Tháng lập :";
             // 
@@ -322,21 +332,23 @@
             this.TextBox_UCproductbill_thang.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_UCproductbill_thang.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCproductbill_thang.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TextBox_UCproductbill_thang.Location = new System.Drawing.Point(644, 145);
+            this.TextBox_UCproductbill_thang.Location = new System.Drawing.Point(787, 174);
+            this.TextBox_UCproductbill_thang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBox_UCproductbill_thang.Name = "TextBox_UCproductbill_thang";
             this.TextBox_UCproductbill_thang.PasswordChar = '\0';
             this.TextBox_UCproductbill_thang.Radius = 10;
             this.TextBox_UCproductbill_thang.SelectedText = "";
-            this.TextBox_UCproductbill_thang.Size = new System.Drawing.Size(65, 37);
+            this.TextBox_UCproductbill_thang.Size = new System.Drawing.Size(79, 50);
             this.TextBox_UCproductbill_thang.TabIndex = 35;
             // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel1.Location = new System.Drawing.Point(42, 98);
+            this.gunaLabel1.Location = new System.Drawing.Point(51, 118);
+            this.gunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(146, 28);
+            this.gunaLabel1.Size = new System.Drawing.Size(180, 32);
             this.gunaLabel1.TabIndex = 28;
             this.gunaLabel1.Text = "Loại sản phẩm :";
             // 
@@ -344,25 +356,27 @@
             // 
             this.ComboBox_UCproductbill_LoaiSP.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_UCproductbill_LoaiSP.FormattingEnabled = true;
-            this.ComboBox_UCproductbill_LoaiSP.Location = new System.Drawing.Point(207, 98);
+            this.ComboBox_UCproductbill_LoaiSP.Location = new System.Drawing.Point(253, 118);
+            this.ComboBox_UCproductbill_LoaiSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ComboBox_UCproductbill_LoaiSP.Name = "ComboBox_UCproductbill_LoaiSP";
-            this.ComboBox_UCproductbill_LoaiSP.Size = new System.Drawing.Size(301, 36);
+            this.ComboBox_UCproductbill_LoaiSP.Size = new System.Drawing.Size(367, 39);
             this.ComboBox_UCproductbill_LoaiSP.TabIndex = 37;
             // 
             // gunaPictureBox1
             // 
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = global::CNPM.Properties.Resources.search_icon;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(41, 29);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(50, 35);
+            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(36, 31);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(44, 37);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gunaPictureBox1.TabIndex = 22;
             this.gunaPictureBox1.TabStop = false;
             // 
             // UCproductbill
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ComboBox_UCproductbill_LoaiSP);
             this.Controls.Add(this.TextBox_UCproductbill_thang);
@@ -378,8 +392,9 @@
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.DataGridView_UCproductbill);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UCproductbill";
-            this.Size = new System.Drawing.Size(1185, 938);
+            this.Size = new System.Drawing.Size(1448, 1126);
             this.Load += new System.EventHandler(this.UCproductbill_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_UCproductbill)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();

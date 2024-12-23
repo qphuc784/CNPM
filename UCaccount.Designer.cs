@@ -35,7 +35,6 @@
             this.Button_UCaccount_Xoa = new Guna.UI.WinForms.GunaButton();
             this.Button_UCaccount_Them = new Guna.UI.WinForms.GunaButton();
             this.TextBox_UCaccount_timkiem = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.DataGridView_UCaccount = new Guna.UI.WinForms.GunaDataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -58,19 +57,20 @@
             this.Button_UCaccount_ResetPassword.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCaccount_ResetPassword.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCaccount_ResetPassword.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCaccount_ResetPassword.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCaccount_ResetPassword.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCaccount_ResetPassword.ForeColor = System.Drawing.Color.White;
             this.Button_UCaccount_ResetPassword.Image = null;
             this.Button_UCaccount_ResetPassword.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCaccount_ResetPassword.Location = new System.Drawing.Point(961, 13);
+            this.Button_UCaccount_ResetPassword.Location = new System.Drawing.Point(1175, 16);
+            this.Button_UCaccount_ResetPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCaccount_ResetPassword.Name = "Button_UCaccount_ResetPassword";
             this.Button_UCaccount_ResetPassword.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCaccount_ResetPassword.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCaccount_ResetPassword.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCaccount_ResetPassword.OnHoverImage = null;
             this.Button_UCaccount_ResetPassword.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCaccount_ResetPassword.Radius = 20;
-            this.Button_UCaccount_ResetPassword.Size = new System.Drawing.Size(174, 56);
+            this.Button_UCaccount_ResetPassword.Radius = 10;
+            this.Button_UCaccount_ResetPassword.Size = new System.Drawing.Size(213, 67);
             this.Button_UCaccount_ResetPassword.TabIndex = 25;
             this.Button_UCaccount_ResetPassword.Text = "Reset password";
             this.Button_UCaccount_ResetPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -84,19 +84,20 @@
             this.Button_UCaccount_Xoa.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCaccount_Xoa.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCaccount_Xoa.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCaccount_Xoa.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCaccount_Xoa.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCaccount_Xoa.ForeColor = System.Drawing.Color.White;
             this.Button_UCaccount_Xoa.Image = null;
             this.Button_UCaccount_Xoa.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCaccount_Xoa.Location = new System.Drawing.Point(818, 13);
+            this.Button_UCaccount_Xoa.Location = new System.Drawing.Point(1000, 16);
+            this.Button_UCaccount_Xoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCaccount_Xoa.Name = "Button_UCaccount_Xoa";
             this.Button_UCaccount_Xoa.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCaccount_Xoa.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCaccount_Xoa.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCaccount_Xoa.OnHoverImage = null;
             this.Button_UCaccount_Xoa.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCaccount_Xoa.Radius = 20;
-            this.Button_UCaccount_Xoa.Size = new System.Drawing.Size(114, 56);
+            this.Button_UCaccount_Xoa.Radius = 10;
+            this.Button_UCaccount_Xoa.Size = new System.Drawing.Size(139, 67);
             this.Button_UCaccount_Xoa.TabIndex = 24;
             this.Button_UCaccount_Xoa.Text = "- Xóa";
             this.Button_UCaccount_Xoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -111,19 +112,20 @@
             this.Button_UCaccount_Them.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCaccount_Them.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCaccount_Them.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCaccount_Them.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCaccount_Them.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCaccount_Them.ForeColor = System.Drawing.Color.White;
             this.Button_UCaccount_Them.Image = null;
             this.Button_UCaccount_Them.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCaccount_Them.Location = new System.Drawing.Point(669, 13);
+            this.Button_UCaccount_Them.Location = new System.Drawing.Point(818, 16);
+            this.Button_UCaccount_Them.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCaccount_Them.Name = "Button_UCaccount_Them";
             this.Button_UCaccount_Them.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Button_UCaccount_Them.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCaccount_Them.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCaccount_Them.OnHoverImage = null;
             this.Button_UCaccount_Them.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCaccount_Them.Radius = 20;
-            this.Button_UCaccount_Them.Size = new System.Drawing.Size(114, 56);
+            this.Button_UCaccount_Them.Radius = 10;
+            this.Button_UCaccount_Them.Size = new System.Drawing.Size(139, 67);
             this.Button_UCaccount_Them.TabIndex = 23;
             this.Button_UCaccount_Them.Text = "+ Thêm";
             this.Button_UCaccount_Them.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -139,25 +141,15 @@
             this.TextBox_UCaccount_timkiem.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_UCaccount_timkiem.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCaccount_timkiem.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TextBox_UCaccount_timkiem.Location = new System.Drawing.Point(194, 23);
+            this.TextBox_UCaccount_timkiem.Location = new System.Drawing.Point(96, 16);
+            this.TextBox_UCaccount_timkiem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TextBox_UCaccount_timkiem.Name = "TextBox_UCaccount_timkiem";
             this.TextBox_UCaccount_timkiem.PasswordChar = '\0';
             this.TextBox_UCaccount_timkiem.Radius = 10;
             this.TextBox_UCaccount_timkiem.SelectedText = "";
-            this.TextBox_UCaccount_timkiem.Size = new System.Drawing.Size(348, 37);
+            this.TextBox_UCaccount_timkiem.Size = new System.Drawing.Size(566, 67);
             this.TextBox_UCaccount_timkiem.TabIndex = 21;
             this.TextBox_UCaccount_timkiem.Text = "Tên user";
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Verdana", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.gunaLabel2.Location = new System.Drawing.Point(69, 30);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(119, 25);
-            this.gunaLabel2.TabIndex = 20;
-            this.gunaLabel2.Text = "Tìm kiếm :";
             // 
             // DataGridView_UCaccount
             // 
@@ -194,13 +186,14 @@
             this.DataGridView_UCaccount.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridView_UCaccount.EnableHeadersVisualStyles = false;
             this.DataGridView_UCaccount.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.DataGridView_UCaccount.Location = new System.Drawing.Point(43, 98);
+            this.DataGridView_UCaccount.Location = new System.Drawing.Point(53, 118);
+            this.DataGridView_UCaccount.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DataGridView_UCaccount.Name = "DataGridView_UCaccount";
             this.DataGridView_UCaccount.RowHeadersVisible = false;
             this.DataGridView_UCaccount.RowHeadersWidth = 62;
             this.DataGridView_UCaccount.RowTemplate.Height = 28;
             this.DataGridView_UCaccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataGridView_UCaccount.Size = new System.Drawing.Size(1092, 798);
+            this.DataGridView_UCaccount.Size = new System.Drawing.Size(1335, 958);
             this.DataGridView_UCaccount.TabIndex = 19;
             this.DataGridView_UCaccount.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.DataGridView_UCaccount.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -265,9 +258,10 @@
             // 
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = global::CNPM.Properties.Resources.search_icon;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(41, 29);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(50, 35);
+            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(36, 31);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(44, 37);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.gunaPictureBox1.TabIndex = 22;
             this.gunaPictureBox1.TabStop = false;
@@ -281,26 +275,27 @@
             this.Button_UCaccount_OK.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCaccount_OK.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCaccount_OK.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCaccount_OK.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCaccount_OK.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCaccount_OK.ForeColor = System.Drawing.Color.White;
             this.Button_UCaccount_OK.Image = null;
             this.Button_UCaccount_OK.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_UCaccount_OK.Location = new System.Drawing.Point(567, 13);
+            this.Button_UCaccount_OK.Location = new System.Drawing.Point(693, 16);
+            this.Button_UCaccount_OK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Button_UCaccount_OK.Name = "Button_UCaccount_OK";
             this.Button_UCaccount_OK.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.Button_UCaccount_OK.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.Button_UCaccount_OK.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCaccount_OK.OnHoverImage = null;
             this.Button_UCaccount_OK.OnPressedColor = System.Drawing.Color.DimGray;
-            this.Button_UCaccount_OK.Radius = 20;
-            this.Button_UCaccount_OK.Size = new System.Drawing.Size(80, 56);
+            this.Button_UCaccount_OK.Radius = 10;
+            this.Button_UCaccount_OK.Size = new System.Drawing.Size(98, 67);
             this.Button_UCaccount_OK.TabIndex = 26;
             this.Button_UCaccount_OK.Text = "Ok";
             this.Button_UCaccount_OK.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // UCaccount
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Button_UCaccount_OK);
             this.Controls.Add(this.Button_UCaccount_ResetPassword);
@@ -308,14 +303,13 @@
             this.Controls.Add(this.Button_UCaccount_Them);
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.TextBox_UCaccount_timkiem);
-            this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.DataGridView_UCaccount);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "UCaccount";
-            this.Size = new System.Drawing.Size(1185, 938);
+            this.Size = new System.Drawing.Size(1448, 1126);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_UCaccount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -326,7 +320,6 @@
         private Guna.UI.WinForms.GunaButton Button_UCaccount_Them;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaTextBox TextBox_UCaccount_timkiem;
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaDataGridView DataGridView_UCaccount;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

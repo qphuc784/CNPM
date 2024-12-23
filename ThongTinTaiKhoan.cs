@@ -44,5 +44,10 @@ namespace CNPM
             DoiMatKhau f = new DoiMatKhau(mk);
             f.ShowDialog();
         }
+
+        private void TextBox_ThongTinTK_ID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

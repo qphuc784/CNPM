@@ -40,6 +40,7 @@
             this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.PictureBox_loginForm_avt = new Guna.UI.WinForms.GunaPictureBox();
+            this.Button_loginForm_ForgetPassword = new Guna.UI.WinForms.GunaButton();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_loginForm_avt)).BeginInit();
@@ -80,7 +81,7 @@
             this.TextBox_loginForm_Username.PasswordChar = '\0';
             this.TextBox_loginForm_Username.Radius = 5;
             this.TextBox_loginForm_Username.SelectedText = "";
-            this.TextBox_loginForm_Username.Size = new System.Drawing.Size(477, 66);
+            this.TextBox_loginForm_Username.Size = new System.Drawing.Size(506, 66);
             this.TextBox_loginForm_Username.TabIndex = 2;
             this.TextBox_loginForm_Username.Text = "phuc";
             // 
@@ -101,7 +102,7 @@
             this.TextBox_loginForm_Password.PasswordChar = '●';
             this.TextBox_loginForm_Password.Radius = 5;
             this.TextBox_loginForm_Password.SelectedText = "";
-            this.TextBox_loginForm_Password.Size = new System.Drawing.Size(477, 66);
+            this.TextBox_loginForm_Password.Size = new System.Drawing.Size(506, 66);
             this.TextBox_loginForm_Password.TabIndex = 3;
             this.TextBox_loginForm_Password.Text = "123";
             this.TextBox_loginForm_Password.UseSystemPasswordChar = true;
@@ -134,7 +135,7 @@
             this.Switch_loginForm_ShowPassword.CheckedOffColor = System.Drawing.Color.Silver;
             this.Switch_loginForm_ShowPassword.CheckedOnColor = System.Drawing.Color.DimGray;
             this.Switch_loginForm_ShowPassword.FillColor = System.Drawing.Color.WhiteSmoke;
-            this.Switch_loginForm_ShowPassword.Location = new System.Drawing.Point(490, 573);
+            this.Switch_loginForm_ShowPassword.Location = new System.Drawing.Point(521, 573);
             this.Switch_loginForm_ShowPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Switch_loginForm_ShowPassword.Name = "Switch_loginForm_ShowPassword";
             this.Switch_loginForm_ShowPassword.Size = new System.Drawing.Size(55, 39);
@@ -144,7 +145,7 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaLabel3.Location = new System.Drawing.Point(315, 578);
+            this.gunaLabel3.Location = new System.Drawing.Point(346, 578);
             this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(155, 30);
@@ -196,7 +197,7 @@
             this.Button_loginForm_SIGNUP.ForeColor = System.Drawing.Color.Black;
             this.Button_loginForm_SIGNUP.Image = null;
             this.Button_loginForm_SIGNUP.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_loginForm_SIGNUP.Location = new System.Drawing.Point(322, 633);
+            this.Button_loginForm_SIGNUP.Location = new System.Drawing.Point(353, 633);
             this.Button_loginForm_SIGNUP.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Button_loginForm_SIGNUP.Name = "Button_loginForm_SIGNUP";
             this.Button_loginForm_SIGNUP.OnHoverBaseColor = System.Drawing.SystemColors.ScrollBar;
@@ -253,11 +254,42 @@
             this.PictureBox_loginForm_avt.TabIndex = 11;
             this.PictureBox_loginForm_avt.TabStop = false;
             // 
+            // Button_loginForm_ForgetPassword
+            // 
+            this.Button_loginForm_ForgetPassword.AnimationHoverSpeed = 0.07F;
+            this.Button_loginForm_ForgetPassword.AnimationSpeed = 0.03F;
+            this.Button_loginForm_ForgetPassword.BackColor = System.Drawing.Color.Transparent;
+            this.Button_loginForm_ForgetPassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.Button_loginForm_ForgetPassword.BaseColor = System.Drawing.Color.Transparent;
+            this.Button_loginForm_ForgetPassword.BorderColor = System.Drawing.Color.Transparent;
+            this.Button_loginForm_ForgetPassword.BorderSize = 1;
+            this.Button_loginForm_ForgetPassword.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.Button_loginForm_ForgetPassword.FocusedColor = System.Drawing.Color.Empty;
+            this.Button_loginForm_ForgetPassword.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_loginForm_ForgetPassword.ForeColor = System.Drawing.Color.Black;
+            this.Button_loginForm_ForgetPassword.Image = null;
+            this.Button_loginForm_ForgetPassword.ImageSize = new System.Drawing.Size(20, 20);
+            this.Button_loginForm_ForgetPassword.Location = new System.Drawing.Point(55, 578);
+            this.Button_loginForm_ForgetPassword.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Button_loginForm_ForgetPassword.Name = "Button_loginForm_ForgetPassword";
+            this.Button_loginForm_ForgetPassword.OnHoverBaseColor = System.Drawing.Color.Gainsboro;
+            this.Button_loginForm_ForgetPassword.OnHoverBorderColor = System.Drawing.Color.Gainsboro;
+            this.Button_loginForm_ForgetPassword.OnHoverForeColor = System.Drawing.Color.Black;
+            this.Button_loginForm_ForgetPassword.OnHoverImage = null;
+            this.Button_loginForm_ForgetPassword.OnPressedColor = System.Drawing.Color.DarkGray;
+            this.Button_loginForm_ForgetPassword.Radius = 5;
+            this.Button_loginForm_ForgetPassword.Size = new System.Drawing.Size(180, 30);
+            this.Button_loginForm_ForgetPassword.TabIndex = 13;
+            this.Button_loginForm_ForgetPassword.Text = "Forget Pasword ";
+            this.Button_loginForm_ForgetPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Button_loginForm_ForgetPassword.UseTransfarantBackground = true;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(619, 778);
+            this.Controls.Add(this.Button_loginForm_ForgetPassword);
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.gunaCirclePictureBox1);
             this.Controls.Add(this.Button_loginForm_SIGNUP);
@@ -298,6 +330,7 @@
         private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
         private Guna.UI.WinForms.GunaPictureBox PictureBox_loginForm_avt;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
+        private Guna.UI.WinForms.GunaButton Button_loginForm_ForgetPassword;
     }
 }
 

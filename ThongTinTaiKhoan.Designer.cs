@@ -68,19 +68,21 @@
             this.TextBox_ThongTinTK_ID.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextBox_ThongTinTK_ID.BorderColor = System.Drawing.Color.Transparent;
             this.TextBox_ThongTinTK_ID.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_ThongTinTK_ID.FocusedBaseColor = System.Drawing.Color.Transparent;
-            this.TextBox_ThongTinTK_ID.FocusedBorderColor = System.Drawing.Color.Transparent;
+            this.TextBox_ThongTinTK_ID.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.TextBox_ThongTinTK_ID.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.TextBox_ThongTinTK_ID.FocusedForeColor = System.Drawing.Color.White;
             this.TextBox_ThongTinTK_ID.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_ThongTinTK_ID.ForeColor = System.Drawing.Color.White;
-            this.TextBox_ThongTinTK_ID.Location = new System.Drawing.Point(307, 248);
+            this.TextBox_ThongTinTK_ID.ImeMode = System.Windows.Forms.ImeMode.Off;
+            this.TextBox_ThongTinTK_ID.Location = new System.Drawing.Point(113, 273);
             this.TextBox_ThongTinTK_ID.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_ThongTinTK_ID.Name = "TextBox_ThongTinTK_ID";
             this.TextBox_ThongTinTK_ID.PasswordChar = '\0';
             this.TextBox_ThongTinTK_ID.ReadOnly = true;
             this.TextBox_ThongTinTK_ID.SelectedText = "";
-            this.TextBox_ThongTinTK_ID.Size = new System.Drawing.Size(58, 45);
+            this.TextBox_ThongTinTK_ID.Size = new System.Drawing.Size(137, 45);
             this.TextBox_ThongTinTK_ID.TabIndex = 13;
+            this.TextBox_ThongTinTK_ID.TextChanged += new System.EventHandler(this.TextBox_ThongTinTK_ID_TextChanged);
             // 
             // gunaLabel4
             // 
@@ -89,7 +91,7 @@
             this.gunaLabel4.Enabled = false;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.ForeColor = System.Drawing.Color.White;
-            this.gunaLabel4.Location = new System.Drawing.Point(253, 248);
+            this.gunaLabel4.Location = new System.Drawing.Point(62, 281);
             this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(63, 38);

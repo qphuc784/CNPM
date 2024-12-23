@@ -80,7 +80,7 @@
             this.Button_Interface_account.BorderColor = System.Drawing.Color.Black;
             this.Button_Interface_account.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_Interface_account.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_Interface_account.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Interface_account.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Interface_account.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_account.Image = null;
             this.Button_Interface_account.ImageSize = new System.Drawing.Size(20, 20);
@@ -109,7 +109,7 @@
             this.Button_Interface_goodreceipt.BorderColor = System.Drawing.Color.Black;
             this.Button_Interface_goodreceipt.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_Interface_goodreceipt.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_Interface_goodreceipt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Interface_goodreceipt.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Interface_goodreceipt.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_goodreceipt.Image = null;
             this.Button_Interface_goodreceipt.ImageSize = new System.Drawing.Size(20, 20);
@@ -216,10 +216,10 @@
             this.Button_Interface_logout.BackColor = System.Drawing.Color.Transparent;
             this.Button_Interface_logout.BaseColor = System.Drawing.Color.Salmon;
             this.Button_Interface_logout.BorderColor = System.Drawing.Color.Black;
-            this.Button_Interface_logout.BorderSize = 2;
+            this.Button_Interface_logout.BorderSize = 1;
             this.Button_Interface_logout.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_Interface_logout.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_Interface_logout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Interface_logout.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Interface_logout.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_logout.Image = global::CNPM.Properties.Resources.pngwing_com;
             this.Button_Interface_logout.ImageSize = new System.Drawing.Size(20, 20);
@@ -247,7 +247,7 @@
             this.Button_Interface_accounting.BorderColor = System.Drawing.Color.Black;
             this.Button_Interface_accounting.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_Interface_accounting.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_Interface_accounting.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Interface_accounting.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Interface_accounting.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_accounting.Image = null;
             this.Button_Interface_accounting.ImageSize = new System.Drawing.Size(20, 20);
@@ -275,7 +275,7 @@
             this.Button_Interface_servicebill.BorderColor = System.Drawing.Color.Black;
             this.Button_Interface_servicebill.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_Interface_servicebill.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_Interface_servicebill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Interface_servicebill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Interface_servicebill.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_servicebill.Image = null;
             this.Button_Interface_servicebill.ImageSize = new System.Drawing.Size(20, 20);
@@ -303,7 +303,7 @@
             this.Button_Interface_productbill.BorderColor = System.Drawing.Color.Black;
             this.Button_Interface_productbill.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_Interface_productbill.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_Interface_productbill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Interface_productbill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Interface_productbill.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_productbill.Image = null;
             this.Button_Interface_productbill.ImageSize = new System.Drawing.Size(20, 20);
@@ -331,7 +331,7 @@
             this.Button_Interface_service.BorderColor = System.Drawing.Color.Black;
             this.Button_Interface_service.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_Interface_service.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_Interface_service.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Interface_service.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Interface_service.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_service.Image = null;
             this.Button_Interface_service.ImageSize = new System.Drawing.Size(20, 20);
@@ -359,7 +359,7 @@
             this.Button_Interface_product.BorderColor = System.Drawing.Color.Black;
             this.Button_Interface_product.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_Interface_product.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_Interface_product.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Interface_product.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_Interface_product.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_product.Image = null;
             this.Button_Interface_product.ImageSize = new System.Drawing.Size(20, 20);

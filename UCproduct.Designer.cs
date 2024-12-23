@@ -33,7 +33,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TextBox_UCproduct_timkiem = new Guna.UI.WinForms.GunaTextBox();
             this.DataGridView_UCproduct = new Guna.UI.WinForms.GunaDataGridView();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.Button_UCproduct_Them = new Guna.UI.WinForms.GunaButton();
             this.Button_UCproduct_Xoa = new Guna.UI.WinForms.GunaButton();
             this.Button_UCproduct_Sua = new Guna.UI.WinForms.GunaButton();
@@ -53,13 +52,13 @@
             this.TextBox_UCproduct_timkiem.FocusedBorderColor = System.Drawing.Color.Transparent;
             this.TextBox_UCproduct_timkiem.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_UCproduct_timkiem.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.TextBox_UCproduct_timkiem.Location = new System.Drawing.Point(237, 28);
+            this.TextBox_UCproduct_timkiem.Location = new System.Drawing.Point(95, 16);
             this.TextBox_UCproduct_timkiem.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_UCproduct_timkiem.Name = "TextBox_UCproduct_timkiem";
             this.TextBox_UCproduct_timkiem.PasswordChar = '\0';
             this.TextBox_UCproduct_timkiem.Radius = 10;
             this.TextBox_UCproduct_timkiem.SelectedText = "";
-            this.TextBox_UCproduct_timkiem.Size = new System.Drawing.Size(488, 50);
+            this.TextBox_UCproduct_timkiem.Size = new System.Drawing.Size(630, 67);
             this.TextBox_UCproduct_timkiem.TabIndex = 2;
             this.TextBox_UCproduct_timkiem.Text = "Tên sản phẩm";
             // 
@@ -123,18 +122,6 @@
             this.DataGridView_UCproduct.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.DataGridView_UCproduct.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Verdana", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Italic | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.gunaLabel2.Location = new System.Drawing.Point(84, 36);
-            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(143, 29);
-            this.gunaLabel2.TabIndex = 1;
-            this.gunaLabel2.Text = "Tìm kiếm :";
-            // 
             // Button_UCproduct_Them
             // 
             this.Button_UCproduct_Them.AnimationHoverSpeed = 0.07F;
@@ -144,7 +131,7 @@
             this.Button_UCproduct_Them.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproduct_Them.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCproduct_Them.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCproduct_Them.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCproduct_Them.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCproduct_Them.ForeColor = System.Drawing.Color.White;
             this.Button_UCproduct_Them.Image = null;
             this.Button_UCproduct_Them.ImageSize = new System.Drawing.Size(20, 20);
@@ -156,7 +143,7 @@
             this.Button_UCproduct_Them.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCproduct_Them.OnHoverImage = null;
             this.Button_UCproduct_Them.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCproduct_Them.Radius = 20;
+            this.Button_UCproduct_Them.Radius = 10;
             this.Button_UCproduct_Them.Size = new System.Drawing.Size(139, 67);
             this.Button_UCproduct_Them.TabIndex = 9;
             this.Button_UCproduct_Them.Text = "+ Thêm";
@@ -172,7 +159,7 @@
             this.Button_UCproduct_Xoa.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproduct_Xoa.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCproduct_Xoa.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCproduct_Xoa.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCproduct_Xoa.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCproduct_Xoa.ForeColor = System.Drawing.Color.White;
             this.Button_UCproduct_Xoa.Image = null;
             this.Button_UCproduct_Xoa.ImageSize = new System.Drawing.Size(20, 20);
@@ -184,7 +171,7 @@
             this.Button_UCproduct_Xoa.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCproduct_Xoa.OnHoverImage = null;
             this.Button_UCproduct_Xoa.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCproduct_Xoa.Radius = 20;
+            this.Button_UCproduct_Xoa.Radius = 10;
             this.Button_UCproduct_Xoa.Size = new System.Drawing.Size(139, 67);
             this.Button_UCproduct_Xoa.TabIndex = 10;
             this.Button_UCproduct_Xoa.Text = "- Xóa";
@@ -200,7 +187,7 @@
             this.Button_UCproduct_Sua.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproduct_Sua.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCproduct_Sua.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCproduct_Sua.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCproduct_Sua.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCproduct_Sua.ForeColor = System.Drawing.Color.White;
             this.Button_UCproduct_Sua.Image = null;
             this.Button_UCproduct_Sua.ImageSize = new System.Drawing.Size(20, 20);
@@ -212,7 +199,7 @@
             this.Button_UCproduct_Sua.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCproduct_Sua.OnHoverImage = null;
             this.Button_UCproduct_Sua.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_UCproduct_Sua.Radius = 20;
+            this.Button_UCproduct_Sua.Radius = 10;
             this.Button_UCproduct_Sua.Size = new System.Drawing.Size(139, 67);
             this.Button_UCproduct_Sua.TabIndex = 11;
             this.Button_UCproduct_Sua.Text = "<> Sửa";
@@ -227,7 +214,7 @@
             this.Button_UCproduct_OK.BorderColor = System.Drawing.Color.Transparent;
             this.Button_UCproduct_OK.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_UCproduct_OK.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_UCproduct_OK.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_UCproduct_OK.Font = new System.Drawing.Font("Segoe UI", 9.857143F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_UCproduct_OK.ForeColor = System.Drawing.Color.White;
             this.Button_UCproduct_OK.Image = null;
             this.Button_UCproduct_OK.ImageSize = new System.Drawing.Size(20, 20);
@@ -239,7 +226,7 @@
             this.Button_UCproduct_OK.OnHoverForeColor = System.Drawing.Color.White;
             this.Button_UCproduct_OK.OnHoverImage = null;
             this.Button_UCproduct_OK.OnPressedColor = System.Drawing.Color.DimGray;
-            this.Button_UCproduct_OK.Radius = 20;
+            this.Button_UCproduct_OK.Radius = 10;
             this.Button_UCproduct_OK.Size = new System.Drawing.Size(98, 67);
             this.Button_UCproduct_OK.TabIndex = 27;
             this.Button_UCproduct_OK.Text = "Ok";
@@ -270,20 +257,16 @@
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.DataGridView_UCproduct);
             this.Controls.Add(this.TextBox_UCproduct_timkiem);
-            this.Controls.Add(this.gunaLabel2);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCproduct";
             this.Size = new System.Drawing.Size(1448, 1126);
             ((System.ComponentModel.ISupportInitialize)(this.DataGridView_UCproduct)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaTextBox TextBox_UCproduct_timkiem;
         private Guna.UI.WinForms.GunaDataGridView DataGridView_UCproduct;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;

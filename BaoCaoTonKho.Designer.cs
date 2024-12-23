@@ -54,22 +54,21 @@
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gunaPanel1.Controls.Add(this.gunaLabel1);
-            this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(1192, 114);
+            this.gunaPanel1.Size = new System.Drawing.Size(1190, 114);
             this.gunaPanel1.TabIndex = 0;
             // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Font = new System.Drawing.Font("Arial", 20.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel1.ForeColor = System.Drawing.Color.White;
             this.gunaLabel1.Location = new System.Drawing.Point(365, 29);
             this.gunaLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(468, 56);
+            this.gunaLabel1.Size = new System.Drawing.Size(486, 56);
             this.gunaLabel1.TabIndex = 0;
             this.gunaLabel1.Text = "BÁO CÁO TỒN KHO";
             // 
@@ -80,11 +79,10 @@
             this.gunaPanel2.Controls.Add(this.gunaLabel3);
             this.gunaPanel2.Controls.Add(this.DateTimePicker_BaoCaoTonKho_Tungay);
             this.gunaPanel2.Controls.Add(this.gunaLabel2);
-            this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel2.Location = new System.Drawing.Point(0, 114);
-            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(1192, 114);
+            this.gunaPanel2.Size = new System.Drawing.Size(1190, 114);
             this.gunaPanel2.TabIndex = 1;
             // 
             // DateTimePicker_BaoCaoTonKho_Denngay
@@ -95,10 +93,10 @@
             this.DateTimePicker_BaoCaoTonKho_Denngay.CustomFormat = null;
             this.DateTimePicker_BaoCaoTonKho_Denngay.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.DateTimePicker_BaoCaoTonKho_Denngay.FocusedColor = System.Drawing.Color.Gainsboro;
-            this.DateTimePicker_BaoCaoTonKho_Denngay.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTimePicker_BaoCaoTonKho_Denngay.Font = new System.Drawing.Font("Arial", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateTimePicker_BaoCaoTonKho_Denngay.ForeColor = System.Drawing.Color.Black;
-            this.DateTimePicker_BaoCaoTonKho_Denngay.Location = new System.Drawing.Point(774, 24);
-            this.DateTimePicker_BaoCaoTonKho_Denngay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DateTimePicker_BaoCaoTonKho_Denngay.Location = new System.Drawing.Point(753, 24);
+            this.DateTimePicker_BaoCaoTonKho_Denngay.Margin = new System.Windows.Forms.Padding(4);
             this.DateTimePicker_BaoCaoTonKho_Denngay.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateTimePicker_BaoCaoTonKho_Denngay.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DateTimePicker_BaoCaoTonKho_Denngay.Name = "DateTimePicker_BaoCaoTonKho_Denngay";
@@ -107,7 +105,7 @@
             this.DateTimePicker_BaoCaoTonKho_Denngay.OnHoverForeColor = System.Drawing.Color.Black;
             this.DateTimePicker_BaoCaoTonKho_Denngay.OnPressedColor = System.Drawing.Color.Gainsboro;
             this.DateTimePicker_BaoCaoTonKho_Denngay.Radius = 7;
-            this.DateTimePicker_BaoCaoTonKho_Denngay.Size = new System.Drawing.Size(403, 61);
+            this.DateTimePicker_BaoCaoTonKho_Denngay.Size = new System.Drawing.Size(424, 61);
             this.DateTimePicker_BaoCaoTonKho_Denngay.TabIndex = 3;
             this.DateTimePicker_BaoCaoTonKho_Denngay.Text = "Tuesday, October 29, 2024";
             this.DateTimePicker_BaoCaoTonKho_Denngay.Value = new System.DateTime(2024, 10, 29, 19, 54, 3, 963);
@@ -116,11 +114,11 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel3.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel3.Font = new System.Drawing.Font("Arial", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel3.Location = new System.Drawing.Point(610, 36);
             this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(149, 30);
+            this.gunaLabel3.Size = new System.Drawing.Size(130, 27);
             this.gunaLabel3.TabIndex = 2;
             this.gunaLabel3.Text = "Đến ngày :";
             // 
@@ -132,10 +130,10 @@
             this.DateTimePicker_BaoCaoTonKho_Tungay.CustomFormat = null;
             this.DateTimePicker_BaoCaoTonKho_Tungay.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.DateTimePicker_BaoCaoTonKho_Tungay.FocusedColor = System.Drawing.Color.Gainsboro;
-            this.DateTimePicker_BaoCaoTonKho_Tungay.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DateTimePicker_BaoCaoTonKho_Tungay.Font = new System.Drawing.Font("Arial", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DateTimePicker_BaoCaoTonKho_Tungay.ForeColor = System.Drawing.Color.Black;
-            this.DateTimePicker_BaoCaoTonKho_Tungay.Location = new System.Drawing.Point(143, 24);
-            this.DateTimePicker_BaoCaoTonKho_Tungay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DateTimePicker_BaoCaoTonKho_Tungay.Location = new System.Drawing.Point(134, 24);
+            this.DateTimePicker_BaoCaoTonKho_Tungay.Margin = new System.Windows.Forms.Padding(4);
             this.DateTimePicker_BaoCaoTonKho_Tungay.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.DateTimePicker_BaoCaoTonKho_Tungay.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.DateTimePicker_BaoCaoTonKho_Tungay.Name = "DateTimePicker_BaoCaoTonKho_Tungay";
@@ -144,7 +142,7 @@
             this.DateTimePicker_BaoCaoTonKho_Tungay.OnHoverForeColor = System.Drawing.Color.Black;
             this.DateTimePicker_BaoCaoTonKho_Tungay.OnPressedColor = System.Drawing.Color.Gainsboro;
             this.DateTimePicker_BaoCaoTonKho_Tungay.Radius = 7;
-            this.DateTimePicker_BaoCaoTonKho_Tungay.Size = new System.Drawing.Size(403, 61);
+            this.DateTimePicker_BaoCaoTonKho_Tungay.Size = new System.Drawing.Size(412, 61);
             this.DateTimePicker_BaoCaoTonKho_Tungay.TabIndex = 1;
             this.DateTimePicker_BaoCaoTonKho_Tungay.Text = "Tuesday, October 29, 2024";
             this.DateTimePicker_BaoCaoTonKho_Tungay.Value = new System.DateTime(2024, 10, 29, 19, 54, 3, 963);
@@ -153,11 +151,11 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel2.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel2.Font = new System.Drawing.Font("Arial", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel2.Location = new System.Drawing.Point(4, 36);
             this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(125, 30);
+            this.gunaLabel2.Size = new System.Drawing.Size(116, 27);
             this.gunaLabel2.TabIndex = 0;
             this.gunaLabel2.Text = "Từ ngày :";
             // 
@@ -168,11 +166,10 @@
             this.gunaPanel3.Controls.Add(this.gunaLabel5);
             this.gunaPanel3.Controls.Add(this.ComboBox_BaoCaoTonKho_TypeSP);
             this.gunaPanel3.Controls.Add(this.gunaLabel4);
-            this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel3.Location = new System.Drawing.Point(0, 228);
-            this.gunaPanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel3.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel3.Name = "gunaPanel3";
-            this.gunaPanel3.Size = new System.Drawing.Size(1192, 114);
+            this.gunaPanel3.Size = new System.Drawing.Size(1190, 114);
             this.gunaPanel3.TabIndex = 2;
             // 
             // ComboBox_BaoCaoTonKho_NameSP
@@ -183,27 +180,27 @@
             this.ComboBox_BaoCaoTonKho_NameSP.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.ComboBox_BaoCaoTonKho_NameSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_BaoCaoTonKho_NameSP.FocusedColor = System.Drawing.Color.Empty;
-            this.ComboBox_BaoCaoTonKho_NameSP.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBox_BaoCaoTonKho_NameSP.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_BaoCaoTonKho_NameSP.ForeColor = System.Drawing.Color.Black;
             this.ComboBox_BaoCaoTonKho_NameSP.FormattingEnabled = true;
-            this.ComboBox_BaoCaoTonKho_NameSP.Location = new System.Drawing.Point(825, 31);
-            this.ComboBox_BaoCaoTonKho_NameSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ComboBox_BaoCaoTonKho_NameSP.Location = new System.Drawing.Point(807, 31);
+            this.ComboBox_BaoCaoTonKho_NameSP.Margin = new System.Windows.Forms.Padding(4);
             this.ComboBox_BaoCaoTonKho_NameSP.Name = "ComboBox_BaoCaoTonKho_NameSP";
             this.ComboBox_BaoCaoTonKho_NameSP.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ComboBox_BaoCaoTonKho_NameSP.OnHoverItemForeColor = System.Drawing.Color.Black;
             this.ComboBox_BaoCaoTonKho_NameSP.Radius = 7;
-            this.ComboBox_BaoCaoTonKho_NameSP.Size = new System.Drawing.Size(351, 43);
+            this.ComboBox_BaoCaoTonKho_NameSP.Size = new System.Drawing.Size(369, 38);
             this.ComboBox_BaoCaoTonKho_NameSP.TabIndex = 4;
             // 
             // gunaLabel5
             // 
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel5.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel5.Font = new System.Drawing.Font("Arial", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel5.Location = new System.Drawing.Point(610, 38);
             this.gunaLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(199, 30);
+            this.gunaLabel5.Size = new System.Drawing.Size(181, 27);
             this.gunaLabel5.TabIndex = 3;
             this.gunaLabel5.Text = "Tên sản phẩm :";
             // 
@@ -215,27 +212,27 @@
             this.ComboBox_BaoCaoTonKho_TypeSP.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.ComboBox_BaoCaoTonKho_TypeSP.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ComboBox_BaoCaoTonKho_TypeSP.FocusedColor = System.Drawing.Color.Empty;
-            this.ComboBox_BaoCaoTonKho_TypeSP.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBox_BaoCaoTonKho_TypeSP.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ComboBox_BaoCaoTonKho_TypeSP.ForeColor = System.Drawing.Color.Black;
             this.ComboBox_BaoCaoTonKho_TypeSP.FormattingEnabled = true;
-            this.ComboBox_BaoCaoTonKho_TypeSP.Location = new System.Drawing.Point(226, 31);
-            this.ComboBox_BaoCaoTonKho_TypeSP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ComboBox_BaoCaoTonKho_TypeSP.Location = new System.Drawing.Point(208, 31);
+            this.ComboBox_BaoCaoTonKho_TypeSP.Margin = new System.Windows.Forms.Padding(4);
             this.ComboBox_BaoCaoTonKho_TypeSP.Name = "ComboBox_BaoCaoTonKho_TypeSP";
             this.ComboBox_BaoCaoTonKho_TypeSP.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ComboBox_BaoCaoTonKho_TypeSP.OnHoverItemForeColor = System.Drawing.Color.Black;
             this.ComboBox_BaoCaoTonKho_TypeSP.Radius = 7;
-            this.ComboBox_BaoCaoTonKho_TypeSP.Size = new System.Drawing.Size(319, 43);
+            this.ComboBox_BaoCaoTonKho_TypeSP.Size = new System.Drawing.Size(337, 38);
             this.ComboBox_BaoCaoTonKho_TypeSP.TabIndex = 2;
             // 
             // gunaLabel4
             // 
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel4.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel4.Font = new System.Drawing.Font("Arial", 9.857143F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaLabel4.Location = new System.Drawing.Point(4, 38);
             this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(204, 30);
+            this.gunaLabel4.Size = new System.Drawing.Size(184, 27);
             this.gunaLabel4.TabIndex = 1;
             this.gunaLabel4.Text = "Loại sản phẩm :";
             // 
@@ -243,11 +240,10 @@
             // 
             this.gunaPanel4.BackColor = System.Drawing.Color.Gainsboro;
             this.gunaPanel4.Controls.Add(this.Button_BaoCaoTonKho_HienThi);
-            this.gunaPanel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel4.Location = new System.Drawing.Point(0, 342);
-            this.gunaPanel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel4.Name = "gunaPanel4";
-            this.gunaPanel4.Size = new System.Drawing.Size(1192, 114);
+            this.gunaPanel4.Size = new System.Drawing.Size(1190, 114);
             this.gunaPanel4.TabIndex = 3;
             // 
             // Button_BaoCaoTonKho_HienThi
@@ -259,12 +255,12 @@
             this.Button_BaoCaoTonKho_HienThi.BorderColor = System.Drawing.Color.Black;
             this.Button_BaoCaoTonKho_HienThi.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Button_BaoCaoTonKho_HienThi.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_BaoCaoTonKho_HienThi.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_BaoCaoTonKho_HienThi.Font = new System.Drawing.Font("Arial", 11.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Button_BaoCaoTonKho_HienThi.ForeColor = System.Drawing.Color.White;
             this.Button_BaoCaoTonKho_HienThi.Image = null;
             this.Button_BaoCaoTonKho_HienThi.ImageSize = new System.Drawing.Size(20, 20);
             this.Button_BaoCaoTonKho_HienThi.Location = new System.Drawing.Point(995, 26);
-            this.Button_BaoCaoTonKho_HienThi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button_BaoCaoTonKho_HienThi.Margin = new System.Windows.Forms.Padding(4);
             this.Button_BaoCaoTonKho_HienThi.Name = "Button_BaoCaoTonKho_HienThi";
             this.Button_BaoCaoTonKho_HienThi.OnHoverBaseColor = System.Drawing.Color.Gray;
             this.Button_BaoCaoTonKho_HienThi.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -282,25 +278,26 @@
             // 
             this.dataGridView_BaoCaoTonKho_Bang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_BaoCaoTonKho_Bang.Location = new System.Drawing.Point(0, 460);
-            this.dataGridView_BaoCaoTonKho_Bang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView_BaoCaoTonKho_Bang.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView_BaoCaoTonKho_Bang.Name = "dataGridView_BaoCaoTonKho_Bang";
             this.dataGridView_BaoCaoTonKho_Bang.RowHeadersWidth = 62;
             this.dataGridView_BaoCaoTonKho_Bang.RowTemplate.Height = 28;
-            this.dataGridView_BaoCaoTonKho_Bang.Size = new System.Drawing.Size(1190, 678);
+            this.dataGridView_BaoCaoTonKho_Bang.Size = new System.Drawing.Size(1190, 891);
             this.dataGridView_BaoCaoTonKho_Bang.TabIndex = 4;
             // 
             // BaoCaoTonKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1192, 1139);
+            this.AutoScroll = true;
+            this.ClientSize = new System.Drawing.Size(1221, 1342);
             this.Controls.Add(this.dataGridView_BaoCaoTonKho_Bang);
             this.Controls.Add(this.gunaPanel4);
             this.Controls.Add(this.gunaPanel3);
             this.Controls.Add(this.gunaPanel2);
             this.Controls.Add(this.gunaPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "BaoCaoTonKho";
             this.Text = "Báo Cáo Tồn Kho";
             this.gunaPanel1.ResumeLayout(false);
