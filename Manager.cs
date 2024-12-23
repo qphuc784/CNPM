@@ -758,7 +758,6 @@ namespace CNPM
             }
             tb_Manager_HDmua_Total.Text = total.ToString("N2");
         }
-
     }
 }
 

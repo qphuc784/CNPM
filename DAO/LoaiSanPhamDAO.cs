@@ -70,5 +70,37 @@ namespace CuaHangDaQuy.DAO
 
             return listdonGiaMua;
         }
+
+        public bool AddLoaiSanPham(string Tenloai, int LoiNhuan, string DonViTinh)
+        {
+            string query = "USP_AddProductType @TenLoai , @LoiNhuan , @DonViTinh";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { Tenloai, LoiNhuan, DonViTinh });
+            return result > 0;
+        }
+        public List<LoaiSP> GetLoaiSPByTenLoai(string TenLoai)
+        {
+            List<LoaiSP> listlsp = new List<LoaiSP>();
+            string query = "USP_GetLoaiSanPhamByTenLoai @TenLoai";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new Object[] { TenLoai });
+            foreach (DataRow row in data.Rows)
+            {
+                LoaiSP lsp = new LoaiSP(row);
+                listlsp.Add(lsp);
+            }
+            return listlsp;
+        }
+        public bool DeleteLoaiSanPhamByTen(string TenLoai)
+        {
+            string query = "USP_DeleteLoaiSanPhamByTenLoai @TenLoai ";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { TenLoai });
+            return result > 0;
+        }
+        public bool UpdateLoaiSanPham(int ID, string TenLoai, int LoiNhuan)
+        {
+            string query = "USP_UpdateLoaiSanPham @ID , @TenLoai , @LoiNhuan";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { ID, TenLoai, LoiNhuan, });
+            return result > 0;
+        }
+
     }
 }
