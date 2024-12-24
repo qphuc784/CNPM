@@ -29,6 +29,10 @@ namespace CuaHangDaQuy.DTO
         public Boolean TrangThai
         { get => trangthai; set => trangthai = value; }
 
+        private int loinhuan;
+        public int LoiNhuan 
+        { get => loinhuan; set => loinhuan = value; }
+
         private DateTime ngaythaydoisl;
         public DateTime NgayThayDoiSL
         { get => ngaythaydoisl; set => ngaythaydoisl = value; }
@@ -37,13 +41,14 @@ namespace CuaHangDaQuy.DTO
         public int Sl_Truoc
         { get => sl_truoc; set => sl_truoc = value; }
 
-        public SanPham(int id, string tensanpham, int idloai, int soluong, Boolean trangthai, DateTime ngaythaydoisl, int sltruoc)
+        public SanPham(int id, string tensanpham, int idloai, int soluong, Boolean trangthai, int loionhuan, DateTime ngaythaydoisl, int sltruoc)
         {
             this.ID = id;
             this.TenSanPham = tensanpham;
             this.IDLoai = idloai;
             this.SoLuong = soluong;
             this.TrangThai = trangthai;
+            this.LoiNhuan = loionhuan;
             this.NgayThayDoiSL = ngaythaydoisl;
             this.Sl_Truoc = sltruoc;
         }
@@ -54,6 +59,7 @@ namespace CuaHangDaQuy.DTO
             this.IDLoai = (int)row["idloai"];
             this.SoLuong = (int)row["soluong"];
             this.TrangThai = (bool)row["trangthai"];
+            this.LoiNhuan = (int)row["LoiNhuan"];
             this.NgayThayDoiSL = (DateTime)row["NgayThayDoiSoLuong"];
             this.Sl_Truoc = (int)row["SoLuongTruoc"];
         }

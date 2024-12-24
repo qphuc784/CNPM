@@ -15,9 +15,6 @@ namespace CuaHangDaQuy.DTO
         private string ten;
         public string Ten { get => ten; set => ten = value; }
 
-        private int loinhuan;
-        public int LoiNhuan { get => loinhuan; set => loinhuan = value; }
-
         private string dvt;
         public string DVT { get => dvt; set => dvt = value; }
 
@@ -26,7 +23,6 @@ namespace CuaHangDaQuy.DTO
         {
             this.ID = id;
             this.Ten = ten;
-            this.LoiNhuan = loinhuan;
             this.DVT = dvt;
         }
 
@@ -34,7 +30,6 @@ namespace CuaHangDaQuy.DTO
         {
             this.ID = (int)row["ID"];
             this.Ten = row["Ten"].ToString();
-            this.LoiNhuan = (int)row["LoiNhuan"];
             this.DVT = row["DonViTinh"].ToString();
         }
     }

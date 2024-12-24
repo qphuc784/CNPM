@@ -81,12 +81,12 @@
     <Compile Include="Addproductbill.Designer.cs">
       <DependentUpon>Addproductbill.cs</DependentUpon>
     </Compile>
-	  <Compile Include="AddProductType.cs">
-		  <SubType>Form</SubType>
-	  </Compile>
-	  <Compile Include="AddProductType.Designer.cs">
-		  <DependentUpon>AddProductType.cs</DependentUpon>
-	  </Compile>
+    <Compile Include="AddProductType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProductType.Designer.cs">
+      <DependentUpon>AddProductType.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +121,9 @@
     <Compile Include="DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\CTPhieuBanHang.cs" />
+    <Compile Include="DTO\CTPhieuDichVu.cs" />
+    <Compile Include="DTO\CTPhieuMuaHang.cs" />
     <Compile Include="DTO\KhachHang.cs" />
     <Compile Include="DTO\LichSuKho.cs" />
     <Compile Include="DTO\LoaiDichVu.cs" />
@@ -238,9 +241,9 @@
     <EmbeddedResource Include="Addproductbill.resx">
       <DependentUpon>Addproductbill.cs</DependentUpon>
     </EmbeddedResource>
-	  <EmbeddedResource Include="AddProductType.resx">
-		  <DependentUpon>AddProductType.cs</DependentUpon>
-	  </EmbeddedResource>
+    <EmbeddedResource Include="AddProductType.resx">
+      <DependentUpon>AddProductType.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddService.resx">
       <DependentUpon>AddService.cs</DependentUpon>
     </EmbeddedResource>
