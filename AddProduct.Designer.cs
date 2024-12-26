@@ -41,6 +41,8 @@
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaComboBox_AddProduct_loai_san_pham = new Guna.UI.WinForms.GunaComboBox();
+            this.TextBox_AddProduct_loi_nhuan = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,13 +55,13 @@
             this.ControlBox_AddProduct_X.BackColor = System.Drawing.Color.LightCoral;
             this.ControlBox_AddProduct_X.IconColor = System.Drawing.Color.Black;
             this.ControlBox_AddProduct_X.IconSize = 30F;
-            this.ControlBox_AddProduct_X.Location = new System.Drawing.Point(664, -4);
-            this.ControlBox_AddProduct_X.Margin = new System.Windows.Forms.Padding(4);
+            this.ControlBox_AddProduct_X.Location = new System.Drawing.Point(483, -2);
+            this.ControlBox_AddProduct_X.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ControlBox_AddProduct_X.Name = "ControlBox_AddProduct_X";
             this.ControlBox_AddProduct_X.OnHoverBackColor = System.Drawing.Color.Firebrick;
             this.ControlBox_AddProduct_X.OnHoverIconColor = System.Drawing.Color.White;
             this.ControlBox_AddProduct_X.OnPressedColor = System.Drawing.Color.LightCoral;
-            this.ControlBox_AddProduct_X.Size = new System.Drawing.Size(73, 49);
+            this.ControlBox_AddProduct_X.Size = new System.Drawing.Size(53, 33);
             this.ControlBox_AddProduct_X.TabIndex = 10;
             // 
             // Button_AddProduct_Ok
@@ -76,8 +78,8 @@
             this.Button_AddProduct_Ok.ForeColor = System.Drawing.Color.Black;
             this.Button_AddProduct_Ok.Image = null;
             this.Button_AddProduct_Ok.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_AddProduct_Ok.Location = new System.Drawing.Point(406, 10);
-            this.Button_AddProduct_Ok.Margin = new System.Windows.Forms.Padding(4);
+            this.Button_AddProduct_Ok.Location = new System.Drawing.Point(295, 6);
+            this.Button_AddProduct_Ok.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Button_AddProduct_Ok.Name = "Button_AddProduct_Ok";
             this.Button_AddProduct_Ok.OnHoverBaseColor = System.Drawing.Color.Gainsboro;
             this.Button_AddProduct_Ok.OnHoverBorderColor = System.Drawing.Color.DimGray;
@@ -85,7 +87,7 @@
             this.Button_AddProduct_Ok.OnHoverImage = null;
             this.Button_AddProduct_Ok.OnPressedColor = System.Drawing.Color.Black;
             this.Button_AddProduct_Ok.Radius = 2;
-            this.Button_AddProduct_Ok.Size = new System.Drawing.Size(127, 47);
+            this.Button_AddProduct_Ok.Size = new System.Drawing.Size(92, 31);
             this.Button_AddProduct_Ok.TabIndex = 11;
             this.Button_AddProduct_Ok.Text = "Ok";
             this.Button_AddProduct_Ok.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -105,8 +107,8 @@
             this.Button_AddProduct_Cancel.ForeColor = System.Drawing.Color.Black;
             this.Button_AddProduct_Cancel.Image = null;
             this.Button_AddProduct_Cancel.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_AddProduct_Cancel.Location = new System.Drawing.Point(582, 10);
-            this.Button_AddProduct_Cancel.Margin = new System.Windows.Forms.Padding(4);
+            this.Button_AddProduct_Cancel.Location = new System.Drawing.Point(423, 6);
+            this.Button_AddProduct_Cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Button_AddProduct_Cancel.Name = "Button_AddProduct_Cancel";
             this.Button_AddProduct_Cancel.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.Button_AddProduct_Cancel.OnHoverBorderColor = System.Drawing.Color.DimGray;
@@ -114,20 +116,21 @@
             this.Button_AddProduct_Cancel.OnHoverImage = null;
             this.Button_AddProduct_Cancel.OnPressedColor = System.Drawing.Color.Black;
             this.Button_AddProduct_Cancel.Radius = 2;
-            this.Button_AddProduct_Cancel.Size = new System.Drawing.Size(127, 47);
+            this.Button_AddProduct_Cancel.Size = new System.Drawing.Size(92, 31);
             this.Button_AddProduct_Cancel.TabIndex = 12;
             this.Button_AddProduct_Cancel.Text = "Cancel";
             this.Button_AddProduct_Cancel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Button_AddProduct_Cancel.Click += new System.EventHandler(this.Button_AddProduct_Cancel_Click);
             // 
             // gunaPanel1
             // 
             this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gunaPanel1.Controls.Add(this.Button_AddProduct_Cancel);
             this.gunaPanel1.Controls.Add(this.Button_AddProduct_Ok);
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 448);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 298);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(736, 70);
+            this.gunaPanel1.Size = new System.Drawing.Size(535, 46);
             this.gunaPanel1.TabIndex = 13;
             // 
             // gunaPanel2
@@ -135,9 +138,9 @@
             this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gunaPanel2.Controls.Add(this.ControlBox_AddProduct_X);
             this.gunaPanel2.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(737, 47);
+            this.gunaPanel2.Size = new System.Drawing.Size(536, 31);
             this.gunaPanel2.TabIndex = 14;
             // 
             // TextBox_AddProduct_ten_san_pham
@@ -151,13 +154,13 @@
             this.TextBox_AddProduct_ten_san_pham.FocusedBorderColor = System.Drawing.Color.Black;
             this.TextBox_AddProduct_ten_san_pham.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_AddProduct_ten_san_pham.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_AddProduct_ten_san_pham.Location = new System.Drawing.Point(251, 86);
-            this.TextBox_AddProduct_ten_san_pham.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBox_AddProduct_ten_san_pham.Location = new System.Drawing.Point(182, 35);
+            this.TextBox_AddProduct_ten_san_pham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBox_AddProduct_ten_san_pham.Name = "TextBox_AddProduct_ten_san_pham";
             this.TextBox_AddProduct_ten_san_pham.PasswordChar = '\0';
             this.TextBox_AddProduct_ten_san_pham.Radius = 10;
             this.TextBox_AddProduct_ten_san_pham.SelectedText = "";
-            this.TextBox_AddProduct_ten_san_pham.Size = new System.Drawing.Size(375, 60);
+            this.TextBox_AddProduct_ten_san_pham.Size = new System.Drawing.Size(273, 40);
             this.TextBox_AddProduct_ten_san_pham.TabIndex = 1;
             // 
             // TextBox_AddProduct_So_luong
@@ -171,13 +174,13 @@
             this.TextBox_AddProduct_So_luong.FocusedBorderColor = System.Drawing.Color.Black;
             this.TextBox_AddProduct_So_luong.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_AddProduct_So_luong.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_AddProduct_So_luong.Location = new System.Drawing.Point(251, 258);
-            this.TextBox_AddProduct_So_luong.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBox_AddProduct_So_luong.Location = new System.Drawing.Point(182, 144);
+            this.TextBox_AddProduct_So_luong.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBox_AddProduct_So_luong.Name = "TextBox_AddProduct_So_luong";
             this.TextBox_AddProduct_So_luong.PasswordChar = '\0';
             this.TextBox_AddProduct_So_luong.Radius = 10;
             this.TextBox_AddProduct_So_luong.SelectedText = "";
-            this.TextBox_AddProduct_So_luong.Size = new System.Drawing.Size(375, 60);
+            this.TextBox_AddProduct_So_luong.Size = new System.Drawing.Size(273, 40);
             this.TextBox_AddProduct_So_luong.TabIndex = 3;
             // 
             // TextBox_AddProduct_Don_gia
@@ -191,13 +194,13 @@
             this.TextBox_AddProduct_Don_gia.FocusedBorderColor = System.Drawing.Color.Black;
             this.TextBox_AddProduct_Don_gia.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_AddProduct_Don_gia.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_AddProduct_Don_gia.Location = new System.Drawing.Point(251, 344);
-            this.TextBox_AddProduct_Don_gia.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBox_AddProduct_Don_gia.Location = new System.Drawing.Point(182, 198);
+            this.TextBox_AddProduct_Don_gia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBox_AddProduct_Don_gia.Name = "TextBox_AddProduct_Don_gia";
             this.TextBox_AddProduct_Don_gia.PasswordChar = '\0';
             this.TextBox_AddProduct_Don_gia.Radius = 10;
             this.TextBox_AddProduct_Don_gia.SelectedText = "";
-            this.TextBox_AddProduct_Don_gia.Size = new System.Drawing.Size(375, 60);
+            this.TextBox_AddProduct_Don_gia.Size = new System.Drawing.Size(273, 40);
             this.TextBox_AddProduct_Don_gia.TabIndex = 4;
             // 
             // gunaLabel2
@@ -205,10 +208,9 @@
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(56, 101);
-            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gunaLabel2.Location = new System.Drawing.Point(41, 50);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(175, 32);
+            this.gunaLabel2.Size = new System.Drawing.Size(125, 23);
             this.gunaLabel2.TabIndex = 6;
             this.gunaLabel2.Text = "Tên sản phẩm :";
             // 
@@ -217,10 +219,9 @@
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(56, 186);
-            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gunaLabel3.Location = new System.Drawing.Point(41, 101);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(180, 32);
+            this.gunaLabel3.Size = new System.Drawing.Size(130, 23);
             this.gunaLabel3.TabIndex = 7;
             this.gunaLabel3.Text = "Loại sản phẩm :";
             // 
@@ -229,10 +230,9 @@
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel4.Location = new System.Drawing.Point(56, 272);
-            this.gunaLabel4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gunaLabel4.Location = new System.Drawing.Point(41, 161);
             this.gunaLabel4.Name = "gunaLabel4";
-            this.gunaLabel4.Size = new System.Drawing.Size(122, 32);
+            this.gunaLabel4.Size = new System.Drawing.Size(87, 23);
             this.gunaLabel4.TabIndex = 8;
             this.gunaLabel4.Text = "Số lượng :";
             // 
@@ -241,10 +241,9 @@
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel5.Location = new System.Drawing.Point(56, 359);
-            this.gunaLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gunaLabel5.Location = new System.Drawing.Point(41, 215);
             this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(110, 32);
+            this.gunaLabel5.Size = new System.Drawing.Size(79, 23);
             this.gunaLabel5.TabIndex = 9;
             this.gunaLabel5.Text = "Đơn giá :";
             // 
@@ -259,20 +258,52 @@
             this.gunaComboBox_AddProduct_loai_san_pham.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaComboBox_AddProduct_loai_san_pham.ForeColor = System.Drawing.Color.Black;
             this.gunaComboBox_AddProduct_loai_san_pham.FormattingEnabled = true;
-            this.gunaComboBox_AddProduct_loai_san_pham.Location = new System.Drawing.Point(251, 182);
-            this.gunaComboBox_AddProduct_loai_san_pham.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaComboBox_AddProduct_loai_san_pham.Location = new System.Drawing.Point(182, 91);
+            this.gunaComboBox_AddProduct_loai_san_pham.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaComboBox_AddProduct_loai_san_pham.Name = "gunaComboBox_AddProduct_loai_san_pham";
             this.gunaComboBox_AddProduct_loai_san_pham.OnHoverItemBaseColor = System.Drawing.Color.White;
             this.gunaComboBox_AddProduct_loai_san_pham.OnHoverItemForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox_AddProduct_loai_san_pham.Size = new System.Drawing.Size(374, 43);
+            this.gunaComboBox_AddProduct_loai_san_pham.Size = new System.Drawing.Size(273, 33);
             this.gunaComboBox_AddProduct_loai_san_pham.TabIndex = 15;
-            this.gunaComboBox_AddProduct_loai_san_pham.SelectedIndexChanged += new System.EventHandler(this.gunaComboBox_AddProduct_loai_san_pham_SelectedIndexChanged);
+            // 
+            // TextBox_AddProduct_loi_nhuan
+            // 
+            this.TextBox_AddProduct_loi_nhuan.BackColor = System.Drawing.Color.Transparent;
+            this.TextBox_AddProduct_loi_nhuan.BaseColor = System.Drawing.Color.White;
+            this.TextBox_AddProduct_loi_nhuan.BorderColor = System.Drawing.Color.Silver;
+            this.TextBox_AddProduct_loi_nhuan.BorderSize = 1;
+            this.TextBox_AddProduct_loi_nhuan.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox_AddProduct_loi_nhuan.FocusedBaseColor = System.Drawing.Color.LightGray;
+            this.TextBox_AddProduct_loi_nhuan.FocusedBorderColor = System.Drawing.Color.Black;
+            this.TextBox_AddProduct_loi_nhuan.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TextBox_AddProduct_loi_nhuan.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_AddProduct_loi_nhuan.Location = new System.Drawing.Point(182, 252);
+            this.TextBox_AddProduct_loi_nhuan.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextBox_AddProduct_loi_nhuan.Name = "TextBox_AddProduct_loi_nhuan";
+            this.TextBox_AddProduct_loi_nhuan.PasswordChar = '\0';
+            this.TextBox_AddProduct_loi_nhuan.Radius = 10;
+            this.TextBox_AddProduct_loi_nhuan.SelectedText = "";
+            this.TextBox_AddProduct_loi_nhuan.Size = new System.Drawing.Size(273, 40);
+            this.TextBox_AddProduct_loi_nhuan.TabIndex = 16;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaLabel1.Location = new System.Drawing.Point(41, 269);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(89, 23);
+            this.gunaLabel1.TabIndex = 17;
+            this.gunaLabel1.Text = "Lợi Nhuận";
             // 
             // AddProduct
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 517);
+            this.ClientSize = new System.Drawing.Size(534, 345);
+            this.Controls.Add(this.gunaLabel1);
+            this.Controls.Add(this.TextBox_AddProduct_loi_nhuan);
             this.Controls.Add(this.gunaComboBox_AddProduct_loai_san_pham);
             this.Controls.Add(this.gunaPanel2);
             this.Controls.Add(this.gunaPanel1);
@@ -284,7 +315,7 @@
             this.Controls.Add(this.TextBox_AddProduct_So_luong);
             this.Controls.Add(this.TextBox_AddProduct_ten_san_pham);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddProduct";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddProduct";
@@ -309,5 +340,7 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaComboBox gunaComboBox_AddProduct_loai_san_pham;
+        private Guna.UI.WinForms.GunaTextBox TextBox_AddProduct_loi_nhuan;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using CNPM.DAO;
+using CuaHangDaQuy.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,6 +18,12 @@ namespace CNPM
         {
             InitializeComponent();
         }
+
+        private void gunaLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
 
         private void Button_AddService_Ok_Click(object sender, EventArgs e)
         {
@@ -38,24 +45,19 @@ namespace CNPM
                 MessageBox.Show("Thêm Dịch Vụ Thành Công!");
                 this.Close();
             }
-
         }
         bool add_service(string TenLoai, float DonGia)
         {
 
             return DichVuDAO.Instance.Add_Service(TenLoai, DonGia);
         }
-        
-        bool checkTenLoaiDV(string TenLoai)
-        {
-            return DichVuDAO.Instance.checkTenLoaiDV(TenLoai);
-        }
-
         private void Button_AddService_Cancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        bool checkTenLoaiDV(string TenLoai)
+        {
+            return DichVuDAO.Instance.checkTenLoaiDV(TenLoai);
+        }
     }
-
 }
-

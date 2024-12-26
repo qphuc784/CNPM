@@ -1,4 +1,5 @@
-﻿using CuaHangDaQuy.DAO;
+﻿
+using CuaHangDaQuy.DAO;
 using CuaHangDaQuy.DTO;
 using System;
 using System.Collections.Generic;
@@ -35,7 +36,6 @@ namespace CNPM
 
                 DataGridView_UCproducttype.Columns["ID"].HeaderText = "Mã Loại Sản Phẩm";
                 DataGridView_UCproducttype.Columns["Ten"].HeaderText = "Tên Loại Sản Phẩm";
-                DataGridView_UCproducttype.Columns["LoiNhuan"].HeaderText = "Lợi Nhuận";
                 DataGridView_UCproducttype.Columns["DVT"].HeaderText = "Đơn Vị Tính";
             }
             else
@@ -69,19 +69,18 @@ namespace CNPM
 
         private void Button_UCproductType_Sua_Click(object sender, EventArgs e)
         {
-            if(DataGridView_UCproducttype.Rows.Count ==0)
+            if (DataGridView_UCproducttype.Rows.Count == 0)
             {
                 MessageBox.Show("Vui Lòng Chọn Loại Sản Phẩm Để Cập Nhật!");
             }
             foreach (DataGridViewRow row in DataGridView_UCproducttype.Rows)
             {
                 string TenLoai = row.Cells["Ten"].Value.ToString();
-                int LN = Convert.ToInt32(row.Cells["LoiNhuan"].Value);
-
+                string DonViTinh = row.Cells["DVT"].Value.ToString();
                 int ID = Convert.ToInt32(row.Cells["ID"].Value);
                 DataGridView_UCproducttype.ReadOnly = false;
                 DataGridView_UCproducttype.Columns["ID"].ReadOnly = true;
-                bool isUpdate = LoaiSanPhamDAO.Instance.UpdateLoaiSanPham(ID, TenLoai, LN);
+                bool isUpdate = LoaiSanPhamDAO.Instance.UpdateLoaiSanPham(ID, TenLoai, DonViTinh);
                 if (!isUpdate)
                 {
                     MessageBox.Show("Cập Nhật Loại Sản Phẩm Thất Bại! Vui Lòng Thử Lại!");

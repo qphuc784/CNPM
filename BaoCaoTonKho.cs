@@ -37,7 +37,39 @@ namespace CNPM
         }
 
         // Xử lý khi nhấn nút "Hiển Thị"
+        private void Button_BaoCaoTonKho_HienThi_Click(object sender, EventArgs e)
+        {
+            string TenLoai = ComboBox_BaoCaoTonKho_TypeSP.Text;
+            string TenSanPham = ComboBox_BaoCaoTonKho_NameSP.Text;
+            DateTime tuNgay = DateTimePicker_BaoCaoTonKho_Tungay.Value;
+            DateTime denNgay = DateTimePicker_BaoCaoTonKho_Denngay.Value;
 
+            // Kiểm tra nếu khoảng thời gian hợp lệ
+            if (tuNgay > denNgay)
+            {
+                MessageBox.Show("Ngày Bắt Đầu Phải Lớn Hơn Ngày Kết Thúc", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            // Hiển thị sản phẩm theo tên và loại
+            if (TenSanPham == "Tất Cả")
+            {
+                LoadAllSanPham(TenLoai, tuNgay, denNgay);
+            }
+            else
+            {
+                LoadSanPhamByTenLoaiAndName(TenLoai, TenSanPham, tuNgay, denNgay);
+            }
+            dataGridView_BaoCaoTonKho_Bang.Columns["ID"].HeaderText = "Mã Sản Phẩm";
+            dataGridView_BaoCaoTonKho_Bang.Columns["TenSanPham"].HeaderText = "Tên Sản Phẩm";
+            dataGridView_BaoCaoTonKho_Bang.Columns["IDLoai"].HeaderText = "Mã Loại SP";
+            dataGridView_BaoCaoTonKho_Bang.Columns["SoLuong"].HeaderText = "Số Lượng";
+            dataGridView_BaoCaoTonKho_Bang.Columns["TrangThai"].HeaderText = "Trạng Thái";
+            dataGridView_BaoCaoTonKho_Bang.Columns["NgayThayDoiSL"].HeaderText = "Ngày Thay Đổi Số Lượng";
+            dataGridView_BaoCaoTonKho_Bang.Columns["SL_Truoc"].HeaderText = "Số Lượng Trước";
+            dataGridView_BaoCaoTonKho_Bang.Columns["LoiNhuan"].HeaderText = "Lợi Nhuận";
+
+        }
 
         // Hàm tải tất cả sản phẩm theo loại và khoảng thời gian
         private void LoadAllSanPham(string TenLoai, DateTime tuNgay, DateTime denNgay)
@@ -70,38 +102,6 @@ namespace CNPM
             {
                 dataGridView_BaoCaoTonKho_Bang.DataSource = filteredList;
             }
-        }
-
-        private void Button_BaoCaoTonKho_HienThi_Click(object sender, EventArgs e)
-        {
-            string TenLoai = ComboBox_BaoCaoTonKho_TypeSP.Text;
-            string TenSanPham = ComboBox_BaoCaoTonKho_NameSP.Text;
-            DateTime tuNgay = DateTimePicker_BaoCaoTonKho_Tungay.Value;
-            DateTime denNgay = DateTimePicker_BaoCaoTonKho_Denngay.Value;
-
-            // Kiểm tra nếu khoảng thời gian hợp lệ
-            if (tuNgay > denNgay)
-            {
-                MessageBox.Show("Ngày Bắt Đầu Phải Lớn Hơn Ngày Kết Thúc", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            // Hiển thị sản phẩm theo tên và loại
-            if (TenSanPham == "Tất Cả")
-            {
-                LoadAllSanPham(TenLoai, tuNgay, denNgay);
-            }
-            else
-            {
-                LoadSanPhamByTenLoaiAndName(TenLoai, TenSanPham, tuNgay, denNgay);
-            }
-            dataGridView_BaoCaoTonKho_Bang.Columns["ID"].HeaderText = "Mã Sản Phẩm";
-            dataGridView_BaoCaoTonKho_Bang.Columns["TenSanPham"].HeaderText = "Tên Sản Phẩm";
-            dataGridView_BaoCaoTonKho_Bang.Columns["IDLoai"].HeaderText = "Mã Loại SP";
-            dataGridView_BaoCaoTonKho_Bang.Columns["SoLuong"].HeaderText = "Số Lượng";
-            dataGridView_BaoCaoTonKho_Bang.Columns["TrangThai"].HeaderText = "Trạng Thái";
-            dataGridView_BaoCaoTonKho_Bang.Columns["NgayThayDoiSL"].HeaderText = "Ngày Thay Đổi Số Lượng";
-            dataGridView_BaoCaoTonKho_Bang.Columns["SL_Truoc"].HeaderText = "Số Lượng Trước";
         }
     }
 }

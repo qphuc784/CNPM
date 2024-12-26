@@ -104,6 +104,25 @@ namespace CuaHangDaQuy.DAO
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { id , password });
             return result > 0;
         }
+
+        public List<NhanVien> GetNhanVienByTenNV(string TenNhanVien)
+        {
+            List<NhanVien> listnv = new List<NhanVien>();
+            string query = "USP_GetNhanVienByName @TenNhanVien ";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new Object[] { TenNhanVien });
+            foreach (DataRow row in data.Rows)
+            {
+                NhanVien nv = new NhanVien(row);
+                listnv.Add(nv);
+            }
+            return listnv;
+        }
+        public bool UpdateNhanVien(string TenNhanVien, string ChucVu, string Email)
+        {
+            string query = "USP_UpdateNhanVienByName @TenNhanVien , @ChucVu , @Email";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { TenNhanVien, ChucVu, Email });
+            return result > 0;
+        }
     }
 }
 

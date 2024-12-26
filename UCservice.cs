@@ -1,4 +1,5 @@
-﻿using CNPM.DAO;
+﻿
+using CNPM.DAO;
 using CuaHangDaQuy.DAO;
 using CuaHangDaQuy.DTO;
 using Guna.UI.WinForms;
@@ -21,6 +22,32 @@ namespace CNPM
             InitializeComponent();
         }
 
+        private void Button_UCservice_Them_Click(object sender, EventArgs e)
+        {
+            AddService newservice = new AddService();
+            newservice.ShowDialog();
+        }
+
+        private void Button_UCservice_OK_Click(object sender, EventArgs e)
+        {
+            string TenLoai = TextBox_UCservice_timkiem.Text;
+            List<LoaiDichVu> loaidichvu = DichVuDAO.Instance.GetDichVuByTenLoai(TenLoai);
+            if (loaidichvu.Count > 0)
+            {
+                // Gán dữ liệu vào DataGridView
+                DataGridView_UCservice.DataSource = loaidichvu;
+                // Tùy chỉnh cột nếu cần
+                DataGridView_UCservice.Columns["ID"].HeaderText = "Mã Dịch Vụ";
+                DataGridView_UCservice.Columns["TenLoai"].HeaderText = "Tên Dịch Vụ";
+                DataGridView_UCservice.Columns["DonGia"].HeaderText = "Đơn Giá";
+            }
+            else
+            {
+                MessageBox.Show("Không Tìm Thấy Dịch Vụ này, Vui Lòng Thử Lại!");
+
+            }
+        }
+
         private void Button_UCservice_Xoa_Click(object sender, EventArgs e)
         {
             string TenLoai = TextBox_UCservice_timkiem.Text;
@@ -41,25 +68,7 @@ namespace CNPM
                 }
             }
         }
-        private void Button_UCservice_OK_Click(object sender, EventArgs e)
-        {
-            string TenLoai = TextBox_UCservice_timkiem.Text;
-            List<LoaiDichVu> loaidichvu = DichVuDAO.Instance.GetDichVuByTenLoai(TenLoai);
-            if (loaidichvu.Count > 0)
-            {
-                // Gán dữ liệu vào DataGridView
-                DataGridView_UCservice.DataSource = loaidichvu;
-                // Tùy chỉnh cột nếu cần
-                DataGridView_UCservice.Columns["ID"].HeaderText = "Mã Dịch Vụ";
-                DataGridView_UCservice.Columns["TenLoai"].HeaderText = "Tên Dịch Vụ";
-                DataGridView_UCservice.Columns["DonGia"].HeaderText = "Đơn Giá";
-            }
-            else
-            {
-                MessageBox.Show("Không Tìm Thấy Dịch Vụ này, Vui Lòng Thử Lại!");
 
-            }
-        }
         private void Button_UCservice_Sua_Click(object sender, EventArgs e)
         {
             if (DataGridView_UCservice.Rows.Count == 0)
@@ -83,12 +92,7 @@ namespace CNPM
                 }
             }
             MessageBox.Show("Cập Nhật Thành Công!");
-        }
 
-        private void Button_UCservice_Them_Click(object sender, EventArgs e)
-        {
-            AddService newservice = new AddService();
-            newservice.ShowDialog();
         }
     }
 }

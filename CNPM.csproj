@@ -107,6 +107,7 @@
     </Compile>
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DichVuDAO.cs" />
+    <Compile Include="DAO\GoodReceiptDAO.cs" />
     <Compile Include="DAO\HoaDonDAO.cs" />
     <Compile Include="DAO\HoaDonDichVuDAO.cs" />
     <Compile Include="DAO\HoaDonMuaHangDAO.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="DTO\CTPhieuBanHang.cs" />
     <Compile Include="DTO\CTPhieuDichVu.cs" />
     <Compile Include="DTO\CTPhieuMuaHang.cs" />
+    <Compile Include="DTO\GoodReceipt.cs" />
     <Compile Include="DTO\KhachHang.cs" />
     <Compile Include="DTO\LichSuKho.cs" />
     <Compile Include="DTO\LoaiDichVu.cs" />

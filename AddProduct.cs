@@ -52,25 +52,28 @@ namespace CNPM
             string TenLoai = gunaComboBox_AddProduct_loai_san_pham.Text;
             string SoLuongText = TextBox_AddProduct_So_luong.Text;
             string DonGiaText = TextBox_AddProduct_Don_gia.Text;
+            string LoiNhuanText = TextBox_AddProduct_loi_nhuan.Text;
             int SoLuong = Convert.ToInt32(SoLuongText);
             float DonGia = Convert.ToSingle(DonGiaText);
+            int LoiNhuan = Convert.ToInt32(LoiNhuanText);
             if (string.IsNullOrWhiteSpace(TenSanpham) ||
                 string.IsNullOrEmpty(SoLuongText) ||
-                string.IsNullOrEmpty(DonGiaText)
+                string.IsNullOrEmpty(DonGiaText) ||
+                string.IsNullOrEmpty(LoiNhuanText)
                )
             {
                 MessageBox.Show("Nhập đầy đủ thông tin");
                 return;
             }
-            if (add_Product(TenSanpham, TenLoai, SoLuong, DonGia))
+            if (add_Product(TenSanpham, TenLoai, SoLuong, DonGia, LoiNhuan))
             {
                 MessageBox.Show("Thêm Sản Phẩm Thành Công!");
                 this.Close();
             }
         }
-        bool add_Product(string TenSanpham, string TenLoai, int SoLuong, float DonGia)
+        bool add_Product(string TenSanpham, string TenLoai, int SoLuong, float DonGia, int LoiNhuan)
         {
-            return ProductDAO.Instance.AddSanPham(TenSanpham, TenLoai, SoLuong, DonGia);
+            return ProductDAO.Instance.AddSanPham(TenSanpham, TenLoai, SoLuong, DonGia, LoiNhuan);
         }
 
         private void Button_AddProduct_Cancel_Click(object sender, EventArgs e)
@@ -78,10 +81,6 @@ namespace CNPM
             this.Close();
         }
 
-        private void gunaComboBox_AddProduct_loai_san_pham_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
     }
 }

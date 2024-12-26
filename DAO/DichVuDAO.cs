@@ -83,5 +83,6 @@ namespace CNPM.DAO
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { TenLoai, DonGia, ID });
             return result > 0;
         }
+
     }
 }

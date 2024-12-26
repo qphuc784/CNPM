@@ -101,7 +101,6 @@
             this.Button_UCaccount_Xoa.TabIndex = 24;
             this.Button_UCaccount_Xoa.Text = "- Xóa";
             this.Button_UCaccount_Xoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Button_UCaccount_Xoa.Click += new System.EventHandler(this.gunaButton5_Click);
             // 
             // Button_UCaccount_Them
             // 

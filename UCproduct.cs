@@ -63,6 +63,8 @@ namespace CNPM
                 DataGridView_UCproduct.Columns["TrangThai"].HeaderText = "Trạng Thái";
                 DataGridView_UCproduct.Columns["NgayThayDoiSL"].HeaderText = "Ngày Thay Đổi Số Lượng";
                 DataGridView_UCproduct.Columns["SL_Truoc"].HeaderText = "Số Lượng Trước";
+                DataGridView_UCproduct.Columns["LoiNhuan"].HeaderText = "Lợi Nhuận";
+
             }
             else
             {
@@ -96,22 +98,29 @@ namespace CNPM
             if (DataGridView_UCproduct.Rows.Count == 0)
             {
                 MessageBox.Show("Vui Lòng Chọn Sản Phẩm Để Cập Nhật!");
+                return;
             }
             foreach (DataGridViewRow row in DataGridView_UCproduct.Rows)
             {
                 string TenSanPham = row.Cells["TenSanPham"].Value.ToString();
                 int SoLuong = Convert.ToInt32(row.Cells["SoLuong"].Value);
                 int ID = Convert.ToInt32(row.Cells["ID"].Value);
+                int LoiNhuan = Convert.ToInt32(row.Cells["LoiNhuan"].Value);
                 DataGridView_UCproduct.ReadOnly = false;
                 DataGridView_UCproduct.Columns["ID"].ReadOnly = true;
-                bool isUpdate = ProductDAO.Instance.UpdateSanPham(ID, TenSanPham, SoLuong);
+                bool isUpdate = ProductDAO.Instance.UpdateSanPham(ID, TenSanPham, SoLuong, LoiNhuan);
                 if (!isUpdate)
                 {
                     MessageBox.Show("Cập Nhật Sản Phẩm Thất Bại! Vui Lòng Thử Lại!");
                     return;
                 }
+                else
+                {
+                    MessageBox.Show("Cập Nhật Sản Phẩm Thành Công!");
+                    return;
+                }
             }
-            MessageBox.Show("Cập Nhật Sản Phẩm Thành Công!");
+
 
             Button_UCproduct_OK_Click(sender, e);
         }

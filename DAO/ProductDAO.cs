@@ -57,18 +57,6 @@ namespace CuaHangDaQuy.DAO
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { TenSanPham, TenLoai, SoLuong, Dongia });
             return result > 0;
         }
-        public List<SanPham> GetSanPhamByTenSP(string TenSanPham)
-        {
-            List<SanPham> listsp = new List<SanPham>();
-            string query = "USP_GetSanPhamByTenSP @TenSanPham ";
-            DataTable data = DataProvider.Instance.ExcuteQuery(query, new Object[] { TenSanPham });
-            foreach (DataRow row in data.Rows)
-            {
-                SanPham sp = new SanPham(row);
-                listsp.Add(sp);
-            }
-            return listsp;
-        }
         public bool DeleteSanPhamByTenSp(string TenSanPham)
         {
             string query = "USP_DeleteSanPhamByTenSp @TenSanPham ";
@@ -121,6 +109,35 @@ namespace CuaHangDaQuy.DAO
             }
 
             return 0; // Trả về 0 nếu không tìm thấy hoặc không có dữ liệu
+        }
+
+        // Add san pham
+        public bool AddSanPham(string TenSanPham, string TenLoai, int SoLuong, float Dongia, int LoiNhuan)
+        {
+            string query = "USP_AddSanPham @TenSanPham , @TenLoai , @SoLuong , @Dongia , @LoiNhuan";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { TenSanPham, TenLoai, SoLuong, Dongia, LoiNhuan });
+            return result > 0;
+        }
+
+        // Button Ok: Get San Pham
+        public List<SanPham> GetSanPhamByTenSP(string TenSanPham)
+        {
+            List<SanPham> listsp = new List<SanPham>();
+            string query = "USP_GetSanPhamByTenSP @TenSanPham ";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new Object[] { TenSanPham });
+            foreach (DataRow row in data.Rows)
+            {
+                SanPham sp = new SanPham(row);
+                listsp.Add(sp);
+            }
+            return listsp;
+        }
+        //Update san pham 
+        public bool UpdateSanPham(int ID, string TenSanPham, int SoLuong, int LoiNhuan)
+        {
+            string query = "USP_UpdateSanPham @ID , @TenSanPham , @SoLuong , @LoiNhuan";
+            int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { ID, TenSanPham, SoLuong, LoiNhuan });
+            return result > 0;
         }
 
     }

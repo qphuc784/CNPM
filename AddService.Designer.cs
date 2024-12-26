@@ -46,9 +46,9 @@
             this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gunaPanel2.Controls.Add(this.ControlBox_AddService_X);
             this.gunaPanel2.Location = new System.Drawing.Point(-1, -1);
-            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(737, 47);
+            this.gunaPanel2.Size = new System.Drawing.Size(536, 31);
             this.gunaPanel2.TabIndex = 26;
             // 
             // ControlBox_AddService_X
@@ -59,13 +59,13 @@
             this.ControlBox_AddService_X.BackColor = System.Drawing.Color.LightCoral;
             this.ControlBox_AddService_X.IconColor = System.Drawing.Color.Black;
             this.ControlBox_AddService_X.IconSize = 30F;
-            this.ControlBox_AddService_X.Location = new System.Drawing.Point(664, -4);
-            this.ControlBox_AddService_X.Margin = new System.Windows.Forms.Padding(4);
+            this.ControlBox_AddService_X.Location = new System.Drawing.Point(483, -2);
+            this.ControlBox_AddService_X.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ControlBox_AddService_X.Name = "ControlBox_AddService_X";
             this.ControlBox_AddService_X.OnHoverBackColor = System.Drawing.Color.Firebrick;
             this.ControlBox_AddService_X.OnHoverIconColor = System.Drawing.Color.White;
             this.ControlBox_AddService_X.OnPressedColor = System.Drawing.Color.LightCoral;
-            this.ControlBox_AddService_X.Size = new System.Drawing.Size(73, 49);
+            this.ControlBox_AddService_X.Size = new System.Drawing.Size(53, 33);
             this.ControlBox_AddService_X.TabIndex = 10;
             // 
             // gunaPanel1
@@ -73,10 +73,10 @@
             this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gunaPanel1.Controls.Add(this.Button_AddService_Cancel);
             this.gunaPanel1.Controls.Add(this.Button_AddService_Ok);
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 266);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 178);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(736, 72);
+            this.gunaPanel1.Size = new System.Drawing.Size(535, 48);
             this.gunaPanel1.TabIndex = 25;
             // 
             // Button_AddService_Cancel
@@ -93,8 +93,8 @@
             this.Button_AddService_Cancel.ForeColor = System.Drawing.Color.Black;
             this.Button_AddService_Cancel.Image = null;
             this.Button_AddService_Cancel.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_AddService_Cancel.Location = new System.Drawing.Point(582, 10);
-            this.Button_AddService_Cancel.Margin = new System.Windows.Forms.Padding(4);
+            this.Button_AddService_Cancel.Location = new System.Drawing.Point(423, 6);
+            this.Button_AddService_Cancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Button_AddService_Cancel.Name = "Button_AddService_Cancel";
             this.Button_AddService_Cancel.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(80)))), ((int)(((byte)(90)))));
             this.Button_AddService_Cancel.OnHoverBorderColor = System.Drawing.Color.DimGray;
@@ -102,7 +102,7 @@
             this.Button_AddService_Cancel.OnHoverImage = null;
             this.Button_AddService_Cancel.OnPressedColor = System.Drawing.Color.Black;
             this.Button_AddService_Cancel.Radius = 2;
-            this.Button_AddService_Cancel.Size = new System.Drawing.Size(127, 47);
+            this.Button_AddService_Cancel.Size = new System.Drawing.Size(92, 31);
             this.Button_AddService_Cancel.TabIndex = 12;
             this.Button_AddService_Cancel.Text = "Cancel";
             this.Button_AddService_Cancel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -122,8 +122,8 @@
             this.Button_AddService_Ok.ForeColor = System.Drawing.Color.Black;
             this.Button_AddService_Ok.Image = null;
             this.Button_AddService_Ok.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_AddService_Ok.Location = new System.Drawing.Point(406, 10);
-            this.Button_AddService_Ok.Margin = new System.Windows.Forms.Padding(4);
+            this.Button_AddService_Ok.Location = new System.Drawing.Point(295, 6);
+            this.Button_AddService_Ok.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Button_AddService_Ok.Name = "Button_AddService_Ok";
             this.Button_AddService_Ok.OnHoverBaseColor = System.Drawing.Color.Gainsboro;
             this.Button_AddService_Ok.OnHoverBorderColor = System.Drawing.Color.DimGray;
@@ -131,7 +131,7 @@
             this.Button_AddService_Ok.OnHoverImage = null;
             this.Button_AddService_Ok.OnPressedColor = System.Drawing.Color.Black;
             this.Button_AddService_Ok.Radius = 2;
-            this.Button_AddService_Ok.Size = new System.Drawing.Size(127, 47);
+            this.Button_AddService_Ok.Size = new System.Drawing.Size(92, 31);
             this.Button_AddService_Ok.TabIndex = 11;
             this.Button_AddService_Ok.Text = "Ok";
             this.Button_AddService_Ok.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -142,10 +142,9 @@
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel3.Location = new System.Drawing.Point(55, 181);
-            this.gunaLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gunaLabel3.Location = new System.Drawing.Point(40, 121);
             this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(110, 32);
+            this.gunaLabel3.Size = new System.Drawing.Size(79, 23);
             this.gunaLabel3.TabIndex = 22;
             this.gunaLabel3.Text = "Đơn giá :";
             // 
@@ -154,10 +153,9 @@
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel2.Location = new System.Drawing.Point(55, 96);
-            this.gunaLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.gunaLabel2.Location = new System.Drawing.Point(40, 64);
             this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(194, 32);
+            this.gunaLabel2.Size = new System.Drawing.Size(137, 23);
             this.gunaLabel2.TabIndex = 21;
             this.gunaLabel2.Text = "Tên loại dịch vụ :";
             // 
@@ -172,13 +170,13 @@
             this.TextBox_AddService_Don_gia.FocusedBorderColor = System.Drawing.Color.Black;
             this.TextBox_AddService_Don_gia.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_AddService_Don_gia.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_AddService_Don_gia.Location = new System.Drawing.Point(263, 167);
-            this.TextBox_AddService_Don_gia.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBox_AddService_Don_gia.Location = new System.Drawing.Point(191, 111);
+            this.TextBox_AddService_Don_gia.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBox_AddService_Don_gia.Name = "TextBox_AddService_Don_gia";
             this.TextBox_AddService_Don_gia.PasswordChar = '\0';
             this.TextBox_AddService_Don_gia.Radius = 10;
             this.TextBox_AddService_Don_gia.SelectedText = "";
-            this.TextBox_AddService_Don_gia.Size = new System.Drawing.Size(375, 60);
+            this.TextBox_AddService_Don_gia.Size = new System.Drawing.Size(273, 40);
             this.TextBox_AddService_Don_gia.TabIndex = 17;
             // 
             // TextBox_AddService_Ten_loai_dich_vu
@@ -192,20 +190,20 @@
             this.TextBox_AddService_Ten_loai_dich_vu.FocusedBorderColor = System.Drawing.Color.Black;
             this.TextBox_AddService_Ten_loai_dich_vu.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_AddService_Ten_loai_dich_vu.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_AddService_Ten_loai_dich_vu.Location = new System.Drawing.Point(263, 82);
-            this.TextBox_AddService_Ten_loai_dich_vu.Margin = new System.Windows.Forms.Padding(4);
+            this.TextBox_AddService_Ten_loai_dich_vu.Location = new System.Drawing.Point(191, 54);
+            this.TextBox_AddService_Ten_loai_dich_vu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextBox_AddService_Ten_loai_dich_vu.Name = "TextBox_AddService_Ten_loai_dich_vu";
             this.TextBox_AddService_Ten_loai_dich_vu.PasswordChar = '\0';
             this.TextBox_AddService_Ten_loai_dich_vu.Radius = 10;
             this.TextBox_AddService_Ten_loai_dich_vu.SelectedText = "";
-            this.TextBox_AddService_Ten_loai_dich_vu.Size = new System.Drawing.Size(375, 60);
+            this.TextBox_AddService_Ten_loai_dich_vu.Size = new System.Drawing.Size(273, 40);
             this.TextBox_AddService_Ten_loai_dich_vu.TabIndex = 16;
             // 
             // AddService
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(735, 336);
+            this.ClientSize = new System.Drawing.Size(534, 224);
             this.Controls.Add(this.gunaPanel2);
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.gunaLabel3);
@@ -213,7 +211,7 @@
             this.Controls.Add(this.TextBox_AddService_Don_gia);
             this.Controls.Add(this.TextBox_AddService_Ten_loai_dich_vu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "AddService";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AddService";
