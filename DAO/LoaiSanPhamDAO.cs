@@ -42,11 +42,11 @@ namespace CuaHangDaQuy.DAO
             return listDonViTinh;
         }
 
-        public List<string> GetDonGiaBan(int idloai)
+        public List<string> GetDonGiaBan(int idsp)
         {
             List<string> listdonGiaBan = new List<string>();
-            string query = "USP_GetDonGiaBan @idloai ";
-            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { idloai });
+            string query = "USP_GetDonGiaBan @idsp ";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { idsp });
 
             foreach (DataRow row in data.Rows)
             {
@@ -56,11 +56,11 @@ namespace CuaHangDaQuy.DAO
 
             return listdonGiaBan;
         }
-        public List<string> GetDonGiaMua(int idloai)
+        public List<string> GetDonGiaMua(int idsp)
         {
             List<string> listdonGiaMua = new List<string>();
-            string query = "USP_GetDonGiaMua @idloai ";
-            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { idloai });
+            string query = "USP_GetDonGiaMua @idsp ";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { idsp });
 
             foreach (DataRow row in data.Rows)
             {

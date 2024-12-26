@@ -104,7 +104,7 @@
             this.TextBox_loginForm_Password.SelectedText = "";
             this.TextBox_loginForm_Password.Size = new System.Drawing.Size(506, 66);
             this.TextBox_loginForm_Password.TabIndex = 3;
-            this.TextBox_loginForm_Password.Text = "123";
+            this.TextBox_loginForm_Password.Text = "1";
             this.TextBox_loginForm_Password.UseSystemPasswordChar = true;
             // 
             // gunaLabel1

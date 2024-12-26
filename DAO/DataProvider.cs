@@ -26,7 +26,7 @@ namespace CuaHangDaQuy.DAO
 
         private DataProvider() { }
 
-        private string connectionStr = "Data Source=ADMIN-PC;Initial Catalog=CUAHANGDAQUY;Integrated Security=True;TrustServerCertificate=True";
+        private string connectionStr = "Data Source=ADMIN-PC;Initial Catalog=CUAHANGDAQUY1;Integrated Security=True;TrustServerCertificate=True";
 
 
         // ExcuteQuery

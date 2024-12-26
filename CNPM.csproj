@@ -108,6 +108,8 @@
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DichVuDAO.cs" />
     <Compile Include="DAO\HoaDonDAO.cs" />
+    <Compile Include="DAO\HoaDonDichVuDAO.cs" />
+    <Compile Include="DAO\HoaDonMuaHangDAO.cs" />
     <Compile Include="DAO\KhachHangDAO.cs" />
     <Compile Include="DAO\LoaiDichVuDAO.cs" />
     <Compile Include="DAO\LoaiSanPhamDAO.cs" />

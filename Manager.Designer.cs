@@ -69,7 +69,6 @@
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.gunaTextBox3 = new Guna.UI.WinForms.GunaTextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
@@ -125,7 +124,6 @@
             this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.gunaTextBox32 = new Guna.UI.WinForms.GunaTextBox();
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
@@ -155,7 +153,6 @@
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader20 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.gunaTextBox83 = new Guna.UI.WinForms.GunaTextBox();
@@ -215,7 +212,6 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adminToolStripMenuItem,
@@ -227,7 +223,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1452, 38);
+            this.menuStrip1.Size = new System.Drawing.Size(1452, 42);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -835,7 +831,6 @@
             this.columnHeader4,
             this.columnHeader5,
             this.columnHeader6,
-            this.columnHeader7,
             this.columnHeader8});
             this.lsv_Manager_HDban.Enabled = false;
             this.lsv_Manager_HDban.ForeColor = System.Drawing.Color.Black;
@@ -877,11 +872,6 @@
             // 
             this.columnHeader6.Text = "Đơn giá";
             this.columnHeader6.Width = 103;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Giảm giá %";
-            this.columnHeader7.Width = 89;
             // 
             // columnHeader8
             // 
@@ -1403,6 +1393,7 @@
             this.btn_Manager_HDDV_ThemHoaDon.TabIndex = 39;
             this.btn_Manager_HDDV_ThemHoaDon.Text = "Thêm Hóa Đơn";
             this.btn_Manager_HDDV_ThemHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Manager_HDDV_ThemHoaDon.Click += new System.EventHandler(this.btn_Manager_HDDV_ThemHoaDon_Click);
             // 
             // txb_Manager_HDDV_Conlai
             // 
@@ -1968,7 +1959,6 @@
             this.columnHeader10,
             this.columnHeader12,
             this.columnHeader14,
-            this.columnHeader15,
             this.columnHeader16});
             this.lsv_Manager_HDDV.Enabled = false;
             this.lsv_Manager_HDDV.ForeColor = System.Drawing.Color.Black;
@@ -2000,11 +1990,6 @@
             // 
             this.columnHeader14.Text = "Đơn giá";
             this.columnHeader14.Width = 103;
-            // 
-            // columnHeader15
-            // 
-            this.columnHeader15.Text = "Giảm giá %";
-            this.columnHeader15.Width = 87;
             // 
             // columnHeader16
             // 
@@ -2438,6 +2423,7 @@
             this.btn_Manager_HDmua_ThemHoaDon.TabIndex = 32;
             this.btn_Manager_HDmua_ThemHoaDon.Text = "Thêm Hóa Đơn";
             this.btn_Manager_HDmua_ThemHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btn_Manager_HDmua_ThemHoaDon.Click += new System.EventHandler(this.btn_Manager_HDmua_ThemHoaDon_Click);
             // 
             // gunaTextBox84
             // 
@@ -2500,7 +2486,6 @@
             this.columnHeader17,
             this.columnHeader18,
             this.columnHeader19,
-            this.columnHeader20,
             this.columnHeader21,
             this.columnHeader23});
             this.lsv_Manager_HDmua.Enabled = false;
@@ -2533,11 +2518,6 @@
             // 
             this.columnHeader19.Text = "Số lượng";
             this.columnHeader19.Width = 77;
-            // 
-            // columnHeader20
-            // 
-            this.columnHeader20.Text = "Đơn vị tính";
-            this.columnHeader20.Width = 109;
             // 
             // columnHeader21
             // 
@@ -3405,7 +3385,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.ColumnHeader columnHeader5;
         private System.Windows.Forms.ColumnHeader columnHeader6;
-        private System.Windows.Forms.ColumnHeader columnHeader7;
         private System.Windows.Forms.ColumnHeader columnHeader8;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -3465,7 +3444,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader10;
         private System.Windows.Forms.ColumnHeader columnHeader12;
         private System.Windows.Forms.ColumnHeader columnHeader14;
-        private System.Windows.Forms.ColumnHeader columnHeader15;
         private System.Windows.Forms.ColumnHeader columnHeader16;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox32;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel6;
@@ -3535,7 +3513,6 @@
         private System.Windows.Forms.ColumnHeader columnHeader17;
         private System.Windows.Forms.ColumnHeader columnHeader18;
         private System.Windows.Forms.ColumnHeader columnHeader19;
-        private System.Windows.Forms.ColumnHeader columnHeader20;
         private System.Windows.Forms.ColumnHeader columnHeader21;
         private System.Windows.Forms.ColumnHeader columnHeader23;
         private Guna.UI.WinForms.GunaButton btn_Manager_HDban_ThemHoaDon;
