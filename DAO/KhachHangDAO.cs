@@ -71,5 +71,19 @@ namespace CuaHangDaQuy.DAO
             }
             return null;
         }
+
+        public List<KhachHang> LoadListKH()
+        {
+            List<KhachHang> khList = new List<KhachHang>();
+
+            DataTable data = DataProvider.Instance.ExcuteQuery("SELECT * FROM KhachHang ");
+
+            foreach (DataRow item in data.Rows)
+            {
+                KhachHang kh = new KhachHang(item);
+                khList.Add(kh);
+            }
+            return khList;
+        }
     }
 }

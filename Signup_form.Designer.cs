@@ -56,7 +56,7 @@
             this.gunaPanel1.Controls.Add(this.ControlBox_SignupForm_X);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(618, 167);
             this.gunaPanel1.TabIndex = 13;
@@ -82,7 +82,7 @@
             this.ControlBox_SignupForm_X.IconColor = System.Drawing.Color.Black;
             this.ControlBox_SignupForm_X.IconSize = 30F;
             this.ControlBox_SignupForm_X.Location = new System.Drawing.Point(545, 0);
-            this.ControlBox_SignupForm_X.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ControlBox_SignupForm_X.Margin = new System.Windows.Forms.Padding(4);
             this.ControlBox_SignupForm_X.Name = "ControlBox_SignupForm_X";
             this.ControlBox_SignupForm_X.OnHoverBackColor = System.Drawing.Color.Firebrick;
             this.ControlBox_SignupForm_X.OnHoverIconColor = System.Drawing.Color.White;
@@ -98,7 +98,7 @@
             this.gunaCirclePictureBox1.ErrorImage = null;
             this.gunaCirclePictureBox1.InitialImage = null;
             this.gunaCirclePictureBox1.Location = new System.Drawing.Point(-1, 906);
-            this.gunaCirclePictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCirclePictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
             this.gunaCirclePictureBox1.Size = new System.Drawing.Size(620, 44);
             this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -122,7 +122,7 @@
             this.Button_SignupForm_SIGNUP.Image = null;
             this.Button_SignupForm_SIGNUP.ImageSize = new System.Drawing.Size(20, 20);
             this.Button_SignupForm_SIGNUP.Location = new System.Drawing.Point(67, 809);
-            this.Button_SignupForm_SIGNUP.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Button_SignupForm_SIGNUP.Margin = new System.Windows.Forms.Padding(4);
             this.Button_SignupForm_SIGNUP.Name = "Button_SignupForm_SIGNUP";
             this.Button_SignupForm_SIGNUP.OnHoverBaseColor = System.Drawing.SystemColors.ScrollBar;
             this.Button_SignupForm_SIGNUP.OnHoverBorderColor = System.Drawing.SystemColors.ScrollBar;
@@ -155,7 +155,7 @@
             this.Switch_SignupForm_ShowPassword.CheckedOnColor = System.Drawing.Color.DimGray;
             this.Switch_SignupForm_ShowPassword.FillColor = System.Drawing.Color.WhiteSmoke;
             this.Switch_SignupForm_ShowPassword.Location = new System.Drawing.Point(489, 805);
-            this.Switch_SignupForm_ShowPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Switch_SignupForm_ShowPassword.Margin = new System.Windows.Forms.Padding(4);
             this.Switch_SignupForm_ShowPassword.Name = "Switch_SignupForm_ShowPassword";
             this.Switch_SignupForm_ShowPassword.Size = new System.Drawing.Size(55, 40);
             this.Switch_SignupForm_ShowPassword.TabIndex = 14;
@@ -194,7 +194,7 @@
             this.TextBox_SignupForm_cf_password.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_SignupForm_cf_password.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_SignupForm_cf_password.Location = new System.Drawing.Point(67, 713);
-            this.TextBox_SignupForm_cf_password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox_SignupForm_cf_password.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_SignupForm_cf_password.Name = "TextBox_SignupForm_cf_password";
             this.TextBox_SignupForm_cf_password.PasswordChar = '●';
             this.TextBox_SignupForm_cf_password.Radius = 5;
@@ -215,7 +215,7 @@
             this.TextBox_SignupForm_Password.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_SignupForm_Password.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_SignupForm_Password.Location = new System.Drawing.Point(67, 594);
-            this.TextBox_SignupForm_Password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox_SignupForm_Password.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_SignupForm_Password.Name = "TextBox_SignupForm_Password";
             this.TextBox_SignupForm_Password.PasswordChar = '●';
             this.TextBox_SignupForm_Password.Radius = 5;
@@ -258,9 +258,9 @@
             this.TextBox_SignupForm_Email.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_SignupForm_Email.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_SignupForm_Email.Location = new System.Drawing.Point(67, 475);
-            this.TextBox_SignupForm_Email.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox_SignupForm_Email.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_SignupForm_Email.Name = "TextBox_SignupForm_Email";
-            this.TextBox_SignupForm_Email.PasswordChar = '●';
+            this.TextBox_SignupForm_Email.PasswordChar = '\0';
             this.TextBox_SignupForm_Email.Radius = 5;
             this.TextBox_SignupForm_Email.SelectedText = "";
             this.TextBox_SignupForm_Email.Size = new System.Drawing.Size(477, 66);
@@ -278,7 +278,7 @@
             this.TextBox_SignupForm_Username.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_SignupForm_Username.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_SignupForm_Username.Location = new System.Drawing.Point(67, 228);
-            this.TextBox_SignupForm_Username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox_SignupForm_Username.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_SignupForm_Username.Name = "TextBox_SignupForm_Username";
             this.TextBox_SignupForm_Username.PasswordChar = '\0';
             this.TextBox_SignupForm_Username.Radius = 5;
@@ -309,7 +309,7 @@
             this.TextBox_SignupForm_Name.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.TextBox_SignupForm_Name.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBox_SignupForm_Name.Location = new System.Drawing.Point(67, 350);
-            this.TextBox_SignupForm_Name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.TextBox_SignupForm_Name.Margin = new System.Windows.Forms.Padding(4);
             this.TextBox_SignupForm_Name.Name = "TextBox_SignupForm_Name";
             this.TextBox_SignupForm_Name.PasswordChar = '\0';
             this.TextBox_SignupForm_Name.Radius = 5;
@@ -321,6 +321,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.ClientSize = new System.Drawing.Size(618, 950);
             this.Controls.Add(this.gunaLabel4);
             this.Controls.Add(this.TextBox_SignupForm_Name);
@@ -338,7 +340,7 @@
             this.Controls.Add(this.TextBox_SignupForm_Password);
             this.Controls.Add(this.gunaPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Signup_form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Signup_form";

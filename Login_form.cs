@@ -68,5 +68,20 @@ namespace CNPM
             i.ShowDialog();
             this.Show();
         }
+
+        private void Switch_loginForm_ShowPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (Switch_loginForm_ShowPassword.Checked)
+            {
+                // Hiện mật khẩu
+                TextBox_loginForm_Password.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                // Ẩn mật khẩu
+                TextBox_loginForm_Password.UseSystemPasswordChar = true;
+            }
+        }
+
     }
 }

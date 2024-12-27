@@ -30,7 +30,6 @@
         {
             this.ControlBox_loginForm_X = new Guna.UI.WinForms.GunaControlBox();
             this.TextBox_loginForm_Username = new Guna.UI.WinForms.GunaTextBox();
-            this.TextBox_loginForm_Password = new Guna.UI.WinForms.GunaTextBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.Switch_loginForm_ShowPassword = new Guna.UI.WinForms.GunaSwitch();
@@ -41,6 +40,7 @@
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.PictureBox_loginForm_avt = new Guna.UI.WinForms.GunaPictureBox();
             this.Button_loginForm_ForgetPassword = new Guna.UI.WinForms.GunaButton();
+            this.TextBox_loginForm_Password = new Guna.UI.WinForms.GunaTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_loginForm_avt)).BeginInit();
@@ -85,28 +85,6 @@
             this.TextBox_loginForm_Username.TabIndex = 2;
             this.TextBox_loginForm_Username.Text = "phuc";
             // 
-            // TextBox_loginForm_Password
-            // 
-            this.TextBox_loginForm_Password.BackColor = System.Drawing.Color.Transparent;
-            this.TextBox_loginForm_Password.BaseColor = System.Drawing.Color.LightGray;
-            this.TextBox_loginForm_Password.BorderColor = System.Drawing.Color.DimGray;
-            this.TextBox_loginForm_Password.BorderSize = 1;
-            this.TextBox_loginForm_Password.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TextBox_loginForm_Password.FocusedBaseColor = System.Drawing.Color.DarkGray;
-            this.TextBox_loginForm_Password.FocusedBorderColor = System.Drawing.Color.DimGray;
-            this.TextBox_loginForm_Password.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.TextBox_loginForm_Password.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextBox_loginForm_Password.Location = new System.Drawing.Point(67, 495);
-            this.TextBox_loginForm_Password.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.TextBox_loginForm_Password.Name = "TextBox_loginForm_Password";
-            this.TextBox_loginForm_Password.PasswordChar = '●';
-            this.TextBox_loginForm_Password.Radius = 5;
-            this.TextBox_loginForm_Password.SelectedText = "";
-            this.TextBox_loginForm_Password.Size = new System.Drawing.Size(506, 66);
-            this.TextBox_loginForm_Password.TabIndex = 3;
-            this.TextBox_loginForm_Password.Text = "1";
-            this.TextBox_loginForm_Password.UseSystemPasswordChar = true;
-            // 
             // gunaLabel1
             // 
             this.gunaLabel1.AutoSize = true;
@@ -140,6 +118,7 @@
             this.Switch_loginForm_ShowPassword.Name = "Switch_loginForm_ShowPassword";
             this.Switch_loginForm_ShowPassword.Size = new System.Drawing.Size(55, 39);
             this.Switch_loginForm_ShowPassword.TabIndex = 2;
+            this.Switch_loginForm_ShowPassword.CheckedChanged += new System.EventHandler(this.Switch_loginForm_ShowPassword_CheckedChanged);
             // 
             // gunaLabel3
             // 
@@ -284,11 +263,32 @@
             this.Button_loginForm_ForgetPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Button_loginForm_ForgetPassword.UseTransfarantBackground = true;
             // 
+            // TextBox_loginForm_Password
+            // 
+            this.TextBox_loginForm_Password.BackColor = System.Drawing.Color.Transparent;
+            this.TextBox_loginForm_Password.BaseColor = System.Drawing.Color.LightGray;
+            this.TextBox_loginForm_Password.BorderColor = System.Drawing.Color.DimGray;
+            this.TextBox_loginForm_Password.BorderSize = 1;
+            this.TextBox_loginForm_Password.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TextBox_loginForm_Password.FocusedBaseColor = System.Drawing.Color.DarkGray;
+            this.TextBox_loginForm_Password.FocusedBorderColor = System.Drawing.Color.DimGray;
+            this.TextBox_loginForm_Password.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.TextBox_loginForm_Password.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_loginForm_Password.Location = new System.Drawing.Point(70, 493);
+            this.TextBox_loginForm_Password.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.TextBox_loginForm_Password.Name = "TextBox_loginForm_Password";
+            this.TextBox_loginForm_Password.PasswordChar = '\0';
+            this.TextBox_loginForm_Password.Radius = 5;
+            this.TextBox_loginForm_Password.SelectedText = "";
+            this.TextBox_loginForm_Password.Size = new System.Drawing.Size(506, 66);
+            this.TextBox_loginForm_Password.TabIndex = 14;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(619, 778);
+            this.Controls.Add(this.TextBox_loginForm_Password);
             this.Controls.Add(this.Button_loginForm_ForgetPassword);
             this.Controls.Add(this.gunaPanel1);
             this.Controls.Add(this.gunaCirclePictureBox1);
@@ -298,7 +298,6 @@
             this.Controls.Add(this.Switch_loginForm_ShowPassword);
             this.Controls.Add(this.gunaLabel2);
             this.Controls.Add(this.gunaLabel1);
-            this.Controls.Add(this.TextBox_loginForm_Password);
             this.Controls.Add(this.TextBox_loginForm_Username);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HelpButton = true;
@@ -320,7 +319,6 @@
 
         private Guna.UI.WinForms.GunaControlBox ControlBox_loginForm_X;
         private Guna.UI.WinForms.GunaTextBox TextBox_loginForm_Username;
-        private Guna.UI.WinForms.GunaTextBox TextBox_loginForm_Password;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
         private Guna.UI.WinForms.GunaSwitch Switch_loginForm_ShowPassword;
@@ -331,6 +329,7 @@
         private Guna.UI.WinForms.GunaPictureBox PictureBox_loginForm_avt;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaButton Button_loginForm_ForgetPassword;
+        private Guna.UI.WinForms.GunaTextBox TextBox_loginForm_Password;
     }
 }
 

@@ -70,7 +70,7 @@ namespace CNPM
 
         private void Button_Interface_productbill_Click(object sender, EventArgs e)
         {
-            ShowUserControl(new UCproductbill());
+            ShowUserControl(new UCProductType());
         }
 
         private void Button_Interface_servicebill_Click(object sender, EventArgs e)

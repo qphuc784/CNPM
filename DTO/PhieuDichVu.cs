@@ -18,8 +18,6 @@ namespace CuaHangDaQuy.DTO
         private int idnhanvien;
         public int IDNhanVien { get => idnhanvien; set => idnhanvien = value; }
 
-        private int soluong;
-        public int SoLuong { get => soluong; set => soluong = value; }
 
         private float tratruoc;
         public float TraTruoc { get => tratruoc; set => tratruoc = value; }
@@ -27,15 +25,17 @@ namespace CuaHangDaQuy.DTO
         private DateTime ngayban;
         public DateTime NgayBan { get => ngayban; set => ngayban = value; }
 
+        private bool trangthai;
+        public bool TrangThai { get => trangthai; set => trangthai = value; }
 
-        public PhieuDichVu(int id, int idkhach, int idnhanvien, int soluong, float tratruoc, DateTime ngayban)
+        public PhieuDichVu(int id, int idkhach, int idnhanvien, float tratruoc, DateTime ngayban, bool trangthai)
         {
             this.ID = id;
             this.IDKhach = idkhach;
             this.IDNhanVien = idnhanvien;
-            this.SoLuong = soluong;
             this.TraTruoc = tratruoc;
             this.NgayBan = ngayban;
+            this.TrangThai = trangthai;
         }
 
         public PhieuDichVu(DataRow row)
@@ -43,9 +43,9 @@ namespace CuaHangDaQuy.DTO
             this.ID = (int)row["ID"];
             this.IDKhach = (int)row["IDKhach"];
             this.IDNhanVien = (int)row["IDNhanVien"];
-            this.SoLuong = (int)row["SoLuong"];
-            this.TraTruoc = (float)row["TraTruoc"];
+            this.TraTruoc = Convert.ToSingle(row["TraTruoc"]);
             this.NgayBan = (DateTime)row["NgayBan"];
+            this.TrangThai = (bool)row["TrangThai"];
         }
     }
 }

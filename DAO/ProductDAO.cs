@@ -74,7 +74,7 @@ namespace CuaHangDaQuy.DAO
         public List<SanPham> GetSanPhamByTenLoai(string TenLoai)
         {
             List<SanPham> listSP = new List<SanPham>();
-            string query = "USP_HienThiTonkho @TenLoai ";
+            string query = "USP_HienThiTonkho @TenLoai";
             DataTable data = DataProvider.Instance.ExcuteQuery(query, new object[] { TenLoai });
 
             foreach (DataRow row in data.Rows)
@@ -123,7 +123,7 @@ namespace CuaHangDaQuy.DAO
         public List<SanPham> GetSanPhamByTenSP(string TenSanPham)
         {
             List<SanPham> listsp = new List<SanPham>();
-            string query = "USP_GetSanPhamByTenSP @TenSanPham ";
+            string query = "USP_GetSanPhamByTenSp @TenSanPham ";
             DataTable data = DataProvider.Instance.ExcuteQuery(query, new Object[] { TenSanPham });
             foreach (DataRow row in data.Rows)
             {

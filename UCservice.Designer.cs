@@ -146,7 +146,7 @@
             this.Button_UCservice_Sua.Radius = 10;
             this.Button_UCservice_Sua.Size = new System.Drawing.Size(139, 67);
             this.Button_UCservice_Sua.TabIndex = 18;
-            this.Button_UCservice_Sua.Text = "<> Sửa";
+            this.Button_UCservice_Sua.Text = "Sửa";
             this.Button_UCservice_Sua.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Button_UCservice_Sua.Click += new System.EventHandler(this.Button_UCservice_Sua_Click);
             // 
@@ -174,7 +174,7 @@
             this.Button_UCservice_Xoa.Radius = 10;
             this.Button_UCservice_Xoa.Size = new System.Drawing.Size(139, 67);
             this.Button_UCservice_Xoa.TabIndex = 17;
-            this.Button_UCservice_Xoa.Text = "- Xóa";
+            this.Button_UCservice_Xoa.Text = "Xóa";
             this.Button_UCservice_Xoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Button_UCservice_Xoa.Click += new System.EventHandler(this.Button_UCservice_Xoa_Click);
             // 
@@ -202,7 +202,7 @@
             this.Button_UCservice_Them.Radius = 10;
             this.Button_UCservice_Them.Size = new System.Drawing.Size(139, 67);
             this.Button_UCservice_Them.TabIndex = 16;
-            this.Button_UCservice_Them.Text = "+ Thêm";
+            this.Button_UCservice_Them.Text = "Thêm";
             this.Button_UCservice_Them.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Button_UCservice_Them.Click += new System.EventHandler(this.Button_UCservice_Them_Click);
             // 

@@ -35,11 +35,12 @@
             this.đăngXuấtToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.báoCáoTồnKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phiếuDịchVụToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.phiếuDịchVụToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl_Manager = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
+            this.HDban_Delete_button_Listview = new Guna.UI.WinForms.GunaButton();
+            this.HDban_Quantity_Listview = new Guna.UI.WinForms.GunaTextBox();
+            this.HDban_Productname_Listview = new System.Windows.Forms.ComboBox();
             this.btn_Manager_HDban_ThemHoaDon = new Guna.UI.WinForms.GunaButton();
             this.gunaTextBox49 = new Guna.UI.WinForms.GunaTextBox();
             this.tb_Manager_HDban_Total = new Guna.UI.WinForms.GunaTextBox();
@@ -59,7 +60,9 @@
             this.tb_Manager_HDban_GuestPN = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox28 = new Guna.UI.WinForms.GunaTextBox();
             this.DateTimePicker_Manager_HDban_date_time = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gunaTextBox22 = new Guna.UI.WinForms.GunaTextBox();
             this.btn_Manager_HDban_AddGuest = new Guna.UI.WinForms.GunaButton();
+            this.gunaTextBox11 = new Guna.UI.WinForms.GunaTextBox();
             this.btn_Manager_HDban_ShowGuest = new Guna.UI.WinForms.GunaButton();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.lsv_Manager_HDban = new System.Windows.Forms.ListView();
@@ -70,7 +73,6 @@
             this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.gunaTextBox3 = new Guna.UI.WinForms.GunaTextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaTextBox5 = new Guna.UI.WinForms.GunaTextBox();
             this.tb_Manager_HDban_IdProduct = new Guna.UI.WinForms.GunaTextBox();
@@ -86,13 +88,15 @@
             this.tb_Manager_HDban_Cash = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox20 = new Guna.UI.WinForms.GunaTextBox();
             this.txb_Manager_HDban_Quantity = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaTextBox11 = new Guna.UI.WinForms.GunaTextBox();
-            this.txb_Manager_HDban_GiamGia = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox21 = new Guna.UI.WinForms.GunaTextBox();
             this.btn_Manager_HDban_AddProductbill = new Guna.UI.WinForms.GunaButton();
             this.billTB = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaTextBox3 = new Guna.UI.WinForms.GunaTextBox();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
+            this.HDDV_Delete_button_Listview = new Guna.UI.WinForms.GunaButton();
+            this.HDDV_Quantity_Listview = new Guna.UI.WinForms.GunaTextBox();
+            this.HDDV_Productname_Listview = new System.Windows.Forms.ComboBox();
             this.btn_Manager_HDDV_ThemHoaDon = new Guna.UI.WinForms.GunaButton();
             this.txb_Manager_HDDV_Conlai = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox54 = new Guna.UI.WinForms.GunaTextBox();
@@ -116,7 +120,9 @@
             this.tb_Manager_HDDV_GuestPN = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox31 = new Guna.UI.WinForms.GunaTextBox();
             this.DateTimePicker_Manager_HDDV_date_time = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gunaTextBox24 = new Guna.UI.WinForms.GunaTextBox();
             this.btn_Manager_HDDV_AddGuest = new Guna.UI.WinForms.GunaButton();
+            this.gunaTextBox27 = new Guna.UI.WinForms.GunaTextBox();
             this.btn_Manager_HDDV_ShowGuest = new Guna.UI.WinForms.GunaButton();
             this.flowLayoutPanel5 = new System.Windows.Forms.FlowLayoutPanel();
             this.lsv_Manager_HDDV = new System.Windows.Forms.ListView();
@@ -129,21 +135,22 @@
             this.flowLayoutPanel6 = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaTextBox33 = new Guna.UI.WinForms.GunaTextBox();
             this.tb_Manager_HDDV_IdService = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaTextBox38 = new Guna.UI.WinForms.GunaTextBox();
-            this.tb_Manager_HDDV_Discount = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaTextBox37 = new Guna.UI.WinForms.GunaTextBox();
-            this.cb_Manager_HDDV_ServiceType = new System.Windows.Forms.ComboBox();
             this.gunaTextBox35 = new Guna.UI.WinForms.GunaTextBox();
             this.tb_Manager_HDDV_UnitPrice = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaTextBox40 = new Guna.UI.WinForms.GunaTextBox();
-            this.txb_Manager_HDDV_Quantity = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaTextBox37 = new Guna.UI.WinForms.GunaTextBox();
+            this.cb_Manager_HDDV_ServiceType = new System.Windows.Forms.ComboBox();
             this.gunaTextBox41 = new Guna.UI.WinForms.GunaTextBox();
             this.tb_Manager_HDDV_Cash = new Guna.UI.WinForms.GunaTextBox();
+            this.gunaTextBox40 = new Guna.UI.WinForms.GunaTextBox();
+            this.txb_Manager_HDDV_Quantity = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox45 = new Guna.UI.WinForms.GunaTextBox();
             this.btn_Manager_HDDV_AddServicebill = new Guna.UI.WinForms.GunaButton();
             this.gunaTextBox46 = new Guna.UI.WinForms.GunaTextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
+            this.HDmua_Delete_button_Listview = new Guna.UI.WinForms.GunaButton();
+            this.HDmua_Quantity_Listview = new Guna.UI.WinForms.GunaTextBox();
+            this.HDmua_Productname_Listview = new System.Windows.Forms.ComboBox();
             this.btn_Manager_HDmua_ThemHoaDon = new Guna.UI.WinForms.GunaButton();
             this.gunaTextBox84 = new Guna.UI.WinForms.GunaTextBox();
             this.tb_Manager_HDmua_Total = new Guna.UI.WinForms.GunaTextBox();
@@ -152,6 +159,7 @@
             this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader19 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader21 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader23 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -172,7 +180,9 @@
             this.tb_Manager_HDmua_GuestPN = new Guna.UI.WinForms.GunaTextBox();
             this.gunaTextBox69 = new Guna.UI.WinForms.GunaTextBox();
             this.DateTimePicker_Manager_HDmua_date_time = new Guna.UI.WinForms.GunaDateTimePicker();
+            this.gunaTextBox30 = new Guna.UI.WinForms.GunaTextBox();
             this.btn_Manager_HDmua_AddGuest = new Guna.UI.WinForms.GunaButton();
+            this.gunaTextBox34 = new Guna.UI.WinForms.GunaTextBox();
             this.btn_Manager_HDmua_ShowNCC = new Guna.UI.WinForms.GunaButton();
             this.flowLayoutPanel8 = new System.Windows.Forms.FlowLayoutPanel();
             this.gunaTextBox74 = new Guna.UI.WinForms.GunaTextBox();
@@ -212,25 +222,24 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.adminToolStripMenuItem,
             this.thôngTinTàiKhoảnToolStripMenuItem,
             this.báoCáoTồnKhoToolStripMenuItem,
-            this.hóaĐơnToolStripMenuItem,
-            this.phiếuDịchVụToolStripMenuItem,
-            this.phiếuDịchVụToolStripMenuItem1});
+            this.hóaĐơnToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1452, 42);
+            this.menuStrip1.Size = new System.Drawing.Size(1452, 38);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // adminToolStripMenuItem
             // 
             this.adminToolStripMenuItem.Name = "adminToolStripMenuItem";
-            this.adminToolStripMenuItem.Size = new System.Drawing.Size(92, 38);
+            this.adminToolStripMenuItem.Size = new System.Drawing.Size(92, 34);
             this.adminToolStripMenuItem.Text = "Admin";
             this.adminToolStripMenuItem.Click += new System.EventHandler(this.adminToolStripMenuItem_Click);
             // 
@@ -240,7 +249,7 @@
             this.thôngTinCáNhânToolStripMenuItem,
             this.đăngXuấtToolStripMenuItem});
             this.thôngTinTàiKhoảnToolStripMenuItem.Name = "thôngTinTàiKhoảnToolStripMenuItem";
-            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(212, 38);
+            this.thôngTinTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(212, 34);
             this.thôngTinTàiKhoảnToolStripMenuItem.Text = "Thông tin tài khoản";
             // 
             // thôngTinCáNhânToolStripMenuItem
@@ -260,35 +269,23 @@
             // báoCáoTồnKhoToolStripMenuItem
             // 
             this.báoCáoTồnKhoToolStripMenuItem.Name = "báoCáoTồnKhoToolStripMenuItem";
-            this.báoCáoTồnKhoToolStripMenuItem.Size = new System.Drawing.Size(182, 38);
+            this.báoCáoTồnKhoToolStripMenuItem.Size = new System.Drawing.Size(182, 34);
             this.báoCáoTồnKhoToolStripMenuItem.Text = "Báo cáo tồn kho";
             this.báoCáoTồnKhoToolStripMenuItem.Click += new System.EventHandler(this.báoCáoTồnKhoToolStripMenuItem_Click);
             // 
             // hóaĐơnToolStripMenuItem
             // 
             this.hóaĐơnToolStripMenuItem.Name = "hóaĐơnToolStripMenuItem";
-            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(112, 38);
+            this.hóaĐơnToolStripMenuItem.Size = new System.Drawing.Size(112, 34);
             this.hóaĐơnToolStripMenuItem.Text = "Hóa đơn";
             this.hóaĐơnToolStripMenuItem.Click += new System.EventHandler(this.hóaĐơnToolStripMenuItem_Click);
-            // 
-            // phiếuDịchVụToolStripMenuItem
-            // 
-            this.phiếuDịchVụToolStripMenuItem.Name = "phiếuDịchVụToolStripMenuItem";
-            this.phiếuDịchVụToolStripMenuItem.Size = new System.Drawing.Size(199, 38);
-            this.phiếuDịchVụToolStripMenuItem.Text = "Tìm kiếm hóa đơn";
-            // 
-            // phiếuDịchVụToolStripMenuItem1
-            // 
-            this.phiếuDịchVụToolStripMenuItem1.Name = "phiếuDịchVụToolStripMenuItem1";
-            this.phiếuDịchVụToolStripMenuItem1.Size = new System.Drawing.Size(156, 38);
-            this.phiếuDịchVụToolStripMenuItem1.Text = "Phiếu dịch vụ";
             // 
             // tabControl_Manager
             // 
             this.tabControl_Manager.Controls.Add(this.tabPage1);
             this.tabControl_Manager.Controls.Add(this.tabPage3);
             this.tabControl_Manager.Controls.Add(this.tabPage2);
-            this.tabControl_Manager.Location = new System.Drawing.Point(0, 44);
+            this.tabControl_Manager.Location = new System.Drawing.Point(0, 43);
             this.tabControl_Manager.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl_Manager.Name = "tabControl_Manager";
             this.tabControl_Manager.SelectedIndex = 0;
@@ -302,9 +299,9 @@
             this.tabPage1.Controls.Add(this.gunaTextBox1);
             this.tabPage1.Controls.Add(this.flowLayoutPanel2);
             this.tabPage1.Controls.Add(this.flowLayoutPanel3);
-            this.tabPage1.Controls.Add(this.gunaTextBox3);
             this.tabPage1.Controls.Add(this.flowLayoutPanel1);
             this.tabPage1.Controls.Add(this.billTB);
+            this.tabPage1.Controls.Add(this.gunaTextBox3);
             this.tabPage1.ForeColor = System.Drawing.Color.Transparent;
             this.tabPage1.Location = new System.Drawing.Point(4, 33);
             this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -312,10 +309,13 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Size = new System.Drawing.Size(1444, 1413);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "HD bán";
+            this.tabPage1.Text = "Hóa đơn bán hàng";
             // 
             // gunaPanel1
             // 
+            this.gunaPanel1.Controls.Add(this.HDban_Delete_button_Listview);
+            this.gunaPanel1.Controls.Add(this.HDban_Quantity_Listview);
+            this.gunaPanel1.Controls.Add(this.HDban_Productname_Listview);
             this.gunaPanel1.Controls.Add(this.btn_Manager_HDban_ThemHoaDon);
             this.gunaPanel1.Controls.Add(this.gunaTextBox49);
             this.gunaPanel1.Controls.Add(this.tb_Manager_HDban_Total);
@@ -324,6 +324,63 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(1437, 235);
             this.gunaPanel1.TabIndex = 32;
+            // 
+            // HDban_Delete_button_Listview
+            // 
+            this.HDban_Delete_button_Listview.AnimationHoverSpeed = 0.07F;
+            this.HDban_Delete_button_Listview.AnimationSpeed = 0.03F;
+            this.HDban_Delete_button_Listview.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.HDban_Delete_button_Listview.BorderColor = System.Drawing.Color.Black;
+            this.HDban_Delete_button_Listview.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.HDban_Delete_button_Listview.FocusedColor = System.Drawing.Color.Empty;
+            this.HDban_Delete_button_Listview.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HDban_Delete_button_Listview.ForeColor = System.Drawing.Color.White;
+            this.HDban_Delete_button_Listview.Image = null;
+            this.HDban_Delete_button_Listview.ImageSize = new System.Drawing.Size(20, 20);
+            this.HDban_Delete_button_Listview.Location = new System.Drawing.Point(137, 73);
+            this.HDban_Delete_button_Listview.Margin = new System.Windows.Forms.Padding(4);
+            this.HDban_Delete_button_Listview.Name = "HDban_Delete_button_Listview";
+            this.HDban_Delete_button_Listview.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.HDban_Delete_button_Listview.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.HDban_Delete_button_Listview.OnHoverForeColor = System.Drawing.Color.White;
+            this.HDban_Delete_button_Listview.OnHoverImage = null;
+            this.HDban_Delete_button_Listview.OnPressedColor = System.Drawing.Color.Black;
+            this.HDban_Delete_button_Listview.Size = new System.Drawing.Size(239, 54);
+            this.HDban_Delete_button_Listview.TabIndex = 38;
+            this.HDban_Delete_button_Listview.Text = "Cập Nhật";
+            this.HDban_Delete_button_Listview.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.HDban_Delete_button_Listview.Click += new System.EventHandler(this.HDban_Delete_button_Listview_Click);
+            // 
+            // HDban_Quantity_Listview
+            // 
+            this.HDban_Quantity_Listview.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.HDban_Quantity_Listview.BaseColor = System.Drawing.Color.WhiteSmoke;
+            this.HDban_Quantity_Listview.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.HDban_Quantity_Listview.BorderSize = 1;
+            this.HDban_Quantity_Listview.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.HDban_Quantity_Listview.FocusedBaseColor = System.Drawing.Color.LightGray;
+            this.HDban_Quantity_Listview.FocusedBorderColor = System.Drawing.Color.DimGray;
+            this.HDban_Quantity_Listview.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.HDban_Quantity_Listview.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HDban_Quantity_Listview.ForeColor = System.Drawing.Color.Black;
+            this.HDban_Quantity_Listview.Location = new System.Drawing.Point(4, 74);
+            this.HDban_Quantity_Listview.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.HDban_Quantity_Listview.Name = "HDban_Quantity_Listview";
+            this.HDban_Quantity_Listview.PasswordChar = '\0';
+            this.HDban_Quantity_Listview.SelectedText = "";
+            this.HDban_Quantity_Listview.Size = new System.Drawing.Size(95, 50);
+            this.HDban_Quantity_Listview.TabIndex = 37;
+            this.HDban_Quantity_Listview.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // HDban_Productname_Listview
+            // 
+            this.HDban_Productname_Listview.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HDban_Productname_Listview.FormattingEnabled = true;
+            this.HDban_Productname_Listview.Location = new System.Drawing.Point(3, 5);
+            this.HDban_Productname_Listview.Margin = new System.Windows.Forms.Padding(4);
+            this.HDban_Productname_Listview.Name = "HDban_Productname_Listview";
+            this.HDban_Productname_Listview.Size = new System.Drawing.Size(370, 39);
+            this.HDban_Productname_Listview.TabIndex = 36;
             // 
             // btn_Manager_HDban_ThemHoaDon
             // 
@@ -337,7 +394,7 @@
             this.btn_Manager_HDban_ThemHoaDon.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDban_ThemHoaDon.Image = null;
             this.btn_Manager_HDban_ThemHoaDon.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDban_ThemHoaDon.Location = new System.Drawing.Point(1156, 73);
+            this.btn_Manager_HDban_ThemHoaDon.Location = new System.Drawing.Point(1168, 73);
             this.btn_Manager_HDban_ThemHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Manager_HDban_ThemHoaDon.Name = "btn_Manager_HDban_ThemHoaDon";
             this.btn_Manager_HDban_ThemHoaDon.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -345,7 +402,7 @@
             this.btn_Manager_HDban_ThemHoaDon.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDban_ThemHoaDon.OnHoverImage = null;
             this.btn_Manager_HDban_ThemHoaDon.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_Manager_HDban_ThemHoaDon.Size = new System.Drawing.Size(236, 68);
+            this.btn_Manager_HDban_ThemHoaDon.Size = new System.Drawing.Size(265, 54);
             this.btn_Manager_HDban_ThemHoaDon.TabIndex = 31;
             this.btn_Manager_HDban_ThemHoaDon.Text = "Thêm Hóa Đơn";
             this.btn_Manager_HDban_ThemHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -363,7 +420,7 @@
             this.gunaTextBox49.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox49.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox49.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox49.Location = new System.Drawing.Point(581, 5);
+            this.gunaTextBox49.Location = new System.Drawing.Point(928, 5);
             this.gunaTextBox49.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox49.Name = "gunaTextBox49";
             this.gunaTextBox49.PasswordChar = '\0';
@@ -386,12 +443,12 @@
             this.tb_Manager_HDban_Total.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDban_Total.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDban_Total.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDban_Total.Location = new System.Drawing.Point(824, 5);
+            this.tb_Manager_HDban_Total.Location = new System.Drawing.Point(1168, 5);
             this.tb_Manager_HDban_Total.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDban_Total.Name = "tb_Manager_HDban_Total";
             this.tb_Manager_HDban_Total.PasswordChar = '\0';
             this.tb_Manager_HDban_Total.SelectedText = "";
-            this.tb_Manager_HDban_Total.Size = new System.Drawing.Size(568, 59);
+            this.tb_Manager_HDban_Total.Size = new System.Drawing.Size(265, 59);
             this.tb_Manager_HDban_Total.TabIndex = 29;
             this.tb_Manager_HDban_Total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -435,7 +492,9 @@
             this.flowLayoutPanel2.Controls.Add(this.tb_Manager_HDban_GuestPN);
             this.flowLayoutPanel2.Controls.Add(this.gunaTextBox28);
             this.flowLayoutPanel2.Controls.Add(this.DateTimePicker_Manager_HDban_date_time);
+            this.flowLayoutPanel2.Controls.Add(this.gunaTextBox22);
             this.flowLayoutPanel2.Controls.Add(this.btn_Manager_HDban_AddGuest);
+            this.flowLayoutPanel2.Controls.Add(this.gunaTextBox11);
             this.flowLayoutPanel2.Controls.Add(this.btn_Manager_HDban_ShowGuest);
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 142);
             this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -743,6 +802,7 @@
             this.DateTimePicker_Manager_HDban_date_time.BorderSize = 1;
             this.DateTimePicker_Manager_HDban_date_time.CustomFormat = null;
             this.DateTimePicker_Manager_HDban_date_time.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DateTimePicker_Manager_HDban_date_time.Enabled = false;
             this.DateTimePicker_Manager_HDban_date_time.FocusedColor = System.Drawing.Color.Silver;
             this.DateTimePicker_Manager_HDban_date_time.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DateTimePicker_Manager_HDban_date_time.ForeColor = System.Drawing.Color.Black;
@@ -755,10 +815,32 @@
             this.DateTimePicker_Manager_HDban_date_time.OnHoverBorderColor = System.Drawing.Color.Gray;
             this.DateTimePicker_Manager_HDban_date_time.OnHoverForeColor = System.Drawing.Color.Black;
             this.DateTimePicker_Manager_HDban_date_time.OnPressedColor = System.Drawing.Color.Silver;
-            this.DateTimePicker_Manager_HDban_date_time.Size = new System.Drawing.Size(482, 54);
+            this.DateTimePicker_Manager_HDban_date_time.Size = new System.Drawing.Size(370, 54);
             this.DateTimePicker_Manager_HDban_date_time.TabIndex = 20;
             this.DateTimePicker_Manager_HDban_date_time.Text = "Saturday, October 26, 2024";
             this.DateTimePicker_Manager_HDban_date_time.Value = new System.DateTime(2024, 10, 26, 15, 9, 24, 330);
+            // 
+            // gunaTextBox22
+            // 
+            this.gunaTextBox22.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox22.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox22.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox22.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox22.Enabled = false;
+            this.gunaTextBox22.FocusedBaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox22.FocusedBorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox22.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox22.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaTextBox22.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gunaTextBox22.Location = new System.Drawing.Point(625, 212);
+            this.gunaTextBox22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaTextBox22.Name = "gunaTextBox22";
+            this.gunaTextBox22.PasswordChar = '\0';
+            this.gunaTextBox22.ReadOnly = true;
+            this.gunaTextBox22.SelectedText = "";
+            this.gunaTextBox22.Size = new System.Drawing.Size(170, 59);
+            this.gunaTextBox22.TabIndex = 28;
+            this.gunaTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btn_Manager_HDban_AddGuest
             // 
@@ -772,7 +854,7 @@
             this.btn_Manager_HDban_AddGuest.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDban_AddGuest.Image = null;
             this.btn_Manager_HDban_AddGuest.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDban_AddGuest.Location = new System.Drawing.Point(737, 212);
+            this.btn_Manager_HDban_AddGuest.Location = new System.Drawing.Point(803, 212);
             this.btn_Manager_HDban_AddGuest.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Manager_HDban_AddGuest.Name = "btn_Manager_HDban_AddGuest";
             this.btn_Manager_HDban_AddGuest.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -786,6 +868,28 @@
             this.btn_Manager_HDban_AddGuest.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Manager_HDban_AddGuest.Click += new System.EventHandler(this.btn_Manager_HDban_AddGuest_Click);
             // 
+            // gunaTextBox11
+            // 
+            this.gunaTextBox11.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox11.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox11.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox11.Enabled = false;
+            this.gunaTextBox11.FocusedBaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox11.FocusedBorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox11.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox11.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaTextBox11.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gunaTextBox11.Location = new System.Drawing.Point(1076, 212);
+            this.gunaTextBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaTextBox11.Name = "gunaTextBox11";
+            this.gunaTextBox11.PasswordChar = '\0';
+            this.gunaTextBox11.ReadOnly = true;
+            this.gunaTextBox11.SelectedText = "";
+            this.gunaTextBox11.Size = new System.Drawing.Size(88, 59);
+            this.gunaTextBox11.TabIndex = 27;
+            this.gunaTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // btn_Manager_HDban_ShowGuest
             // 
             this.btn_Manager_HDban_ShowGuest.AnimationHoverSpeed = 0.07F;
@@ -798,7 +902,7 @@
             this.btn_Manager_HDban_ShowGuest.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDban_ShowGuest.Image = null;
             this.btn_Manager_HDban_ShowGuest.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDban_ShowGuest.Location = new System.Drawing.Point(1010, 212);
+            this.btn_Manager_HDban_ShowGuest.Location = new System.Drawing.Point(1172, 212);
             this.btn_Manager_HDban_ShowGuest.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Manager_HDban_ShowGuest.Name = "btn_Manager_HDban_ShowGuest";
             this.btn_Manager_HDban_ShowGuest.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -871,35 +975,12 @@
             // columnHeader6
             // 
             this.columnHeader6.Text = "Đơn giá";
-            this.columnHeader6.Width = 103;
+            this.columnHeader6.Width = 117;
             // 
             // columnHeader8
             // 
             this.columnHeader8.Text = "Thành tiền";
-            this.columnHeader8.Width = 136;
-            // 
-            // gunaTextBox3
-            // 
-            this.gunaTextBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox3.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox3.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox3.Enabled = false;
-            this.gunaTextBox3.FocusedBaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox3.FocusedBorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaTextBox3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox3.Location = new System.Drawing.Point(7, 420);
-            this.gunaTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gunaTextBox3.Name = "gunaTextBox3";
-            this.gunaTextBox3.PasswordChar = '\0';
-            this.gunaTextBox3.ReadOnly = true;
-            this.gunaTextBox3.SelectedText = "";
-            this.gunaTextBox3.Size = new System.Drawing.Size(235, 53);
-            this.gunaTextBox3.TabIndex = 11;
-            this.gunaTextBox3.Text = "Thông tin sản phẩm";
-            this.gunaTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader8.Width = 140;
             // 
             // flowLayoutPanel1
             // 
@@ -918,8 +999,6 @@
             this.flowLayoutPanel1.Controls.Add(this.tb_Manager_HDban_Cash);
             this.flowLayoutPanel1.Controls.Add(this.gunaTextBox20);
             this.flowLayoutPanel1.Controls.Add(this.txb_Manager_HDban_Quantity);
-            this.flowLayoutPanel1.Controls.Add(this.gunaTextBox11);
-            this.flowLayoutPanel1.Controls.Add(this.txb_Manager_HDban_GiamGia);
             this.flowLayoutPanel1.Controls.Add(this.gunaTextBox21);
             this.flowLayoutPanel1.Controls.Add(this.btn_Manager_HDban_AddProductbill);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 462);
@@ -969,7 +1048,7 @@
             this.tb_Manager_HDban_IdProduct.Name = "tb_Manager_HDban_IdProduct";
             this.tb_Manager_HDban_IdProduct.PasswordChar = '\0';
             this.tb_Manager_HDban_IdProduct.SelectedText = "";
-            this.tb_Manager_HDban_IdProduct.Size = new System.Drawing.Size(300, 59);
+            this.tb_Manager_HDban_IdProduct.Size = new System.Drawing.Size(370, 59);
             this.tb_Manager_HDban_IdProduct.TabIndex = 5;
             this.tb_Manager_HDban_IdProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -985,13 +1064,13 @@
             this.gunaTextBox4.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox4.Location = new System.Drawing.Point(555, 5);
+            this.gunaTextBox4.Location = new System.Drawing.Point(625, 5);
             this.gunaTextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox4.Name = "gunaTextBox4";
             this.gunaTextBox4.PasswordChar = '\0';
             this.gunaTextBox4.ReadOnly = true;
             this.gunaTextBox4.SelectedText = "";
-            this.gunaTextBox4.Size = new System.Drawing.Size(449, 59);
+            this.gunaTextBox4.Size = new System.Drawing.Size(435, 59);
             this.gunaTextBox4.TabIndex = 8;
             this.gunaTextBox4.Text = "Đơn giá";
             this.gunaTextBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1009,12 +1088,12 @@
             this.tb_Manager_HDban_UnitPrice.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDban_UnitPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDban_UnitPrice.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDban_UnitPrice.Location = new System.Drawing.Point(1012, 5);
+            this.tb_Manager_HDban_UnitPrice.Location = new System.Drawing.Point(1068, 5);
             this.tb_Manager_HDban_UnitPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDban_UnitPrice.Name = "tb_Manager_HDban_UnitPrice";
             this.tb_Manager_HDban_UnitPrice.PasswordChar = '\0';
             this.tb_Manager_HDban_UnitPrice.SelectedText = "";
-            this.tb_Manager_HDban_UnitPrice.Size = new System.Drawing.Size(425, 59);
+            this.tb_Manager_HDban_UnitPrice.Size = new System.Drawing.Size(370, 59);
             this.tb_Manager_HDban_UnitPrice.TabIndex = 9;
             this.tb_Manager_HDban_UnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1048,7 +1127,7 @@
             this.cb_Manager_HDban_ProductType.Location = new System.Drawing.Point(247, 73);
             this.cb_Manager_HDban_ProductType.Margin = new System.Windows.Forms.Padding(4);
             this.cb_Manager_HDban_ProductType.Name = "cb_Manager_HDban_ProductType";
-            this.cb_Manager_HDban_ProductType.Size = new System.Drawing.Size(295, 39);
+            this.cb_Manager_HDban_ProductType.Size = new System.Drawing.Size(367, 39);
             this.cb_Manager_HDban_ProductType.TabIndex = 22;
             this.cb_Manager_HDban_ProductType.SelectedIndexChanged += new System.EventHandler(this.cb_Manager_HDban_ProductType_SelectedIndexChanged);
             // 
@@ -1064,13 +1143,13 @@
             this.gunaTextBox13.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox13.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox13.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox13.Location = new System.Drawing.Point(550, 74);
+            this.gunaTextBox13.Location = new System.Drawing.Point(622, 74);
             this.gunaTextBox13.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox13.Name = "gunaTextBox13";
             this.gunaTextBox13.PasswordChar = '\0';
             this.gunaTextBox13.ReadOnly = true;
             this.gunaTextBox13.SelectedText = "";
-            this.gunaTextBox13.Size = new System.Drawing.Size(451, 59);
+            this.gunaTextBox13.Size = new System.Drawing.Size(435, 59);
             this.gunaTextBox13.TabIndex = 12;
             this.gunaTextBox13.Text = "Đơn vị tính";
             this.gunaTextBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1088,12 +1167,12 @@
             this.tb_Manager_HDban_Donvitinh.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDban_Donvitinh.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDban_Donvitinh.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDban_Donvitinh.Location = new System.Drawing.Point(1009, 74);
+            this.tb_Manager_HDban_Donvitinh.Location = new System.Drawing.Point(1065, 74);
             this.tb_Manager_HDban_Donvitinh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDban_Donvitinh.Name = "tb_Manager_HDban_Donvitinh";
             this.tb_Manager_HDban_Donvitinh.PasswordChar = '\0';
             this.tb_Manager_HDban_Donvitinh.SelectedText = "";
-            this.tb_Manager_HDban_Donvitinh.Size = new System.Drawing.Size(425, 59);
+            this.tb_Manager_HDban_Donvitinh.Size = new System.Drawing.Size(370, 59);
             this.tb_Manager_HDban_Donvitinh.TabIndex = 13;
             this.tb_Manager_HDban_Donvitinh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1127,7 +1206,7 @@
             this.cb_Manager_HDban_ProductName.Location = new System.Drawing.Point(247, 142);
             this.cb_Manager_HDban_ProductName.Margin = new System.Windows.Forms.Padding(4);
             this.cb_Manager_HDban_ProductName.Name = "cb_Manager_HDban_ProductName";
-            this.cb_Manager_HDban_ProductName.Size = new System.Drawing.Size(295, 39);
+            this.cb_Manager_HDban_ProductName.Size = new System.Drawing.Size(367, 39);
             this.cb_Manager_HDban_ProductName.TabIndex = 23;
             this.cb_Manager_HDban_ProductName.SelectedIndexChanged += new System.EventHandler(this.cb_Manager_HDban_ProductName_SelectedIndexChanged);
             // 
@@ -1143,13 +1222,13 @@
             this.gunaTextBox18.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox18.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox18.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox18.Location = new System.Drawing.Point(550, 143);
+            this.gunaTextBox18.Location = new System.Drawing.Point(622, 143);
             this.gunaTextBox18.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox18.Name = "gunaTextBox18";
             this.gunaTextBox18.PasswordChar = '\0';
             this.gunaTextBox18.ReadOnly = true;
             this.gunaTextBox18.SelectedText = "";
-            this.gunaTextBox18.Size = new System.Drawing.Size(451, 59);
+            this.gunaTextBox18.Size = new System.Drawing.Size(435, 59);
             this.gunaTextBox18.TabIndex = 16;
             this.gunaTextBox18.Text = "Thành tiền";
             this.gunaTextBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1167,12 +1246,12 @@
             this.tb_Manager_HDban_Cash.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDban_Cash.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDban_Cash.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDban_Cash.Location = new System.Drawing.Point(1009, 143);
+            this.tb_Manager_HDban_Cash.Location = new System.Drawing.Point(1065, 143);
             this.tb_Manager_HDban_Cash.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDban_Cash.Name = "tb_Manager_HDban_Cash";
             this.tb_Manager_HDban_Cash.PasswordChar = '\0';
             this.tb_Manager_HDban_Cash.SelectedText = "";
-            this.tb_Manager_HDban_Cash.Size = new System.Drawing.Size(425, 59);
+            this.tb_Manager_HDban_Cash.Size = new System.Drawing.Size(370, 59);
             this.tb_Manager_HDban_Cash.TabIndex = 17;
             this.tb_Manager_HDban_Cash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1221,50 +1300,6 @@
             this.txb_Manager_HDban_Quantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txb_Manager_HDban_Quantity.TextChanged += new System.EventHandler(this.txb_Manager_HDban_Quantity_TextChanged);
             // 
-            // gunaTextBox11
-            // 
-            this.gunaTextBox11.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox11.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox11.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox11.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox11.Enabled = false;
-            this.gunaTextBox11.FocusedBaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox11.FocusedBorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox11.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox11.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaTextBox11.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox11.Location = new System.Drawing.Point(371, 212);
-            this.gunaTextBox11.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gunaTextBox11.Name = "gunaTextBox11";
-            this.gunaTextBox11.PasswordChar = '\0';
-            this.gunaTextBox11.ReadOnly = true;
-            this.gunaTextBox11.SelectedText = "";
-            this.gunaTextBox11.Size = new System.Drawing.Size(164, 59);
-            this.gunaTextBox11.TabIndex = 24;
-            this.gunaTextBox11.Text = "Giảm giá";
-            this.gunaTextBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // txb_Manager_HDban_GiamGia
-            // 
-            this.txb_Manager_HDban_GiamGia.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txb_Manager_HDban_GiamGia.BaseColor = System.Drawing.Color.WhiteSmoke;
-            this.txb_Manager_HDban_GiamGia.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txb_Manager_HDban_GiamGia.BorderSize = 1;
-            this.txb_Manager_HDban_GiamGia.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txb_Manager_HDban_GiamGia.FocusedBaseColor = System.Drawing.Color.LightGray;
-            this.txb_Manager_HDban_GiamGia.FocusedBorderColor = System.Drawing.Color.DimGray;
-            this.txb_Manager_HDban_GiamGia.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.txb_Manager_HDban_GiamGia.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txb_Manager_HDban_GiamGia.ForeColor = System.Drawing.Color.Black;
-            this.txb_Manager_HDban_GiamGia.Location = new System.Drawing.Point(543, 212);
-            this.txb_Manager_HDban_GiamGia.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.txb_Manager_HDban_GiamGia.Name = "txb_Manager_HDban_GiamGia";
-            this.txb_Manager_HDban_GiamGia.PasswordChar = '\0';
-            this.txb_Manager_HDban_GiamGia.SelectedText = "";
-            this.txb_Manager_HDban_GiamGia.Size = new System.Drawing.Size(186, 59);
-            this.txb_Manager_HDban_GiamGia.TabIndex = 25;
-            this.txb_Manager_HDban_GiamGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // gunaTextBox21
             // 
             this.gunaTextBox21.BackColor = System.Drawing.Color.Transparent;
@@ -1277,13 +1312,13 @@
             this.gunaTextBox21.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox21.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox21.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox21.Location = new System.Drawing.Point(737, 212);
+            this.gunaTextBox21.Location = new System.Drawing.Point(371, 212);
             this.gunaTextBox21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox21.Name = "gunaTextBox21";
             this.gunaTextBox21.PasswordChar = '\0';
             this.gunaTextBox21.ReadOnly = true;
             this.gunaTextBox21.SelectedText = "";
-            this.gunaTextBox21.Size = new System.Drawing.Size(265, 59);
+            this.gunaTextBox21.Size = new System.Drawing.Size(793, 59);
             this.gunaTextBox21.TabIndex = 26;
             this.gunaTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -1299,7 +1334,7 @@
             this.btn_Manager_HDban_AddProductbill.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDban_AddProductbill.Image = null;
             this.btn_Manager_HDban_AddProductbill.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDban_AddProductbill.Location = new System.Drawing.Point(1010, 212);
+            this.btn_Manager_HDban_AddProductbill.Location = new System.Drawing.Point(1172, 212);
             this.btn_Manager_HDban_AddProductbill.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Manager_HDban_AddProductbill.Name = "btn_Manager_HDban_AddProductbill";
             this.btn_Manager_HDban_AddProductbill.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -1335,6 +1370,29 @@
             this.billTB.Text = "HÓA ĐƠN BÁN HÀNG";
             this.billTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // gunaTextBox3
+            // 
+            this.gunaTextBox3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox3.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox3.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox3.Enabled = false;
+            this.gunaTextBox3.FocusedBaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox3.FocusedBorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox3.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaTextBox3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gunaTextBox3.Location = new System.Drawing.Point(8, 423);
+            this.gunaTextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaTextBox3.Name = "gunaTextBox3";
+            this.gunaTextBox3.PasswordChar = '\0';
+            this.gunaTextBox3.ReadOnly = true;
+            this.gunaTextBox3.SelectedText = "";
+            this.gunaTextBox3.Size = new System.Drawing.Size(235, 53);
+            this.gunaTextBox3.TabIndex = 11;
+            this.gunaTextBox3.Text = "Thông tin sản phẩm";
+            this.gunaTextBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // tabPage3
             // 
             this.tabPage3.Controls.Add(this.gunaPanel2);
@@ -1350,12 +1408,15 @@
             this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage3.Size = new System.Drawing.Size(1444, 1413);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "HD DV";
+            this.tabPage3.Text = "Hóa đơn dịch vụ";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // gunaPanel2
             // 
             this.gunaPanel2.BackColor = System.Drawing.Color.White;
+            this.gunaPanel2.Controls.Add(this.HDDV_Delete_button_Listview);
+            this.gunaPanel2.Controls.Add(this.HDDV_Quantity_Listview);
+            this.gunaPanel2.Controls.Add(this.HDDV_Productname_Listview);
             this.gunaPanel2.Controls.Add(this.btn_Manager_HDDV_ThemHoaDon);
             this.gunaPanel2.Controls.Add(this.txb_Manager_HDDV_Conlai);
             this.gunaPanel2.Controls.Add(this.gunaTextBox54);
@@ -1369,6 +1430,63 @@
             this.gunaPanel2.Size = new System.Drawing.Size(1439, 235);
             this.gunaPanel2.TabIndex = 31;
             // 
+            // HDDV_Delete_button_Listview
+            // 
+            this.HDDV_Delete_button_Listview.AnimationHoverSpeed = 0.07F;
+            this.HDDV_Delete_button_Listview.AnimationSpeed = 0.03F;
+            this.HDDV_Delete_button_Listview.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.HDDV_Delete_button_Listview.BorderColor = System.Drawing.Color.Black;
+            this.HDDV_Delete_button_Listview.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.HDDV_Delete_button_Listview.FocusedColor = System.Drawing.Color.Empty;
+            this.HDDV_Delete_button_Listview.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HDDV_Delete_button_Listview.ForeColor = System.Drawing.Color.White;
+            this.HDDV_Delete_button_Listview.Image = null;
+            this.HDDV_Delete_button_Listview.ImageSize = new System.Drawing.Size(20, 20);
+            this.HDDV_Delete_button_Listview.Location = new System.Drawing.Point(142, 73);
+            this.HDDV_Delete_button_Listview.Margin = new System.Windows.Forms.Padding(4);
+            this.HDDV_Delete_button_Listview.Name = "HDDV_Delete_button_Listview";
+            this.HDDV_Delete_button_Listview.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.HDDV_Delete_button_Listview.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.HDDV_Delete_button_Listview.OnHoverForeColor = System.Drawing.Color.White;
+            this.HDDV_Delete_button_Listview.OnHoverImage = null;
+            this.HDDV_Delete_button_Listview.OnPressedColor = System.Drawing.Color.Black;
+            this.HDDV_Delete_button_Listview.Size = new System.Drawing.Size(236, 54);
+            this.HDDV_Delete_button_Listview.TabIndex = 42;
+            this.HDDV_Delete_button_Listview.Text = "Cập Nhật";
+            this.HDDV_Delete_button_Listview.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.HDDV_Delete_button_Listview.Click += new System.EventHandler(this.HDDV_Delete_button_Listview_Click);
+            // 
+            // HDDV_Quantity_Listview
+            // 
+            this.HDDV_Quantity_Listview.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.HDDV_Quantity_Listview.BaseColor = System.Drawing.Color.WhiteSmoke;
+            this.HDDV_Quantity_Listview.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.HDDV_Quantity_Listview.BorderSize = 1;
+            this.HDDV_Quantity_Listview.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.HDDV_Quantity_Listview.FocusedBaseColor = System.Drawing.Color.LightGray;
+            this.HDDV_Quantity_Listview.FocusedBorderColor = System.Drawing.Color.DimGray;
+            this.HDDV_Quantity_Listview.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.HDDV_Quantity_Listview.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HDDV_Quantity_Listview.ForeColor = System.Drawing.Color.Black;
+            this.HDDV_Quantity_Listview.Location = new System.Drawing.Point(4, 76);
+            this.HDDV_Quantity_Listview.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.HDDV_Quantity_Listview.Name = "HDDV_Quantity_Listview";
+            this.HDDV_Quantity_Listview.PasswordChar = '\0';
+            this.HDDV_Quantity_Listview.SelectedText = "";
+            this.HDDV_Quantity_Listview.Size = new System.Drawing.Size(95, 50);
+            this.HDDV_Quantity_Listview.TabIndex = 41;
+            this.HDDV_Quantity_Listview.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // HDDV_Productname_Listview
+            // 
+            this.HDDV_Productname_Listview.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HDDV_Productname_Listview.FormattingEnabled = true;
+            this.HDDV_Productname_Listview.Location = new System.Drawing.Point(4, 5);
+            this.HDDV_Productname_Listview.Margin = new System.Windows.Forms.Padding(4);
+            this.HDDV_Productname_Listview.Name = "HDDV_Productname_Listview";
+            this.HDDV_Productname_Listview.Size = new System.Drawing.Size(370, 39);
+            this.HDDV_Productname_Listview.TabIndex = 40;
+            // 
             // btn_Manager_HDDV_ThemHoaDon
             // 
             this.btn_Manager_HDDV_ThemHoaDon.AnimationHoverSpeed = 0.07F;
@@ -1381,7 +1499,7 @@
             this.btn_Manager_HDDV_ThemHoaDon.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDDV_ThemHoaDon.Image = null;
             this.btn_Manager_HDDV_ThemHoaDon.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDDV_ThemHoaDon.Location = new System.Drawing.Point(1195, 73);
+            this.btn_Manager_HDDV_ThemHoaDon.Location = new System.Drawing.Point(1171, 68);
             this.btn_Manager_HDDV_ThemHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Manager_HDDV_ThemHoaDon.Name = "btn_Manager_HDDV_ThemHoaDon";
             this.btn_Manager_HDDV_ThemHoaDon.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -1389,7 +1507,7 @@
             this.btn_Manager_HDDV_ThemHoaDon.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDDV_ThemHoaDon.OnHoverImage = null;
             this.btn_Manager_HDDV_ThemHoaDon.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_Manager_HDDV_ThemHoaDon.Size = new System.Drawing.Size(236, 68);
+            this.btn_Manager_HDDV_ThemHoaDon.Size = new System.Drawing.Size(265, 54);
             this.btn_Manager_HDDV_ThemHoaDon.TabIndex = 39;
             this.btn_Manager_HDDV_ThemHoaDon.Text = "Thêm Hóa Đơn";
             this.btn_Manager_HDDV_ThemHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1402,17 +1520,18 @@
             this.txb_Manager_HDDV_Conlai.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txb_Manager_HDDV_Conlai.BorderSize = 1;
             this.txb_Manager_HDDV_Conlai.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txb_Manager_HDDV_Conlai.Enabled = false;
             this.txb_Manager_HDDV_Conlai.FocusedBaseColor = System.Drawing.Color.WhiteSmoke;
             this.txb_Manager_HDDV_Conlai.FocusedBorderColor = System.Drawing.Color.WhiteSmoke;
             this.txb_Manager_HDDV_Conlai.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txb_Manager_HDDV_Conlai.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Manager_HDDV_Conlai.ForeColor = System.Drawing.Color.Black;
-            this.txb_Manager_HDDV_Conlai.Location = new System.Drawing.Point(1174, 5);
+            this.txb_Manager_HDDV_Conlai.Location = new System.Drawing.Point(725, 72);
             this.txb_Manager_HDDV_Conlai.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txb_Manager_HDDV_Conlai.Name = "txb_Manager_HDDV_Conlai";
             this.txb_Manager_HDDV_Conlai.PasswordChar = '\0';
             this.txb_Manager_HDDV_Conlai.SelectedText = "";
-            this.txb_Manager_HDDV_Conlai.Size = new System.Drawing.Size(257, 59);
+            this.txb_Manager_HDDV_Conlai.Size = new System.Drawing.Size(266, 54);
             this.txb_Manager_HDDV_Conlai.TabIndex = 38;
             this.txb_Manager_HDDV_Conlai.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1428,7 +1547,7 @@
             this.gunaTextBox54.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox54.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox54.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox54.Location = new System.Drawing.Point(1010, 5);
+            this.gunaTextBox54.Location = new System.Drawing.Point(561, 72);
             this.gunaTextBox54.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox54.Name = "gunaTextBox54";
             this.gunaTextBox54.PasswordChar = '\0';
@@ -1450,12 +1569,12 @@
             this.txb_Manager_HDDV_TraTruoc.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txb_Manager_HDDV_TraTruoc.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Manager_HDDV_TraTruoc.ForeColor = System.Drawing.Color.Black;
-            this.txb_Manager_HDDV_TraTruoc.Location = new System.Drawing.Point(722, 5);
+            this.txb_Manager_HDDV_TraTruoc.Location = new System.Drawing.Point(725, 5);
             this.txb_Manager_HDDV_TraTruoc.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txb_Manager_HDDV_TraTruoc.Name = "txb_Manager_HDDV_TraTruoc";
             this.txb_Manager_HDDV_TraTruoc.PasswordChar = '\0';
             this.txb_Manager_HDDV_TraTruoc.SelectedText = "";
-            this.txb_Manager_HDDV_TraTruoc.Size = new System.Drawing.Size(263, 59);
+            this.txb_Manager_HDDV_TraTruoc.Size = new System.Drawing.Size(266, 54);
             this.txb_Manager_HDDV_TraTruoc.TabIndex = 36;
             this.txb_Manager_HDDV_TraTruoc.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txb_Manager_HDDV_TraTruoc.TextChanged += new System.EventHandler(this.txb_Manager_HDDV_TraTruoc_TextChanged);
@@ -1472,12 +1591,12 @@
             this.txb_Manager_HDDV_TongTien.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txb_Manager_HDDV_TongTien.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txb_Manager_HDDV_TongTien.ForeColor = System.Drawing.Color.Black;
-            this.txb_Manager_HDDV_TongTien.Location = new System.Drawing.Point(165, 5);
+            this.txb_Manager_HDDV_TongTien.Location = new System.Drawing.Point(1172, 5);
             this.txb_Manager_HDDV_TongTien.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txb_Manager_HDDV_TongTien.Name = "txb_Manager_HDDV_TongTien";
             this.txb_Manager_HDDV_TongTien.PasswordChar = '\0';
             this.txb_Manager_HDDV_TongTien.SelectedText = "";
-            this.txb_Manager_HDDV_TongTien.Size = new System.Drawing.Size(259, 59);
+            this.txb_Manager_HDDV_TongTien.Size = new System.Drawing.Size(265, 54);
             this.txb_Manager_HDDV_TongTien.TabIndex = 35;
             this.txb_Manager_HDDV_TongTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -1493,12 +1612,12 @@
             this.gunaTextBox51.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox51.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox51.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox51.Location = new System.Drawing.Point(4, 5);
+            this.gunaTextBox51.Location = new System.Drawing.Point(1020, 5);
             this.gunaTextBox51.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox51.Name = "gunaTextBox51";
             this.gunaTextBox51.PasswordChar = '\0';
             this.gunaTextBox51.SelectedText = "";
-            this.gunaTextBox51.Size = new System.Drawing.Size(153, 59);
+            this.gunaTextBox51.Size = new System.Drawing.Size(144, 59);
             this.gunaTextBox51.TabIndex = 34;
             this.gunaTextBox51.Text = "Tổng tiền";
             this.gunaTextBox51.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1515,12 +1634,12 @@
             this.gunaTextBox47.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox47.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox47.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox47.Location = new System.Drawing.Point(475, 5);
+            this.gunaTextBox47.Location = new System.Drawing.Point(545, 5);
             this.gunaTextBox47.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox47.Name = "gunaTextBox47";
             this.gunaTextBox47.PasswordChar = '\0';
             this.gunaTextBox47.SelectedText = "";
-            this.gunaTextBox47.Size = new System.Drawing.Size(239, 59);
+            this.gunaTextBox47.Size = new System.Drawing.Size(175, 59);
             this.gunaTextBox47.TabIndex = 32;
             this.gunaTextBox47.Text = "Trả trước";
             this.gunaTextBox47.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1565,7 +1684,9 @@
             this.flowLayoutPanel4.Controls.Add(this.tb_Manager_HDDV_GuestPN);
             this.flowLayoutPanel4.Controls.Add(this.gunaTextBox31);
             this.flowLayoutPanel4.Controls.Add(this.DateTimePicker_Manager_HDDV_date_time);
+            this.flowLayoutPanel4.Controls.Add(this.gunaTextBox24);
             this.flowLayoutPanel4.Controls.Add(this.btn_Manager_HDDV_AddGuest);
+            this.flowLayoutPanel4.Controls.Add(this.gunaTextBox27);
             this.flowLayoutPanel4.Controls.Add(this.btn_Manager_HDDV_ShowGuest);
             this.flowLayoutPanel4.Location = new System.Drawing.Point(0, 143);
             this.flowLayoutPanel4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -1871,8 +1992,9 @@
             this.DateTimePicker_Manager_HDDV_date_time.BaseColor = System.Drawing.Color.WhiteSmoke;
             this.DateTimePicker_Manager_HDDV_date_time.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
             this.DateTimePicker_Manager_HDDV_date_time.BorderSize = 1;
-            this.DateTimePicker_Manager_HDDV_date_time.CustomFormat = null;
+            this.DateTimePicker_Manager_HDDV_date_time.CustomFormat = "MM/yyyy";
             this.DateTimePicker_Manager_HDDV_date_time.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DateTimePicker_Manager_HDDV_date_time.Enabled = false;
             this.DateTimePicker_Manager_HDDV_date_time.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.DateTimePicker_Manager_HDDV_date_time.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DateTimePicker_Manager_HDDV_date_time.ForeColor = System.Drawing.Color.Black;
@@ -1885,10 +2007,32 @@
             this.DateTimePicker_Manager_HDDV_date_time.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.DateTimePicker_Manager_HDDV_date_time.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.DateTimePicker_Manager_HDDV_date_time.OnPressedColor = System.Drawing.Color.Black;
-            this.DateTimePicker_Manager_HDDV_date_time.Size = new System.Drawing.Size(482, 54);
+            this.DateTimePicker_Manager_HDDV_date_time.Size = new System.Drawing.Size(370, 54);
             this.DateTimePicker_Manager_HDDV_date_time.TabIndex = 20;
-            this.DateTimePicker_Manager_HDDV_date_time.Text = "Saturday, October 26, 2024";
-            this.DateTimePicker_Manager_HDDV_date_time.Value = new System.DateTime(2024, 10, 26, 15, 9, 24, 330);
+            this.DateTimePicker_Manager_HDDV_date_time.Text = "Saturday, November 9, 2024";
+            this.DateTimePicker_Manager_HDDV_date_time.Value = new System.DateTime(2024, 11, 9, 0, 0, 0, 0);
+            // 
+            // gunaTextBox24
+            // 
+            this.gunaTextBox24.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox24.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox24.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox24.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox24.Enabled = false;
+            this.gunaTextBox24.FocusedBaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox24.FocusedBorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox24.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox24.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaTextBox24.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gunaTextBox24.Location = new System.Drawing.Point(625, 212);
+            this.gunaTextBox24.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaTextBox24.Name = "gunaTextBox24";
+            this.gunaTextBox24.PasswordChar = '\0';
+            this.gunaTextBox24.ReadOnly = true;
+            this.gunaTextBox24.SelectedText = "";
+            this.gunaTextBox24.Size = new System.Drawing.Size(170, 59);
+            this.gunaTextBox24.TabIndex = 30;
+            this.gunaTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btn_Manager_HDDV_AddGuest
             // 
@@ -1902,7 +2046,7 @@
             this.btn_Manager_HDDV_AddGuest.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDDV_AddGuest.Image = null;
             this.btn_Manager_HDDV_AddGuest.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDDV_AddGuest.Location = new System.Drawing.Point(737, 212);
+            this.btn_Manager_HDDV_AddGuest.Location = new System.Drawing.Point(803, 212);
             this.btn_Manager_HDDV_AddGuest.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Manager_HDDV_AddGuest.Name = "btn_Manager_HDDV_AddGuest";
             this.btn_Manager_HDDV_AddGuest.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -1916,6 +2060,28 @@
             this.btn_Manager_HDDV_AddGuest.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Manager_HDDV_AddGuest.Click += new System.EventHandler(this.btn_Manager_HDDV_AddGuest_Click);
             // 
+            // gunaTextBox27
+            // 
+            this.gunaTextBox27.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox27.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox27.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox27.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox27.Enabled = false;
+            this.gunaTextBox27.FocusedBaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox27.FocusedBorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox27.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox27.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaTextBox27.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gunaTextBox27.Location = new System.Drawing.Point(1076, 212);
+            this.gunaTextBox27.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaTextBox27.Name = "gunaTextBox27";
+            this.gunaTextBox27.PasswordChar = '\0';
+            this.gunaTextBox27.ReadOnly = true;
+            this.gunaTextBox27.SelectedText = "";
+            this.gunaTextBox27.Size = new System.Drawing.Size(88, 59);
+            this.gunaTextBox27.TabIndex = 29;
+            this.gunaTextBox27.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // btn_Manager_HDDV_ShowGuest
             // 
             this.btn_Manager_HDDV_ShowGuest.AnimationHoverSpeed = 0.07F;
@@ -1928,7 +2094,7 @@
             this.btn_Manager_HDDV_ShowGuest.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDDV_ShowGuest.Image = null;
             this.btn_Manager_HDDV_ShowGuest.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDDV_ShowGuest.Location = new System.Drawing.Point(1010, 212);
+            this.btn_Manager_HDDV_ShowGuest.Location = new System.Drawing.Point(1172, 212);
             this.btn_Manager_HDDV_ShowGuest.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Manager_HDDV_ShowGuest.Name = "btn_Manager_HDDV_ShowGuest";
             this.btn_Manager_HDDV_ShowGuest.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -1974,12 +2140,12 @@
             // columnHeader9
             // 
             this.columnHeader9.Text = "Mã DV";
-            this.columnHeader9.Width = 88;
+            this.columnHeader9.Width = 100;
             // 
             // columnHeader10
             // 
             this.columnHeader10.Text = "Loại DV";
-            this.columnHeader10.Width = 113;
+            this.columnHeader10.Width = 130;
             // 
             // columnHeader12
             // 
@@ -1989,12 +2155,12 @@
             // columnHeader14
             // 
             this.columnHeader14.Text = "Đơn giá";
-            this.columnHeader14.Width = 103;
+            this.columnHeader14.Width = 235;
             // 
             // columnHeader16
             // 
             this.columnHeader16.Text = "Thành tiền";
-            this.columnHeader16.Width = 136;
+            this.columnHeader16.Width = 235;
             // 
             // gunaTextBox32
             // 
@@ -2024,16 +2190,14 @@
             this.flowLayoutPanel6.BackColor = System.Drawing.Color.White;
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox33);
             this.flowLayoutPanel6.Controls.Add(this.tb_Manager_HDDV_IdService);
-            this.flowLayoutPanel6.Controls.Add(this.gunaTextBox38);
-            this.flowLayoutPanel6.Controls.Add(this.tb_Manager_HDDV_Discount);
-            this.flowLayoutPanel6.Controls.Add(this.gunaTextBox37);
-            this.flowLayoutPanel6.Controls.Add(this.cb_Manager_HDDV_ServiceType);
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox35);
             this.flowLayoutPanel6.Controls.Add(this.tb_Manager_HDDV_UnitPrice);
-            this.flowLayoutPanel6.Controls.Add(this.gunaTextBox40);
-            this.flowLayoutPanel6.Controls.Add(this.txb_Manager_HDDV_Quantity);
+            this.flowLayoutPanel6.Controls.Add(this.gunaTextBox37);
+            this.flowLayoutPanel6.Controls.Add(this.cb_Manager_HDDV_ServiceType);
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox41);
             this.flowLayoutPanel6.Controls.Add(this.tb_Manager_HDDV_Cash);
+            this.flowLayoutPanel6.Controls.Add(this.gunaTextBox40);
+            this.flowLayoutPanel6.Controls.Add(this.txb_Manager_HDDV_Quantity);
             this.flowLayoutPanel6.Controls.Add(this.gunaTextBox45);
             this.flowLayoutPanel6.Controls.Add(this.btn_Manager_HDDV_AddServicebill);
             this.flowLayoutPanel6.Location = new System.Drawing.Point(0, 457);
@@ -2084,53 +2248,54 @@
             this.tb_Manager_HDDV_IdService.PasswordChar = '\0';
             this.tb_Manager_HDDV_IdService.ReadOnly = true;
             this.tb_Manager_HDDV_IdService.SelectedText = "";
-            this.tb_Manager_HDDV_IdService.Size = new System.Drawing.Size(297, 59);
+            this.tb_Manager_HDDV_IdService.Size = new System.Drawing.Size(370, 59);
             this.tb_Manager_HDDV_IdService.TabIndex = 5;
             this.tb_Manager_HDDV_IdService.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gunaTextBox38
+            // gunaTextBox35
             // 
-            this.gunaTextBox38.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox38.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox38.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox38.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox38.Enabled = false;
-            this.gunaTextBox38.FocusedBaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox38.FocusedBorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox38.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox38.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaTextBox38.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox38.Location = new System.Drawing.Point(552, 5);
-            this.gunaTextBox38.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gunaTextBox38.Name = "gunaTextBox38";
-            this.gunaTextBox38.PasswordChar = '\0';
-            this.gunaTextBox38.ReadOnly = true;
-            this.gunaTextBox38.SelectedText = "";
-            this.gunaTextBox38.Size = new System.Drawing.Size(445, 59);
-            this.gunaTextBox38.TabIndex = 12;
-            this.gunaTextBox38.Text = "Giảm giá %";
-            this.gunaTextBox38.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaTextBox35.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox35.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox35.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox35.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox35.Enabled = false;
+            this.gunaTextBox35.FocusedBaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox35.FocusedBorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox35.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox35.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaTextBox35.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gunaTextBox35.Location = new System.Drawing.Point(625, 5);
+            this.gunaTextBox35.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaTextBox35.Name = "gunaTextBox35";
+            this.gunaTextBox35.PasswordChar = '\0';
+            this.gunaTextBox35.ReadOnly = true;
+            this.gunaTextBox35.SelectedText = "";
+            this.gunaTextBox35.Size = new System.Drawing.Size(433, 59);
+            this.gunaTextBox35.TabIndex = 8;
+            this.gunaTextBox35.Text = "Đơn giá";
+            this.gunaTextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // tb_Manager_HDDV_Discount
+            // tb_Manager_HDDV_UnitPrice
             // 
-            this.tb_Manager_HDDV_Discount.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Manager_HDDV_Discount.BaseColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Manager_HDDV_Discount.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tb_Manager_HDDV_Discount.BorderSize = 1;
-            this.tb_Manager_HDDV_Discount.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_Manager_HDDV_Discount.FocusedBaseColor = System.Drawing.Color.LightGray;
-            this.tb_Manager_HDDV_Discount.FocusedBorderColor = System.Drawing.Color.DimGray;
-            this.tb_Manager_HDDV_Discount.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tb_Manager_HDDV_Discount.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Manager_HDDV_Discount.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDDV_Discount.Location = new System.Drawing.Point(1005, 5);
-            this.tb_Manager_HDDV_Discount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tb_Manager_HDDV_Discount.Name = "tb_Manager_HDDV_Discount";
-            this.tb_Manager_HDDV_Discount.PasswordChar = '\0';
-            this.tb_Manager_HDDV_Discount.SelectedText = "";
-            this.tb_Manager_HDDV_Discount.Size = new System.Drawing.Size(431, 59);
-            this.tb_Manager_HDDV_Discount.TabIndex = 13;
-            this.tb_Manager_HDDV_Discount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_Manager_HDDV_UnitPrice.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_Manager_HDDV_UnitPrice.BaseColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_Manager_HDDV_UnitPrice.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tb_Manager_HDDV_UnitPrice.BorderSize = 1;
+            this.tb_Manager_HDDV_UnitPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_Manager_HDDV_UnitPrice.Enabled = false;
+            this.tb_Manager_HDDV_UnitPrice.FocusedBaseColor = System.Drawing.Color.LightGray;
+            this.tb_Manager_HDDV_UnitPrice.FocusedBorderColor = System.Drawing.Color.DimGray;
+            this.tb_Manager_HDDV_UnitPrice.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.tb_Manager_HDDV_UnitPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Manager_HDDV_UnitPrice.ForeColor = System.Drawing.Color.Black;
+            this.tb_Manager_HDDV_UnitPrice.Location = new System.Drawing.Point(1066, 5);
+            this.tb_Manager_HDDV_UnitPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tb_Manager_HDDV_UnitPrice.Name = "tb_Manager_HDDV_UnitPrice";
+            this.tb_Manager_HDDV_UnitPrice.PasswordChar = '\0';
+            this.tb_Manager_HDDV_UnitPrice.SelectedText = "";
+            this.tb_Manager_HDDV_UnitPrice.Size = new System.Drawing.Size(370, 59);
+            this.tb_Manager_HDDV_UnitPrice.TabIndex = 9;
+            this.tb_Manager_HDDV_UnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gunaTextBox37
             // 
@@ -2162,54 +2327,54 @@
             this.cb_Manager_HDDV_ServiceType.Location = new System.Drawing.Point(247, 73);
             this.cb_Manager_HDDV_ServiceType.Margin = new System.Windows.Forms.Padding(4);
             this.cb_Manager_HDDV_ServiceType.Name = "cb_Manager_HDDV_ServiceType";
-            this.cb_Manager_HDDV_ServiceType.Size = new System.Drawing.Size(295, 39);
+            this.cb_Manager_HDDV_ServiceType.Size = new System.Drawing.Size(367, 39);
             this.cb_Manager_HDDV_ServiceType.TabIndex = 23;
             this.cb_Manager_HDDV_ServiceType.SelectedIndexChanged += new System.EventHandler(this.cb_Manager_HDDV_ServiceType_SelectedIndexChanged);
             // 
-            // gunaTextBox35
+            // gunaTextBox41
             // 
-            this.gunaTextBox35.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox35.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox35.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox35.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox35.Enabled = false;
-            this.gunaTextBox35.FocusedBaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox35.FocusedBorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox35.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox35.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaTextBox35.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox35.Location = new System.Drawing.Point(550, 74);
-            this.gunaTextBox35.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gunaTextBox35.Name = "gunaTextBox35";
-            this.gunaTextBox35.PasswordChar = '\0';
-            this.gunaTextBox35.ReadOnly = true;
-            this.gunaTextBox35.SelectedText = "";
-            this.gunaTextBox35.Size = new System.Drawing.Size(444, 59);
-            this.gunaTextBox35.TabIndex = 8;
-            this.gunaTextBox35.Text = "Đơn giá";
-            this.gunaTextBox35.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.gunaTextBox41.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox41.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox41.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox41.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox41.Enabled = false;
+            this.gunaTextBox41.FocusedBaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox41.FocusedBorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox41.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox41.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaTextBox41.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gunaTextBox41.Location = new System.Drawing.Point(622, 74);
+            this.gunaTextBox41.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaTextBox41.Name = "gunaTextBox41";
+            this.gunaTextBox41.PasswordChar = '\0';
+            this.gunaTextBox41.ReadOnly = true;
+            this.gunaTextBox41.SelectedText = "";
+            this.gunaTextBox41.Size = new System.Drawing.Size(433, 59);
+            this.gunaTextBox41.TabIndex = 16;
+            this.gunaTextBox41.Text = "Thành tiền";
+            this.gunaTextBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // tb_Manager_HDDV_UnitPrice
+            // tb_Manager_HDDV_Cash
             // 
-            this.tb_Manager_HDDV_UnitPrice.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Manager_HDDV_UnitPrice.BaseColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Manager_HDDV_UnitPrice.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tb_Manager_HDDV_UnitPrice.BorderSize = 1;
-            this.tb_Manager_HDDV_UnitPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_Manager_HDDV_UnitPrice.Enabled = false;
-            this.tb_Manager_HDDV_UnitPrice.FocusedBaseColor = System.Drawing.Color.LightGray;
-            this.tb_Manager_HDDV_UnitPrice.FocusedBorderColor = System.Drawing.Color.DimGray;
-            this.tb_Manager_HDDV_UnitPrice.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tb_Manager_HDDV_UnitPrice.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Manager_HDDV_UnitPrice.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDDV_UnitPrice.Location = new System.Drawing.Point(1002, 74);
-            this.tb_Manager_HDDV_UnitPrice.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tb_Manager_HDDV_UnitPrice.Name = "tb_Manager_HDDV_UnitPrice";
-            this.tb_Manager_HDDV_UnitPrice.PasswordChar = '\0';
-            this.tb_Manager_HDDV_UnitPrice.SelectedText = "";
-            this.tb_Manager_HDDV_UnitPrice.Size = new System.Drawing.Size(430, 59);
-            this.tb_Manager_HDDV_UnitPrice.TabIndex = 9;
-            this.tb_Manager_HDDV_UnitPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tb_Manager_HDDV_Cash.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_Manager_HDDV_Cash.BaseColor = System.Drawing.Color.WhiteSmoke;
+            this.tb_Manager_HDDV_Cash.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tb_Manager_HDDV_Cash.BorderSize = 1;
+            this.tb_Manager_HDDV_Cash.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.tb_Manager_HDDV_Cash.Enabled = false;
+            this.tb_Manager_HDDV_Cash.FocusedBaseColor = System.Drawing.Color.LightGray;
+            this.tb_Manager_HDDV_Cash.FocusedBorderColor = System.Drawing.Color.DimGray;
+            this.tb_Manager_HDDV_Cash.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.tb_Manager_HDDV_Cash.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_Manager_HDDV_Cash.ForeColor = System.Drawing.Color.Black;
+            this.tb_Manager_HDDV_Cash.Location = new System.Drawing.Point(1063, 74);
+            this.tb_Manager_HDDV_Cash.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tb_Manager_HDDV_Cash.Name = "tb_Manager_HDDV_Cash";
+            this.tb_Manager_HDDV_Cash.PasswordChar = '\0';
+            this.tb_Manager_HDDV_Cash.SelectedText = "";
+            this.tb_Manager_HDDV_Cash.Size = new System.Drawing.Size(370, 59);
+            this.tb_Manager_HDDV_Cash.TabIndex = 17;
+            this.tb_Manager_HDDV_Cash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gunaTextBox40
             // 
@@ -2251,55 +2416,10 @@
             this.txb_Manager_HDDV_Quantity.Name = "txb_Manager_HDDV_Quantity";
             this.txb_Manager_HDDV_Quantity.PasswordChar = '\0';
             this.txb_Manager_HDDV_Quantity.SelectedText = "";
-            this.txb_Manager_HDDV_Quantity.Size = new System.Drawing.Size(297, 59);
+            this.txb_Manager_HDDV_Quantity.Size = new System.Drawing.Size(116, 59);
             this.txb_Manager_HDDV_Quantity.TabIndex = 15;
             this.txb_Manager_HDDV_Quantity.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txb_Manager_HDDV_Quantity.TextChanged += new System.EventHandler(this.txb_Manager_HDDV_Quantity_TextChanged);
-            // 
-            // gunaTextBox41
-            // 
-            this.gunaTextBox41.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox41.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox41.BorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox41.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.gunaTextBox41.Enabled = false;
-            this.gunaTextBox41.FocusedBaseColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox41.FocusedBorderColor = System.Drawing.Color.Transparent;
-            this.gunaTextBox41.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.gunaTextBox41.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaTextBox41.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox41.Location = new System.Drawing.Point(552, 143);
-            this.gunaTextBox41.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.gunaTextBox41.Name = "gunaTextBox41";
-            this.gunaTextBox41.PasswordChar = '\0';
-            this.gunaTextBox41.ReadOnly = true;
-            this.gunaTextBox41.SelectedText = "";
-            this.gunaTextBox41.Size = new System.Drawing.Size(445, 59);
-            this.gunaTextBox41.TabIndex = 16;
-            this.gunaTextBox41.Text = "Thành tiền";
-            this.gunaTextBox41.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // tb_Manager_HDDV_Cash
-            // 
-            this.tb_Manager_HDDV_Cash.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Manager_HDDV_Cash.BaseColor = System.Drawing.Color.WhiteSmoke;
-            this.tb_Manager_HDDV_Cash.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.tb_Manager_HDDV_Cash.BorderSize = 1;
-            this.tb_Manager_HDDV_Cash.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.tb_Manager_HDDV_Cash.Enabled = false;
-            this.tb_Manager_HDDV_Cash.FocusedBaseColor = System.Drawing.Color.LightGray;
-            this.tb_Manager_HDDV_Cash.FocusedBorderColor = System.Drawing.Color.DimGray;
-            this.tb_Manager_HDDV_Cash.FocusedForeColor = System.Drawing.SystemColors.ControlText;
-            this.tb_Manager_HDDV_Cash.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tb_Manager_HDDV_Cash.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDDV_Cash.Location = new System.Drawing.Point(1005, 143);
-            this.tb_Manager_HDDV_Cash.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.tb_Manager_HDDV_Cash.Name = "tb_Manager_HDDV_Cash";
-            this.tb_Manager_HDDV_Cash.PasswordChar = '\0';
-            this.tb_Manager_HDDV_Cash.SelectedText = "";
-            this.tb_Manager_HDDV_Cash.Size = new System.Drawing.Size(430, 59);
-            this.tb_Manager_HDDV_Cash.TabIndex = 17;
-            this.tb_Manager_HDDV_Cash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // gunaTextBox45
             // 
@@ -2318,7 +2438,7 @@
             this.gunaTextBox45.Name = "gunaTextBox45";
             this.gunaTextBox45.PasswordChar = '\0';
             this.gunaTextBox45.SelectedText = "";
-            this.gunaTextBox45.Size = new System.Drawing.Size(998, 59);
+            this.gunaTextBox45.Size = new System.Drawing.Size(1160, 59);
             this.gunaTextBox45.TabIndex = 20;
             this.gunaTextBox45.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2334,7 +2454,7 @@
             this.btn_Manager_HDDV_AddServicebill.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDDV_AddServicebill.Image = null;
             this.btn_Manager_HDDV_AddServicebill.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDDV_AddServicebill.Location = new System.Drawing.Point(1010, 212);
+            this.btn_Manager_HDDV_AddServicebill.Location = new System.Drawing.Point(1172, 212);
             this.btn_Manager_HDDV_AddServicebill.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Manager_HDDV_AddServicebill.Name = "btn_Manager_HDDV_AddServicebill";
             this.btn_Manager_HDDV_AddServicebill.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -2385,11 +2505,14 @@
             this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage2.Size = new System.Drawing.Size(1444, 1413);
             this.tabPage2.TabIndex = 3;
-            this.tabPage2.Text = "HD mua";
+            this.tabPage2.Text = "Phiếu mua hàng";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // gunaPanel3
             // 
+            this.gunaPanel3.Controls.Add(this.HDmua_Delete_button_Listview);
+            this.gunaPanel3.Controls.Add(this.HDmua_Quantity_Listview);
+            this.gunaPanel3.Controls.Add(this.HDmua_Productname_Listview);
             this.gunaPanel3.Controls.Add(this.btn_Manager_HDmua_ThemHoaDon);
             this.gunaPanel3.Controls.Add(this.gunaTextBox84);
             this.gunaPanel3.Controls.Add(this.tb_Manager_HDmua_Total);
@@ -2398,6 +2521,63 @@
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(1437, 235);
             this.gunaPanel3.TabIndex = 34;
+            // 
+            // HDmua_Delete_button_Listview
+            // 
+            this.HDmua_Delete_button_Listview.AnimationHoverSpeed = 0.07F;
+            this.HDmua_Delete_button_Listview.AnimationSpeed = 0.03F;
+            this.HDmua_Delete_button_Listview.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.HDmua_Delete_button_Listview.BorderColor = System.Drawing.Color.Black;
+            this.HDmua_Delete_button_Listview.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.HDmua_Delete_button_Listview.FocusedColor = System.Drawing.Color.Empty;
+            this.HDmua_Delete_button_Listview.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HDmua_Delete_button_Listview.ForeColor = System.Drawing.Color.White;
+            this.HDmua_Delete_button_Listview.Image = null;
+            this.HDmua_Delete_button_Listview.ImageSize = new System.Drawing.Size(20, 20);
+            this.HDmua_Delete_button_Listview.Location = new System.Drawing.Point(140, 73);
+            this.HDmua_Delete_button_Listview.Margin = new System.Windows.Forms.Padding(4);
+            this.HDmua_Delete_button_Listview.Name = "HDmua_Delete_button_Listview";
+            this.HDmua_Delete_button_Listview.OnHoverBaseColor = System.Drawing.Color.Gray;
+            this.HDmua_Delete_button_Listview.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.HDmua_Delete_button_Listview.OnHoverForeColor = System.Drawing.Color.White;
+            this.HDmua_Delete_button_Listview.OnHoverImage = null;
+            this.HDmua_Delete_button_Listview.OnPressedColor = System.Drawing.Color.Black;
+            this.HDmua_Delete_button_Listview.Size = new System.Drawing.Size(236, 54);
+            this.HDmua_Delete_button_Listview.TabIndex = 35;
+            this.HDmua_Delete_button_Listview.Text = "Cập Nhật";
+            this.HDmua_Delete_button_Listview.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.HDmua_Delete_button_Listview.Click += new System.EventHandler(this.HDmua_Delete_button_Listview_Click);
+            // 
+            // HDmua_Quantity_Listview
+            // 
+            this.HDmua_Quantity_Listview.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.HDmua_Quantity_Listview.BaseColor = System.Drawing.Color.WhiteSmoke;
+            this.HDmua_Quantity_Listview.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.HDmua_Quantity_Listview.BorderSize = 1;
+            this.HDmua_Quantity_Listview.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.HDmua_Quantity_Listview.FocusedBaseColor = System.Drawing.Color.LightGray;
+            this.HDmua_Quantity_Listview.FocusedBorderColor = System.Drawing.Color.DimGray;
+            this.HDmua_Quantity_Listview.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.HDmua_Quantity_Listview.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HDmua_Quantity_Listview.ForeColor = System.Drawing.Color.Black;
+            this.HDmua_Quantity_Listview.Location = new System.Drawing.Point(3, 76);
+            this.HDmua_Quantity_Listview.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.HDmua_Quantity_Listview.Name = "HDmua_Quantity_Listview";
+            this.HDmua_Quantity_Listview.PasswordChar = '\0';
+            this.HDmua_Quantity_Listview.SelectedText = "";
+            this.HDmua_Quantity_Listview.Size = new System.Drawing.Size(95, 50);
+            this.HDmua_Quantity_Listview.TabIndex = 34;
+            this.HDmua_Quantity_Listview.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // HDmua_Productname_Listview
+            // 
+            this.HDmua_Productname_Listview.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HDmua_Productname_Listview.FormattingEnabled = true;
+            this.HDmua_Productname_Listview.Location = new System.Drawing.Point(3, 4);
+            this.HDmua_Productname_Listview.Margin = new System.Windows.Forms.Padding(4);
+            this.HDmua_Productname_Listview.Name = "HDmua_Productname_Listview";
+            this.HDmua_Productname_Listview.Size = new System.Drawing.Size(370, 39);
+            this.HDmua_Productname_Listview.TabIndex = 33;
             // 
             // btn_Manager_HDmua_ThemHoaDon
             // 
@@ -2411,7 +2591,7 @@
             this.btn_Manager_HDmua_ThemHoaDon.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDmua_ThemHoaDon.Image = null;
             this.btn_Manager_HDmua_ThemHoaDon.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDmua_ThemHoaDon.Location = new System.Drawing.Point(1156, 73);
+            this.btn_Manager_HDmua_ThemHoaDon.Location = new System.Drawing.Point(1171, 73);
             this.btn_Manager_HDmua_ThemHoaDon.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Manager_HDmua_ThemHoaDon.Name = "btn_Manager_HDmua_ThemHoaDon";
             this.btn_Manager_HDmua_ThemHoaDon.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -2419,7 +2599,7 @@
             this.btn_Manager_HDmua_ThemHoaDon.OnHoverForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDmua_ThemHoaDon.OnHoverImage = null;
             this.btn_Manager_HDmua_ThemHoaDon.OnPressedColor = System.Drawing.Color.Black;
-            this.btn_Manager_HDmua_ThemHoaDon.Size = new System.Drawing.Size(236, 68);
+            this.btn_Manager_HDmua_ThemHoaDon.Size = new System.Drawing.Size(265, 54);
             this.btn_Manager_HDmua_ThemHoaDon.TabIndex = 32;
             this.btn_Manager_HDmua_ThemHoaDon.Text = "Thêm Hóa Đơn";
             this.btn_Manager_HDmua_ThemHoaDon.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -2437,7 +2617,7 @@
             this.gunaTextBox84.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox84.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox84.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox84.Location = new System.Drawing.Point(581, 5);
+            this.gunaTextBox84.Location = new System.Drawing.Point(928, 5);
             this.gunaTextBox84.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox84.Name = "gunaTextBox84";
             this.gunaTextBox84.PasswordChar = '\0';
@@ -2460,12 +2640,12 @@
             this.tb_Manager_HDmua_Total.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDmua_Total.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDmua_Total.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDmua_Total.Location = new System.Drawing.Point(824, 5);
+            this.tb_Manager_HDmua_Total.Location = new System.Drawing.Point(1169, 5);
             this.tb_Manager_HDmua_Total.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDmua_Total.Name = "tb_Manager_HDmua_Total";
             this.tb_Manager_HDmua_Total.PasswordChar = '\0';
             this.tb_Manager_HDmua_Total.SelectedText = "";
-            this.tb_Manager_HDmua_Total.Size = new System.Drawing.Size(568, 59);
+            this.tb_Manager_HDmua_Total.Size = new System.Drawing.Size(265, 59);
             this.tb_Manager_HDmua_Total.TabIndex = 29;
             this.tb_Manager_HDmua_Total.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -2485,6 +2665,7 @@
             this.columnHeader13,
             this.columnHeader17,
             this.columnHeader18,
+            this.columnHeader7,
             this.columnHeader19,
             this.columnHeader21,
             this.columnHeader23});
@@ -2502,32 +2683,36 @@
             // columnHeader13
             // 
             this.columnHeader13.Text = "Mã SP";
-            this.columnHeader13.Width = 70;
+            this.columnHeader13.Width = 65;
             // 
             // columnHeader17
             // 
             this.columnHeader17.Text = "Loại SP";
-            this.columnHeader17.Width = 161;
+            this.columnHeader17.Width = 125;
             // 
             // columnHeader18
             // 
             this.columnHeader18.Text = "Tên SP";
-            this.columnHeader18.Width = 214;
+            this.columnHeader18.Width = 175;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Mã NCC";
             // 
             // columnHeader19
             // 
             this.columnHeader19.Text = "Số lượng";
-            this.columnHeader19.Width = 77;
+            this.columnHeader19.Width = 50;
             // 
             // columnHeader21
             // 
             this.columnHeader21.Text = "Đơn giá";
-            this.columnHeader21.Width = 149;
+            this.columnHeader21.Width = 150;
             // 
             // columnHeader23
             // 
             this.columnHeader23.Text = "Thành tiền";
-            this.columnHeader23.Width = 161;
+            this.columnHeader23.Width = 155;
             // 
             // gunaTextBox83
             // 
@@ -2592,7 +2777,9 @@
             this.flowLayoutPanel7.Controls.Add(this.tb_Manager_HDmua_GuestPN);
             this.flowLayoutPanel7.Controls.Add(this.gunaTextBox69);
             this.flowLayoutPanel7.Controls.Add(this.DateTimePicker_Manager_HDmua_date_time);
+            this.flowLayoutPanel7.Controls.Add(this.gunaTextBox30);
             this.flowLayoutPanel7.Controls.Add(this.btn_Manager_HDmua_AddGuest);
+            this.flowLayoutPanel7.Controls.Add(this.gunaTextBox34);
             this.flowLayoutPanel7.Controls.Add(this.btn_Manager_HDmua_ShowNCC);
             this.flowLayoutPanel7.Location = new System.Drawing.Point(0, 142);
             this.flowLayoutPanel7.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -2900,6 +3087,7 @@
             this.DateTimePicker_Manager_HDmua_date_time.BorderSize = 1;
             this.DateTimePicker_Manager_HDmua_date_time.CustomFormat = null;
             this.DateTimePicker_Manager_HDmua_date_time.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
+            this.DateTimePicker_Manager_HDmua_date_time.Enabled = false;
             this.DateTimePicker_Manager_HDmua_date_time.FocusedColor = System.Drawing.Color.Silver;
             this.DateTimePicker_Manager_HDmua_date_time.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.DateTimePicker_Manager_HDmua_date_time.ForeColor = System.Drawing.Color.Black;
@@ -2912,10 +3100,32 @@
             this.DateTimePicker_Manager_HDmua_date_time.OnHoverBorderColor = System.Drawing.Color.Gray;
             this.DateTimePicker_Manager_HDmua_date_time.OnHoverForeColor = System.Drawing.Color.Black;
             this.DateTimePicker_Manager_HDmua_date_time.OnPressedColor = System.Drawing.Color.Silver;
-            this.DateTimePicker_Manager_HDmua_date_time.Size = new System.Drawing.Size(482, 54);
+            this.DateTimePicker_Manager_HDmua_date_time.Size = new System.Drawing.Size(370, 54);
             this.DateTimePicker_Manager_HDmua_date_time.TabIndex = 20;
             this.DateTimePicker_Manager_HDmua_date_time.Text = "Saturday, October 26, 2024";
             this.DateTimePicker_Manager_HDmua_date_time.Value = new System.DateTime(2024, 10, 26, 15, 9, 24, 330);
+            // 
+            // gunaTextBox30
+            // 
+            this.gunaTextBox30.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox30.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox30.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox30.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox30.Enabled = false;
+            this.gunaTextBox30.FocusedBaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox30.FocusedBorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox30.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox30.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaTextBox30.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gunaTextBox30.Location = new System.Drawing.Point(625, 212);
+            this.gunaTextBox30.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaTextBox30.Name = "gunaTextBox30";
+            this.gunaTextBox30.PasswordChar = '\0';
+            this.gunaTextBox30.ReadOnly = true;
+            this.gunaTextBox30.SelectedText = "";
+            this.gunaTextBox30.Size = new System.Drawing.Size(170, 59);
+            this.gunaTextBox30.TabIndex = 32;
+            this.gunaTextBox30.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // btn_Manager_HDmua_AddGuest
             // 
@@ -2929,7 +3139,7 @@
             this.btn_Manager_HDmua_AddGuest.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDmua_AddGuest.Image = null;
             this.btn_Manager_HDmua_AddGuest.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDmua_AddGuest.Location = new System.Drawing.Point(737, 212);
+            this.btn_Manager_HDmua_AddGuest.Location = new System.Drawing.Point(803, 212);
             this.btn_Manager_HDmua_AddGuest.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Manager_HDmua_AddGuest.Name = "btn_Manager_HDmua_AddGuest";
             this.btn_Manager_HDmua_AddGuest.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -2943,6 +3153,28 @@
             this.btn_Manager_HDmua_AddGuest.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btn_Manager_HDmua_AddGuest.Click += new System.EventHandler(this.btn_Manager_HDmua_AddGuest_Click);
             // 
+            // gunaTextBox34
+            // 
+            this.gunaTextBox34.BackColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox34.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox34.BorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox34.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox34.Enabled = false;
+            this.gunaTextBox34.FocusedBaseColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox34.FocusedBorderColor = System.Drawing.Color.Transparent;
+            this.gunaTextBox34.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.gunaTextBox34.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaTextBox34.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.gunaTextBox34.Location = new System.Drawing.Point(1076, 212);
+            this.gunaTextBox34.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gunaTextBox34.Name = "gunaTextBox34";
+            this.gunaTextBox34.PasswordChar = '\0';
+            this.gunaTextBox34.ReadOnly = true;
+            this.gunaTextBox34.SelectedText = "";
+            this.gunaTextBox34.Size = new System.Drawing.Size(88, 59);
+            this.gunaTextBox34.TabIndex = 31;
+            this.gunaTextBox34.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // btn_Manager_HDmua_ShowNCC
             // 
             this.btn_Manager_HDmua_ShowNCC.AnimationHoverSpeed = 0.07F;
@@ -2955,7 +3187,7 @@
             this.btn_Manager_HDmua_ShowNCC.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDmua_ShowNCC.Image = null;
             this.btn_Manager_HDmua_ShowNCC.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDmua_ShowNCC.Location = new System.Drawing.Point(1010, 212);
+            this.btn_Manager_HDmua_ShowNCC.Location = new System.Drawing.Point(1172, 212);
             this.btn_Manager_HDmua_ShowNCC.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Manager_HDmua_ShowNCC.Name = "btn_Manager_HDmua_ShowNCC";
             this.btn_Manager_HDmua_ShowNCC.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -3146,7 +3378,7 @@
             this.cb_Manager_HDmua_ProductName.Location = new System.Drawing.Point(1070, 73);
             this.cb_Manager_HDmua_ProductName.Margin = new System.Windows.Forms.Padding(4);
             this.cb_Manager_HDmua_ProductName.Name = "cb_Manager_HDmua_ProductName";
-            this.cb_Manager_HDmua_ProductName.Size = new System.Drawing.Size(365, 39);
+            this.cb_Manager_HDmua_ProductName.Size = new System.Drawing.Size(363, 39);
             this.cb_Manager_HDmua_ProductName.TabIndex = 25;
             this.cb_Manager_HDmua_ProductName.SelectedIndexChanged += new System.EventHandler(this.cb_Manager_HDmua_ProductName_SelectedIndexChanged);
             // 
@@ -3213,7 +3445,7 @@
             this.gunaTextBox17.PasswordChar = '\0';
             this.gunaTextBox17.ReadOnly = true;
             this.gunaTextBox17.SelectedText = "";
-            this.gunaTextBox17.Size = new System.Drawing.Size(409, 59);
+            this.gunaTextBox17.Size = new System.Drawing.Size(406, 59);
             this.gunaTextBox17.TabIndex = 26;
             this.gunaTextBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -3229,7 +3461,7 @@
             this.gunaTextBox78.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.gunaTextBox78.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaTextBox78.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.gunaTextBox78.Location = new System.Drawing.Point(767, 143);
+            this.gunaTextBox78.Location = new System.Drawing.Point(764, 143);
             this.gunaTextBox78.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gunaTextBox78.Name = "gunaTextBox78";
             this.gunaTextBox78.PasswordChar = '\0';
@@ -3253,7 +3485,7 @@
             this.tb_Manager_HDmua_Cash.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.tb_Manager_HDmua_Cash.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tb_Manager_HDmua_Cash.ForeColor = System.Drawing.Color.Black;
-            this.tb_Manager_HDmua_Cash.Location = new System.Drawing.Point(1072, 143);
+            this.tb_Manager_HDmua_Cash.Location = new System.Drawing.Point(1069, 143);
             this.tb_Manager_HDmua_Cash.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tb_Manager_HDmua_Cash.Name = "tb_Manager_HDmua_Cash";
             this.tb_Manager_HDmua_Cash.PasswordChar = '\0';
@@ -3279,7 +3511,7 @@
             this.gunaTextBox82.Name = "gunaTextBox82";
             this.gunaTextBox82.PasswordChar = '\0';
             this.gunaTextBox82.SelectedText = "";
-            this.gunaTextBox82.Size = new System.Drawing.Size(998, 59);
+            this.gunaTextBox82.Size = new System.Drawing.Size(1160, 59);
             this.gunaTextBox82.TabIndex = 20;
             this.gunaTextBox82.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -3295,7 +3527,7 @@
             this.btn_Manager_HDmua_AddProductbill.ForeColor = System.Drawing.Color.White;
             this.btn_Manager_HDmua_AddProductbill.Image = null;
             this.btn_Manager_HDmua_AddProductbill.ImageSize = new System.Drawing.Size(20, 20);
-            this.btn_Manager_HDmua_AddProductbill.Location = new System.Drawing.Point(1010, 212);
+            this.btn_Manager_HDmua_AddProductbill.Location = new System.Drawing.Point(1172, 212);
             this.btn_Manager_HDmua_AddProductbill.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Manager_HDmua_AddProductbill.Name = "btn_Manager_HDmua_AddProductbill";
             this.btn_Manager_HDmua_AddProductbill.OnHoverBaseColor = System.Drawing.Color.Gray;
@@ -3328,7 +3560,7 @@
             this.gunaTextBox55.SelectedText = "";
             this.gunaTextBox55.Size = new System.Drawing.Size(1442, 103);
             this.gunaTextBox55.TabIndex = 9;
-            this.gunaTextBox55.Text = "HÓA ĐƠN MUA HÀNG";
+            this.gunaTextBox55.Text = "PHIẾU MUA HÀNG";
             this.gunaTextBox55.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Manager
@@ -3452,8 +3684,6 @@
         private Guna.UI.WinForms.GunaTextBox gunaTextBox35;
         private Guna.UI.WinForms.GunaTextBox tb_Manager_HDDV_UnitPrice;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox37;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox38;
-        private Guna.UI.WinForms.GunaTextBox tb_Manager_HDDV_Discount;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox40;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox41;
         private Guna.UI.WinForms.GunaTextBox tb_Manager_HDDV_Cash;
@@ -3527,11 +3757,23 @@
         private System.Windows.Forms.ComboBox cb_Manager_HDDV_ServiceType;
         private System.Windows.Forms.ComboBox cb_Manager_HDmua_ProductType;
         private System.Windows.Forms.ComboBox cb_Manager_HDmua_ProductName;
-        private System.Windows.Forms.ToolStripMenuItem phiếuDịchVụToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem phiếuDịchVụToolStripMenuItem1;
-        private Guna.UI.WinForms.GunaTextBox gunaTextBox11;
-        private Guna.UI.WinForms.GunaTextBox txb_Manager_HDban_GiamGia;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox17;
         private Guna.UI.WinForms.GunaTextBox gunaTextBox21;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
+        private System.Windows.Forms.ComboBox HDmua_Productname_Listview;
+        private Guna.UI.WinForms.GunaButton HDmua_Delete_button_Listview;
+        private Guna.UI.WinForms.GunaTextBox HDmua_Quantity_Listview;
+        private Guna.UI.WinForms.GunaButton HDDV_Delete_button_Listview;
+        private Guna.UI.WinForms.GunaTextBox HDDV_Quantity_Listview;
+        private System.Windows.Forms.ComboBox HDDV_Productname_Listview;
+        private Guna.UI.WinForms.GunaButton HDban_Delete_button_Listview;
+        private Guna.UI.WinForms.GunaTextBox HDban_Quantity_Listview;
+        private System.Windows.Forms.ComboBox HDban_Productname_Listview;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox11;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox22;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox24;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox27;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox30;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox34;
     }
 }

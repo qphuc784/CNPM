@@ -40,7 +40,6 @@
             this.gunaPanel5 = new Guna.UI.WinForms.GunaPanel();
             this.Button_Interface_logout = new Guna.UI.WinForms.GunaButton();
             this.Button_Interface_accounting = new Guna.UI.WinForms.GunaButton();
-            this.Button_Interface_servicebill = new Guna.UI.WinForms.GunaButton();
             this.Button_Interface_productbill = new Guna.UI.WinForms.GunaButton();
             this.Button_Interface_service = new Guna.UI.WinForms.GunaButton();
             this.Button_Interface_product = new Guna.UI.WinForms.GunaButton();
@@ -57,10 +56,8 @@
             this.gunaPanel1.Controls.Add(this.Button_Interface_account);
             this.gunaPanel1.Controls.Add(this.Button_Interface_goodreceipt);
             this.gunaPanel1.Controls.Add(this.gunaPanel6);
-            this.gunaPanel1.Controls.Add(this.gunaPanel3);
             this.gunaPanel1.Controls.Add(this.gunaPanel5);
             this.gunaPanel1.Controls.Add(this.Button_Interface_accounting);
-            this.gunaPanel1.Controls.Add(this.Button_Interface_servicebill);
             this.gunaPanel1.Controls.Add(this.Button_Interface_productbill);
             this.gunaPanel1.Controls.Add(this.Button_Interface_service);
             this.gunaPanel1.Controls.Add(this.Button_Interface_product);
@@ -84,17 +81,17 @@
             this.Button_Interface_account.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_account.Image = null;
             this.Button_Interface_account.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_Interface_account.Location = new System.Drawing.Point(4, 838);
+            this.Button_Interface_account.Location = new System.Drawing.Point(5, 824);
             this.Button_Interface_account.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Button_Interface_account.Name = "Button_Interface_account";
-            this.Button_Interface_account.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Button_Interface_account.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.Button_Interface_account.OnHoverBorderColor = System.Drawing.Color.Black;
             this.Button_Interface_account.OnHoverForeColor = System.Drawing.Color.Black;
             this.Button_Interface_account.OnHoverImage = null;
             this.Button_Interface_account.OnPressedColor = System.Drawing.Color.Black;
             this.Button_Interface_account.Radius = 2;
             this.Button_Interface_account.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.Button_Interface_account.Size = new System.Drawing.Size(346, 90);
+            this.Button_Interface_account.Size = new System.Drawing.Size(346, 105);
             this.Button_Interface_account.TabIndex = 10;
             this.Button_Interface_account.Text = "ACCOUNT";
             this.Button_Interface_account.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -113,16 +110,16 @@
             this.Button_Interface_goodreceipt.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_goodreceipt.Image = null;
             this.Button_Interface_goodreceipt.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_Interface_goodreceipt.Location = new System.Drawing.Point(6, 645);
+            this.Button_Interface_goodreceipt.Location = new System.Drawing.Point(5, 602);
             this.Button_Interface_goodreceipt.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Button_Interface_goodreceipt.Name = "Button_Interface_goodreceipt";
-            this.Button_Interface_goodreceipt.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.Button_Interface_goodreceipt.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Button_Interface_goodreceipt.OnHoverBorderColor = System.Drawing.Color.Black;
             this.Button_Interface_goodreceipt.OnHoverForeColor = System.Drawing.Color.Black;
             this.Button_Interface_goodreceipt.OnHoverImage = null;
             this.Button_Interface_goodreceipt.OnPressedColor = System.Drawing.Color.Black;
             this.Button_Interface_goodreceipt.Radius = 2;
-            this.Button_Interface_goodreceipt.Size = new System.Drawing.Size(346, 90);
+            this.Button_Interface_goodreceipt.Size = new System.Drawing.Size(346, 105);
             this.Button_Interface_goodreceipt.TabIndex = 15;
             this.Button_Interface_goodreceipt.Text = "GOOD RECEIPT";
             this.Button_Interface_goodreceipt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -138,7 +135,7 @@
             this.gunaPanel6.Location = new System.Drawing.Point(1, 0);
             this.gunaPanel6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaPanel6.Name = "gunaPanel6";
-            this.gunaPanel6.Size = new System.Drawing.Size(346, 249);
+            this.gunaPanel6.Size = new System.Drawing.Size(346, 263);
             this.gunaPanel6.TabIndex = 14;
             // 
             // Label_Email_user_interface
@@ -184,7 +181,7 @@
             // gunaPanel2
             // 
             this.gunaPanel2.BackColor = System.Drawing.Color.Black;
-            this.gunaPanel2.Location = new System.Drawing.Point(1, 240);
+            this.gunaPanel2.Location = new System.Drawing.Point(1, 248);
             this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaPanel2.Name = "gunaPanel2";
             this.gunaPanel2.Size = new System.Drawing.Size(349, 12);
@@ -193,7 +190,7 @@
             // gunaPanel3
             // 
             this.gunaPanel3.BackColor = System.Drawing.Color.Black;
-            this.gunaPanel3.Location = new System.Drawing.Point(1, 944);
+            this.gunaPanel3.Location = new System.Drawing.Point(0, 3);
             this.gunaPanel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(351, 12);
@@ -203,10 +200,11 @@
             // 
             this.gunaPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.gunaPanel5.Controls.Add(this.Button_Interface_logout);
-            this.gunaPanel5.Location = new System.Drawing.Point(1, 945);
+            this.gunaPanel5.Controls.Add(this.gunaPanel3);
+            this.gunaPanel5.Location = new System.Drawing.Point(1, 935);
             this.gunaPanel5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.gunaPanel5.Name = "gunaPanel5";
-            this.gunaPanel5.Size = new System.Drawing.Size(346, 178);
+            this.gunaPanel5.Size = new System.Drawing.Size(346, 188);
             this.gunaPanel5.TabIndex = 13;
             // 
             // Button_Interface_logout
@@ -251,48 +249,20 @@
             this.Button_Interface_accounting.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_accounting.Image = null;
             this.Button_Interface_accounting.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_Interface_accounting.Location = new System.Drawing.Point(3, 741);
+            this.Button_Interface_accounting.Location = new System.Drawing.Point(5, 713);
             this.Button_Interface_accounting.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Button_Interface_accounting.Name = "Button_Interface_accounting";
-            this.Button_Interface_accounting.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.Button_Interface_accounting.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.Button_Interface_accounting.OnHoverBorderColor = System.Drawing.Color.Black;
             this.Button_Interface_accounting.OnHoverForeColor = System.Drawing.Color.Black;
             this.Button_Interface_accounting.OnHoverImage = null;
             this.Button_Interface_accounting.OnPressedColor = System.Drawing.Color.Black;
             this.Button_Interface_accounting.Radius = 2;
-            this.Button_Interface_accounting.Size = new System.Drawing.Size(346, 90);
+            this.Button_Interface_accounting.Size = new System.Drawing.Size(346, 105);
             this.Button_Interface_accounting.TabIndex = 11;
             this.Button_Interface_accounting.Text = "ACCOUNTING";
             this.Button_Interface_accounting.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Button_Interface_accounting.Click += new System.EventHandler(this.Button_Interface_accounting_Click);
-            // 
-            // Button_Interface_servicebill
-            // 
-            this.Button_Interface_servicebill.AnimationHoverSpeed = 0.07F;
-            this.Button_Interface_servicebill.AnimationSpeed = 0.03F;
-            this.Button_Interface_servicebill.BackColor = System.Drawing.Color.Transparent;
-            this.Button_Interface_servicebill.BaseColor = System.Drawing.Color.Transparent;
-            this.Button_Interface_servicebill.BorderColor = System.Drawing.Color.Black;
-            this.Button_Interface_servicebill.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.Button_Interface_servicebill.FocusedColor = System.Drawing.Color.Empty;
-            this.Button_Interface_servicebill.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Interface_servicebill.ForeColor = System.Drawing.Color.Black;
-            this.Button_Interface_servicebill.Image = null;
-            this.Button_Interface_servicebill.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_Interface_servicebill.Location = new System.Drawing.Point(6, 548);
-            this.Button_Interface_servicebill.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Button_Interface_servicebill.Name = "Button_Interface_servicebill";
-            this.Button_Interface_servicebill.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Button_Interface_servicebill.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.Button_Interface_servicebill.OnHoverForeColor = System.Drawing.Color.Black;
-            this.Button_Interface_servicebill.OnHoverImage = null;
-            this.Button_Interface_servicebill.OnPressedColor = System.Drawing.Color.Black;
-            this.Button_Interface_servicebill.Radius = 2;
-            this.Button_Interface_servicebill.Size = new System.Drawing.Size(346, 90);
-            this.Button_Interface_servicebill.TabIndex = 9;
-            this.Button_Interface_servicebill.Text = "SERVICE BILL";
-            this.Button_Interface_servicebill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Button_Interface_servicebill.Click += new System.EventHandler(this.Button_Interface_servicebill_Click);
             // 
             // Button_Interface_productbill
             // 
@@ -307,7 +277,7 @@
             this.Button_Interface_productbill.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_productbill.Image = null;
             this.Button_Interface_productbill.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_Interface_productbill.Location = new System.Drawing.Point(-1, 448);
+            this.Button_Interface_productbill.Location = new System.Drawing.Point(5, 491);
             this.Button_Interface_productbill.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Button_Interface_productbill.Name = "Button_Interface_productbill";
             this.Button_Interface_productbill.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -316,9 +286,9 @@
             this.Button_Interface_productbill.OnHoverImage = null;
             this.Button_Interface_productbill.OnPressedColor = System.Drawing.Color.Black;
             this.Button_Interface_productbill.Radius = 2;
-            this.Button_Interface_productbill.Size = new System.Drawing.Size(346, 90);
+            this.Button_Interface_productbill.Size = new System.Drawing.Size(346, 105);
             this.Button_Interface_productbill.TabIndex = 8;
-            this.Button_Interface_productbill.Text = "PRODUCT BILL";
+            this.Button_Interface_productbill.Text = "PRODUCT TYPE";
             this.Button_Interface_productbill.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.Button_Interface_productbill.Click += new System.EventHandler(this.Button_Interface_productbill_Click);
             // 
@@ -335,7 +305,7 @@
             this.Button_Interface_service.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_service.Image = null;
             this.Button_Interface_service.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_Interface_service.Location = new System.Drawing.Point(6, 352);
+            this.Button_Interface_service.Location = new System.Drawing.Point(5, 380);
             this.Button_Interface_service.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Button_Interface_service.Name = "Button_Interface_service";
             this.Button_Interface_service.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
@@ -344,7 +314,7 @@
             this.Button_Interface_service.OnHoverImage = null;
             this.Button_Interface_service.OnPressedColor = System.Drawing.Color.Black;
             this.Button_Interface_service.Radius = 2;
-            this.Button_Interface_service.Size = new System.Drawing.Size(346, 90);
+            this.Button_Interface_service.Size = new System.Drawing.Size(346, 105);
             this.Button_Interface_service.TabIndex = 7;
             this.Button_Interface_service.Text = "SERVICE";
             this.Button_Interface_service.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -363,7 +333,7 @@
             this.Button_Interface_product.ForeColor = System.Drawing.Color.Black;
             this.Button_Interface_product.Image = null;
             this.Button_Interface_product.ImageSize = new System.Drawing.Size(20, 20);
-            this.Button_Interface_product.Location = new System.Drawing.Point(4, 255);
+            this.Button_Interface_product.Location = new System.Drawing.Point(5, 269);
             this.Button_Interface_product.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Button_Interface_product.Name = "Button_Interface_product";
             this.Button_Interface_product.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
@@ -372,7 +342,7 @@
             this.Button_Interface_product.OnHoverImage = null;
             this.Button_Interface_product.OnPressedColor = System.Drawing.Color.Black;
             this.Button_Interface_product.Radius = 2;
-            this.Button_Interface_product.Size = new System.Drawing.Size(346, 90);
+            this.Button_Interface_product.Size = new System.Drawing.Size(346, 105);
             this.Button_Interface_product.TabIndex = 3;
             this.Button_Interface_product.Text = "PRODUCT";
             this.Button_Interface_product.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -421,7 +391,6 @@
         private Guna.UI.WinForms.GunaButton Button_Interface_product;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
         private Guna.UI.WinForms.GunaButton Button_Interface_account;
-        private Guna.UI.WinForms.GunaButton Button_Interface_servicebill;
         private Guna.UI.WinForms.GunaButton Button_Interface_productbill;
         private Guna.UI.WinForms.GunaButton Button_Interface_service;
         private Guna.UI.WinForms.GunaButton Button_Interface_accounting;

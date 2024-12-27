@@ -72,23 +72,51 @@ namespace CNPM
             if (DataGridView_UCproducttype.Rows.Count == 0)
             {
                 MessageBox.Show("Vui Lòng Chọn Loại Sản Phẩm Để Cập Nhật!");
+                return;
             }
+
+            // Cho phép chỉnh sửa DataGridView
+            DataGridView_UCproducttype.ReadOnly = false;
+            DataGridView_UCproducttype.Columns["ID"].ReadOnly = true; // Khóa cột ID
+
+            // Biến đếm kết quả cập nhật
+            int successCount = 0;
+            int failCount = 0;
+
             foreach (DataGridViewRow row in DataGridView_UCproducttype.Rows)
             {
+                if (row.IsNewRow || row.Cells["Ten"].Value == null || row.Cells["DVT"].Value == null)
+                    continue; // Bỏ qua dòng mới hoặc dòng thiếu dữ liệu
+
+                // Lấy giá trị từ các cột
                 string TenLoai = row.Cells["Ten"].Value.ToString();
                 string DonViTinh = row.Cells["DVT"].Value.ToString();
                 int ID = Convert.ToInt32(row.Cells["ID"].Value);
-                DataGridView_UCproducttype.ReadOnly = false;
-                DataGridView_UCproducttype.Columns["ID"].ReadOnly = true;
+
+                // Gọi DAO để cập nhật loại sản phẩm
                 bool isUpdate = LoaiSanPhamDAO.Instance.UpdateLoaiSanPham(ID, TenLoai, DonViTinh);
-                if (!isUpdate)
+                if (isUpdate)
                 {
-                    MessageBox.Show("Cập Nhật Loại Sản Phẩm Thất Bại! Vui Lòng Thử Lại!");
-                    return;
+                    successCount++;
+                }
+                else
+                {
+                    failCount++;
                 }
             }
-            MessageBox.Show("Cập Nhật Loại Sản Phẩm Thành Công!");
 
+            // Hiển thị thông báo kết quả
+            if (successCount > 0)
+            {
+                MessageBox.Show($"Cập Nhật Thành Công!");
+            }
+            if (failCount > 0)
+            {
+                MessageBox.Show($"Cập Nhật Thất Bại! Vui Lòng Thử Lại.");
+            }
+
+            // Tùy chọn: Làm mới lại dữ liệu nếu cần
+            Button_UCproductType_OK_Click(sender, e);
 
         }
     }

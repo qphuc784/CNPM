@@ -62,5 +62,18 @@ namespace CNPM.DAO
 
             return result > 0;
         }
+        public List<NhaCungCap> GetListSdt()
+        {
+            List<NhaCungCap> listSdt = new List<NhaCungCap>();
+            string query = "select * from NhaCungCap";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                NhaCungCap sdt = new NhaCungCap(row);
+                listSdt.Add(sdt);
+            }
+            return listSdt;
+        }
     }
 }

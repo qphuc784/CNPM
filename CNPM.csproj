@@ -105,6 +105,14 @@
     <Compile Include="BaoCaoTonKho.Designer.cs">
       <DependentUpon>BaoCaoTonKho.cs</DependentUpon>
     </Compile>
+    <Compile Include="CTHDDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CTHDDV.Designer.cs">
+      <DependentUpon>CTHDDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\BaoCaoTonKhoDAO.cs" />
+    <Compile Include="DAO\CTHoaDonDichVuDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
     <Compile Include="DAO\DichVuDAO.cs" />
     <Compile Include="DAO\GoodReceiptDAO.cs" />
@@ -124,6 +132,7 @@
     <Compile Include="DoiMatKhau.Designer.cs">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\BaoCaoTonKhodto.cs" />
     <Compile Include="DTO\CTPhieuBanHang.cs" />
     <Compile Include="DTO\CTPhieuDichVu.cs" />
     <Compile Include="DTO\CTPhieuMuaHang.cs" />
@@ -155,12 +164,6 @@
     </Compile>
     <Compile Include="Manager.Designer.cs">
       <DependentUpon>Manager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PhieuDichVu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PhieuDichVu.Designer.cs">
-      <DependentUpon>PhieuDichVu.cs</DependentUpon>
     </Compile>
     <Compile Include="Signup_form.cs">
       <SubType>Form</SubType>
@@ -257,6 +260,9 @@
     <EmbeddedResource Include="BaoCaoTonKho.resx">
       <DependentUpon>BaoCaoTonKho.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CTHDDV.resx">
+      <DependentUpon>CTHDDV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DoiMatKhau.resx">
       <DependentUpon>DoiMatKhau.cs</DependentUpon>
     </EmbeddedResource>
@@ -268,9 +274,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Manager.resx">
       <DependentUpon>Manager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PhieuDichVu.resx">
-      <DependentUpon>PhieuDichVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Signup_form.resx">
       <DependentUpon>Signup_form.cs</DependentUpon>

@@ -50,15 +50,13 @@ namespace CNPM
         {
             string TenSanpham = TextBox_AddProduct_ten_san_pham.Text;
             string TenLoai = gunaComboBox_AddProduct_loai_san_pham.Text;
-            string SoLuongText = TextBox_AddProduct_So_luong.Text;
-            string DonGiaText = TextBox_AddProduct_Don_gia.Text;
+           
             string LoiNhuanText = TextBox_AddProduct_loi_nhuan.Text;
-            int SoLuong = Convert.ToInt32(SoLuongText);
-            float DonGia = Convert.ToSingle(DonGiaText);
+            int SoLuong = 0;
+            float DonGia = 0;
             int LoiNhuan = Convert.ToInt32(LoiNhuanText);
             if (string.IsNullOrWhiteSpace(TenSanpham) ||
-                string.IsNullOrEmpty(SoLuongText) ||
-                string.IsNullOrEmpty(DonGiaText) ||
+                
                 string.IsNullOrEmpty(LoiNhuanText)
                )
             {

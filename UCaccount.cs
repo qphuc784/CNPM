@@ -27,7 +27,61 @@ namespace CNPM
 
 
 
-        private void Button_UCaccount_OK_Click(object sender, EventArgs e)
+      
+
+       
+
+        private void Button_UCaccount_Xoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_UCaccount_ResetPassword_Click(object sender, EventArgs e)
+        {
+            if (DataGridView_UCaccount.Rows.Count == 0)
+            {
+                MessageBox.Show("Vui Lòng Chọn Nhân Viên Để Cập Nhật!");
+                return;
+            }
+
+            // Biến đếm kết quả cập nhật
+            int successCount = 0;
+            int failCount = 0;
+
+            foreach (DataGridViewRow row in DataGridView_UCaccount.Rows)
+            {
+                if (row.IsNewRow || row.Cells["TenNhanVien"].Value == null || row.Cells["ChucVu"].Value == null || row.Cells["Email"].Value == null)
+                    continue; // Bỏ qua dòng mới hoặc dòng thiếu dữ liệu
+
+                // Lấy giá trị từ các cột
+                string TenNhanVien = row.Cells["TenNhanVien"].Value.ToString();
+                string ChucVu = row.Cells["ChucVu"].Value.ToString();
+                string Email = row.Cells["Email"].Value.ToString();
+
+                // Gọi DAO để cập nhật thông tin nhân viên
+                bool isUpdate = NhanVienDAO.Instance.UpdateNhanVien(TenNhanVien, ChucVu, Email);
+                if (isUpdate)
+                {
+                    successCount++;
+                }
+                else
+                {
+                    failCount++;
+                }
+            }
+
+            // Hiển thị thông báo kết quả
+            if (successCount > 0)
+            {
+                MessageBox.Show($"Cập Nhật Thành Công Thông Tin Nhân Viên!");
+            }
+            if (failCount > 0)
+            {
+                MessageBox.Show($"Cập Nhật Thất Bại Thông Tin Nhân Viên! Vui Lòng Thử Lại.");
+            }
+        }
+
+        private void Button_UCaccount_OK_Click_1(object sender, EventArgs e)
         {
             string TenNhanVien = TextBox_UCaccount_timkiem.Text;
             List<NhanVien> nhanvien = NhanVienDAO.Instance.GetNhanVienByTenNV(TenNhanVien);
@@ -50,37 +104,6 @@ namespace CNPM
             }
         }
 
-        private void Button_UCaccount_ResetPassword_Click(object sender, EventArgs e)
-        {
-            if (DataGridView_UCaccount.Rows.Count == 0)
-            {
-                MessageBox.Show("Vui Lòng Chọn Nhân Viên Để Cập Nhật!");
-            }
-            foreach (DataGridViewRow row in DataGridView_UCaccount.Rows)
-            {
-                string TenNhanVien = row.Cells["TenNhanVien"].Value.ToString();
-                string ChucVu = row.Cells["ChucVu"].Value.ToString();
-                string Email = row.Cells["Email"].Value.ToString();
-
-
-                bool isUpdate = NhanVienDAO.Instance.UpdateNhanVien(TenNhanVien, ChucVu, Email);
-                if (isUpdate)
-                {
-
-                    MessageBox.Show("Cập Nhật Thông Tin Nhân Viên Thành Công!");
-                }
-                else
-                {
-                    MessageBox.Show("Cập Nhật Thông Tin Nhân Viên Thất Bại! Vui Lòng Thử Lại!");
-                    return;
-
-                }
-            }
-        }
-
-        private void Button_UCaccount_Xoa_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

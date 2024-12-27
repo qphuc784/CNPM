@@ -21,12 +21,16 @@ namespace CuaHangDaQuy.DTO
         private bool tinhtrang; 
         public bool TinhTrang { get => tinhtrang; set => tinhtrang = value; }
 
-        public CTPhieuDichVu(int id, int idphieudichvu, bool tinhtrang)
+        private int soluong;
+        public int SoLuong { get => soluong; set => soluong = value; }
+
+        public CTPhieuDichVu(int id, int idphieudichvu, bool tinhtrang, int soluong)
         {
             this.ID = id;
             this.IDPhieuDichVu = idphieudichvu;
             this.IDDichVu = iddichvu;
             this.TinhTrang = tinhtrang;
+            this.SoLuong = soluong;
         }
 
         public CTPhieuDichVu(DataRow row)
@@ -34,7 +38,8 @@ namespace CuaHangDaQuy.DTO
             this.ID = (int)row["ID"];
             this.IDPhieuDichVu = (int)row["IDHoaDonDichVu"];
             this.IDDichVu = (int)row["IDDichVu"];
-            this.tinhtrang = (bool)row["TinhTrang"];
+            this.TinhTrang = (bool)row["TinhTrang"];
+            this.SoLuong = (int)row["SoLuong"];
         }
     }
 }

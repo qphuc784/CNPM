@@ -73,25 +73,49 @@ namespace CNPM
         {
             if (DataGridView_UCservice.Rows.Count == 0)
             {
-                MessageBox.Show("Vui Lòng Chọn Dịch Vụ Để Cập Nhật");
+                MessageBox.Show("Vui Lòng Chọn Dịch Vụ Để Cập Nhật!");
+                return;
             }
+
+            // Cho phép chỉnh sửa DataGridView
+            DataGridView_UCservice.ReadOnly = false;
+            DataGridView_UCservice.Columns["ID"].ReadOnly = true; // ID không được chỉnh sửa
+
+            // Biến đếm kết quả cập nhật
+            int successCount = 0;
+            int failCount = 0;
+
             foreach (DataGridViewRow row in DataGridView_UCservice.Rows)
             {
-                if (row.IsNewRow) continue; // Bỏ qua dòng mới
-                // lấy giá trị từ các cột
+                if (row.IsNewRow || row.Cells["TenLoai"].Value == null || row.Cells["DonGia"].Value == null)
+                    continue; // Bỏ qua dòng mới hoặc dòng thiếu dữ liệu
+
+                // Lấy giá trị từ các cột
                 string TenLoai = row.Cells["TenLoai"].Value.ToString();
                 float DonGia = Convert.ToSingle(row.Cells["DonGia"].Value);
                 int ID = Convert.ToInt32(row.Cells["ID"].Value);
-                DataGridView_UCservice.ReadOnly = false;
-                DataGridView_UCservice.Columns["ID"].ReadOnly = true; // ID không được chỉnh sửa
+
+                // Gọi DAO để cập nhật dịch vụ
                 bool isUpdate = DichVuDAO.Instance.UpdateDichVu(TenLoai, DonGia, ID);
-                if (!isUpdate)
+                if (isUpdate)
                 {
-                    MessageBox.Show("Cập Nhật Thất Bại, Vui Lòng Thử Lại!");
-                    return;
+                    successCount++;
+                }
+                else
+                {
+                    failCount++;
                 }
             }
-            MessageBox.Show("Cập Nhật Thành Công!");
+
+            // Hiển thị thông báo kết quả
+            if (successCount > 0)
+            {
+                MessageBox.Show($"Cập Nhật Thành Công Dịch Vụ!");
+            }
+            if (failCount > 0)
+            {
+                MessageBox.Show($"Cập Nhật Thất Bại sDịch Vụ! Vui Lòng Thử Lại.");
+            }
 
         }
     }

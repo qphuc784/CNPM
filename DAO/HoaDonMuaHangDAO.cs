@@ -1,5 +1,7 @@
-﻿using System;
+﻿using CuaHangDaQuy.DTO;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -55,6 +57,19 @@ namespace CuaHangDaQuy.DAO
             string query = "USP_InsertCTPhieuNhapHang @idphieunhaphang , @idncc , @idsanpham , @soluong , @dongia ";
             int result = DataProvider.Instance.ExcuteNonQuery(query, new object[] { idphieunhaphang, idncc , idsanpham , soluong , dongia });
             return result > 0;
+        }
+        public List<PhieuMuaHang> GetListID()
+        {
+            List<PhieuMuaHang> listID = new List<PhieuMuaHang>();
+            string query = "select * from PhieuNhapHang";
+            DataTable data = DataProvider.Instance.ExcuteQuery(query);
+
+            foreach (DataRow row in data.Rows)
+            {
+                PhieuMuaHang idphieu = new PhieuMuaHang(row);
+                listID.Add(idphieu);
+            }
+            return listID;
         }
     }
 }

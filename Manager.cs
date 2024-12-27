@@ -51,10 +51,13 @@ namespace CNPM
             UpdateIDBIll();
             tb_Manager_HDban_IdStaff.Text = loginNhanVien.ID.ToString();
             tb_Manager_HDban_StaffName.Text = loginNhanVien.TenNhanVien;
+            DateTimePicker_Manager_HDban_date_time.Value = DateTime.Now;
             tb_Manager_HDDV_IdStaff.Text = loginNhanVien.ID.ToString();
             tb_Manager_HDDV_StaffName.Text = loginNhanVien.TenNhanVien;
+            DateTimePicker_Manager_HDDV_date_time.Value = DateTime.Now;
             tb_Manager_HDmua_IdStaff.Text = loginNhanVien.ID.ToString();
             tb_Manager_HDmua_StaffName.Text = loginNhanVien.TenNhanVien;
+            DateTimePicker_Manager_HDmua_date_time.Value = DateTime.Now;
         }
 
         // Hiển thị form admin
@@ -186,22 +189,11 @@ namespace CNPM
                     {
                         tb_Manager_HDban_Donvitinh.Text = " ";
                     }
-
-                    List<string> dongiaban = LoaiSanPhamDAO.Instance.GetDonGiaBan(selectedIDSanPham);
-                    if (dongiaban != null && dongiaban.Count > 0)
-                    {
-                        tb_Manager_HDban_UnitPrice.Text = string.Join(", ", dongiaban);
-                    }
-                    else
-                    {
-                        tb_Manager_HDban_UnitPrice.Text = " ";
-                    }
                 }
                 else
                 {
                     LoadTenSPToComboBox(0);
                     tb_Manager_HDban_Donvitinh.Text = "";
-                    tb_Manager_HDban_UnitPrice.Text = "";
                 }
             }
         }
@@ -233,15 +225,26 @@ namespace CNPM
                 if (selectedValue != null && int.TryParse(selectedValue.ToString(), out int selectedIDSanPham))
                 {
                     tb_Manager_HDban_IdProduct.Text = selectedIDSanPham.ToString();
+                    List<string> dongiaban = LoaiSanPhamDAO.Instance.GetDonGiaBan(selectedIDSanPham);
+                    if (dongiaban != null && dongiaban.Count > 0)
+                    {
+                        tb_Manager_HDban_UnitPrice.Text = string.Join(", ", dongiaban);
+                    }
+                    else
+                    {
+                        tb_Manager_HDban_UnitPrice.Text = " ";
+                    }
                 }
                 else
                 {
-                    tb_Manager_HDban_IdProduct.Text = ""; 
+                    tb_Manager_HDban_IdProduct.Text = "";
+                    tb_Manager_HDban_UnitPrice.Text = " ";
                 }
             }
             else
             {
-                tb_Manager_HDban_IdProduct.Text = ""; 
+                tb_Manager_HDban_IdProduct.Text = "";
+                tb_Manager_HDban_UnitPrice.Text = " ";
             }
         }
 
@@ -257,11 +260,11 @@ namespace CNPM
                 {
                     txb_Manager_HDban_Quantity.Text = soLuongConLai.ToString();
                     decimal tongTien = (donGiaBan * soLuongConLai);
-                    tb_Manager_HDban_Cash.Text = tongTien.ToString("N2");
+                    tb_Manager_HDban_Cash.Text = tongTien.ToString();
                 } else
                 {
                     decimal tongTien = (donGiaBan * soLuong);
-                    tb_Manager_HDban_Cash.Text = tongTien.ToString("N2");
+                    tb_Manager_HDban_Cash.Text = tongTien.ToString();
                 }
             }
             else
@@ -291,18 +294,51 @@ namespace CNPM
                 return;
             }
 
-            decimal thanhTien = (donGia * soLuong);
+            // Lấy số lượng còn lại từ cơ sở dữ liệu
+            int soLuongConLai = ProductDAO.Instance.GetSoLuongByID(maSP);
 
-            ListViewItem item = new ListViewItem(maSP);
-            item.SubItems.Add(loaiSP);
-            item.SubItems.Add(tenSP);
-            item.SubItems.Add(soLuong.ToString());
-            item.SubItems.Add(donViTinh);
-            item.SubItems.Add(donGia.ToString()); 
-            item.SubItems.Add(thanhTien.ToString()); 
+            if (soLuong > soLuongConLai)
+            {
+                MessageBox.Show($"Số lượng yêu cầu ({soLuong}) vượt quá số lượng còn lại ({soLuongConLai}).", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            lsv_Manager_HDban.Items.Add(item);
+            bool itemExists = false;
+            foreach (ListViewItem item in lsv_Manager_HDban.Items)
+            {
+                if (item.SubItems[0].Text == maSP)
+                {
+                    int currentSoLuong = int.Parse(item.SubItems[3].Text);
+                    int newSoLuong = currentSoLuong + soLuong;
 
+                    if (newSoLuong > soLuongConLai)
+                    {
+                        MessageBox.Show($"Tổng số lượng ({newSoLuong}) vượt quá số lượng còn lại ({soLuongConLai}).", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    decimal newThanhTien = newSoLuong * donGia;
+                    item.SubItems[3].Text = newSoLuong.ToString();
+                    item.SubItems[6].Text = newThanhTien.ToString();
+
+                    itemExists = true;
+                    break;
+                }
+            }
+            if (!itemExists)
+            {
+                decimal thanhTien = donGia * soLuong;
+
+                ListViewItem item = new ListViewItem(maSP);
+                item.SubItems.Add(loaiSP);
+                item.SubItems.Add(tenSP);
+                item.SubItems.Add(soLuong.ToString());
+                item.SubItems.Add(donViTinh);
+                item.SubItems.Add(donGia.ToString());
+                item.SubItems.Add(thanhTien.ToString());
+
+                lsv_Manager_HDban.Items.Add(item);
+            }
+            LoadProductNamesToComboBox_ban();
             tb_Manager_HDban_IdProduct.Text = string.Empty;
             cb_Manager_HDban_ProductType.SelectedIndex = -1;
             cb_Manager_HDban_ProductName.DataSource = null;
@@ -313,6 +349,7 @@ namespace CNPM
 
             CalculateTotal();
         }
+
         private void CalculateTotal()
         {
             decimal total = 0;
@@ -402,6 +439,69 @@ namespace CNPM
             tb_Manager_HDmua_IdProductBill.Text = HoaDonMuaHangDAO.Instance.GetIDHoaDon().ToString();
         }
 
+        private void LoadProductNamesToComboBox_ban()
+        {
+            List<string> productNames = new List<string>();
+
+            foreach (ListViewItem item in lsv_Manager_HDban.Items)
+            {
+                string productName = item.SubItems[2].Text;
+
+                if (!productNames.Contains(productName))
+                {
+                    productNames.Add(productName);
+                }
+            }
+
+            HDban_Productname_Listview.DataSource = null;
+            HDban_Productname_Listview.DataSource = productNames;
+        }
+
+            private void HDban_Delete_button_Listview_Click(object sender, EventArgs e)
+            {
+                if (HDban_Productname_Listview.SelectedItem == null)
+                {
+                    MessageBox.Show("Vui lòng chọn sản phẩm để cập nhật hoặc xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                string selectedProductName = HDban_Productname_Listview.SelectedItem.ToString();
+                if (!int.TryParse(HDban_Quantity_Listview.Text, out int newQuantity) || newQuantity < 0)
+                {
+                    MessageBox.Show("Số lượng phải là số nguyên không âm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+                foreach (ListViewItem item in lsv_Manager_HDban.Items)
+                {
+                if (item.SubItems[2].Text == selectedProductName)
+                {
+                    string productId = item.SubItems[0].Text;
+                    int soLuongConLai = ProductDAO.Instance.GetSoLuongByID(productId);
+                    if (newQuantity > soLuongConLai)
+                    {
+                        MessageBox.Show($"Số lượng yêu cầu ({newQuantity}) vượt quá số lượng còn lại ({soLuongConLai}) trong kho.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+                    }
+                    if (newQuantity == 0)
+                    {
+                        lsv_Manager_HDban.Items.Remove(item);
+                        MessageBox.Show($"Đã xóa sản phẩm '{selectedProductName}' khỏi danh sách.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        decimal donGia = decimal.Parse(item.SubItems[5].Text);
+                        decimal thanhTien = donGia * newQuantity;
+
+                        item.SubItems[3].Text = newQuantity.ToString();
+                        item.SubItems[6].Text = thanhTien.ToString();
+                        MessageBox.Show($"Đã cập nhật số lượng sản phẩm cho '{selectedProductName}'.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    break;
+                }
+            }
+                CalculateTotal();
+            }
+
         ///////////////////////////////////////////////////////////////////////////////////////
         // HÓA ĐƠN DỊCH VỤ //
         // Thông tin chung //
@@ -481,7 +581,7 @@ namespace CNPM
             {
                 decimal tongTien = (donGiaBan * soLuong);
 
-                tb_Manager_HDDV_Cash.Text = tongTien.ToString("N2");
+                tb_Manager_HDDV_Cash.Text = tongTien.ToString();
             }
             else
             {
@@ -506,17 +606,36 @@ namespace CNPM
                 MessageBox.Show("Đơn giá phải là số dương.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            bool itemExists = false;
+            foreach (ListViewItem item in lsv_Manager_HDDV.Items)
+            {
+                if (item.SubItems[0].Text == maDV)
+                {
+                    int currentSoLuong = int.Parse(item.SubItems[2].Text);
+                    int newSoLuong = currentSoLuong + soLuong;
+                    decimal newThanhTien = newSoLuong * donGia;
 
-            decimal thanhTien = (donGia * soLuong);
+                    item.SubItems[2].Text = newSoLuong.ToString();
+                    item.SubItems[4].Text = newThanhTien.ToString();
 
-            ListViewItem item = new ListViewItem(maDV);
-            item.SubItems.Add(loaiDV);
-            item.SubItems.Add(soLuong.ToString());
-            item.SubItems.Add(donGia.ToString("N2"));
-            item.SubItems.Add(thanhTien.ToString("N2"));
+                    itemExists = true;
+                    break;
+                }
+            }
 
-            lsv_Manager_HDDV.Items.Add(item);
+            if (!itemExists)
+            {
+                decimal thanhTien = (donGia * soLuong);
 
+                ListViewItem item = new ListViewItem(maDV);
+                item.SubItems.Add(loaiDV);
+                item.SubItems.Add(soLuong.ToString());
+                item.SubItems.Add(donGia.ToString());
+                item.SubItems.Add(thanhTien.ToString());
+
+                lsv_Manager_HDDV.Items.Add(item);
+            }
+            LoadProductNamesToComboBox_dichvu();
             tb_Manager_HDDV_IdService.Text = string.Empty;
             cb_Manager_HDDV_ServiceType.SelectedIndex = -1;
             txb_Manager_HDDV_Quantity.Text = string.Empty;
@@ -537,7 +656,7 @@ namespace CNPM
                 }
             }
 
-            txb_Manager_HDDV_TongTien.Text = total.ToString("N2");
+            txb_Manager_HDDV_TongTien.Text = total.ToString();
         }
 
         private void txb_Manager_HDDV_TraTruoc_TextChanged(object sender, EventArgs e)
@@ -548,13 +667,13 @@ namespace CNPM
                 if (traTruoc < tongTien)
                 {
                     decimal conLai = tongTien - traTruoc;
-                    txb_Manager_HDDV_Conlai.Text = conLai.ToString("N2");
+                    txb_Manager_HDDV_Conlai.Text = conLai.ToString();
                 }
                 else
                 {
                     decimal conLai = 0;
                     txb_Manager_HDDV_TraTruoc.Text = txb_Manager_HDDV_TongTien.Text;
-                    txb_Manager_HDDV_Conlai.Text = conLai.ToString("N2");
+                    txb_Manager_HDDV_Conlai.Text = conLai.ToString();
                 }
             }
             else
@@ -641,6 +760,62 @@ namespace CNPM
             lsv_Manager_HDDV.Items.Clear();
         }
 
+        private void LoadProductNamesToComboBox_dichvu()
+        {
+            List<string> serviceTypes = new List<string>();
+
+            foreach (ListViewItem item in lsv_Manager_HDDV.Items)
+            {
+                string serviceType = item.SubItems[1].Text;
+
+                if (!serviceTypes.Contains(serviceType))
+                {
+                    serviceTypes.Add(serviceType);
+                }
+            }
+
+            HDDV_Productname_Listview.DataSource = null;
+            HDDV_Productname_Listview.DataSource = serviceTypes;
+        }
+
+        private void HDDV_Delete_button_Listview_Click(object sender, EventArgs e)
+        {
+            if (HDDV_Productname_Listview.SelectedItem == null)
+            {
+                MessageBox.Show("Vui lòng chọn dịch vụ để cập nhật hoặc xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string selectedServiceName = HDDV_Productname_Listview.SelectedItem.ToString();
+            if (!int.TryParse(HDDV_Quantity_Listview.Text, out int newQuantity) || newQuantity < 0)
+            {
+                MessageBox.Show("Số lượng phải là số nguyên không âm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            foreach (ListViewItem item in lsv_Manager_HDDV.Items)
+            {
+                if (item.SubItems[1].Text == selectedServiceName)
+                {
+                    if (newQuantity == 0)
+                    {
+                        lsv_Manager_HDDV.Items.Remove(item);
+                        MessageBox.Show($"Đã xóa '{selectedServiceName}' khỏi danh sách.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        decimal donGia = decimal.Parse(item.SubItems[3].Text);
+                        decimal thanhTien = donGia * newQuantity;
+
+                        item.SubItems[2].Text = newQuantity.ToString();
+                        item.SubItems[4].Text = thanhTien.ToString();
+                        MessageBox.Show($"Đã cập nhật số lượng cho '{selectedServiceName}'.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    break;
+                }
+            }
+            CalculateTotal_DV();
+        }
+
         ///////////////////////////////////////////////////////////////////////////////////////
         // HÓA ĐƠN MUA HÀNG //
         // Thông tin chung //
@@ -696,21 +871,10 @@ namespace CNPM
                 {
                     LoadTenSPToComboBox_mua(selectedIDSanPham);
 
-                    List<string> dongiaban = LoaiSanPhamDAO.Instance.GetDonGiaMua(selectedIDSanPham);
-                    if (dongiaban != null && dongiaban.Count > 0)
-                    {
-                        tb_Manager_HDmua_UnitPrice.Text = string.Join(", ", dongiaban);
-                    }
-                    else
-                    {
-                        tb_Manager_HDmua_UnitPrice.Text = " ";
-                    }
-
                 }
                 else
                 {
                     LoadTenSPToComboBox_mua(0);
-                    tb_Manager_HDmua_UnitPrice.Text = "";
                 }
             }
         }
@@ -742,15 +906,26 @@ namespace CNPM
                 if (selectedValue != null && int.TryParse(selectedValue.ToString(), out int selectedIDSanPham))
                 {
                     tb_Manager_HDmua_IdProduct.Text = selectedIDSanPham.ToString();
+                    List<string> dongiaban = LoaiSanPhamDAO.Instance.GetDonGiaMua(selectedIDSanPham);
+                    if (dongiaban != null && dongiaban.Count > 0)
+                    {
+                        tb_Manager_HDmua_UnitPrice.Text = string.Join(", ", dongiaban);
+                    }
+                    else
+                    {
+                        tb_Manager_HDmua_UnitPrice.Text = " ";
+                    }
                 }
                 else
                 {
                     tb_Manager_HDmua_IdProduct.Text = "";
+                    tb_Manager_HDmua_UnitPrice.Text = " ";
                 }
             }
             else
             {
                 tb_Manager_HDmua_IdProduct.Text = "";
+                tb_Manager_HDmua_UnitPrice.Text = " ";
             }
         }
         private void tb_Manager_HDmua_UnitPrice_TextChanged(object sender, EventArgs e)
@@ -760,7 +935,7 @@ namespace CNPM
             {
                 decimal tongTien = (donGiaBan * soLuong);
 
-                tb_Manager_HDmua_Cash.Text = tongTien.ToString("N2");
+                tb_Manager_HDmua_Cash.Text = tongTien.ToString();
             }
             else
             {
@@ -775,7 +950,7 @@ namespace CNPM
             {
                 decimal tongTien = (donGiaBan * soLuong);
 
-                tb_Manager_HDmua_Cash.Text = tongTien.ToString("N2");
+                tb_Manager_HDmua_Cash.Text = tongTien.ToString();
             }
             else
             {
@@ -788,40 +963,74 @@ namespace CNPM
             string maSP = tb_Manager_HDmua_IdProduct.Text;
             string loaiSP = cb_Manager_HDmua_ProductType.Text;
             string tenSP = cb_Manager_HDmua_ProductName.Text;
+            string maNCC = tb_Manager_HDmua_IDncc.Text;
             int soLuong = 0;
             decimal donGia = 0;
 
+            if (string.IsNullOrWhiteSpace(maNCC))
+            {
+                MessageBox.Show("Mã nhà cung cấp không được để trống.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
             if (!int.TryParse(txb_Manager_HDmua_Quantity.Text, out soLuong) || soLuong <= 0)
             {
                 MessageBox.Show("Số lượng phải là số nguyên dương.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-
             if (!decimal.TryParse(tb_Manager_HDmua_UnitPrice.Text, out donGia) || donGia < 0)
             {
                 MessageBox.Show("Đơn giá phải là số dương.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            decimal thanhTien = (donGia * soLuong);
+            bool itemExists = false;
+            foreach (ListViewItem item in lsv_Manager_HDmua.Items)
+            {
+                if (item.SubItems[0].Text == maSP && item.SubItems[3].Text == maNCC)
+                {
+                    int currentSoLuong = int.Parse(item.SubItems[4].Text);
+                    int newSoLuong = currentSoLuong + soLuong;
+                    decimal newThanhTien = newSoLuong * donGia;
 
-            ListViewItem item = new ListViewItem(maSP);
-            item.SubItems.Add(loaiSP);
-            item.SubItems.Add(tenSP);
-            item.SubItems.Add(soLuong.ToString());
-            item.SubItems.Add(donGia.ToString());
-            item.SubItems.Add(thanhTien.ToString("N2")); 
+                    item.SubItems[4].Text = newSoLuong.ToString();
+                    item.SubItems[6].Text = newThanhTien.ToString();
 
-            lsv_Manager_HDmua.Items.Add(item);
+                    itemExists = true;
+                    break;
+                }
+            }
 
+            if (!itemExists)
+            {
+                decimal thanhTien = donGia * soLuong;
+
+                ListViewItem item = new ListViewItem(maSP);                 
+                item.SubItems.Add(loaiSP);
+                item.SubItems.Add(tenSP);
+                item.SubItems.Add(maNCC);
+                item.SubItems.Add(soLuong.ToString());
+                item.SubItems.Add(donGia.ToString());
+                item.SubItems.Add(thanhTien.ToString());
+
+                lsv_Manager_HDmua.Items.Add(item);
+            }
+            LoadProductNamesToComboBox_mua();
             tb_Manager_HDmua_IdProduct.Text = string.Empty;
             cb_Manager_HDmua_ProductType.SelectedIndex = -1;
             cb_Manager_HDmua_ProductName.DataSource = null;
-            txb_Manager_HDmua_Quantity.Text = string.Empty;
+            ClearNCCInfor();
+            txb_Manager_HDmua_Quantity.Text = string.Empty; 
             tb_Manager_HDmua_UnitPrice.Text = string.Empty;
             tb_Manager_HDmua_Cash.Text = "0";
 
             CalculateTotal_mua();
+        }
+
+        private void ClearNCCInfor()
+        {
+            tb_Manager_HDmua_IDncc.Text = string.Empty;
+            tb_Manager_HDmua_DiaChi.Text = string.Empty;
+            tb_Manager_HDmua_GuestPN.Text = string.Empty;
         }
         private void CalculateTotal_mua()
         {
@@ -829,12 +1038,12 @@ namespace CNPM
 
             foreach (ListViewItem item in lsv_Manager_HDmua.Items)
             {
-                if (decimal.TryParse(item.SubItems[5].Text, out decimal thanhTien))
+                if (decimal.TryParse(item.SubItems[6].Text, out decimal thanhTien))
                 {
                     total += thanhTien;
                 }
             }
-            tb_Manager_HDmua_Total.Text = total.ToString("N2");
+            tb_Manager_HDmua_Total.Text = total.ToString();
         }
 
         private void btn_Manager_HDmua_ThemHoaDon_Click(object sender, EventArgs e)
@@ -846,11 +1055,6 @@ namespace CNPM
                 if (!int.TryParse(tb_Manager_HDmua_IdProductBill.Text, out int id))
                 {
                     MessageBox.Show("ID hóa đơn không hợp lệ.");
-                    return;
-                }
-                if (!int.TryParse(tb_Manager_HDmua_IDncc.Text, out int idncc))
-                {
-                    MessageBox.Show("ID nhà cung cấp không hợp lệ.");
                     return;
                 }
 
@@ -874,14 +1078,19 @@ namespace CNPM
                         MessageBox.Show("Mã sản phẩm không hợp lệ.");
                         return;
                     }
+                    if (!int.TryParse(item.SubItems[3].Text, out int idncc))
+                    {
+                        MessageBox.Show("Mã nhà cung cấp không hợp lệ.");
+                        return;
+                    }
 
-                    if (!int.TryParse(item.SubItems[3].Text, out int soLuong))
+                    if (!int.TryParse(item.SubItems[4].Text, out int soLuong))
                     {
                         MessageBox.Show("Số lượng sản phẩm không hợp lệ.");
                         return;
                     }
 
-                    if (!int.TryParse(item.SubItems[4].Text, out int dongia))
+                    if (!int.TryParse(item.SubItems[5].Text, out int dongia))
                     {
                         MessageBox.Show("Đơn giá sản phẩm không hợp lệ.");
                         return;
@@ -910,6 +1119,63 @@ namespace CNPM
             tb_Manager_HDmua_Total.Text = "0";
             lsv_Manager_HDmua.Items.Clear();
         }
+
+        private void LoadProductNamesToComboBox_mua()
+        {
+            List<string> productNames = new List<string>();
+
+            foreach (ListViewItem item in lsv_Manager_HDmua.Items)
+            {
+                string productName = item.SubItems[2].Text; 
+
+                if (!productNames.Contains(productName))
+                {
+                    productNames.Add(productName);
+                }
+            }
+
+            HDmua_Productname_Listview.DataSource = null; 
+            HDmua_Productname_Listview.DataSource = productNames; 
+        }
+
+        private void HDmua_Delete_button_Listview_Click(object sender, EventArgs e)
+        {
+            if (HDmua_Productname_Listview.SelectedItem == null)
+            {
+                MessageBox.Show("Vui lòng chọn sản phẩm để cập nhật hoặc xóa.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string selectedProductName = HDmua_Productname_Listview.SelectedItem.ToString();
+            if (!int.TryParse(HDmua_Quantity_Listview.Text, out int newQuantity) || newQuantity < 0)
+            {
+                MessageBox.Show("Số lượng phải là số nguyên không âm.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            foreach (ListViewItem item in lsv_Manager_HDmua.Items)
+            {
+                if (item.SubItems[2].Text == selectedProductName) 
+                {
+                    if (newQuantity == 0)
+                    {
+                        lsv_Manager_HDmua.Items.Remove(item);
+                        MessageBox.Show($"Đã xóa sản phẩm '{selectedProductName}' khỏi danh sách.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        decimal donGia = decimal.Parse(item.SubItems[5].Text);
+                        decimal thanhTien = donGia * newQuantity;
+
+                        item.SubItems[4].Text = newQuantity.ToString();
+                        item.SubItems[6].Text = thanhTien.ToString();  
+                        MessageBox.Show($"Đã cập nhật số lượng cho sản phẩm '{selectedProductName}'.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    break;
+                }
+            }
+            CalculateTotal_mua();
+        }
+
     }
 }
 
